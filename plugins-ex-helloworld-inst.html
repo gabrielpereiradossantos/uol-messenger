@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
+	<title>Desenvolvendo plugins para o UOL Messenger | UOL Messenger</title>
+	<link href="css/base.min.css" rel="stylesheet">
+	<link href="css/project.min.css" rel="stylesheet">
+	<link href="favicon.ico" rel="shortcut icon">
+	<link href="apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+</head>
+<body class="page-green">
+	<header class="header header-transparent header-waterfall ui-header">
+		<ul class="nav nav-list pull-left">
+			<li>
+				<a data-toggle="menu" href="#ui_menu">
+					<span class="icon icon-lg">menu</span>
+				</a>
+			</li>
+		</ul>
+		<a class="header-logo margin-left-no" href="index.html">UOL Messenger</a>
+	</header>
+	<nav aria-hidden="true" class="menu" id="ui_menu" tabindex="-1">
+		<div class="menu-scroll">
+			<div class="menu-content">
+				<a class="menu-logo" href="index.html">UOL Messenger</a>
+				<ul class="nav">
+					<li>
+						<a class="waves-attach" href="como-funciona.html">Como funciona</a>
+					</li>
+					<li>
+						<a class="waves-attach" href="instalar.html">Instalação</a>
+					</li>
+					<li>
+						<a class="waves-attach" href="perguntas-frequentes.html">Perguntas frequentes</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main class="content">
+		<div class="content-header ui-content-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-lg-push-3 col-sm-10 col-sm-push-1">
+						<h1 class="content-heading">Desenvolvendo plugins para o UOL Messenger</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-push-3 col-sm-10 col-sm-push-1">
+					<section class="content-inner margin-top-no">
+						<div class="card">
+							<div class="card-main">
+								<div class="card-inner">
+									<p>Nesta página, encontram-se os detalhes da instalação dos plugins no programa UOL Messenger que servirão de exemplo para o desenvolvimento de novos plugins. Outras informações relevantes poderão ser nos encontradas nos comentários dos códigos fonte. Para desenvolver plugins como esses, é necessário preparar o ambiente. <a href="plugins-ex-helloworld-conf.html">Veja o passo-a-passo de como prepará-lo</a>.</p>
+								</div>
+							</div>
+						</div>
+						<h2 class="content-sub-heading">Tutorial de instalação dos plugins de exemplo no UOL Messenger</h2>
+						<dl>
+							<dt>1. Instalando o código fonte para desenvolvimento dos plugins</dt>
+							<dd>
+								<ul>
+									<li>Baixando os Arquivos Fonte do UOL Messenger:
+										<ul>
+											<li>Baixe o arquivo <a href="http://download.uol.com.br/messenger/plugin/demos/helloworld/src/hello-plugins-src.zip">hello-plugins-src.zip</a>.</li>
+											<li>Descompacte o arquivo hello-plugins-src.zip em <code>${basedir}\</code>, onde <code>${basedir}</code> é o diretorio base de seu projeto de desenvolvimento de plugin.</li>
+											<li>Será criado, dentro desta pasta, duas outras: <code>\build</code> e <code>\src</code>.</li>
+										</ul>
+									</li>
+									<li>Baixando as LIBs:
+										<ul>
+											<li>Baixe o arquivo <a href="http://download.uol.com.br/messenger/plugin/demos/helloworld/lib/desktop-shared-libs.zip">desktop-shared-libs.zip</a>.</li>
+											<li>Descompacte o arquivo desktop-shared-libs.zip em <code>${desktop-shared-libs-scr}\</code>, onde <code>${desktop-shared-libs-src}</code> é o diretorio onde os codigos das desktop-shared-libs estão.</li> <li>Será criado, dentro desta pasta, duas outras: <code>\build</code> e <code>\src</code>.</li>
+										</ul>
+									</li>
+								</ul>
+							</dd>
+							<dt>2. Executando os plugins no UOL Messenger</dt>
+							<dd>
+								<ul>
+									<li>Instalando a última versão do UOL Messenger:
+										<ul>
+											<li><a href="instalar.html">Acesse esta página</a> para obter a última versão do UOL Messenger.</li>
+											<li>Siga as instruções na página para a correta instalação do UOL Messenger.</li>
+										</ul>
+									</li>
+									<li>Configurando o Windows:
+										<ul>
+											<li>Acesse "Tools&gt;Folder" Options para abrir a janela de dialogo "Folder Options"</li>
+											<li>Clique na aba "View".</li>
+											<li>Verifique se a opção "Show Hidden Files and Folders" está selecionada.</li>
+										</ul>
+									</li>
+								</ul>
+								<ul>
+									<li>Obtendo os plugins (binários)
+										<ul>
+											<li>Baixe o arquivo <a href="http://download.uol.com.br/messenger/plugin/demos/helloworld/bin/hello-plugins-DLL.zip">hello-plugins-DLL.zip</a></li> 
+											<li>Descompacte o arquivo hello-plugins-DLL.zip em <code>${basedir}\dist</code>.</li>
+											<li>Será criado, dentro desta pasta, três diretórios, cada um para um tipo de plugin, conforme explicado abaixo:
+												<ul>
+													<li>O "helloplugin1" ensina como criar um plugin que será instalado em um painel de interface própria dentro do UOL Messenger.</li>
+													<li>O "helloplugin2" ensina como criar um plugin que será instalado como um item adicional da área de ferramentas UOL do UOL Messenger.</li>
+													<li>O "helloplugin3" ensina como criar um plugin para interação com um contato através de uma janela de mensagens.</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li>Configurando o plugin no UOL Messenger:
+										<ul>
+											<li>Copie o diretório de <code>${basedir}\dist\hellopluginX</code> (X é o plugin escolhido para você quer instalar) para <code>C:\Documents and Settings\All Users\Application Data\UOL\UIM\Plugins</code></li>
+											<li>Altere o arquivo <code>C:\Documents and Settings\All Users\Application Data\UOL\UIM\Plugins\localuolmessengerplugins.xml</code> adicionando a(s) seguinte(s) linha entre as tags <code>&lt;plugins&gt; ... &lt;/plugins&gt;</code>:
+												<ul>
+													<li><code>‹plugin internalname="helloplugin1" pluginFileName="HelloPlugin1.dll" pluginDirname="helloplugin1" /›</code> (para instalar o plugin 1)</li>
+													<li><code>‹plugin internalname="helloplugin2" pluginFileName="HelloPlugin2.dll" pluginDirname="helloplugin2" /›</code> (para instalar o plugin 2)</li>
+													<li><code>‹plugin internalname="helloplugin3" pluginFileName="HelloPlugin3.dll" pluginDirname="helloplugin3" /›</code> (para instalar o plugin 3)</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</dd>
+							<dt>3. Conclusão da instalação</dt>
+							<dd>
+								<ul>
+									<li>Feche o UOL Messenger e inicie-o novamente.</li>
+									<li>Clique em "Preferências" para abrir a janela "UOL Messenger - Preferências".
+										<ul>
+											<li>Clique no ícone "Plugins".</li>
+											<li>Marque a caixa de seleção correspondente ao plugin que deseja testar.</li>
+											<li>Por questoes de compatiblidade, desmarque a caixa de selecao do plugin "Criptografia de Mensagens"</li>
+										</ul>
+									</li>
+								</ul>
+							</dd>
+							<dt>4. Como saber se a instalação foi concluída com sucesso</dt>
+							<dd>
+								<ul>
+									<li>Hello Plugin 1
+										<ul>
+											<li> Será acrescentada uma área com a frase "Hello, World 1!", editável na interface principal do UIM.</li>
+										</ul>
+									</li>
+									<li>Hello Plugin 2
+										<ul>
+											<li> Será adicionado um item na área "Ferramentas UOL" com a frase "Hello, World 2!".</li>
+											<li> Se o item for clicado (duplo clique), o plugin abrirá uma janela com a frase "Hello, World 2!".</li>
+										</ul>
+									</li>
+									<li>Hello Plugin 3
+										<ul>
+											<li>Dê um duplo clique em algum contato.</li>
+											<li>Verifique na barra superior se aparece um ícone com as iniciais "HW".</li>
+											<li> Clique no ícone e, caso o seu contato também tenha o plugin Hello Plugin 3 instalado, uma mensagem será enviada e aparecerá dentro de uma janela no desktop do seu contato. <br> Ao receber a mensagem, o outro contato poderá respondê-la através do plugin "Hello Plugin 3 </li>
+										</ul>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+					</section>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="ui-footer">
+		<div class="container">
+			<p>Esta página não tem ligação com o UOL e/ou com suas filiadas. Este software é licenciado sob a <a href="https://www.gnu.org/licenses/gpl-2.0.html">GNU GPL</a>.</p>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/78fe09ff41.js"></script>
+	<script src="js/base.min.js"></script>
+	<script src="js/project.min.js"></script>
+</body> 
+</html>

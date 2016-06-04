@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
+	<title>Desenvolvendo plugins para o UOL Messenger | UOL Messenger</title>
+	<link href="css/base.min.css" rel="stylesheet">
+	<link href="css/project.min.css" rel="stylesheet">
+	<link href="favicon.ico" rel="shortcut icon">
+	<link href="apple-touch-icon.png" rel="apple-touch-icon-precomposed">
+</head>
+<body class="page-green">
+	<header class="header header-transparent header-waterfall ui-header">
+		<ul class="nav nav-list pull-left">
+			<li>
+				<a data-toggle="menu" href="#ui_menu">
+					<span class="icon icon-lg">menu</span>
+				</a>
+			</li>
+		</ul>
+		<a class="header-logo margin-left-no" href="index.html">UOL Messenger</a>
+	</header>
+	<nav aria-hidden="true" class="menu" id="ui_menu" tabindex="-1">
+		<div class="menu-scroll">
+			<div class="menu-content">
+				<a class="menu-logo" href="index.html">UOL Messenger</a>
+				<ul class="nav">
+					<li>
+						<a class="waves-attach" href="como-funciona.html">Como funciona</a>
+					</li>
+					<li>
+						<a class="waves-attach" href="instalar.html">Instalação</a>
+					</li>
+					<li>
+						<a class="waves-attach" href="perguntas-frequentes.html">Perguntas frequentes</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main class="content">
+		<div class="content-header ui-content-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-lg-push-3 col-sm-10 col-sm-push-1">
+						<h1 class="content-heading">Desenvolvendo plugins para o UOL Messenger</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-push-3 col-sm-10 col-sm-push-1">
+					<section class="content-inner margin-top-no">
+						<div class="card">
+							<div class="card-main">
+								<div class="card-inner">
+									<p>Nesta página, encontram-se os detalhes para configurar seu ambiente de desenvolvimento para poder trabalhar com os códigos dos plugins. É necessário utilizar a IDE Microsoft Visual Studio .Net 2003. Após preparar o ambiente, <a href="plugins-ex-helloworld-inst.html">acesse a página com o Tutorial de instalação dos plugins de exemplo no UOL Messenger</a> para ver os como instalá-los.</p>
+								</div>
+							</div>
+						</div>
+						<h2 class="content-sub-heading">Tutorial de instalação dos plugins de exemplo no UOL Messenger</h2>
+						<dl>
+							<dt>1. Instalando as dependências e arquivos dos plugins</dt>
+							<dd>
+								<ul>
+									<li>Baixando os Arquivos Fonte dos plugins de exemplo
+										<ul>
+											<li>Baixe o arquivo <a href="http://download.uol.com.br/messenger/plugin/demos/helloworld/src/hello-plugins-src.zip">hello-plugins-src.zip</a>.</li>
+											<li>Descompacte o arquivo na pasta <code>${basedir}</code>,  <code>${basedir}</code> é o diretório base de seu projeto de desenvolvimento de plugin.</li>
+											<li>Após a descompactação, dentro desta pasta teremos duas outras: <code>\build</code> e <code>\src</code>.</li>
+										</ul>
+									</li>
+									<li>Baixando as LIBs
+										<ul>
+											<li>Baixe o arquivo <a href="http://download.uol.com.br/messenger/plugin/demos/helloworld/lib/desktop-shared-libs.zip">desktop-shared-libs.zip</a>.</li>
+											<li>Descompacte o arquivo na pasta <code>${desktop-shared-libs-scr}\</code>, onde <code>${desktop-shared-libs-src}</code> é o diretorio onde os codigos das desktop-shared-libs estão.</li>
+											<li>Após a descompactação, dentro dessa pasta teremos duas outras: <code>\build</code> e <code>\src</code>.</li>
+										</ul>
+									</li>
+								</ul>
+							</dd>
+							<dt>2. Adicionando as variáveis de ambiente</dt>
+							<dd>
+								<ul>
+									<li>Clique em "Start".</li>
+									<li>Clique no ícone "Control Panel", para abrir o painel de controles.</li>
+									<li>Clique no ícone "System" para abrir a janela "System Properties".</li>
+									<li>Acesse a aba "Advanced".</li>
+									<li>Clique no botão "Enviroment Variables".</li>
+									<li>Na primeira janela identificada por "User variables", clique no botão "New".
+										<ul>
+											<li>Preencha o campo "Variable name:" com: <code>UOL_SHARED_INCLUDE</code></li>
+											<li>Preencha o campo "Variable value:" com: <code>${desktop-shared-libs-src}\src</code></li>
+										</ul>
+									</li>
+									<li>Repita os procedimentos do item anterior adicionando as seguintes variáveis:
+										<ul>
+											<li><code>UOL_SHARED_LIB = ${desktop-shared-libs-src}\build</code></li>
+											<li><code>UOL_SHARED_SRC = ${desktop-shared-libs-src}\src</code></li>
+											<li><code>_NT_SYMBOL_PATH = srv*${localsymbols}*http://msdl.microsoft.com/download/symbols</code> onde ${localsymbols} é um diretório deseja instalar seus localsymbols.</li>
+										</ul>
+									</li>
+								</ul>
+							</dd>
+							<dt>3. Compilando o projeto</dt>
+							<dd>
+								<ul>
+									<li>Instalando a última versão do UOL Messenger:
+										<ul>
+											<li><a href="instalar.html">Acesse esta página</a> para obter a última versão do UOL Messenger.</li>
+											<li>Siga as instruções na página para a correta instalação do UOL Messenger.</li>
+										</ul>
+									</li>
+									<li>Abra o seu Microsoft Visual Studio .Net 2003.</li>
+									<li>Abrindo o Projeto dos fontes do UOL Messenger
+										<ul>
+											<li>Acesse o menu File&gt;Open e clique em "Project" para abrir a janela "Open Project".</li>
+											<li>Navegue até o diretorio <code>${basedir}\scr</code>.</li>
+											<li>Dê um duplo clique no arquivo UIM.sln.</li>
+										</ul>
+									</li>
+									<li>Compilando o projeto:
+										<ul>
+											<li>Na janela "Solution Explorer" clique no ícone da solução.</li>
+											<li>Acesse o menu 'Build".</li>
+											<li>Clique no item "Configuration Manager".</li>
+											<li>Selecione a opção "Release" no item "Active Solution Configuration".</li>
+											<li>Compilando os plugins:
+												<ul>
+													<li>Clique com o botão direito no projeto "HelloPlugin1".</li>
+													<li>Clique no item "Build".</li>
+												</ul>
+											</li>
+											<li>Repita o passo anterior (compilando os plugins) para os projetos "HelloPlugin2" e "HelloPlugin3".</li>
+										</ul>
+									</li>
+								</ul>
+							</dd>
+							<dt>4. Trabalhando com o projeto de plugins de exemplo</dt>
+							<dd>
+								<ul>
+									<li>Compilando o Projeto:
+										<ul>
+											<li> Compile o projeto, como descrito no item 3, alterando os passos 3.4.4 para o seguinte: <br>
+												Selecione a opção "Debug" no item "Active Solution Configuration". </li>
+											<li>Siga as instruções na pagina para a correta instalação do UOL Messenger.</li>
+											<li>Renomeie o arquivo <code>C:\Documents and Settings\All Users\Application Data\UOL\UIM\Plugins\helloplugin1\helloplugin1d.dll para helloplugin1.dll</code>.</li>
+											<li>Repita o passo acima para HelloPlugin2 e HelloPlugin3.</li>
+										</ul>
+									</li>
+									<li>Execute o UOL Messenger.</li>
+									<li>Anexando o processo ao depurador:
+										<ul>
+											<li>Acesse o menu "Tools".</li>
+											<li>Clique no item "Debug Processes" para abrir a janela "Processes".</li>
+											<li>Na lista dentro da janela de um duplo clique em "uimd.exe", isso abrirá a janela "Attach Process".</li>
+											<li>Selecione apenas o campo "Native".</li>
+											<li>Clique em OK.</li>
+											<li>Feche a janela "Processes".</li>
+										</ul>
+									</li>
+									<li>Agora utilize o depurador normalmente, adicionando breakpoints etc.</li>
+								</ul>
+							</dd>
+						</dl>
+						<h2 class="content-sub-heading">Glossário</h2>
+						<p>${basedir} é o diretório base de seu projeto de desenvolvimento de plugin.</p>
+						<p>${desktop-shared-libs-src} é o diretório onde se encontram os códigos das desktop-shared-libs.</p>
+						<p>${localsymbols} é o diretório onde você deseja instalarseus localsymbols.</p>
+					</section>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="ui-footer">
+		<div class="container">
+			<p>Esta página não tem ligação com o UOL e/ou com suas filiadas. Este software é licenciado sob a <a href="https://www.gnu.org/licenses/gpl-2.0.html">GNU GPL</a>.</p>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/78fe09ff41.js"></script>
+	<script src="js/base.min.js"></script>
+	<script src="js/project.min.js"></script>
+</body> 
+</html>
