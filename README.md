@@ -1,2 +1,0 @@
-# UIM
-UOL Messenger 
