@@ -1,0 +1,592 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,2,6
+ PRODUCTVERSION 1,0,2,6
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080004b0"
+        BEGIN
+            VALUE "CompanyName", "Universo Online S/A"
+            VALUE "FileDescription", "UOL Messenger UOL Voip Plugin"
+            VALUE "FileVersion", "1, 0, 2, 6"
+            VALUE "InternalName", "UOLFone"
+            VALUE "LegalCopyright", "Direitos Autorais Reservados (c) 2006 Universo Online S/A"
+            VALUE "OriginalFilename", "UOLFonePlugin.dll"
+            VALUE "ProductName", "UOL Messenger UOL Voip Plugin Beta"
+            VALUE "ProductVersion", "1, 0, 2, 6"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x800, 1200
+    END
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)\r\n"
+    "LANGUAGE 22, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\UOLFonePlugin.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CONTACT_IMAGE       BITMAP                  "res\\contactImage.bmp"
+IDB_CONTACT_IMAGE_SMALL BITMAP                  "res\\contactImageSmall.bmp"
+IDB_ICO_SUCCESS         BITMAP                  "res\\ico-sucess.bmp"
+IDB_ICO_ERROR           BITMAP                  "res\\ico-erro.bmp"
+IDB_BTN_JANELA_CONVERSA BITMAP                  "res\\botao-janela-conversa.bmp"
+IDB_UOLFONE_PLUGIN_ICON BITMAP                  "res\\ico-plugin-fone.bmp"
+IDB_BTN_CALL            BITMAP                  "res\\bot-discar.bmp"
+IDB_BTN_RECALL_INATIVE  BITMAP                  "res\\bot-rediscar-desativado.bmp"
+IDB_BTN_ACCEPT          BITMAP                  "res\\bot-atender.bmp"
+IDB_BTN_ACCEPT_INATIVE  BITMAP                  "res\\bot-atender-desativado.bmp"
+IDB_BTN_HANGUP          BITMAP                  "res\\bot-desligar.bmp"
+IDB_BTN_HANGUP_INACTIVE BITMAP                  "res\\bot-desligar-desativado.bmp"
+IDB_BTN_CALL_INACTIVE   BITMAP                  "res\\bot-discar-desativado.bmp"
+IDB_BTN_RECALL          BITMAP                  "res\\bot-rediscar.bmp"
+IDB_BTN_TECLADO_1       BITMAP                  "res\\bot-teclado1.bmp"
+IDB_BTN_TECLADO_2       BITMAP                  "res\\bot-teclado2.bmp"
+IDB_BTN_TECLADO_3       BITMAP                  "res\\bot-teclado3.bmp"
+IDB_BTN_TECLADO_4       BITMAP                  "res\\bot-teclado4.bmp"
+IDB_BTN_TECLADO_5       BITMAP                  "res\\bot-teclado5.bmp"
+IDB_BTN_TECLADO_6       BITMAP                  "res\\bot-teclado6.bmp"
+IDB_BTN_TECLADO_7       BITMAP                  "res\\bot-teclado7.bmp"
+IDB_BTN_TECLADO_8       BITMAP                  "res\\bot-teclado8.bmp"
+IDB_BTN_TECLADO_9       BITMAP                  "res\\bot-teclado9.bmp"
+IDB_BTN_TECLADO_POUND   BITMAP                  "res\\bot-teclado-#.bmp"
+IDB_BTN_TECLADO_ASTERISK BITMAP                  "res\\bot-teclado-asterisco.bmp"
+IDB_BTN_TECLADO_0       BITMAP                  "res\\bot-teclado0.bmp"
+IDB_BTN_LISTA_CONTATOS  BITMAP                  "res\\botao-lista-contatos.bmp"
+IDB_PC2PHONE_IMAGE      BITMAP                  "res\\pc2phoneImage.bmp"
+IDB_PC2PHONE_IMAGE_SMALL BITMAP                  "res\\pc2phoneImageSmall.bmp"
+IDB_BTN_SAIBA_MAIS      BITMAP                  "res\\bot-saibamais.bmp"
+IDB_BTN_LIMPAR          BITMAP                  "res\\ico-limpar.bmp"
+IDB_TOOLBAR_BTN_HOME_UOL BITMAP                  "res\\toolbar-fone_uol.bmp"
+IDB_TOOLBAR_BTN_PRICES  BITMAP                  "res\\toolbar-fone_carga.bmp"
+IDB_TOOLBAR_BTN_MY_ACCOUNT BITMAP                  "res\\toolbar-fone_extrato.bmp"
+IDB_TOOLBAR_BTN_CONFIG  BITMAP                  "res\\toolbar-fone_prefs.bmp"
+IDB_ICO_INFO            BITMAP                  "res\\info_16x16.bmp"
+IDB_ICO_INFO_SMALL      BITMAP                  "res\\info_small.bmp"
+IDB_PREFS_TOOLBAR_BTN_UOLFONE BITMAP                  "res\\prefs_uolfone_bot.bmp"
+IDB_UOLFONE_TAB_ICON    BITMAP                  "res\\uolfone_tab_icon.bmp"
+IDB_BTN_CONECTAR_CONTA_UOL BITMAP                  "res\\bot-conectar-conta-uol.bmp"
+IDB_BTN_CADASTRAR_CONTA_UOL BITMAP                  "res\\bot-cadastrar-conta-uol.bmp"
+IDB_TOOLBAR_BTN_HISTORICO BITMAP                  "res\\toolbar-fone_historico.bmp"
+IDB_ICO_INFO_BALLOON    BITMAP                  "res\\info_icon_balloon.bmp"
+IDB_CONTACT_IMAGE_ALT   BITMAP                  "res\\uolfone\\contactImage.bmp"
+IDB_CONTACT_IMAGE_SMALL_ALT BITMAP                  "res\\uolfone\\contactImageSmall.bmp"
+IDB_PC2PHONE_IMAGE_ALT  BITMAP                  "res\\uolfone\\pc2phoneImage.bmp"
+IDB_PC2PHONE_IMAGE_SMALL_ALT BITMAP                  "res\\uolfone\\pc2phoneImageSmall.bmp"
+IDB_BTN_BUY_CREDIT      BITMAP                  "res\\botao_saldo_carga.bmp"
+IDB_BTN_RECONNECT       BITMAP                  "res\\bot-reconectar.bmp"
+IDB_BTN_RESTART_APP     BITMAP                  "res\\bot-reiniciar-aplicacao.bmp"
+IDB_BTN_RETURN          BITMAP                  "res\\bot-retornar.bmp"
+IDB_BTN_BUY_CREDITS     BITMAP                  "res\\bot-comprar-creditos.bmp"
+IDB_TOOLBAR_BTN_LIG_EFETUADA BITMAP                  "res\\toolbar_fone_chamada_efetuadas.bmp"
+IDB_TOOLBAR_BTN_CALL_HISTORY BITMAP                  "res\\toolbar_fone_chamada_perdida.bmp"
+IDB_TOOLBAR_BTN_CALL_HISTORY_ALERT BITMAP                  "res\\toolbar_fone_chamada_perdida_alert.bmp"
+IDB_TOOLBAR_BTN_LIG_ATENDIDA BITMAP                  "res\\toolbar_fone_chamada_recebida.bmp"
+IDB_TOOLBAR_BTN_CONVERSA BITMAP                  "res\\toolbar_fone_conversa.bmp"
+IDB_TOOLBAR_BTN_CALL_SAC BITMAP                  "res\\toolbar_fone_sac.bmp"
+IDB_BTN_DONTACCEPT_INACTIVE BITMAP                  "res\\bot-recusar-desativado.BMP"
+IDB_BTN_DONTACCEPT      BITMAP                  "res\\bot-recusar.BMP"
+IDB_BTN_MICROPHONE_ON   BITMAP                  "res\\microphone_on.bmp"
+IDB_BTN_MICROPHONE_OFF  BITMAP                  "res\\microphone_off.bmp"
+IDB_BTN_SPEAKER_ON      BITMAP                  "res\\speaker_on.bmp"
+IDB_BTN_SPEAKER_OFF     BITMAP                  "res\\speaker_off.bmp"
+IDB_ICO_WARNING         BITMAP                  "res\\ico-alerta.bmp"
+IDB_LINE_SEPARATOR      BITMAP                  "res\\line_separator.bmp"
+IDB_BTN_BUY_CREDITS_LINE BITMAP                  "res\\botao_compre_creditos_uolvoip.bmp"
+IDB_BTN_BUY_PLAN_LINE   BITMAP                  "res\\botao_assine_planos_uolvoip.bmp"
+IDB_BTN_BUY_VOIP        BITMAP                  "res\\bot_ass_voip.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG_DLG DIALOGEX 0, 0, 348, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Usar conta:",IDC_STATIC,21,34,38,8
+    COMBOBOX        IDC_CMB_CONTAS,68,30,151,66,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        " Configurações ",IDC_STATIC,14,14,320,60
+    PUSHBUTTON      "Remover Números das Últimas Chamadas",IDC_BTN_LIMPAR_HISTORICO,21,53,158,14
+    GROUPBOX        " Dispositivos de Áudio ",IDC_STATIC,14,85,320,62
+    LTEXT           "Entrada de Áudio:",IDC_STATIC,21,106,59,8
+    LTEXT           "Saída de Áudio:",IDC_STATIC,21,128,51,8
+    COMBOBOX        IDC_CMB_ENTRADA_AUDIO,88,102,194,50,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_SAIDA_AUDIO,88,124,194,50,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Forçar conexão pela porta 80",IDC_CHECK_FORCE_TUNNEL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,157,111,10
+    EDITTEXT        IDC_EDIT_PURGE_INTERVAL,117,172,17,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_PURGE_INTERVAL,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,135,172,11,14
+    LTEXT           "dias.",IDC_STATIC_TEXT1,151,177,16,8
+    LTEXT           "Limpar arquivo de erros a cada",IDC_STATIC,14,177,100,8
+    CONTROL         "Conectar no UOL Voip apenas quando eu efetuar uma ligação",IDC_CHECK_REGISTER_ON_CALL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,195,213,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CONFIG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        VERTGUIDE, 14
+        VERTGUIDE, 21
+        VERTGUIDE, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+        HORZGUIDE, 14
+        HORZGUIDE, 232
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// BINARY
+//
+
+IDR_SINO_ANIMA          BINARY                  "res\\icone-sino-anima.gi_"
+IDR_WAIT_ANIMA          BINARY                  "res\\wait_21x21-fdaz.gi_"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_KEY_0               WAVE                    "res\\0.wav"
+IDR_KEY_ASTERISK        WAVE                    "res\\star.wav"
+IDR_KEY_1               WAVE                    "res\\1.wav"
+IDR_KEY_2               WAVE                    "res\\2.wav"
+IDR_KEY_3               WAVE                    "res\\3.wav"
+IDR_KEY_4               WAVE                    "res\\4.wav"
+IDR_KEY_5               WAVE                    "res\\5.wav"
+IDR_KEY_6               WAVE                    "res\\6.wav"
+IDR_KEY_7               WAVE                    "res\\7.wav"
+IDR_KEY_8               WAVE                    "res\\8.wav"
+IDR_KEY_9               WAVE                    "res\\9.wav"
+IDR_KEY_POUND           WAVE                    "res\\pound.wav"
+IDR_WAVE_CALL_CLOSED    WAVE                    "res\\callclosed.wav"
+IDR_WAVE_CALL_RINGING   WAVE                    "res\\ringing.wav"
+IDR_WAVE_CALL_CALLING   WAVE                    "res\\calling.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_XML_CONFIG_STUB     HTML                    "res\\UOLFonePluginConfig.xml"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PLUGIN_DESC         "Fale com seus amigos PC-PC, PC-fone e fone-PC."
+    IDS_PLUGIN_NAME         "UOL Voip"
+    IDS_BTN_LABEL_PREFERENCES "Preferências"
+    IDS_BTN_LABEL_PROCEED_CALL "Discar"
+    IDS_BTN_LABEL_CALL_TO   "Digite o número"
+    IDS_LABEL_CALL_INFO     "Para ligar, não use código de operadora"
+    IDS_LABEL_NATIONAL_EXAMPLE "Nacional - ex.: 011 2222 3333"
+    IDS_LABEL_INTERNATIONAL_EXAMPLE "Internacional - ex.: 0054 11 2222 3333"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BTN_LABEL_KEY_0     "0"
+    IDS_BTN_LABEL_KEY_1     "1"
+    IDS_BTN_LABEL_KEY_2     "2"
+    IDS_BTN_LABEL_KEY_3     "3"
+    IDS_BTN_LABEL_KEY_4     "4"
+    IDS_BTN_LABEL_KEY_5     "5"
+    IDS_BTN_LABEL_KEY_6     "6"
+    IDS_BTN_LABEL_KEY_7     "7"
+    IDS_BTN_LABEL_KEY_8     "8"
+    IDS_BTN_LABEL_KEY_9     "9"
+    IDS_BTN_LABEL_KEY_ASTERISK "*"
+    IDS_BTN_LABEL_KEY_POUND "#"
+    IDS_LABEL_CALL_IN_PROGRESS_INFO_1 "Aguarde ..."
+    IDS_LABEL_CALL_IN_PROGRESS_INFO_2 "completando ligação para"
+    IDS_LABEL_DURATION      "Duração:"
+    IDS_LABEL_ACCEPT_CALL_INFO_1 "O número"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LABEL_ACCEPT_CALL_INFO_2 "está chamando."
+    IDS_BTN_LABEL_ACCEPT_CALL "Atender ligação"
+    IDS_BTN_LABEL_DONT_ACCEPT_CALL "Não atender ligação"
+    IDS_LABEL_CALL_IN_PLACE_INFO "Ligação em andamento"
+    IDS_LABEL_MICROPHONE    "Microfone"
+    IDS_LABEL_SPEAKER       "Som"
+    IDS_LABEL_MUTE          "Mudo"
+    IDS_BTN_LABEL_HANG_CALL "Desligar"
+    IDS_LABEL_BALANCE       "Créditos disponíveis"
+    IDS_BTN_LABEL_EXTRATO   "Carga/Extrato"
+    IDS_LABEL_COST          "Custo:"
+    IDS_LABEL_COMPLETANDO_LIGACAO "Completando ligação..."
+    IDS_LABEL_RECEBENDO_LIGACAO "Recebendo ligação"
+    IDS_LABEL_LIGACAO_EM_ANDAMENTO "Ligação em andamento"
+    IDS_LABEL_ERRO_ENCONTRADO "Erro encontrado"
+    IDS_ERROR_UNABLE_RETRIEVE_CONTACT 
+                            "Ocorreu um erro durante a execução do UOL Voip. Por favor, reinicie o programa. (PUF0117)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_UNABLE_RETRIEVE_ACCOUNT 
+                            "Ocorreu um erro durante a execução do UOL Voip. Por favor, reinicie o programa. (PUF0114)"
+    IDS_ERROR_UNABLE_RETRIEVE_ACCOUNT_CONNECTION_MANAGER 
+                            "Ocorreu um erro durante a execução do UOL Voip. Por favor, reinicie o programa. (PUF0115)"
+    IDS_ERROR_USER_NOT_CONNECTED 
+                            "Não é possível usar o UOL Voip desconectado. (PUF0119)"
+    IDS_ERROR_UNABLE_RETRIEVE_CHILD_WINDOW 
+                            "Ocorreu um erro durante a execução do UOL Voip. Por favor, reinicie o programa. (PUF0116)"
+    IDS_ERROR_VOIP_CALL_ESTABLISHED 
+                            "Já existe uma chamada em andamento. (PUF0120)"
+    IDS_URL_SITE_EXTRATO    "https://voip.uol.com.br/extrato.html"
+    IDS_CONFIG_FILE_STUB    "<?xml version=""1.0"" encoding=""utf-8"" ?><UOLFonePluginConfig><CallAccount></CallAccount><AudioDevices><LineIn></LineIn><LineOut></LineOut></AudioDevices><CallHistory></CallHistory></UOLFonePluginConfig>"
+    IDS_UOL_FONE_CLIENT_DLL_NAME "UOLFoneClient"
+    IDS_UOL_FONE_CLIENT_DLL_VERSION "1.0.0.23"
+    IDS_UOL_FONE_SERVER_CONFIG_PROVIDER_DLL_NAME "UOLFoneServerConfigProvider"
+    IDS_UOL_FONE_SERVER_CONFIG_PROVIDER_DLL_VERSION "1.0.0.16"
+    IDS_UOL_FONE_CRYPT_DLL_NAME "UOLFoneCrypt"
+    IDS_UOL_FONE_CRYPT_DLL_VERSION "1.0.0.2"
+    IDS_UOL_PROTOCOL_ID     "prpl-uol"
+    IDS_URL_RELEASE_DLLS    "http://ubpv.multi.uol.com.br/libs/"
+    IDS_URL_PHONE_VALIDATION_RULES 
+                            "http://ubpv.multi.uol.com.br/uolfone/uolfonerules.xml"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ACM_DLL_VERSION     "1.0.0.1"
+    IDS_PLUGINS_DEBUG_DIR   "plugins_debug"
+    IDS_UOL_REALM           "uol.com.br"
+    IDS_ERROR_CALL          "Ocorreu um erro durante a ligação. (PUF0121)"
+    IDS_URL_CODECS_LIST     "http://ubpv.multi.uol.com.br/uolfone/uolfonecodecs.xml"
+    IDS_PLUGINS_RELEASE_DIR "plugins"
+    IDS_ERROR_NOT_POSSIBLE_TO_CONNECT 
+                            "Não foi possível conectar. Por favor, verifique sua conexão à Internet e entre em contato com o nosso suporte técnico caso o problema não seja resolvido. (PUF0142)"
+    IDS_ERROR_PLUGIN_NOT_INITIALIZED 
+                            "Não foi possível iniciar o UOL Voip. Por favor, reinicie o programa. (PUF0113)"
+    IDS_ERROR_DOWNLOAD_CODECS 
+                            "Não foi possível iniciar o UOL Voip. Por favor, tente novamente mais tarde e entre em contato com o nosso suporte técnico caso o problema volte a acontecer. (PUF0108)"
+    IDS_ERROR_UNKNOW        "Ocorreu um erro durante a execução do UOL Voip. (PUF0118)"
+    IDS_URL_DEFAULT         "http://messenger.uol.com.br"
+    IDS_UOL_FONE_INSCRIPTIONS_HEADER "UOL-AvailableProducts"
+    IDS_UOL_FONE_INSCRIPTIONS_VALUES "108;1019;272"
+    IDS_CLEAR_HISTORY_CONFIRM_MESSAGE 
+                            "Você tem certeza que deseja remover os números das últimas chamadas?"
+    IDS_ERROR_APPLY_CONFIG  "Você tem uma ligação em andamento. Suas alterações não serão salvas. (PUF0122)"
+    IDS_LABEL_INITIALIZING  "Por favor, aguarde..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PHONE_VALIDATION_RULES_FILENAME "uolfonerules.xml"
+    IDS_LABEL_ACCOUNT_DISCONNECTED "Desconectado"
+    IDS_MENU_LABEL_CHAMAR_CONTATO "Chamar contato"
+    IDS_ERROR_CALL_TO_PC_FAILED 
+                            "Não foi possível completar a chamada. (PUF0103)"
+    IDS_ERROR_INVALID_PHONE_NUMBER 
+                            "Número de telefone ou contato inválido. (PUF0404)."
+    IDS_ERROR_CALL_TO_PHONE_FAILED 
+                            "Não foi possível completar a chamada. (PUF0104)"
+    IDS_ERROR_CONNECTION_UNAUTHORIZED 
+                            "Atenção, não foi possível conectar. Por favor, tente novamente mais tarde. (PUF0107)"
+    IDS_ERROR_CONNECTION_SERVER_UNAVAILABLE 
+                            "Não foi possível conectar. Por favor, tente novamente mais tarde. (PUF0105)"
+    IDS_ERROR_CONNECTION_TIMEOUT 
+                            "Não foi possível conectar. Por favor, tente novamente mais tarde. (PUF0106)"
+    IDS_ERROR_PHONE_CALL    "Não foi possível completar a chamada. (PUF0111)"
+    IDS_ERROR_PHONE_BUSY    "O número ou contato chamado está ocupado. (PUF0110)"
+    IDS_ERROR_PHONE_NOANSWER 
+                            "O número ou contato chamado está indisponível no momento. (PUF0112)"
+    IDS_URL_SITE_RECARGA    "http://barra.uol.com.br/st.html?sg=300096096&sa=RECARGA&uredir=http://voip.uol.com.br/"
+    IDS_TOOLBAR_BTN_LABEL_CONVERSAS "Conversas"
+    IDS_ERROR_LIBRARY_INITIALIZATION_FAILED 
+                            "Não foi possível inicializar o UOL Voip. (PUF0109)"
+    IDS_ACM_DLL_NAME        "acm"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_URL_SITE_CREDITOS   "http://barra.uol.com.br/st.html?sg=300096096&sa=CREDITOS&uredir=http://voip.uol.com.br/"
+    IDS_URL_SITE_HOME_UOL   "http://www.uol.com.br/"
+    IDS_TOOLBAR_BTN_LABEL_CARGA "Comprar Créditos"
+    IDS_TOOLBAR_BTN_LABEL_EXTRATO "Extrato de Ligações"
+    IDS_TOOLBAR_BTN_LABEL_HOME_UOL "UOL"
+    IDS_TOOLBAR_BTN_LABEL_CONFIG "Preferências"
+    IDS_LABEL_SEE_EXAMPLES  "Veja como ligar"
+    IDS_INFO_UOL_ACCOUNT_DISCONNECTED 
+                            "Para usar o UOL Voip é necessário que a conta da Rede UOL esteja conectada. Clique no botão abaixo para conectá-la (PUF0102)."
+    IDS_INFO_UOL_ACCOUNT_NOT_FOUND 
+                            "Para usar o UOL Voip é necessário configurar uma conta na Rede UOL. Clique no botão abaixo para configurá-la (PUF0101)."
+    IDS_TOOLBAR_BTN_LABEL_CALL_HISTORY "Histórico de Ligações"
+    IDS_URL_SITE_HISTORICO  "https://voip.uol.com.br/historico-ligacoes.html"
+    IDS_INFO_SEND_TONS_WITH_KEYBOARD 
+                            "Caso precise discar algum número durante a ligação, utilize o teclado numérico."
+    IDS_INFO_BOL_USER_WARNING 
+                            "Para realizar ligações para telefones é necessário ter uma conta na Rede UOL cadastrada no UOL Voip (e-mail UOL). Caso tenha outra conta, configure-a ou assine o serviço."
+    IDS_BTN_BUY_CREDIT_TOOLTIP "Carga"
+    IDS_INFO_UOLFONE_SUBSCRIBER_URL "http://voip.uol.com.br/ajuda/uolfone2"
+    IDS_TOOLBAR_BTN_LABEL_LIG_ATENDIDAS "Chamadas atendidas"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOOLBAR_BTN_LABEL_LIG_EFETUADAS "Chamadas efetuadas"
+    IDS_TOOLBAR_BTN_LABEL_LIG_PERDIDAS "Chamadas perdidas"
+    IDS_HISTORY_CALL_STATUS_MISSED "MISSED"
+    IDS_HISTORY_CALL_STATUS_RECEIVED "RECEIVED"
+    IDS_HISTORY_CALL_STATUS_DIALED "DIALED"
+    IDS_HISTORY_CALL_STATUS_NONE "NONE"
+    IDS_HISTORY_CALL_STATUS_ALL "ALL"
+    IDS_UOL_PROTOCOL_ID2    "UOL"
+    IDS_BOL_PROTOCOL_ID     "BOL"
+    IDS_VOIP_PROTOCOL_ID    "VOIP"
+    IDS_INFO_UOLFONE_SUBSCRIBER_WARNING 
+                            "Para realizar ligações para telefones é necessário ter uma conta na Rede UOL cadastrada no UOL Voip (e-mail UOL). Caso tenha outra conta, configure-a ou assine o serviço."
+    IDS_HISTORY_ERROR_NO_CURRENT_ACCOUNT 
+                            "Para acessar o histórico de chamadas é necessário ter uma conta na Rede UOL cadastrada no UOL Voip (email UOL) e configurada (aba ""UOL Voip"")."
+    IDS_BTN_LABEL_CLEAN     "Limpar"
+    IDS_TOOLBAR_BTN_LABEL_SAC "Fale Conosco"
+    IDS_URL_SITE_MINHA_CONTA "https://voip.uol.com.br/userhome.html"
+    IDS_TOOLBAR_BTN_LABEL_MY_ACCOUNT "Minha Conta"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HISTORY_CALL_PARAMETER_CONTACT "CONTACT"
+    IDS_HISTORY_CALL_PARAMETER_CALLS "CALLS"
+    IDS_HISTORY_CALL_Phone2PC "Phone2PC"
+    IDS_HISTORY_CALL_PC2Phone "PC2Phone"
+    IDS_HISTORY_CALL_PC2PC  "PC2PC"
+    IDS_PLUGIN_FILES_NOT_FOUND_ON_SERVER 
+                            "Arquivos exigidos pelo plugin não foram encontrados nos servidores do UOL. Por favor, entre em contato com o nosso suporte técnico. (PUF0145)"
+    IDS_PROXY_AUTHENTICATION_REQUIRED 
+                            "O servidor de proxy da sua rede exige usuário e senha. Por favor, consulte o administrador da sua rede e, em caso de dúvida, entre em contato com o nosso suporte técnico. (PUF0146)"
+    IDS_FOLDER_PATH_CREATION_FAILURE 
+                            "Ocorreu um erro durante a criação de pastas e/ou arquivos. Por favor, entre em contato com o nosso suporte técnico. (PUF0147)"
+    IDS_PLUGIN_FILES_DOWNLOAD_ERROR 
+                            "Ocorreu um erro ao tentar baixar arquivos do UOL Voip. Por favor, tente novamente mais tarde e entre em contato com o nosso suporte técnico caso o problema volte a acontecer. (PUF0148)"
+    IDS_PLUGIN_INITIALIZATION_FAILURE 
+                            "Ocorreu um erro na inicialização do UOL Voip. Por favor, tente novamente mais tarde e entre em contato com o nosso suporte técnico caso o problema volte a acontecer. (PUF0149)"
+    IDS_PLUGIN_LIBRARY_INITIALIZATION_FAILURE 
+                            "Ocorreu um erro no carregamento de componentes do UOL Voip. Por favor, tente novamente mais tarde e entre em contato com o nosso suporte técnico caso o problema volte a acontecer. (PUF0150)"
+    IDS_REGISTER_ON_CALL_HINT 
+                            "Atenção, ao ativar essa opção você não receberá chamadas para seu número Voip IN e também não receberá chamadas de seus amigos. Utilize essa opção caso deseje não ser incomodado ou se você utiliza o seu número Voip IN em um adaptador telefônico."
+    IDS_URL_SITE_BUY_CREDIT "http://voip.uol.com.br/creditos.htm"
+    IDS_BUY_PLAN_LABEL      "Compre planos do UOL Voip"
+    IDS_BUY_CREDIT_LABEL    "Compre créditos do UOL Voip"
+    IDS_LABEL_WARNING       "Mensagem alerta"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HISTORY_CALL_MESSAGE_DIALED "Ligação efetuada."
+    IDS_URL_PHONE_INFO      "http://ubpv.multi.uol.com.br/uolfone/uolfoneinfo.xml"
+    IDS_HISTORY_CALL_MESSAGE_MISSED "Ligação perdida."
+    IDS_HISTORY_CALL_MESSAGE_RECEIVED "Ligação recebida."
+    IDS_LABEL_SAC           "UOL SAC"
+    IDS_SOUND_EVENT_KEY0_DESCRIPTION "UOL VoIP - Tecla 0"
+    IDS_SOUND_EVENT_KEY1_DESCRIPTION "UOL VoIP - Tecla 1"
+    IDS_SOUND_EVENT_KEY2_DESCRIPTION "UOL VoIP - Tecla 2"
+    IDS_SOUND_EVENT_KEY3_DESCRIPTION "UOL VoIP - Tecla 3"
+    IDS_SOUND_EVENT_KEY4_DESCRIPTION "UOL VoIP - Tecla 4"
+    IDS_SOUND_EVENT_KEY5_DESCRIPTION "UOL VoIP - Tecla 5"
+    IDS_SOUND_EVENT_KEY6_DESCRIPTION "UOL VoIP - Tecla 6"
+    IDS_SOUND_EVENT_KEY7_DESCRIPTION "UOL VoIP - Tecla 7"
+    IDS_SOUND_EVENT_KEY8_DESCRIPTION "UOL VoIP - Tecla 8"
+    IDS_SOUND_EVENT_KEY9_DESCRIPTION "UOL VoIP - Tecla 9"
+    IDS_SOUND_EVENT_ASTERISK_DESCRIPTION "UOL VoIP - Tecla *"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SOUND_EVENT_TYPE_CALL_CALLING "CallCalling"
+    IDS_SOUND_EVENT_TYPE_CALL_CLOSED "CallClosed"
+    IDS_SOUND_EVENT_TYPE_CALL_RINGING "CallRinging"
+    IDS_TOOLBAR_BTN_LABEL_PRICES "Tabela de Preços"
+    IDS_TABELA_PRECOS_CAPTION "Tabela de Preços"
+    IDS_URL_SITE_TABELA_PRECOS "http://voip.uol.com.br/tarifas.html"
+    IDS_URL_PROMO_BANNER    "http://ubpv.multi.uol.com.br/uolfone/banner_softphone.html"
+    IDS_HISTORY_RECORD_SERVICE_VOIP "VoIP"
+    IDS_HISTORY_WINDOW_CAPTION "ligações"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SOUND_EVENT_POUND_DESCRIPTION "UOL VoIP - Tecla #"
+    IDS_SOUND_EVENT_CALL_CALLING_DESCRIPTION "UOL VoIP - Efetuar chamada"
+    IDS_SOUND_EVENT_CALL_CLOSED_DESCRIPTION "UOL VoIP - Chamada encerrada"
+    IDS_SOUND_EVENT_CALL_RINGING_DESCRIPTION "UOL VoIP - Receber chamada"
+    IDS_SOUND_EVENT_KEY0_FILENAME "0.wav"
+    IDS_SOUND_EVENT_KEY1_FILENAME "1.wav"
+    IDS_SOUND_EVENT_KEY2_FILENAME "2.wav"
+    IDS_SOUND_EVENT_KEY3_FILENAME "3.wav"
+    IDS_SOUND_EVENT_KEY4_FILENAME "4.wav"
+    IDS_SOUND_EVENT_KEY5_FILENAME "5.wav"
+    IDS_SOUND_EVENT_KEY6_FILENAME "6.wav"
+    IDS_SOUND_EVENT_KEY7_FILENAME "7.wav"
+    IDS_SOUND_EVENT_KEY8_FILENAME "8.wav"
+    IDS_SOUND_EVENT_KEY9_FILENAME "9.wav"
+    IDS_SOUND_EVENT_ASTERISK_FILENAME "star.wav"
+    IDS_SOUND_EVENT_POUND_FILENAME "pound.wav"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SOUND_EVENT_CALL_CALLING_FILENAME "calling.wav"
+    IDS_SOUND_EVENT_CALL_CLOSED_FILENAME "callclosed.wav"
+    IDS_SOUND_EVENT_CALL_RINGING_FILENAME "ringing.wav"
+    IDS_SOUND_DIR           "Sounds"
+    IDS_SOUND_EVENT_TYPE_KEY0 "Key0"
+    IDS_SOUND_EVENT_TYPE_KEY1 "Key1"
+    IDS_SOUND_EVENT_TYPE_KEY2 "Key2"
+    IDS_SOUND_EVENT_TYPE_KEY3 "Key3"
+    IDS_SOUND_EVENT_TYPE_KEY4 "Key4"
+    IDS_SOUND_EVENT_TYPE_KEY5 "Key5"
+    IDS_SOUND_EVENT_TYPE_KEY6 "Key6"
+    IDS_SOUND_EVENT_TYPE_KEY7 "Key7"
+    IDS_SOUND_EVENT_TYPE_KEY8 "Key8"
+    IDS_SOUND_EVENT_TYPE_KEY9 "Key9"
+    IDS_SOUND_EVENT_TYPE_ASTERISK "Asterisk"
+    IDS_SOUND_EVENT_TYPE_POUND "Pound"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_LABEL_PLAN          "Plano"
+    IDS_URL_SITE_HOME_UOL_VOIP "http://voip.uol.com.br/"
+    IDS_AUDIO_DEVICE_INITIALIZATION_FAILURE 
+                            "Ocorreu uma falha na inicialização do dispositivo de áudio %s. Por favor, verifique as configurações de áudio e tente novamente. Entre em contato com o nosso suporte técnico caso o problema volte a acontecer. (PUF0151)"
+    IDS_PLUGIN_LOGS_TO_REPORT_TITLE "ERROR from UOLFonePlugin log records"
+    IDS_VOIP_LOGS_TO_REPORT_TITLE 
+                            "WARNING and ERROR from UOLFoneClient log records"
+END
+
+#endif    // Portuguese (Brazil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+LANGUAGE 22, 1
+#pragma code_page(1252)
+#include "res\UOLFonePlugin.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

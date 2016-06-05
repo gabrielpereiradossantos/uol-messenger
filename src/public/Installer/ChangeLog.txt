@@ -1,0 +1,1063 @@
+14/08/2009  (versão 2.0.16.15)
+
+- Ajuste no instalador para forçar o registro da msxml3.dll, evitando problemas em que a mesma não está registrada, apesar de existir;
+- Correção do crash que ocorre quando outras janelas que utilizam o controle de busca não tratam o evento do pressionamento da tecla enter, o qual somente tem sentido na janela de contatos;
+- Alteração para restringir o protocolo UOL aos domínios @uol.com.br e @bol.com.br;
+- Incremento do Install Sequence para 52;
+
+
+31/07/2009 (versão 2.0.16.14)
+
+- Novo build substituindo o anterior 2.0.16.13;
+
+
+30/07/2009 (versão 2.0.16.13)
+
+- Ajuste para contornar o crash que ocorre ao enviar uma mensagem para um contato offline pelo MSN http://developer.pidgin.im/ticket/7508;
+- Ajuste para evitar o crash que ocorre quando se recebe uma mensagem ao estar fechando o UOL Messenger;
+- Alteração na mensagem informativa da janela de Crash Report;
+- Incremento da versão da ctrlcenter para 1.0.4.8;
+- Revertidas as alterações realizadas no último commit que visavam corrigr a falha que ocorre no componente de HTML quando é recebida uma mensagem de um contato pelo pidgin;
+- Aplicação de um ajuste para que seja removida a tag "<span style='font-size: medium;'/>" que não apresenta o "</span>", e portanto é má interpretada pelo componente de HTML;
+- Incremento da versão do UOL Messenger para 2.0.16.13;
+
+
+23/07/2009 (versão 2.0.16.12)
+
+- Alteração para que o botão Alterar da aba de contas fique desabilitado quando todas as contas forem removidas (Defect 926);
+- Ajuste para que o status primitivo "mobile" (que indica que o contato pode receber mensagens SMS) seja tratado por todos os protocolos e reconhecido no momento pelo protocolo MSN (Defect 919);
+- Ajuste no metodo "CMessageTemplateRecord: plitMessage()" que nao calculava a parte da mensagem corretamente depois de um ajuste nos protocolos que passou a inserir tags "<br>" no seu conteúdo;
+- Ajuste no parte de geração do conteúdo a ser apresentado na janela de conversação para evitar que certas tags HTML enviadas causem má formatação das mensagens seguintes (Defect 929);
+- Correção da pintura do combobox (Defect 932);
+- Inclusão de uma mensagem informativa de sucesso no envio do relatório do Fale Conosco (Defect 924);
+- Implementação da janela de atalhos do aplicativo (Defect 880);
+- Alteração no UOLFoneController.cpp para evitar um crash quando a UOLFoneClient.dll não foi carregada e o teste da Ferramenta de Diagnóstico é iniciado;
+- Adicionados os testes de download das dll's do UOL Voip e leitura do UOLFoneCodecs.xml;
+- Implementação do novo template HTML na Ferramenta de Diagnóstico;
+
+
+21/07/2009 (versão 2.0.16.11)
+
+- Alteração para abrir automaticamente a janela de conversação com o primeiro contato localizado na busca de contatos ao se pressionar a tecla ENTER;
+- Alteração para limpar a busca de contatos ao fechar a janela da aplicação, quando a mesma é recolhida para a bandeja do windows; 
+- Inclusão de um item de menu e atalho (ctrl + J) para exibir a janela de downloads;
+- Remoção dos status Away e Busy do menu de contexto da conta do UOL Toda Oferta;
+- Merge com a libPurple 2.5.8, para solucionar o problema de conexão com o Yahoo;
+- Alteração que vincula a opção "exibir histórico recente" à "guardar histórico das conversas", de forma que se não estiver marcada a opção de gravar histórico, não mostrará o histórico recente;
+- Ajuste para que o fundo do combobox não seja fixado em branco quando está usando o tema Clássico do Windows;
+- Incremento da versão do UOL Messenger para 2.0.16.11;
+
+
+02/07/2009 (versão 2.0.16.10)
+
+- Correção do problema de apresentação do saldo de minutos do plano zerado e sem o nome do plano que ocorre quando é alternada entre uma conta Voip e outra. Este problema foi relatado pela Lilian em 18/06;
+- Compatibilização do aplicativo com as versões anteriores da ctrlcenter.dll;
+- Alteração para evitar o crash que ocorre durante a busca de contatos enquanto a lista de contatos está sendo preenchida;
+- Alteração para evitar o crash que ocorre quando a opção "Forçar conexão pela porta 80" estiver marcada e o servidor de Tunnel não estiver respondendo. Após a segunda tentativa de efetuar uma chamada ocorre um crash;
+- Incremento da versão do UOLFoneClient para 1.0.0.23;
+- Incremento da versão do UOL Messenger para 2.0.16.10;
+
+
+05/06/2009 (versão 2.0.16.9)
+
+- Compatibilização da Ferramenta de Diagnóstico com as versões anteriores da ctrlcenter.dll;
+- Correção do posicionamento dos botões quando a janela da Ferramenta de Diagnóstico é redimensionada;
+- Inclusão de uma janela intermediária para o envio do resultado dos testes, nos mesmos moldes da janela do Crash Report;
+- Incremento da versão da ctrlcenter.dll para 1.0.4.6;
+
+
+03/06/2009 (versão 2.0.16.8)
+
+- Alteração na URL de "http://ubpv.multi.uol.com.br/UOLMessengerAuthorizing.xml" para "http://ubpv.multi.uol.com.br/messenger/UOLMessengerAuthorizing.xml";
+- Alteração para que a Ferramenta de diagnóstico envie o resultado dos testes pela rede do Fale Conosco;
+- Ajuste no controle dos botões da janela da Ferramenta de Diagnóstico;
+- Atualização no template html dos resultados dos testes da Ferramenta de Diagnóstico para exibir a numeração dos testes;
+- Inclusão do ícone da janela da Ferramenta de Diagnóstico;
+- Incremento da versão da ctrlcenter.dll para 1.0.4.5;
+
+
+19/05/2009 (versão 2.0.16.7)
+
+- Ajuste no ctrlcenter que não apresentava a tela de "Bug Report" por default, o que causava a apresentação da tela de "Crash Report" na opção do "Fale Conosco" da BarraUOL;
+- Incremento da versão da "ctrlcenter.dll" para 1.0.4.4;
+- Ajuste final no método de pintura dos checkboxes e radiobuttons transparentes das janelas que utilizam tema;
+- Correção do crash que ocorre caso a crtlcenter.dll esteja desatualizada e não possua a Ferramenta de Diagnóstico;
+- Incremento na UOLFonePlugin.dll para 1.0.2.4 devido aos ajustes para evitar o mesmo crash do item anterior;
+
+
+30/04/2009 (versão 2.0.16.6)
+
+- Ajuste nos arquivos de licença informando que a versão 6.x ou superiores do Internet Explorer é exigida para o bom funcionamento do aplicativo;
+- Ajuste no RichUOLEdit para que os fragmentos de texto correspondentes aos custom emoticons inseridos pelo usuário sejam enviados para o contato e armazenados no histórico respeitando a capitalização de todas as letras conforme informado. Ou seja, se o usuário digitar "_eO" e o atalho de um custom emoticon for "_eo", o emoticon será exibido normalmente (parse de custom emoticons não é case-sensitive) e o texto enviado passará a ser o digitado pelo usuário e não o atalho padrão do custom emoticon como ocorria antes (Problema reportado pelo Marcos no dia 29/04/2009);
+- Ajuste no "ctrlcenter.dll" para que ele seja compilado estaticamente com as bibliotecas CRT e com isso não apresente problemas ao ser executado no Windows 2000 que não tenha a biblioteca "msvcr80.dll";
+- Incremento da versão da "ctrlcenter.dll" para 1.0.4.3;
+- Ajuste no instalador que não copiava os certificados digitais da libpurple para o Windows 2000;
+- Adição da biblioteca "dbghelp.dll" (versão 5.1.2600.5512) ao instalador. Essa biblioteca será criada na pasta do UOLMessenger caso o sistema operacional seja Windows 2000;
+- Ajuste no plugin da Radio UOL para evitar crashes na reprodução dos canais caso o arquivo de autorização não esteja presente nos servidores do UOL;
+- Incremento da versão do plugin da Rádio UOL para 1.0.0.17;
+- Correção da pintura dos controles das janelas com tema quando o Windows está utilizando o Tema Clássico;
+- Correção do problema do botão OK da janela de notificação que a aplicação está localizada no SystemTray;
+
+
+27/04/2009 (versão 2.0.16.5)
+
+- Correção do crash que ocorre quando se apaga um item selecionado do histórico de ligações / mensagens. Relatado pelo Carlos Eduardo (UOL) dia 22/04/2009;
+- Aplicação do tema nas demais janelas do UOL Messenger: Adicionar contato, Renomear contato, Adicionar grupo, Renomear grupo, Senha da conta, Informação de recebimento de mensagem de um não contato, Privacidade (bloqueio / desbloqueio), Informação que o contato te adicionou, Informação de mensagem não lida na janela de mensagens, Alterar senha do perfil, Informação que o UOL Messenger estará ativo na barra de tarefas, Sobre;
+- Atualização do método de pintura do checkbox transparente (janela do Wizard) de forma que o label do checkbox pode ser clicado normalmente;
+- Correção do crash ao conectar na conta MSN, reportado pelo Marcos (UOL) dia 19/03/2009;
+- Implementação da infraestrutura de segurança do UOLMessenger para autorização de métodos executados pelos plugins;
+- Adição de métodos para criação de itens no menu systray da aplicação e para criação de itens e submenus dentro deste item;
+- Inserção de um menu de contexto pelo plugin da Rádio UOL contendo itens de navegação e de seleção de canais;
+- Adição de um método para recuperação do menu systray da aplicação na CAppWindow e CUIMView;
+- Ajuste no PluginManager para que seja possível consultar os plugins enquanto eles são desalocados, incluindo o próprio plugin que está sendo desalocado no momento (necessário à infraestrutura de autorização);
+- Incremento da versão do plugin da Rádio UOL para 1.0.0.16;
+
+
+17/04/2009 (versão 2.0.16.4)
+
+- Alteração para não permitir que seja aberta mais de uma janela do Fale Conosco;
+
+
+14/04/2009 (versão 2.0.16.3)
+
+- Adição do processamento da lista de expressão regular do uolfonerules.xml que define os números inválidos. Exemplo: 0800*;
+- Incremento da versão da "UOLFoneServerConfigProvider" para 1.0.0.16;
+- Incremento da versão da "UOLFonePlugin" para 1.0.2.3;
+- Ajuste no parser de emoticons da tela de conversação para evitar um crash ao enviar a mensagem logo após a adição de um novo custom emoticon. No momento do envio, o array de emoticons do parser era reconstruido para conter o novo emoticon e os antigos passavam a ter indices invalidos (problema reportado pela Raquel);
+
+
+09/04/2009 (versão 2.0.16.2)
+
+- Inclusão dos testes TCP dos protocolos, Sistema de arquivos para as pastas públicas e de usuário, e demais downloads da aplicação;
+- Ajuste no ctrlcenter para que a janela da Ferramenta de Diagnóstico possa ser redimensionada;
+- Ajustes no método "MessageLoopWait" da classe "CThread" do projeto "Utils" para evitar o problema de travamento da interface do UOLMessenger com a tela do "Fale Conosco" aberta;
+- Adição de um método no BugReport possibilitando o fechamento da tela do "Bug Report" no encerramento do UOLMessenger;
+- Ajustes na tela do "Crash Report" conforme solicitação do cliente;
+- Incremento da versão da "UOLFoneClient" para 1.0.0.22, da "UOLFoneServerConfigProvider" para 1.0.0.15, da "UOLFonePlugin" para 1.0.2.2 e da "ctrlcenter" para 1.0.4.2;
+
+
+
+30/03/2009 (versão 2.0.16.1)
+
+- Ajuste para separar o título do teste de sistema de arquivo, para que identifique que é Leitura ou Gravação;
+- Atualização da versão do ctrlcenter para 1.0.4.1;
+- Correção do problema de estado inconsistente que ocorre após um timeout de uma ligação voip por falta de conectividade com a rede (Problema reportado pela Lilian Felix);
+- Ajuste no UOLFoneServerConfigProvider para eliminar codecs locais que sofreram quebra de compatibilidade com a versão atual da UOLFoneClient (indicado pela tag "criticalUpdate) do arquivo "uolfonecodecs.xml";
+- Ajustes no plugin de voip para executar o procedimento de limpeza critica dos codecs incompatíveis;
+- Atualização da versão da UOLFoneServerConfigProvider para 1.0.0.14;
+- Atualização da versão da UOLFonePlugin para 1.0.2.1;
+
+
+25/03/2009 (versão 2.0.16.0)
+
+- Atualização da versão do Plugin do UOLVoip para 1.0.2.0;
+- Atualização da versão da biblioteca UOLFoneClient para 1.0.0.21;
+- Atualização da versão da biblioteca UOLFoneServerConfigProvider para 1.0.0.13;
+- Ajuste para invocar o método "osip_trace_initialize_func" da "libosip2" com o parâmetro do nível de log incrementado de "1";
+- Ajuste para desregistrar o método callback de informações de debug na finalização da UOLFoneClient;
+- Remoção das quebras de linhas das informações logadas pelo PurpleLogger e pelo logger da UOLFoneClient;
+- Ajuste no logger para permitir a seleção entre um registro detalhado de início de uma sessão de log (com "n" linhas) ou um registro de uma linha somente (melhor para filtragem);
+- Ajuste na infraestrutura de registro de loggers para permitir que os plugins possam registrar os seus loggers para serem incorporados no relatório do "Fale Conosco";
+- Ajustes no registro do logger da UOLFoneClient para que a configuração fique somente no arquivo INI criado, eliminando a duplicidade no arquivo de configurações do plugin "UOLFonePluginConfig.xml";
+- Criação de uma infraestrutura para registro de loggers no UOLMessenger;
+- Ajustes na UOLFoneClient, no plugin de voip e no UOLMessenger para gerar um arquivo de log com as informações geradas pelas bibliotecas Wengo;
+- Ajustes para adicionar a versão do UOLMessenger/UOLVoip ao nome do arquivo de dump gerado pela aplicação durante um crash;
+- Adição do path completo do arquivo de dump gerado no relatório do "Fale Conosco";
+- Ajustes para imbutir o conteúdo do arquivo de dump no relatório do "Fale Conosco" no formato de uma string codificada em base64;
+- Ajustes no UOLMessenger para interceptar quaisquer exceções inesperadas na aplicação, salvar um dump localmente e invocar a tela do "Fale Conosco" com uma nova flag setada indicando que a tela deve ser exibida no modo "Crash";
+- Ajustes no CtrlCenter para que a tela do "Fale Conosco" possa ser apresentada com um layout diferente quando invocada em resposta a um crash na aplicação;
+- Adição dos registros de INFO, WARNING e ERROR do log da libpurple ao relatório do "Fale Conosco";
+- Criação de uma infraestrutura de registro de propriedades dos plugins no UOLMessenger para uso no relatório do "Fale Conosco";
+- Ajustes no plugin de voip para registrar as propriedades principais no UOLMessenger para compor o relatório do "Fale Conosco";
+- Ajustes na UOLFoneServerConfigProvider e no plugin de Voip para que a quebra de compatibilidade atual e futuras entre a biblioteca UOLFoneClient e o codec G.729 nao causem problemas à aplicação;
+- Ajustes nas bibliotecas do Wengo para tratar dinamicamente o tamanho do frame RTP tanto para chamadas originadas como iniciadas; e para permitir tamanhos diferentes de frames nos dois canais;
+- Ajuste no CUOLFoneMultiStateButton para que troque o cursor do mouse para IDC_HAND quando setado;
+- Inclusão da mensagem de erro específica para problema de áudio - PUF0151;
+- Implementação da infra-estrutura da Ferramenta de Diagnóstico;
+- Implementação da infra-estrutura necessária para utilização da Ferramenta de Diagnóstico da ctrlcenter.dll;
+- Implementação de duas chamadas para a Ferramenta de diagnóstico: linha de comando (/diagnose) e menu Ajuda;
+- Implementação da infra-estrutura necessária para utilização da Ferramenta de Diagnóstico da ctrlcenter.dll pelo Plugin UOL Voip;
+- Criação do teste de conectividade SIP;
+
+
+
+20/03/2009 (versão 2.0.15.13)
+
+- Alteração para que tags HTML ou javascript não sejam interpretadas pela janela de conversação;
+- Correção do problema do scroll da janela de mensagens que foi introduzido com a instalação do IE8;
+
+
+20/03/2009 (versão 2.0.15.12)
+
+- Atualização da versão do Plugin do UOLVoip para 1.0.1.40;
+- Ajuste para que não sejam tratadas as mensagens que chegam após o UNREGISTER da conta Voip. Isto evita que informações de uma conta sejam erroneamente exibidas durante a troca de contas no Plugin UOL Voip. Este problema foi relatado pelo Carlos Eduardo (UOL);
+- Ajuste na tela de conversação para atualizar o título da aba de uma conversação caso o apelido do usuário seja atualizado e também o título da janela caso a conversação com esse mesmo usuário seja a ativa no momento;
+- Alteração na lógica de registro de eventos de contatos, pois considerava somente a conversação ativa. Ou seja, se um contato tivesse alguma atualização de status ou alias, mas não fosse o contato da conversação corrente, nenhuma das alterações seria refletida na interface;
+
+
+17/03/2009 (versão 2.0.15.11)
+
+- Merge da libPurple 2.5.5;
+- Solução do problema de conexão com o protocolo ICQ;
+- Solução do problema de não ter a informação de erro quando o servidor contacts.msn.com gerou um timeout;
+- Correção do problema introduzido pelo merge com a libPurple 2.5.5 no qual não havia propagação do capabilities da conta UOL;
+- Ajuste para que a pasta "UOL\UIM" seja criada na pasta "Dados de Aplicativos" da pasta do perfil Windows do usuário evitando falha na inicialização dos loggers na primeira instalação do UOLMessenger;
+- Correção do problema de deadlock no bloqueio de contato Yahoo;
+
+
+10/03/2009 (versão 2.0.15.10)
+
+- Atualização da versão do Plugin do UOLVoip para 1.0.1.39;
+- Ajuste no instalador para criar o arquivo "UIMLog.ini" na pasta "All Users";
+- Ajuste no UOLMessenger/UOLVoip para ler o arquivo "UIMLog.ini" da pasta "All Users";
+- Redução no tempo de purge para o log da libpurple;
+- Ajuste para evitar que seja sinalizada a finalização da transferência de arquivos duas vezes seguidas;
+- Atualização do texto de exemplo do "veja como ligar" no Plugin UOL Voip;
+- Ajuste na altura do Painel de Informações da Conta no Plugin do Voip;
+- Correção do problema de não atualizar a barra de título da janela de conversação quando há mais de uma conversa e a janela esta minimizada e é restaurada;
+- Correção do problema de exibir o botão Assine Planos VoipOut mesmo quando o usuário já possui um plano;
+
+
+20/02/2009 (versão 2.0.15.9)
+
+- Ajuste para que emoticons que contenham caracteres " sejam enviados corretamente pela libPurple;
+- Ajuste no "UIMLog.ini" para que o nível de log gerado seja "INFO" para a libpurple;
+- Ajuste no "InstallerCommon.nsh" para instalar o arquivo "UIMLog.ini" no local correto;
+- Ajuste na ConversationWindow para que a janela não seja destruída enquanto a adição de um custom emoticon está em andamento;
+- Ajustes para evitar um crash durante a ativação do plugin de voip (reproduzível somente quando o "ubpv.multi.uol.com.br" no arquivo hosts da máquina aponta para uma URL inválida), e para que a tela inicial seja reapresentada caso a ativação seja feita logo após uma desativação;
+- Ajuste nas rotinas do logger que falhava ao realizar o "purge" do arquivo expresso de erros do voip;
+- Ajuste no UOLFoneServerConfigProvider para que considere a mensagem "UOL-AvailableProducts" que contém os IDs dos produtos que o usuário possui, dentre esses, os planos de minutos, essenciais para o controle da exibição do botão Assine Planos VoipOut;
+- Implementação dos métodos do UOLFoneAccount que determinam se o usuário possui ou não planos VoipOut ou qualquer outro ID de produto que for passado por parâmetro;
+- Alteração para que o botão "Assine Planos VoipOut" seja exibido somente quando o usuário não possui planos de minutos;
+- Inclusão da validação da versão 8.0 do Internet Explorer no installer;
+- Ajuste na pintura e no controle do Blink no painel de informações de saldo do plano e créditos - Plugin UOL Voip;
+- Atualização da versão do Plugin do UOLVoip para 1.0.1.38;
+
+
+11/02/2009 (versão 2.0.15.8)
+
+- Revertido para utilizar a UOLFoneClient.dll versão 1.0.0.20;
+
+
+10/02/2009 (versão 2.0.15.7)
+
+- Correção do problema da duplicação de quebra de linha na janela de mensagens relatado pelo Marcos;
+- Correção de um ponto de falha que foi descoberto durante os testes do PUF0148 relatado pela Raquel. Neste caso ocorria um crash na aplicação ao tentar efetuar uma chamada para um contato (PC2PC) quando não havia conexão com a internet ou a mesma estava bloqueada por um Firewall.
+- Ajuste para impedir que o pedido de autorização de adição de contato MSN no protocolo Yahoo seja propagado para o usuário, causando a desconexão do mesmo;
+- Ajuste na imagem da tab de contas da janela de preferências do UOL Voip, pois é a única que não tem cor. Relatado pelo Carlos Eduardo;
+- Correção do método que determina o tipo de falha ocorrida no UOL Voip - GetFailureInfoText() - pois o mesmo estava apontando a descrição errada para o tipo do erro no log de erros do Voip;
+- Revertida a alteração da versão 2.0.15.6; 
+- Ajuste para forçar o download e aceite automático em caso de falha de certificados. Esta alteração visa corrigir o problema reportado pelo Marcos no qual havia um certificado cuja validade havia expirado;
+- Alterações para adaptação no Plugin UOL Voip e UOLFoneServerConfigProvider aos novos planos com franquia de tarifação em segundos;
+- Alteração da versão do UOLFoneServerConfigProvider para 1.0.0.12;
+- Alteração da versão do UOLFoneClient para 1.0.0.21;
+- Ajustes no layout do Plugin UOL Voip adaptado aos novos planos com franquia, seguindo a solicitação do cliente;
+- Ajuste no logger que nao estava funcionando para o plugin de voip;
+- Ajustes no plugin de voip para categorização dos erros e alertas PUF e na tela de apresentação de erros para ter um layout diferente para cada tipo de informação (erro / alerta);
+- Ajuste para que as URLS dos botões "Compre créditos" e "Assine Planos" sejam configuradas remotamente na uolfoneinfo.xml;
+
+
+12/01/2009 (versão 2.0.15.6)
+
+- Alteração emergencial da url contacts.msn.com para omega.contacts.msn.com que soluciona o problema de conexão do protocolo MSN;
+
+
+23/12/2008 (versão 2.0.15.5)
+
+- Correção do problema do teclado virtual do Voip que não efetuava a ligação quando pressionada a tecla enter com o foco sobre o combobox;
+
+
+17/12/2008 (versão 2.0.15.4)
+
+- Correção do problema do teclado virtual do Voip;
+- Correção do problema em que o UOL Messenger roubava o foco de outras aplicações ao receber pela primeira vez uma mensagem de um contato;
+- Correção do problema do digitação e envio de mensagens durante uma transferência de arquivos ativa;
+- Ajuste no plugin de voip para que chamadas para determinados números com código de área 51 não travassem o UOLMessenger (problema ocasionado pelo tratamento de eventos subsequentes da chamada com espaço pequeno demais);
+
+
+10/12/2008 (versão 2.0.15.3)
+
+- Alteração para desabilitar o recebimento de pedido de atenção durante uma conferência, evitando o crash reportado pelo cliente;
+- Adição de uma thread no carregamento dos contatos para evitar congelamento da aplicação;
+
+
+05/12/2008 (versão 2.0.15.2)
+
+- Melhoria do processo de leitura dos arquivos xml de histórico, utilizando uma thread para carregamento;
+- Otimização da busca de histórico;
+- Adição dos controles de navegação pelos resultados da busca de histórico;
+- Persistência da posição e dimensão da janela de histórico;
+- Desativação temporária do teclado alfa-numérico do Voip;
+- Substituição da cor do highlight da busca do histórico;
+- Ajuste no RichEditCtrl para evitar a captura e envio de caracteres inválidos e conseguente desconexão do contato UOL (ticket 3701);
+
+
+03/12/2008 (versão 2.0.15.1)
+
+- Implementação do log de debug da libPurple no UOL Messenger;
+- Alteração que permite que o arquivo de log seja aberto por outro aplicativo mesmo durante o uso pelo UOL Messenger;
+- Novos ajustes solicitados pelo Vadim do Qutecom acerca da corretude em se atribuir as informações para os payloads de output "opayloads" para estes serem copiados para os payloads de input "ipayloads" além de informar o respectivo payload de input na inicialização do decoder e o payload de output para a inicialização do encoder;
+- Ajuste para que a alteração no "UserId" de uma conta seja refletida no botão correspondente do painel de contas;
+- Ajuste para que o registro bem sucedido no UOLK (necessário a novos usuários BOL, e que implica na falha da conexão inicial), seja seguido de uma nova tentativa de conexão que deverá ser bem sucedida;
+- Removido um padrão de formatação "%s" que estava sobrando na geração do relatório do "Fale Conosco";
+- Ajuste para que os endereços dos contatos informados no combo de discagem do plugin de voip também sejam adicionados ao histórico de chamadas;
+
+
+21/11/2008 (versão 2.0.15.0)
+
+- Ajustes no ImageButtonContainer, ImageButton e criação de novas classes visando disponibilizar um campo de busca na toolbar padrão do UOLMessenger para uso na janela de histórico;
+- Ajustes no HistoryRecord e criação do HistoryRecordList para que o texto do histórico seja todo carregado para uma lista na memória, dessa forma sendo possível implementar a busca no histórico;
+- Ajuste para desconsiderar letras maiúsculas e minúsculas na busca;
+- Alteração na janela de transferência de arquivos para ter o mesmo comportamento da lista de contatos, respondendo ao Mouse Wheel e setas de direção;
+- Implementação da ordenação da lista de transferência de arquivos por ordem cronológica;
+- Ajuste no PhoneNumberComboBox para que ao ser pressionado o botão limpar, passe o foco para a janela Pai que por sua vez permitirá que as teclas pressionadas sejam enviadas para o teclado virutal;
+- Implementação do teclado virtual na janela de ligação em andamento do Voip;
+- Ajuste no combobox de ligação do Voip para que o texto fique limitado até o botão limpar e faça o scroll horizontal automaticamente;
+- Implementação da ligação PC2PC pela interface de teclado do UOL Voip
+- Ajuste na mensagem PUF0404, incluindo o contato como possível causador da falha;
+- Ajuste para que a imagem padrão do contato voip seja usada no caso da conta do uol estar desconectada e uma chamada para o contato ter sido feita a partir da janela do teclado virtual.
+- Implementação da funcionalidade alfa-numérica do teclado virtual Voip;
+- Ajuste para que os números iniciados com "+" sejam considerados internacionais e válidos;
+- Merge da libPurple 2.5.2.
+- Correção do problema da janela do UOL Voip / UOL Messenger ser redimensionada após erro CMN0008, descrito no ticket 3799. 
+- Alteração no método de controle das janelas de histórico de mensagens para que se possa abrir mais de uma janela (uma para cada contato), conforme solicitação do cliente no ticket http://bugtracker.tqi.com.br/view.php?id=3860;
+- Ajuste solicitado pelo Marcos no "Fale Conosco" visando posicionar o campo "ProgId" no final do relatório;
+- Ajuste nas bibliotecas do Openwengo para tratarem o parâmetro "mode" recebido através do atributo "fmtp" para o codec iLBC indicando o tamanho do frame (packetization) a ser utilizado. Também fiz ajustes para que os codecs recebam tanto o "mode" quanto o "ptime" já coletado para decidir qual o tamanho de frame que será utilizado na transmissão de dados RTP (ticket 3936);
+
+
+
+05/11/2008 (versão 2.0.14.3)
+
+- Correção do método de validação do número de telefone para que volte a considerar o "+" como telefone válido;
+- Substituição do link https://voip.uol.com.br/userhome.html pelo http://voip.uol.com.br/creditos.htm no botão comprar créditos;
+- Alteração na mensagem informativa do aplicativo sendo executado durante a instalação;
+
+
+28/10/2008 (versão 2.0.14.2)
+
+- Ajuste no alinhamento dos campos do splash de perfil; 
+- Ajuste para que a lógica de nomenclatura do arquivo de histórico seja aplicada quando se passa de um dia para o outro com a janela de conversação aberta;
+- Alteração do método GetContactName que erroneamente estava retornando o nome do usuário quando o contato não era localizado na lista de contatos; Este ajuste resolve o caso relatado pelo cliente em e-mail do dia 10/10/2008;
+- Ajuste para não bloquear a gravação de histórico de conferência para contatos que não constam na lista de contatos;
+- Correção no controle da exibição da aba Avançado dos protocolos ICQ e Jabber;
+- Alinhamento dos controles da aba avançado do protocolo ICQ;
+- Ajuste no espaçamento dos itens do User Status Panel;
+- Correção da propagação do avatar do usuário na janela de edição de conta;
+- Ajuste para que não sejam aceitos espaços em branco no combobox do número de telefone do Voip.
+- Ajuste das URLs do plugin do UOL Voip para https: https://voip.uol.com.br/userhome.html, https://voip.uol.com.br/historico-ligacoes.html, https://voip.uol.com.br/extrato.html;
+- Inclusão das frases de exemplo de ligação que estavam no tooltip para que fiquem permanentes na janela de ligação Voip;
+- Alteração das frases de exemplo de ligação, onde havia "exemplo" passou a ser "ex.";
+- Ajuste para que ao trocar de usuário Voip o saldo seja zerado e o botão "comprar créditos" seja exibido no painel de saldo da aba Voip;
+- Ajuste na cor das frases de informação Como Ligar;
+
+
+06/10/2008 (versão 2.0.14.1)
+
+- Ajuste no plugin de voip para apresentar a mensagem PUF0112 para usuário caso ele tente ligar para um contato que não esteja registrado (essa mensagem é mais clara do que a PUF0111 anterior);
+- Ajuste para que a frase do dia seja propagada após o UpdateServerExtendedCapabilities no protocolo UOL;
+- Ajuste para forçar a atualização do status do usuário quando a Frase do Dia (Status Message) é atualizada;
+- Ajuste para que a toolbar de contas aceite o botão direito do mouse com o mesmo comportamento do esquerdo;
+
+
+03/10/2008 (versão 2.0.14.0)
+
+- Alteração para aceitar automaticamente o certificado do "talk.google.com", resolvendo o problema da não conexão de usuários do GTalk;
+- Alteração para que o botão SAC do Voip não apareça quando estiver configurada uma conta do BOL;
+- Alteração no script do instalador para não criar o link de inicialização automática do UOL Messenger / UOL Voip caso seja uma reinstalação;
+- Ajuste na barra de contas e no Skin para utilizar o componente CUOLToolbar para exibição dos boões de conta;
+- Adição dos botões de conta para cada status de cada protocolo ao Skin;
+- Ajustes na tela de configuração do plugin de voip conforme solicitação do Guilherme;
+- Ajuste para que o desvínculo da conexão UOL com o servidor Voip funcione também quando a troca de contas ocorrer entre duas contas que estão on-line;
+
+
+30/09/2008 (versão 2.0.13.32)
+
+- Ajuste no Protocols para que a nova versão do método SetUserStatus (agora com o texto da "mensagem do dia") fosse implementado no CPurpleJabberUOLProtocol para atualização da estrutura interna de controle de status;
+
+
+29/09/2008 (versão 2.0.13.31)
+
+- Correção do problema de abertura das urls que contém #, recebidas na janela de conversação. Ticket 2745;
+- Correção do problema do botão Rediscar do UOL Voip que não funcionava após receber uma notificação de erro de inatividade de áudio. Ticket 2787;
+- Ajuste para que o xml de histórico grave a tag texto em um CDATA;
+- Ajuste para evitar a duplicação de linhas quando se está em uma conferência com um ou mais participantes que não pertencem à sua lista de contatos. Refere-se ao email do Marcos Koga de 18/08/2008.
+- Merge da libPurple 2.5.1;
+- Merge da libMSN-15;
+- Habilitação a renomeação de contato com persistência no servidor;
+- Atualização do script do instalador para incluir os arquivos de certificados da pasta ca-certs;
+- Ajuste para selecionar o primeiro item do combobox de grupos na janela de autorização;
+- Alterações necessárias para a implementação da Frase do Dia;
+- Ajustes na biblioteca UOLFoneClient para que chamadas encerradas ou que apresentem erros sejam finalizadas junto à PhApi para que o unregister da linha ocorra com sucesso;
+- Ajuste para que a tela de aviso de usuário BOL não seja apresentada caso uma chamada seja encerrada e a tela de erro esteja em exibição;
+- Ajuste para que a tela "Home" do plugin não seja apresentada em resposta ao evento de registro da linha caso uma chamada esteja pendente de execução;
+- Ajuste nos protocolos UOL e TodaOferta para retornarem FALSE no método que indica se o protocolo suporta envio de mensagens off-line;
+- Ajuste para executar o registro Voip caso o usuário esteja conectado na rede UOL, mas não esteja ainda registrado e desative a opção de registrar somente no momento da chamada;
+- O ajuste realizado em 15/05 para eliminar as primitivas ping do SIP não considerou que o unregister é assincrono. O ajuste agora foi realizado na callback de eventos da linha quando esta eh definitivamente desregistrada (incremento na versão dao UOLFoneClient para 1.0.0.18);
+- Ajuste solicitado nos botões de conta de forma que o click com o botão esquerdo passe a apresentar o menu (o click direito não terá mais função) e que fosse adicionado um item no menu para apresentar as informações da conta atual (avatar e apelido) no painel superior. (Falta os botões de conta se apresentarem como botões);
+- Inclusão dos métodos "xmlInitParser()" na inicialização do CPurpleService e "xmlCleanupParser()" na finalização, ambos da libxml2 necessários à utilização dessa biblioteca em aplicativos multi-thread (visa evitar um bug reportado pelo cliente em que a troca de mensagens pela rede TodaOferta crasha o aplicativo);
+- Ajuste solicitado pelo cliente por email e no ticket 2745 (falta validar ainda com o cliente a solução visto que nos casos em que a URL tiver "#" ela será aberta por uma janela do I.E. independentemente da configuração de browser padrão do usuário);
+- Adição de logs em algumas classes visando identificar as causas da demora na execução da task 90%;
+- Ajustes para que a informação de erro não seja sobrescrita em diversos pontos do "UOLFoneController";
+- Adição de métodos de recuperação dos HWND's das janelas de Blob e Photoblog na biblioteca de photoblog, e ajustes no plugin de blog/photoblog para posicionar as janelas similarmente ao que é feito com as janelas do plugin da RadioUOL;
+- Ajuste no "NotifyPopUpResource" para utilizar as imagens do tema e não realizar mais requests HTTP para recuperá-las;
+- Ajuste no validador de números telefônicos conforme solicitação do cliente (a versão da biblioteca UOLFoneServerConfigProvider.dll foi para 1.0.0.10 e da UOLFonePlugin.dll foi para 1.0.1.29);
+- Adicionada a opção no plugin do UOLFone para que o registro no servidor Voip seja desvinculada do login no servidor Jabber;
+- Ajuste no "CAccountConnectionManager" para que o método "SetUserDisplayIcon" do protocolo seja executado somente se a funcionalidade for suportada utilizando-se o "HasUserDisplayIconSupport" (visa evitar crash reportado por um dos usuários do UOL);
+- Ajuste para que o primeiro grupo existente seja automaticamente selecionado na tela de adição de contatos;
+- Ajuste no botão de compra de créditos do plugin de voip que não abria o browser na página correspondente;
+- Ajuste para que mensagens com texto em branco (composto somente por espaços e/ou tabulações) não sejam enviadas;
+- Pequeno ajuste no logger global para apresentar a data para cada registro (isso se tornou necessario com o uso de parte dos registros no "Fale Conosco");
+- Ajuste no formato dos registros gerados para o arquivo de log expresso do plugin de voip para uso futuro ao compor o relatório do "Fale Conosco";
+- Implementados os métodos para obtenção dos dados e adição destes no relatório do "Fale Conosco", conforme ticket 2665;
+- Adição da lista de contas (e respectivos ProtocolSettings) cadastradas e de plugins ativos ao novo bloco de informações do "Fale Conosco";
+- Adição de mais alguns logs na aplicação onde os códigos de erro (UIM0XXX) são retornados, em alguns casos com informações adicionais;
+- Ajuste no global logger para aceitar configurações de adicionais de purge e de nível de log;
+- Implementação de métodos no global logger para recuperar um range de registros do log (para futura inserção nos dados do "Fale Conosco");
+- Inserção de informações no log global para todas as finalizações de managers e classes envolvidas nessas finalizações conforme ticket 2666;
+- Ajuste no método "SetIdle" que passava a informação incorreta para o parâmetro do método "purple_presence_set_idle";
+- Ajuste no "CPurpleService", na estrutura "MessageParam", no "CPurpleProtocol" e no "ConversationManager" para tratar uma mensagem de erro recebida durante uma conferência MSN, e que resulta na finalização do "switchboard" sem sinalização para a interface;
+- Ajustes para eliminar o aviso de fechamento da conferência quando a mesma já estiver encerrada (ticket 2662);
+- Adição de códigos de erros para algumas mensagens do script de instalação (UIM0126 e UIM0127);
+- Ajuste no instalador solicitado pelo Marcos e documentado no ticket 2691;
+- Pequenos ajustes no CAddCustomEmoticonDialog e no CChatInviteDialog para chamarem os métodos OnDestroy da superclasse CMainDialog;
+- A finalização do MessageWindowManager antes migrada para o bloco "PreFinalize" da aplicação foi retornada para o bloco "Finalize" pois causava crashes no fechamento do UOLMessenger com as janelas acima abertas;
+- Remoção de algumas mensagens durante a elaboração das planilhas de erro do UOLMessenger/UOLVoip.
+- Correção em uma das mensagens de erro do plugin da RadioUOL.
+- Ajuste no UOLFoneTooltipLabel em resposta ao ticket 2241.
+
+
+18/07/2008 (versão 2.0.13.30)
+
+- Ajuste no CWaveSound para evitar o deadlock reportado pelo Guilherme via email no dia 09/07;
+- Ajuste no CodecsConfigFileUpdater para que a execução do update do arquivo "uolfonecodecs.xml" seja realizada por um método à parte, e não na instanciação desse atualizador pelo método "CreateCodecsConfigFileUpdater" no "UOLFoneController". Crashes foram identificados em casos de falha e dependendo do escalonamento das threads envolvidas;
+- Ajuste no CPurpleService visando eliminar a causa do crash reportado pelo Guilherme no dia 14/07 ocasionado pelo cancelamento da requisição de autorização em resposta à desconexão da conta logo após a decisão de autorizar ou não realizada pelo usuário, o que invalidou a estrutura com os dados;
+- Ajuste no DialogManager visando eliminar um problema de deadlock no fechamento do UOLMessenger durante a execução simultânea do "UnregisterAll" e do "UnregisterDialog";
+- Manutenção nos códigos do WengoPhone, do UOLFoneClient e do UOLFonePlugin para propagar informações adicionais de erro em caso de falhas durante uma chamada. A versão da biblioteca UOLFoneClient foi incrementada para 1.0.0.17, e a da UOLFonePlugin para 1.0.1.28;
+- Disponibilização das rotinas de formatação de data/hora na interface do GlobalLogger, e ajuste no método de post de erros do plugin do voip para adicionar essa informação;
+- Adição de informações adicionais de erro no início da chamada;
+- Ajuste no script para instalar a biblioteca "msvcr71.dll" na pasta da aplicação;
+
+
+09/07/2008 (versão 2.0.13.29)
+
+- Ajuste no FileTransferNode para evitar um crash reportado pelo Paulo (UOL);
+
+
+08/07/2008 (versão 2.0.13.28)
+
+- Adição de informações detalhadas de log no IUOLFoneCodecsUpdater visando armazenar no arquivo de falhas do plugin de Voip esses dados para futuras consultas (com isso a versão da DLL do UOLFoneServerConfigProvider foi incrementada para 1.0.0.8, e o UOLMessenger para 2.0.13.28);
+
+
+07/07/2008 (versão 2.0.13.27)
+
+- Ajuste nos protocolos UOL e TodaOferta para que o botão Voip da lista de contatos voltasse a ser apresentado;
+
+
+04/07/2008 (versão 2.0.13.26)
+
+- Ajustes nas mensagens de erro apresentadas para o usuário em caso de falha de inicialização do plugin do UOLFone. Os botões de ação foram removidos também, visto que são inúteis na quase totalidade dos casos;
+- Ajuste no na apresentação de erro do protocolo MSN que causava crash quando a informação do servidor era passada com NULL (conforme crash enviado pela Raquel);
+- Ajuste no UOLFoneServerConfigProvider para incluir também a parte de log adicional implementada no plugin do UOLFone, e permitir assim o controle melhor das rotinas de download que ocorrem naquela biblioteca. Com isso, incrementei as versões da UOLFonePlugin (1.0.1.26) e da UOLFoneServerConfigProvider (1.0.0.7);
+
+
+03/07/2008 (versão 2.0.13.25)
+
+- Ajuste para exibir o histórico do dia exibindo todos os horários, relatado no ticket 2382;
+- Correção na exibição do nome do contato no histórico de ligações, relatado no ticket 2384;
+- Removido o botão "Conversas" da janela de histórico de ligações;
+- Padronização dos xml de histórico para que o campo "Type" seja determinante para o fluxo do evento;
+- Substituição do MessageBox pelo texto informativo quando não há histórico a ser exibido na janela de histórico;
+- Alteração na treeview da janela de histórico para exibir apenas a data quando o histórico for de Voip, relatado no ticket 2386;
+- Atualização para libPurple 2.4.3;
+- Ajuste pré-programado para o UIMGlobalLogger, visando eliminar a flag que decide se será apresentado o momento (data/hora formatada) em que ocorreu o post do registro de log. A data/hora SEMPRE fará parte do registro de log;
+- Ajuste no logger global da aplicação para procurar o arquivo "UIMLog.ini" e gerar o arquivo de log "UIMLog.log" dentro da pasta "[USER_APP_DATA]\UOL\UIM";
+- Ajustes no logger global da aplicação para permitir o post de uma única informação de log em um arquivo específico, a ser utilizado para salvamento de erros críticos do plugin do UOLFone;
+- Implementação de rotinas de salvamento de erros críticos ocorridos na inicialização do plugin do UOLFone em um arquivo de log;
+- Configuração na aba do plugin do UOLFone e implementação do "purge" do arquivo com intervalo de "X" dias;
+- Atualização da versão do plugin do UOLFone para 1.0.1.25;
+- Ajuste na parte de histórico de transferências de arquivos para sempre utilizar smartpointers, evitando o "Crash C" reportado no ticket 2401;
+- Ajuste na parte de protocolos para tratar o cancelamento da requisição de autorização (a desconexão da conta antes que o usuário autorizasse o contato causava crash - "Crash A" do ticket 2401);
+
+
+30/06/2008 (versão 2.0.13.24)
+
+- Ajuste na serialização - no sentido libpurple->UOLMessenger - recém ativada visando eliminar a possibilidade de crashes durante o tratamento de mensagens na finalização do UOLMessenger (possivelmente pelos ponteiros dos métodos a serem executados já terem sido desalocados);
+
+
+27/06/2008 (versão 2.0.13.23)
+
+- Implementado o bloco de salvamento das informações da mensagem que deverá gerar o crash por falha de alocação de memória pela glib, o qual apresenta também um MessageBox informativo para o usuário (ticket 2115);
+- Reativei a serialização no sentido libpurple->UOLMessenger que, após a remoção de um "Sleep" em um dos métodos envolvidos no carregamento inicial de contatos, apresentou um desempenho bem melhor. Além disso, essa versão tende a ser mais controlável e a causar menos deadlocks;
+
+
+26/06/2008 (versão 2.0.13.22)
+
+- Revertido o ajuste realizado em resposta ao deadlock reportado no ticket 2247 pois causou diversos problemas no carregamento inicial de contatos, inclusive a abertura do ticket 2317;
+- Ajuste na método "jabber_si_xfer_free" do protocolo Jabber/UOL/TodaOferta pois causava crash quando o emissor e o receptor da transferência de arquivos mandavam cancelar a transferência em andamento (ticket 2306);
+- Substituição das chamadas ao método "CanRequestContactAuthorization" do CPurpleProtocol (e instâncias específicas dos protocolos) por métodos do próprio CContact que utilizam uma flag inicializada pelo método "OnContactCanRequestAuthorization" da CIMProtocolCallback. Esse método do CPurpleProtocol era o único não serializado e suspeito de causar alguns crashes já reportados;
+
+
+25/06/2008 (versão 2.0.13.21)
+
+- Ajuste no plugin Oscar (protocolos ICQ e AIM) pois causava crash na falha da conexão ao informar uma string nula para formatação "%s";
+- Ajuste na parte de serialização visando evitar novas incidências do deadlock detectado na máquina do Denao (ticket 2247). Serialização por mensagem do Windows para o OnContactListUpdate e ajuste adicional no DisconnectAll do AccountConnectionManager que passou a ser sincrono;
+- Ajuste no protocolo Jabber (UOL) que apresentava uma mensagem em inglês em resposta a uma falha de conexão (ticket 2277);
+- Ajuste no método de carregamento de ícones do CIconElement na tentativa de resolver o problema de carregamento do UOLMessenger/UOLVoip (ticket 1994);
+
+
+23/06/2008 (versão 2.0.13.20)
+
+- Ajuste no posicionamento dos splitters da janela de conferência que falhava quando a opção de agrupar conversas em abas estava desabilitada;
+- Ajuste no Conversation que causava crash, identificado através do dump postado no ticket 2201;
+- Postergada a atualização da flag do PurpleService que indica o término da aplicação, visto que causava deadlocks no fechamento da aplicação com uma conferência aberta; (esse ajuste é crítico e demanda testes adicionais)
+- Desativação do bloco do instalador que cria o arquivo "UIMLog.ini" que gera os logs;
+
+
+23/06/2008 (versão 2.0.13.19 - Para uso exclusivo pela Central de Atendimento do UOL)
+
+- Pequeno ajuste no carregamento do ícone no CIconElement;
+- Adição de diversas entradas de log visando identificar as causas do travamento do UOLMessenger justamente na criação do primeiro CIconElement;
+- Ajustes realizados na tela de progresso que apresentava problemas no Windows Vista. Apesar de não ter corrigido o problema, a nova implementação ficou melhor;
+- Reativação do bloco do instalador que cria o arquivo "UIMLog.ini" que gera os logs;
+
+
+20/06/2008 (versão 2.0.13.18)
+
+- Ajuste para exibir o aviso para o usuário que o contato aceitou a transferência de arquivo;
+- Correção do DefectID 896 do UOL (Ao remover uma conta com a configuração de Agrupar por contas em preferências -> Contatos, o nome da conta na janela de contatos fica aparecendo até reiniciar o messenger ou todas as contas);
+- Ajuste na mensagem do plugin de Criptografia conforme defect 899;
+- Ajuste no texto da barra de progresso de carregamento do UOLMessenger conforme defect 897;
+- Ajuste na janela de mensagens para que o foco não seja roubado por uma nova janela de conversação, conforme defect 895;
+
+
+19/06/2008 (versão 2.0.13.17)
+
+- Removido o bloco de criação do arquivo "UIMLog.ini" da pasta pessoal do usuário;
+
+
+19/06/2008 (versão 2.0.13.16)
+
+- Correção de dois pontos de falha na janela de histórico que estava causando crash. Reportado pelo Paulo (UOL);
+- Ajuste das mensagens de erro conforme sugestão do cliente;
+- Ajuste na janela de mensagem para evitar perda de foco quando as abas de conversação estão desativadas, a notificação de mensagens ligada e a janela que irá receber a mensagem está minimizada tendo o foco em uma outra janela de conversação;
+- Ajuste nas configurações da libpurple realizadas durante a inicialização do PurpleService visando bloquear a execução das rotinas de idle e auto-away;
+- Adição de um bloco no script de instalação para que o arquivo "UIMLog.ini" seja copiado para a pasta pessoal do usuário;
+
+
+18/06/2008 (versão 2.0.13.15)
+
+- Ajuste para notificar o usuário do aceite / cancelamento de uma transferência através da janela de conversação.
+- Alteração no comportamento do botão "anterior" da janela de histórico, conforme sugerido pelo cliente;
+- Alteração da mensagem informando que não há histórico para ser exibido, conforme orientação do cliente;
+- Removidas as opções "exibir avatar" e "exibir data e hora" da janela de preferências e preferências wizard, por estarem obsoletas;
+- Ajuste para forçar a ordenação de grupos de contatos durante o carregamento dos contatos, assim como é feito para os contatos;
+- Correção do método que identifica a posição do botão de chamada PC2PC na lista de contatos, respeitando a opção de posicionamento dos itens da lista;
+- Alteração na exibição do Wizard, escondendo a janela de progresso quando o mesmo está ativo e passando o desktop como parent do wizard;
+- Implementação do NotifyFormatted() possibilitando receber a mensagem de retorno dos protocolos jabber / UOL / TodaOferta quando o contato está offline e lhe é enviada uma mensagem;
+- Implementação da notificação e cancelamento de transferência de arquivo quando usado o UOL Messenger no protocolo Jabber tentando enviar um arquivo para um contato com o GTalk;
+- Correção do problema encontrado no plugin da Rádio UOL que não estava exibindo o nome da música;
+- Ajuste no logger global para que o arquivo ini seja procurado, e o arquivo de log seja também salvo, na pasta de dados do usuário;
+- Ajustes do defect 892 enviado pelo cliente;
+- Imagens para correção do defect 864;
+- Mensagens ajustadas de acordo com o defect 869;
+- Adição de blocos de log na parte de mudança de status AUTO_AWAY e AUTO_AWAY_RETURN;
+
+
+12/06/2008 (versão 2.0.13.14)
+
+- Correção do ticket 2123: atualização da lista de eventos de sons;
+- Correção do ticket 2136: atualização do ícone de status na janela de mensagem;
+- Correção do ticket 2161: posicionamento do splitter da conferência;
+- Pequeno ajuste na "CUIMInitProgressWnd" para que a finalização seja mais rápida no caso de falha na inicialização de alguma task;
+- Log geral do sistema (utilizado nessa versão somente na parte de carregamento do skin):
+	- Adição de uma classe de log;
+	- Adição de entradas de log na maior parte do carregamento dos elementos do skin. Faltou somente a construção de alguns elementos que é realizada à parte;
+
+
+11/06/2008 (versão 2.0.13.13)
+
+- Correção do bug do scroll invertido da janela de conversação quando o usuário possui o IE6 no Windows XP;
+- Ajuste no método de conversão de arquivos antigos de histórico para evitar estouro de buffer de arquivo e conversão de data inválida; 
+- Correção do problema de não exibir corretamente textos que tem quebra de linha do histórico;
+- Ajuste para evitar o crash da busca de contatos, relatado pelo Guilherme;
+- Ajuste para evitar o crash relatado no ticket 2024, durante a conversão dos arquivos de histórico antigos (antes do xml);
+- Implementação do efeito flash na janela de transferência de arquivos para envio e recebimento;
+- Ajuste no AccountUserStatusHelper para que a opção de mudança de status para desconectado seja sempre a última;
+- Ajustes para que as opções de troca de avatar e apelido de uma conta sejam apresentadas pelo botão da conta na base do UOLMessenger e somente nos casos em que o protocolo possibilitar essa operação (relativo ao defect 539);
+
+
+06/06/2008 (Versão 2.0.13.12)
+
+- Correção do ticket 2011 que ocorre com o Pidgin no Linux enviando uma mensagem que foi copiada do histórico para um contado do UOLMessenger no protocolo G-Talk/Jabber;
+- Correção do ticket 2012 onde o scroll do mouse não tinha efeito sobre a janela de conversação;
+- Ajustes para que somente os status válidos por protocolo apareçam como opção de troca no botão da barra de contas (inferior do UOLMessenger);
+- Ajuste adicional para que a transição global de status respeite a existência desses status em cada protocolo. Dessa forma, foi criada uma rotina de mapeamento que, dado o status desejado para transição, retorna um status válido para essa transição.
+- Disponibilização de uma tela de progresso das tasks de inicialização do UOLMessenger. Conforme definição do cliente, e devido às limitações e urgência, a tela progresso apresentará somente um texto com a porcentagem concluída;
+
+
+03/06/2008 (Versão 2.0.13.11)
+
+- Ajuste para exibir o histórico recente com o template de mensagem;
+- Criação da opção de ativar/desativar a exibição do histórico recente na janela de preferências;
+- Remoção da opção "Usar a pasta mais recente" das opções de salvamento de transferência de arquivos da janela de preferências;
+- Pequenos ajustes na pintura da janela de histórico;
+- Correção de um bug encontrado no histórico do Voip e Chat durante a importação de um xml de histórico antigo "ConvertFrom()";
+- Movido o DestroyWindow da janela de histórico do Finalize para o PreFinalize, evitando que haja um crash quando o histórico do voip está sendo exibido e a aplicação é fechada. O Plugin do Voip estava sendo finalizado antes da janela de histórico;
+- Ajuste para fazer o parse de emoticons e custom emoticons no histórico recente;
+- Correção de um problema encontrado na gravação do histórico quando se recebe uma mensagem contendo um custom emoticom;
+- Ajustes realizados na parte de transferência de arquivos conforme solicitações do cliente datadas do dis 30/05 e presentes no ticket 1297;
+- Ajuste para atualização correta do saldo considerando-se a nova taxa de ligação, conforme informações presentes no ticket 1976;
+- Ajuste no "PluginNode" para evitar o crash reportado pelo Guilherme na ativação do plugin da RadioUOL (ticket 1980);
+
+
+29/05/2008 (Versão 2.0.13.10)
+
+- Reaplicado o ajuste relativo ao ticket 1306, que foi removido durante a manutenção que resultou na versão 2.0.13.8, e ajustes adicionais para remover possíveis pontos de deadlocks;
+- Ajuste no "CValidateAccountsDialog" para que seja apresentada a mensagem de erro informada pelo método "OnReportDisconnect" durante a validação de contas pelo Wizard de cadastro inicial. Antes o repasse dessa mensagem de erro era desconsiderada, o que causava crash na aplicação durante a formatação da string que esperava três parametros "%s";
+
+
+28/05/2008 (Versão 2.0.13.9)
+
+- Ajuste para que o evento "OnConnected" seja processado pela serialização via Fila de Mensagens do Windows, e remoção do "Sleep" no "AccountConnectionManager" durante o tratamento desse mesmo evento;
+
+
+27/05/2008 (Versão 2.0.13.8)
+
+- Pequenos ajustes no plugin do UOLFone para evitar crashes (por assertion failure) ao finalizar o UOLMessenger durante a inicialização;
+- Ajuste no "JabberProtocol" para que o status correto seja apresentado na inicialização do UOLMessenger. Este protocolo (e os derivados) não recebem o evento ChangeStatus durante a inicialização, e o ajuste resumiu-se em forçar a execução do "OnContactStatusChanged" durante o "OnContactSignedOn" somente para o protocolo Jabber;
+- Ajuste no PurpleProtocolAsyncExec para retornar o código correto de erro durante a finalização do aplicativo;
+
+
+26/05/2008 (Versão 2.0.13.7)
+
+- Ajuste para que os metodos "refletidos" e enfileirados pelo "PurpleProtocolAsyncExec" também concorram pelo acesso à libpurple. Sem esse ajuste os métodos dessa thread eram executados em paralelo com a thread do UOLMessenger;
+- Tive de ajustar a implementação do protocolo JabberUOL para fazer uso do "SetUserStatusAsync", pois do contrário causava deadlock em conjunto com o ajuste anterior.
+
+
+21/05/2008 (Versão 2.0.13.6)
+
+- Criação da janela de convite para conferência;
+- Troca do nome do método que exclui todos os arquivos xml de histórico de DeleteAllHistory para DeleteAllHistoryFiles;
+- Ajuste no FindContactPanel para poder ser criada mais de uma instância;
+- Ajuste para não validar números de telefone internacionais no UOLVoip (Ticket 1818);
+- Ajuste para forçar o encerramento de uma conferência quando existe somente um participante além do usuário;
+- Ajuste no método "phFreeVlines" para percorrer corretamente o array, e efetivamente realizar a liberação das linhas usadas;
+- Ajuste no PhApiAdapter para invocar o metodo "phFreeVLines" depois de unregister de uma linha visando liberar a informação associada a essa linha evitando assim o envio de pacotes OPTIONS (keep-alive).
+- Ajuste para anteceder a liberação dos HistoryRecords no HistoryManager para antes da finalização dos plugins, pois causava crash.
+- Ajustes para melhorar o carregamento inicial da aplicação, sendo:
+	1- Desativação da serialização no sentido Libpurple->UOLMessenger;
+	2- Criação de uma fila de processos que devem ser executados assincronamente (entre eles os métodos "refletidos" durante o carregamento das contas);
+	3- Ajustes na desconexão geral para que não causasse crashes ou deadlocks (ainda pendente).
+- Ajuste no UOLFoneServerConfigProvider para validar se a operação assincrona de download do arquivos de configuração de codecs foi cancelada antes de invocar o método de finalização original (o que causava um crash);
+- Ajuste na libpurple para desconsiderar file descriptors inválidos "== -1" ao invocar as rotinas de tratamento de sockets.
+
+
+14/05/2008 (Versão 2.0.13.5)
+
+- Criação da nova API de Histórico;
+- Ajuste no histórico para Mensagens e chamadas Voip;
+- Criação do histórico para chat;
+- Criação do histórico recente de mensagens;
+- Criação do histórico de transferências de arquivos;
+- Removidos os commands do histórico antigo que ficaram obsoletos;
+- Limpeza dos métodos das interfaces do histórico antigo que ficaram obsoletos;
+- Ajuste na nomenclatura de algumas chamadas que faltaram do HistoryRecord (antigo) para MessageTemplate;
+- Removidas as chamadas excessivas de update da janela no GroupListCtrl, que causava lentidão durante o drag-drop;
+- Ajustes na biblioteca "Sound" do OpenWengo e no UOLFoneController da UOLFonePlugin para corrigir o problema de configuração do microfone no Windows Vista (ticket 1317);
+- Migração dos projetos para o Visual Studio 2005;
+- Implementação dos ajustes solicitados pelo cliente conforme comentários e imagem "tranferencia de arquivos2.jpg" do ticket 1297;
+- Remoção do método "FormatReceivedMessage" reimplementado nos protocolos "MSN" e "Oscar" (ICQ e AIM), e ajuste na implementação genérica desse método no PurpleProtocol para aplicar o "linkify" (gerando os links (URL's) nas mensagens recebidas) - ticket 1657;
+
+
+15/04/2008 (Versão 2.0.13.4)
+
+- Ajuste no WaveSound para resolver um problema de "race condition" durante a reprodução de arquivos de áudio pelo plugin do UOLFone;
+- Melhoria no desempenho da abertura da janela de preferências, movendo o UpdateEmoticonList() do OnInitDialog() para o OnShowWindow();
+- Ajuste na pintura da lista de plugins. Havia uma falha na pintura que apenas na primeira vez que a aba era exibida os ícones dos plugins ficavam à esquerda da janela sendo cortados ao meio;
+- Removido o efeito de minimizar a janela de transferência de arquivos ao fecha-la;
+
+
+11/04/2008 (Versão 2.0.12.8)
+
+- Ajuste no WaveSound para resolver um problema de "race condition" durante a reprodução de arquivos de áudio pelo plugin do UOLFone;
+
+
+10/04/2008 (Versão 2.0.13.3 e 2.0.12.7)
+
+- Ajuste para evitar travamento durante o drag-drop no Windows Vista;
+- Melhor organização do controle de drag-drop de Contacts e FileTransfer no ContactListCtrl;
+- Adicionada a validação do iDropHelper, para evitar o uso quando ele seja NULL;
+
+
+09/04/2008 (Versão 2.0.13.2)
+
+- Ajuste para tentar diminuir a carga de atualizações na interface gráfica no momento da conexão das contas. Este procedimento reflete diretamente no ticket 1318
+- Implementação da configuração dos eventos de som do Plugin UOL Voip na aba Sons da janela de preferências do UOLMessenger (ticket 1294);
+- Adição dos eventos de som para transferêcia de arquivos (ticket 1294);
+- Revertidos os ajustes da última serialização no sentido libpurple -> UOLMessenger, visto que a aplicação começou a apresentar um comportamento muito instável;
+- Ajustes no protocolo crypto para serializar os eventos no sentido libpurple -> crypto;
+- Ajustes no UOLFoneServerConfigProvider para que o CleanUp dos codecs locais seja realizado em um método separado a ser invocado pelo UOLFonePlugin antes que este inicialize as bibliotecas de VoIP e bloqueie assim os plugins de codecs para atualização;
+- Ajustes no UOLFoneController do UOLFonePlugin para que o metodo de CleanUp seja invocado antes da inicialização das bibliotecas de VoIP e para que a atualização dos codecs não interfira no funcionamento normal.
+- Atualização da versão da biblioteca UOLFoneServerConfigProvider (para 1.0.0.5), e da biblioteca UOLFonePlugin (para 1.0.1.23);
+- Adição dos ajustes realizados na versão 2.2 do OpenWengo para tratar o atributo "pTime" (taxa de amostragem, sendo: padrão 20ms, mas desejado 40ms também) negociado pelo SDP;
+- Ajuste adicionao no arquivo "eXosip.c" para que o atributo "pTime" seja enviado na primitiva Invite forçando a negociação;
+- Ajustes no codec G729 para tratar a nova amostragem (40 ms);
+- Atualização da versão da biblioteca do codec G729 (para 1.0.0.2) e da biblioteca UOLFoneClient (para 1.0.0.15);
+
+
+26/03/2008
+
+- Substituição do controle da lista de plugins da aba plugins da janela de preferências;
+- Criação do dialog e infra-estrutura para configuração da opção de armazenar histórico em conversa segura;
+- Adequação das interfaces IUOLMessengerConversationWindow e IUOLMessengerMessageWindow para expor a configuração da opção de armazenar histórico em conversa segura;
+- Ajuste necessário no método SetButtonRect() e GetButtonRect() do IUOLMessengerImageButton para facilitar a verificação da posição do botão dentro de um node. Este ajuste refletiu no FileTransferNode também;
+- Ajuste para tocar som quando envia o nudge;
+- Ajuste no formato da hora do template de mensagem, removendo o "h" conforme solicitado no ticket 1320;
+- Correção de um bug identificado na aba UOL Voip da janela de preferências. A página de configuração do UOLVoip somente aparecia uma única vez, gerando erros quando a janela de preferências era aberta pela segunda vez;
+- Reaplicação do ajuste para que o RichEdit da janela de conversacao nao perca o foco no momento da atualizacao de um custom emoticon que foi recebido do contato. Esse ajuste foi perdido quando o bloco de atualizacao foi substituido pela nova chamada do template de mensagens;
+- Pequeno ajuste na ConversationWindow relativo a um id de menu que nao precisa de fato ser o mesmo utilizado por algum dos itens do menu de contexto do IWebBrowser2;
+- Ajuste para formatar o path do arquivo de avatar do usuário para UTF-8, visando solucionar a falha na configuração dessa propriedade quando o usuário do Windows possui acento no nome;
+- Removido o PurpleProtocolSerializer que não é mais utilizado;
+- Movida a serialização do CallbackSelector para a PurpleService visando adicionar a pilha de protocolos à serialização no sentido Libpurple -> UOLMessenger;
+- Ajustes no protocolo Crypto para corrigir uma falha na máquina de estados que resultava no envio infinito de erros de sessão não encontrada pelas duas partes.
+- Resolvido o problema de Copy & Paste na janela de mensagens com a nova infraestrutura de templates (ticket 1330);
+
+
+14/03/2008
+
+- Ajustes diversos para solucionar problemas envolvendo pastas de usuários com acento (entre eles o problema reportado em que o UOLMessenger era finalizado após a validação do perfil);
+- Ajuste na finalização do "PurpleService" visto que o metodo "xmlParseChunk" causava um crash quando era executado a partir da thread do UOLMessenger, sendo que a solucao foi executar o bloco responsavel em um metodo que seria encaminhado para a thread da libpurple via "purple_timeout_add".
+- Ajustes para a apresentação correta do menu de contexo na janela de histórico;
+
+
+29/02/2008
+
+- Implementação da janela de transferência de arquivos agrupada;
+- Inclusão da configuração de local padrão para transferência de arquivos;
+- Implementação do drag-drop de arquivos para transferência;
+- Implementação do efeito visual do nudge;
+- Inclusão dos novos ícones de protocolos enviados pelo cliente;
+- Ajuste na exibição do caption da janela de conversação quando a conferência é encerrada;
+- Ajuste no nome interno do grupo de resultados da busca de contatos. Mesmo que remoto, poderia haver um conflito de nomes entre um grupo comum definido pelo usuário e o próprio grupo de resultados da busca.
+- Melhoria na exibição das mensagens de alerta para a janela de adição de custom emoticons previamente aberta;
+- Ajuste no tratamento do encerramento da conferência quando a conexão é perdida;
+- Ajuste pare evitar a confirmação de encerramento de conferência quando a conexão é perdida;
+- Ajuste no posicionamento dos splitters da janela de conferência;
+- Implementacao de classes para inserir funcionalidades no IWebBrowser extendendo o "Dynamic HTML Object Model";
+- Ajuste na libpurple e no "Protocols" para que o alias e o icone do usuário fossem propagados para outros clientes (No momento tempos a propagação de alias funcionando somente no MSN, e a propagação do avatar funcionando somente no MSN e ICQ);
+- Implementação da parte de protocolos e de propagação até a janela de mensagens da confirmação de recebimento de arquivos que agora será assíncrona aceitando vários aceites que serão adicionados em blocos à parte na janela de mensagens;
+- Ajuste para que toda a pasta ".purple" da libpurple seja migrada para dentro do profile do usuário, e não somente a persistência da "Smiley API";
+- Revertidas as alterações na "Smiley API" que permitiam configurar a pasta root para persistência do arquivo de configuração e imagens;
+- Implementação da infraestrutura de gerência e de tratamento de templates de mensagens;
+- Implementação de uma interface pública e classe interna de histórico utilizada durante a montagem do documento final no controle de histórico (essa implementação poderá ser útil na geração dos arquivos físicos de histórico);
+- Adicionada a configuração do template padrão "UOLMessenger" no MessageSettings (falta ainda apresentar uma tela de seleção dos templates existentes);
+- Implementação do aceite de transferência de arquivos na janela de conversação;
+
+
+
+01/02/2008
+
+- Corrigido bug da busca que estava agrupando por contas;
+- Aplicadas as novas imagens e cores da RadioUOL;
+- Correção do bug na edição do painel de busca quando um texto está selecionado;
+- Ajuste para evitar que o texto da busca permaneça quando todas as contas são desconectadas;
+- Correção do bug encontrado na busca que exibia o mesmo contato com status diferentes;
+- Correção do bug encontrado na janela de permissões quando se desbloqueava um contato e o mesmo não desaparecia da lista de bloqueados;
+- Removida a linha "Conectado desde" do tooltip do contato;
+- Ajuste na altura do dropdown list de todos os combobox da aplicação para que não ocorra problema semelhante ao defect #849;
+- Melhoria no foco da janela principal, repassando os eventos do teclado e mouse para a lista de contatos;
+- Inclusão do tratamento das teclas PAGE-UP, PAGE-DOWN, HOME e END na lista de contatos;
+- Ajuste para permitir "acelerador" na lista de contatos, ou seja, o item será selecionado de acordo com a letra pressionada;
+- Padronização dos tempos de espera para exibição dos tooltips;
+- Ajustes para que a tela de adicao de emoticons alerte o usuario se ele tentar adicionar um emoticon a partir da janela de mensagens com um dos atalhos de uma tarefa ainda pendente na janela de propriedade de emoticons;
+- Ajustes no parser manager para que ele seja responsável por atualizar as listas de parsing quando ocorrer alguma alteração nas configuraçães de emoticons e não a MessageEditPanel;
+- Ajuste para apresentar a mensagem de operação pendente quando o usuário tentar adicionar um emoticon via janela de mensagens utilizando o atalho original de uma operação de troca de atalho;
+- Ajuste na Smiley API para configurar a pasta de armazenamento do arquivo de configuração e imagens;
+- Ajuste no UOLMessenger para informar a pasta de persistência da Smiley API;
+- Ajuste no MainDialog para finalizar corretamente após um "ALT+F4";
+- Ajuste para permitir a apresentação de somente uma instância da janela de adição de emoticons. DoModal em mais de uma tela estava causando comportamentos bizarros na aplicação;
+
+
+28/01/2008
+
+- Substituição da mensagem informativa quando se está adicionando um contato à conferência;
+- Habilitado recebimento do Mouse Wheel na janela de contatos quando o foco está no painel de busca;
+- Ajuste na janela do teclado pois o combo de números discados estava sobrepondo o label informativo;
+- Ajuste na janela de seleção de emoticons para que ela tenha um tamanho dinâmico suficiente para a apresentação dos emoticons do protocolo específico.
+- Ajuste no cálculo das dimensões dos emoticons para apresentação no histórico de mensagens de quem envia;
+- Bloquear a maximização da janela de propriedades;
+
+
+25/01/2008
+
+- Alterada a imagem do botão "Inciar conferência" conforme enviado pelo Guilherme;
+- Alinhamento do combo do voip com os botões de dial;
+- Correção no combo do voip para voltar a exibir a lista de números discados;
+- Ajuste para permitir gravação e envio de emoticons com atalhos com caracteres especiais, tipo "ç, ã, ô, !, @, #, $, etc);
+- Correção no posicionamento dos splitters da janela de conversação de conferência;
+- Ajuste na EmoticonPropPage para eliminar o Defect 835 reincidente. Ajuste na tela de adição de emoticons para que o atalho de um emoticon agendado para exclusão possa ser utilizado na adição de um novo;
+- Migrei as opções "Permitir que me enviem pedidos de atenção" e "Receber custom emoticons" da aba de contatos para a aba de mensagens;
+- Ajuste para apresentar corretamente no histórico recente emoticons recebidos do Live Messenger que tenham o caracter ">";
+
+
+24/01/2008
+
+- Removido o alerta de fechamento da janela em um chat encerrado;
+- Ajuste para não exibir emoticons do tipo PNG no RichEdit;
+- Alteração no processamento de erro da Radio UOL quando o mesmo se dá pelo longo tempo de pausa numa música, agora o erro é ignorado passando para a próxima música;
+- Ajuste para evitar o problema do ctrl+c não estar funcionando na janela de histórico recente;
+- Ajuste para forçar o scroll no histórico recente quando é recebido um custom emoticon;
+- Corrigido o problema de não estar abrindo a janela de contato quando foi feita uma busca e se está navegando sobre os contatos e pressiona-se o enter;
+- Corrigido o problema do ESC pressionado sobre a lista de contatos não estar limpando a busca;
+- Inclusão do botão limpar dentro do combo do Voip;
+- Alteração na posição dos botões da toolbar inferior da janela de conversação, colocando emoticon e nudge primeiro;
+- Ajustes consideráveis na Smiley API para permitir que sejam cadastrados emoticons que referenciem uma mesma imagem;
+- Ajustes na tela de seleção de emoticons na janela de mensagens, e na aba de propriedades de emoticons para apresentar emoticons que referenciem para a mesma imagem;
+- Ajuste na rotina de troca de imagem do EmoticonSettings que falhava na atribuição do novo path quando a importação do arquivo de imagem falhava, o que acontecia quando o arquivo selecionado já estava na pasta de emoticons adicionados;
+- Ajuste na parte de tunelamento do VoIP que entrava em um estado inconsistente após uma desconexão inesperada da rede;
+- Ajuste na tela de adição de emoticons para validar se existem emoticons sendo editados que possuem o atalho informado (Defects 834 e 836);
+- Ajuste para que a lista de templates não seja apresentada no compoonente de exibição de emoticons da tela de propriedades (Defect 835);
+- Ajuste para que as operações de troca de atalho e de imagem de um mesmo emoticon sejam executadas corretamente;
+- Ajuste para exibir o menu de contexto quando o emoticon estiver em processo de edição e ainda não tiver sido persistido;
+- Ajuste no EmoticonSet para nunca remover um arquivo de imagem visto que ele poder estar sendo utilizado por outro emoticon;
+- Ajuste no método "ShowHistory" que não validava o retorno do método "GetCurrentAccount()" do "UOLFoneAccountManager" antes de utilizar o valor para apresentação do histórico de ligações (em resposta ao crash ocorrido no Win2k ao acessar o botão de histórico na toolbar do plugin UOL Voip);
+
+
+21/01/2008
+
+- Alteração para que o splitter mantenha seu tamanho original quando a janela de conferência for fechada estando o mesmo fechado (acionado pelo duplo clique);
+- Ajuste para evitar o redimensionamento da imagem dos splitters, mantendo a imagem central sempre com o mesmo aspecto; 
+- Adição do bloco de codigo de envio de custom emoticons para a parte de conferência (chat) do MSN;
+- Ajuste no purple service e na ConversationWindow para que atalhos que tenham "ç" recebidos do Live Messenger sejam processados corretamente;
+- Ajuste na janela de propriedades de Emoticons para que os atalhos dos emoticons que tenham caracteres especiais (tais como "<", ">", etc) sejam apresentados corretamente;
+- Ajustes no tema solicitado pelo Marcos;
+- Merge da maior parte dos ajustes realizados pelo UOL na biblioteca HttpTunnel da OpenWengo.
+
+
+18/01/2008
+
+- Inclusão do ContactName no título da janela de conversação;
+- Redução da espera para que o tooltip apareça;
+- Inclusão das mensagens informativas quando é enviado um convite para chat e quando há falha no envio do convite;
+- Colocado o botão limpar da busca dentro do edit;
+- Troca da imagem do botão limpar do UOL VoIP
+- Correção do evento disparado quando um contato está digitando uma mensagem;
+- Ajuste para remover o menu de contexto da janela de seleção de emoticons da janela de mensagens;
+- Ajuste para interpretar caracteres especiais durante a validacao dos emoticons que estao na mensagem que estah em formato HTML e traduziu esses mesmos caracteres;
+- Ajuste na aba de propriedades de emoticons para que o botão "Apply" limpe a lista de updates e aplique as alterações em disco;
+- Ajustes para que a extensão do arquivo do custom emoticon recebido seja encaminhado até o cache temporário da interface e utilizado ao salvar o arquivo em disco.
+
+
+17/01/2008
+
+- Inclusão do UserID no título da lista de contatos inferior da janela de conferência;
+- Correção no recebimento do evento disparado quando um contato está digitando uma mensagem;
+- Ajuste na infraestrutra de emoticons para que o arquivo de configuração antigo do usuário (versão 1) tenha o Emoticon Set "Custom" criado possibilitando a adição de novos emoticons;
+- Novo pacote de emoticons padrão transparentes;
+- Ajuste na janela de mensagens para apresentar o foco no RichEdit quando a tela do chat iniciado pelo usuário é apresentada.
+
+
+16/01/2008
+
+- Ajustes no parsing de emoticons para considerar outras situacoes (colagem de texto, e apresentacao da mensagem do contato no controle de historico) envolvendo atalhos que sao substrings de outros atalhos (por exemplo "_bu" e "_burn");
+- Ajuste para que um emoticon sofra o parsing corretamente logo apohs ser adicionado pela tela de mensagens;
+- Ajuste para atualizar a lista de emoticons na janela de propriedades quando um emoticon for adicionado pela tela de mensagens;
+- Ajuste na infraestrutra de emoticons para que o arquivo de configuração adicionado pela primeira vez para o usuário tenha o Emoticon Set "Custom" criado possibilitando a adição de novos emoticons.
+- Trocado o ícone padrão de download de emoticons.
+- Novo layout da janela de conferência;
+- Inversão da lista de participantes da conferência no caption da janela e tab;
+- Comportamento dos splitters da janela de conferência semelhante ao splitter da lista de contatos;
+- Tooltip da aba da janela de conferência padrão do SO.
+
+
+15/01/2008
+
+- Ajuste na parte de exclusão de custom emoticons;
+- Ajustes na apresentação dos menus de contexto dos componentes IWebBrowser tanto na tela de propriedades de custom emoticons quanto na janela de mensagens. O menu de contexto padrão do componente não deve ser exibido;
+- Ajuste para tornar o Emoticon Set do protocolo MSN o padrão durante a apresentação da tela de preferências;
+- Ajuste para apresentar uma borda no no componente de exibição dos emoticons na tela de propriedades. O tema também foi ajustado para conter a cor da borda;
+- Alteração no layout da janela de conversação de chat conforme sugestão do Guilherme;
+- Ajustando a parte de troca de imagem de um emoticon para nao perder a lista de atalhos;
+- Serializacao das tarefas de edicao de emoticons na libpurple para nao causar problemas de busca nao serializada;
+- Ajustes na tela de adicao de emoticons;
+- Inclusão do ChatListCtrl e ReadyForChatListCtrl como listeners do Settings para que reflitam as configurações de ordenação de contatos.
+
+
+04/01/2008
+
+- Ajuste no componente "PictureExWnd.h" para exibir imagens JPG;
+- Novo conjunto de emoticons por protocolo;
+- Envio e recebimento de custom emoticons pelo protocolo MSN;
+- Gerência e apresentação de emoticons totalmente reestruturada;
+- Conferência para o protocolo MSN.
+
+
+30/11/2007
+
+- Ajuste no componente "PictureExWnd.h" para permitir que a imagem animada em exibicao seja encolhida;
+- Novas strings de recurso;
+- Adição de metodos no AccountManager e de constantes no ProtocolManager a serem utilizados durante a adicao de custom emoticons para todas as contas (ainda nao finalizada);
+- Ajuste no html do historico para apresentar a mesma cor de fundo do emoticon padrão de download;
+- Ajuste no parsing e custom emoticons da tela de conversacao para nao apresentar problemas com shortcuts similares ("_burn" e "_bu" por exemplo);
+- A tela de adição de custom emoticon valida se já existe algum com o mesmo atalho cadastrado;
+- Ajuste na parte de foco do ContactListCtrl;
+- Ajuste no texto padrão do componente de busca de contatos.
+
+
+29/11/2007
+
+- Adição dos custom emoticons agora é refletida também na configuração de emoticons pessoais do usuário;
+- A tela de adição de custom emoticons faz parte do tema.
+
+
+28/11/2007
+
+- Adição dos custom emoticons recebidos na conta do usuário da libpurple (eles ainda não são salvos nos emoticons do usuário do UOLMessenger, e por esse motivo o parser da janela de conversação ainda não funciona);
+- Envio de custom emoticons através do protocolo MSN;
+
+
+27/11/2007
+
+- Implementação da busca de contatos, versão final.
+
+
+22/11/2007
+
+- Implementação da busca de contatos. Versão liberada para testes preliminares.
+
+
+19/11/2007
+
+- Ajuste no controle do plugin do UOLFone para que as chamadas sejam parcialmente desvinculadas do estado da conexão do protocolo UOL da conta configurada no plugin, possibilitando: realizar chamadas para números externos sem que a conta UOL esteja conectada; não finalizar as chamadas realizadas durante a desconexão da conta UOL.
+
+
+14/11/2007
+
+- Ajuste na biblioteca Netlib do Wengophone para enviar a informação correta para a primitiva OPTIONS;
+- Novos de bloqueio e desbloqueio de contatos, de permissões, e da aba de "status" da janela de preferencias.
+
+
+12/11/2007
+
+- UOLFonePlugin agora integrado com a nova versão da biblioteca UOLFoneClient gerada a partir das novas versões das bibliotecas do Wengophone;
+- Ajustes no recebimento de custom emoticons para que o nome do arquivo seja um Base64 do atalho (visando eliminar caracteres invalidos para o sistema de arquivos), e contando com a imagem de download padrão.
+
+
+06/11/2007
+
+- Tema atualizado com novo conjunto de imagens;
+
+
+05/11/2007
+
+- Ajustes no ContactNode e no GroupListCtrl visando evitar os crashes na atualização da lista de contatos durante o fechamento da aplicação;
+- Ajuste no parser dos emoticons que era inicializado somente quando o usuário digitava alguma coisa no RichEditCtrl;
+- Implementação do recebimento de custom emoticons para o protocolo MSN, que realiza no momento somente um cache por sessão destes custom emoticons;
+
+
+24/10/2007
+
+- Nova imagem para o botão de envio de "Pedido de Atenção";
+- Recolocação do botão de "Pedido de Atenção" na barra de ferramentas inferior (barra de formatação do texto), da janela de conversação.
+
+
+23/10/2007
+
+- Ajuste no tunelamento para que o tunel HTTP seja desalocado após a ocorrência de um unregister da linha. Isso é necessário porque de outra forma a estrutura do tunel permanece alocada, mas a conexão é finalizada após um timeout X. Nesse cenário, um register de uma nova linha tentará fazer uso do tunel que já está inválido.
+
+
+09/10/2007
+
+- Atualização do som do nudge pelo que foi enviado pelo Guilherme.
+
+
+08/10/2007
+
+- Atualização para libPurple 2.2.1 que corrige o crash do nudge relatado pelo Marcos em 3/10/2007.
+- Correção do problema no botão do UOL VoIP relatado pelo Marcos em 3/10/2007.
+
+
+02/10/2007
+
+- Corrigido o bug relatado pelo Marcos que acontecia quando o UOLMessenger era fechado estando o messagebox de confirmação de limpeza de histórico de ligações do UOLFone aberto. O valor retornado como padrão era "sim" quando deveria ser "não".
+
+
+26/09/2007
+
+- Remoção do limite de envio de nudges.
+- Ajuste no agrupamento de contatos por conta usando a chave composta por UserId e ProtocolId.
+- Alteração no layout da tela de contatos na janela de propriedades.
+- Ajuste no bug no Controle de layout da lista de contatos.
+
+
+24/09/2007
+
+- Ajuste nos MessageBox com tema que apresentavam defeito na pintura da borda no Windows Vista.
+
+
+21/09/2007
+
+- Ajuste dos MessageBox para que sejam exibidos com tema.
+- Ajuste para evitar o crash que ocorria quando o usuário fechava o UOLMessenger estando o MessageBox de confirmação de recebimento de arquivo aberto.
+- Ajuste para evitar o crash que ocorria quando o usuário fechava o UOLMessenger estando a janela de propriedades aberta (com ou sem MessageBox aberto).
+- Ajuste para evitar o crash que o Guilherme reportou por e-mail do dia 17/09/2007
+
+12/09/2007
+
+- Ajustes no plugin do UOLFone e no UOLFoneClient para que o usuário possa escolher se deseja forçar a utilização do tunel pela porta 80 para as conexões VoIP;
+- Agrupamento dos contatos por conta;
+- Configuração do layout de apresentação dos contatos;
+- Envio e recebimento de pedidos de atenção;
+- Navegabilidade na tela de mensagens com os atalhos: "CTRL + W" e "CTRL + F4" para fechar a janela; "CTRL + A" para selecionar o texto digitado; "ALT + <-", "ALT + ->" e "CTRL + SHIFT + TAB" para navegar entre abas; e, "TAB" e "SHIFT + TAB" para alternar entre os componentes da janela (valido somente para a área de edição, o botão de enviar e o histórico).
+
+
+27/08/2007
+
+- Ajuste na montagem das abas da janela de preferências, visto que a inicialização da aba de plugins estava adicionando abas novas e invalidando o indice de referencia para acesso às abas fixas;
+- Ajuste na interface IUOLMessengerProtocolManager que não foi extendida durante ajustes realizados no esforço de migração da libgaim para libpurple;
+- Incremento no sequencial da DLL do plugin do UOLFone em resposta ao ajuste das URL's de compra de crédisos realizado no release anterior.
+
+
+24/08/2007
+
+- Ajustes dos defects reportados entre segunda e quarta-feira;
+- Ajustes solicitados pelo Guilherme nas URL's utilizadas para compra de créditos que serão diferentes agora. No botão de compra de créditos padrão da barra de ferramentas do plugin do UOLFone será utilizada a URL ("http://barra.uol.com.br/st.html?sg=300096096&sa=CREDITOS&uredir=http://voip.uol.com.br/"), e para o botão de compra de créditos visível somente quando estes se acabarem será utilizada a URL ("http://barra.uol.com.br/st.html?sg=300096096&sa=RECARGA&uredir=http://voip.uol.com.br/");
+- As opções avançadas do ICQ estarão disponíveis agora, bem como a opção de configuração de recebimento ou não de pedidos de atenção.
+
+
+17/08/2007
+
+* Versão 1
+
+- Removidos todos os ajustes realizados na libpurple atual - versão 2.0.2 - e que eram relativos a crashes da aplicação;
+
+* Versão 2
+
+- Merge dos códigos atualizados da libpurple versão 2.1.0, e ajuste no protocolo MSN para que os contatos que recebem SMS fiquem off-line.
+
+
+16/08/2007
+
+- Merge das melhorias: 1- Apresentação da conta na janela de tooltip; e, 2- Apresentação da janela de tooltip nas abas da janela de conversação;
+- Ajustes na parte de envio das capabilities do protocolo UOL. A libpurple inseria uma tag "c" adicional que não era tratada pelas versões nova e antiga do UOLMessenger.
+
+
+15/08/2007
+
+- Merge dos ajustes realizados no UOL e disponibilizados pelo Marcos.
+
+
+14/08/2007
+
+- Ajustes na parte de serialização;
+- Ajuste para que as contas do protocolo ICQ sejam importadas com sucesso pelo novo UOLMessenger (libpurple);
+- Ajuste no UOLK para IE7 que causava travamento do browser;
+
+
+10/08/2007
+
+- Serialização do acesso à libpurple através do uso do loop de eventos do glib (g_main_loop);
+- Configuração das opções "web aware" e "request authorization" do protocolo ICQ através da aba avançada;
+- Otimização da lista de contatos;
+
+

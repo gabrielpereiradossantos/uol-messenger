@@ -1,0 +1,16 @@
+############################################################
+#
+# $Header: /cvsroot/linphone/linphone/oRTP/src/LOAD,v 1.1 2002/02/25 08:41:53 smorlat Exp $
+#
+# $Source: /cvsroot/linphone/linphone/oRTP/src/LOAD,v $
+# $Revision: 1.1 $
+# $Locker:  $
+# 
+############################################################
+/usr/sbin/kmadmin -U oRTP
+/usr/sbin/kminstall -d oRTP
+/usr/sbin/kmadmin -s
+/usr/sbin/kminstall -a oRTP
+/usr/sbin/config -M oRTP -u
+/usr/sbin/kmadmin -L oRTP
+/usr/sbin/kmadmin -s

@@ -1,0 +1,292 @@
+<html>
+<head>
+	<title>Teste</title>
+</head>
+
+<script language="Javascript1.2">
+
+function editor_defaultConfig(objname) {
+  this.width =  "100%";
+  this.height = "100%";
+  this.bodyStyle = 'background-color: white; font-family: "Verdana"; font-size: x-small;';
+  this.debug  = 0;
+  this.replaceNextlines = 0;
+}
+
+function editor_generate(objname,userConfig) {
+
+  var config = new editor_defaultConfig(objname);
+  if (userConfig) {
+    for (var thisName in userConfig) {
+      if (userConfig[thisName]) { config[thisName] = userConfig[thisName]; }
+    }
+  }
+  document.all[objname].config = config;
+
+  //var obj    = document.all[objname];
+  //if (!config.width || config.width == "auto") {
+  //  if      (obj.style.width) { config.width = obj.style.width; }
+  //  else if (obj.cols)        { config.width = (obj.cols * 8) + 22; }
+  //  else                      { config.width = '100%'; }
+  //}
+  //if (!config.height || config.height == "auto") {
+  //  if      (obj.style.height) { config.height = obj.style.height; }
+  //  else if (obj.rows)         { config.height = obj.rows * 17 }
+  //  else                       { config.height = '200'; }
+  //}
+  
+  config.width = '100%';
+  config.height = '100%';
+
+  var editor = '<textarea ID="_' +objname + '_editor" style="width:' +config.width+ '; height:' +config.height+ ';" wrap=soft></textarea>';
+
+  if (!config.debug) { document.all[objname].style.display = "none"; }
+
+  document.all[objname].insertAdjacentHTML('afterEnd', editor)
+
+  editor_setmode(objname, 'init');
+
+  return true;
+
+}
+
+
+function editor_event(objname,runDelay) {
+  var config = document.all[objname].config;
+  var editor_obj  = document.all["_" +objname+  "_editor"];
+  if (runDelay == null) { runDelay = 0; }
+  var editdoc;
+  var editEvent = editor_obj.contentWindow ? editor_obj.contentWindow.event : event;
+
+    if (editEvent && editEvent.keyCode) {
+      var ord       = editEvent.keyCode;
+      var ctrlKey   = editEvent.ctrlKey;
+      var altKey    = editEvent.altKey;
+      var shiftKey  = editEvent.shiftKey;
+
+      if (ord == 16) { return; }
+      if (ord == 17) { return; }
+      if (ord == 18) { return; }
+
+      if (ord == 13)
+      {
+		if (ctrlKey && (editEvent.type == 'keydown'))
+		{
+			editor_insertHTML(objname, "<br>");
+		}
+		else
+		{
+			editEvent.returnValue = false;
+		}
+      }
+
+      if (ctrlKey && (ord == 122 || ord == 90)) {     // catch ctrl-z (UNDO)
+//      TODO: Add our own undo/redo functionality
+        editEvent.cancelBubble = true;
+        return;
+      }
+
+      if ((ctrlKey && (ord == 121 || ord == 89)) ||
+          ctrlKey && shiftKey && (ord == 122 || ord == 90)) {     // catch ctrl-y, ctrl-shift-z (REDO)
+//      TODO: Add our own undo/redo functionality
+        return;
+      }
+    }
+
+  if (runDelay > 0) { return setTimeout(function(){ editor_event(objname); }, runDelay); }
+
+  if (this.tooSoon == 1 && runDelay >= 0) { this.queue = 1; return; } // queue all but urgent events
+  this.tooSoon = 1;
+  setTimeout(function(){
+    this.tooSoon = 0;
+    if (this.queue) { editor_event(objname,-1); };
+    this.queue = 0;
+    }, 200);
+
+  editor_updateOutput(objname);
+}
+
+
+function editor_updateOutput(objname) {
+  var config     = document.all[objname].config;
+  var editor_obj  = document.all["_" +objname+  "_editor"];       // html editor object
+  var editEvent = editor_obj.contentWindow ? editor_obj.contentWindow.event : event;
+  var editdoc = editor_obj.contentWindow.document;
+
+  var contents = editdoc.body.innerHTML;
+
+  if (config.lastUpdateOutput && config.lastUpdateOutput == contents) { return; }
+  else { config.lastUpdateOutput = contents; }
+
+  document.all[objname].value = contents;
+}
+
+
+function editor_filterOutput(objname) {
+  editor_updateOutput(objname);
+  var contents = document.all[objname].value;
+  var config   = document.all[objname].config;
+
+  if (contents.toLowerCase() == '<p>&nbsp;</p>') { contents = ""; }
+  if (contents.toLowerCase() == '<DIV>&nbsp;</DIV>') { contents = ""; }
+
+  var filterTag = function(tagBody,tagName,tagAttr) {
+    tagName = tagName.toLowerCase();
+    var closingTag = (tagBody.match(/^<\//)) ? true : false;
+
+    if (tagName == 'img') { tagBody = tagBody.replace(/(src\s*=\s*.)[^*]*(\*\*\*)/, "$1$2"); }
+    if (tagName == 'a')   { tagBody = tagBody.replace(/(href\s*=\s*.)[^*]*(\*\*\*)/, "$1$2"); }
+
+    return tagBody;
+  };
+
+  RegExp.lastIndex = 0;
+    var matchTag = /<\/?(\w+)((?:[^'">]*|'[^']*'|"[^"]*")*)>/g;   // this will match tags, but still doesn't handle container tags (textarea, comments, etc)
+
+  contents = contents.replace(matchTag, filterTag);
+
+  if (config.replaceNextlines) {
+    contents = contents.replace(/\r\n/g, ' ');
+    contents = contents.replace(/\n/g, ' ');
+    contents = contents.replace(/\r/g, ' ');
+  }
+
+  document.all[objname].value = contents;
+
+}
+
+function editor_setmode(objname, mode) {
+  var config     = document.all[objname].config;
+  var editor_obj = document.all["_" +objname + "_editor"];
+
+  if (document.readyState != 'complete') {
+    setTimeout(function() { editor_setmode(objname,mode) }, 25);
+    return;
+  }
+
+  var RichEdit   = '<iframe ID="_' +objname+ '_editor" style="position:absolute;top:0px;left:0px;width:' +editor_obj.style.width+ '; height:' +editor_obj.style.height+ ';"></iframe>';
+
+  var contents = editor_obj.value;
+  if (mode == 'init') { contents = document.all[objname].value; }
+
+  editor_obj.outerHTML = RichEdit;
+  editor_obj = document.all["_" +objname + "_editor"];
+
+  var html = "";
+  html += '<html><head>\n';
+  html += '<style>\n';
+  html += 'body {' +config.bodyStyle+ '} \n';
+  for (var i in config.fontstyles) {
+    var fontstyle = config.fontstyles[i];
+    if (fontstyle.classStyle) {
+      html += '.' +fontstyle.className+ ' {' +fontstyle.classStyle+ '}\n';
+    }
+  }
+  html += '</style>\n'
+    + '</head>\n'
+    + '<body contenteditable="true" topmargin=0 leftmargin=0'
+    +'>'
+    + contents
+    + '</body>\n'
+    + '</html>\n';
+
+  var editdoc = editor_obj.contentWindow.document;
+
+  editdoc.open();
+  editdoc.write(html);
+  editdoc.close();
+
+  editdoc.objname = objname;
+
+  editdoc.onkeydown      = function() { editor_event(objname); }
+  editdoc.onkeypress     = function() { editor_event(objname); }
+  editdoc.onkeyup        = function() { editor_event(objname); }
+  editdoc.onmouseup      = function() { editor_event(objname); }
+  editdoc.body.ondrop    = function() { editor_event(objname, 100); }
+  editdoc.body.oncut     = function() { editor_event(objname, 100); }
+  editdoc.body.onpaste   = function() { editor_event(objname, 100); }
+  editdoc.body.onblur    = function() { editor_event(objname, -1); }
+
+  if (mode != 'init') {
+    editor_focus(editor_obj);
+    editor_event(objname);
+  }
+
+}
+
+
+function editor_focus(editor_obj) {
+    var editdoc = editor_obj.contentWindow.document;
+    var editorRange = editdoc.body.createTextRange();
+    var curRange    = editdoc.selection.createRange();
+
+    if (curRange.length == null &&
+        !editorRange.inRange(curRange)) {
+      editorRange.collapse();
+      editorRange.select();
+      curRange = editorRange;
+    }
+}
+
+
+function editor_insertHTML(objname, str1,str2, reqSel) {
+  var config     = document.all[objname].config;
+  var editor_obj = document.all["_" +objname + "_editor"];
+  if (str1 == null) { str1 = ''; }
+  if (str2 == null) { str2 = ''; }
+
+  if (document.all[objname] && editor_obj == null) {
+    document.all[objname].focus();
+    document.all[objname].value = document.all[objname].value + str1 + str2;
+    return;
+  }
+
+  if (editor_obj == null) { return; }
+
+  editor_focus(editor_obj);
+
+  var tagname = editor_obj.tagName.toLowerCase();
+  var sRange;
+
+  if (tagname == 'iframe') {
+    var editdoc = editor_obj.contentWindow.document;
+    sRange  = editdoc.selection.createRange();
+    var sHtml   = sRange.htmlText;
+
+    if (sRange.length) { return; }
+
+    var oldHandler = window.onerror;
+    window.onerror = function() { return true; }
+    if (sHtml.length) {
+      if (str2) { sRange.pasteHTML(str1 +sHtml+ str2) }
+      else      { sRange.pasteHTML(str1); }
+    } else {
+      if (reqSel) { return; }
+      sRange.pasteHTML(str1 + str2);
+    }
+    window.onerror = oldHandler;
+  }
+
+  sRange.collapse(false);
+  sRange.select();
+
+}
+
+</script>
+
+<body scroll=no style="background-color: white;">
+	<form action="" method="post" name="form1">
+	<textarea name=bodyTextPost wrap=virtual style="position:absolute;top:0px;left:0px;width:100%;height:100%;"></textarea>
+	</form>
+	<script language="javascript1.2">
+		var config = new Object();
+		//config.width = "200px";
+		//config.height = "80px";
+		config.bodyStyle = 'background-color: white; font-family: "Arial"; font-size: x-small;';
+		config.debug = 0;
+
+		editor_generate('bodyTextPost',config);
+	</script>
+
+</body>
+</html>

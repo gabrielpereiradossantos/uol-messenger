@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<AuthorizingScheme version="1">
+    <!--
+        @param name MUST match the plugin's internal name.
+    -->
+    <AuthorizedModule name="UOLFone">
+        <AuthorizedMethods>
+            <AuthorizedMethod>WaitSystrayMenuInitialization</AuthorizedMethod>
+            <AuthorizedMethod>AddSystrayMenuItem</AuthorizedMethod>
+            <AuthorizedMethod>RemoveSystrayMenuItem</AuthorizedMethod>
+            <AuthorizedMethod>AddMenuItem</AuthorizedMethod>
+            <AuthorizedMethod>RemoveMenuItem</AuthorizedMethod>
+            <AuthorizedMethod>RemoveAllMenuItems</AuthorizedMethod>
+            <AuthorizedMethod>EnableMenuItem</AuthorizedMethod>
+            <AuthorizedMethod>AddSubMenu</AuthorizedMethod>
+            <AuthorizedMethod>RemoveSubMenu</AuthorizedMethod>
+        </AuthorizedMethods>
+    </AuthorizedModule>
+    <AuthorizedModule name="radioUol">
+        <AuthorizedMethods>
+            <AuthorizedMethod>WaitSystrayMenuInitialization</AuthorizedMethod>
+            <AuthorizedMethod>AddSystrayMenuItem</AuthorizedMethod>
+            <AuthorizedMethod>RemoveSystrayMenuItem</AuthorizedMethod>
+            <AuthorizedMethod>AddMenuItem</AuthorizedMethod>
+            <AuthorizedMethod>RemoveMenuItem</AuthorizedMethod>
+            <AuthorizedMethod>RemoveAllMenuItems</AuthorizedMethod>
+            <AuthorizedMethod>EnableMenuItem</AuthorizedMethod>
+            <AuthorizedMethod>AddSubMenu</AuthorizedMethod>
+            <AuthorizedMethod>RemoveSubMenu</AuthorizedMethod>
+        </AuthorizedMethods>
+    </AuthorizedModule>
+</AuthorizingScheme>

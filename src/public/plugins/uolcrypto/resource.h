@@ -1,0 +1,42 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by uolcrypto.rc
+//
+#define IDS_NONUIMWARNIG                101
+#define IDS_NONUIMWARNING               101
+#define IDS_NON_UIM_WARNING             101
+#define IDB_BITMAP_CRYPTO_MESSAGE       102
+#define IDS_STRING102                   102
+#define IDS_CANTSTARTCRYPTOSESSION      102
+#define IDB_BITMAP_CRYPTO_MESSAGE_      103
+#define IDB_BITMAP_CRYPTO_MESSAGE_INIT  103
+#define IDS_TOOLTIP_BUTTON_CRYPTO       103
+#define IDB_BITMAP_CRYPTO_MESSAGE_STARTED 103
+#define IDB_BITMAP_CRYPTO_SESSION_STARTED 103
+#define IDS_TOOLTIP_ESTABLISHING_SESSION 103
+#define IDB_BITMAP1                     104
+#define IDB_PLUGIN_ICON                 104
+#define IDS_CRYPTO_SESSION_NOT_FOUND    104
+#define IDS_ACCOUNT_NOT_CONNECTED_MSG   105
+#define IDB_BITMAP_CRYPTO_SESSION_ENDED 105
+#define IDS_CRYPTO_PLUGIN_NAME          106
+#define IDB_BITMAP_CRYPTO_SESSION_ESTABLISHED 106
+#define IDS_TOOLTIP_START_SESSION       107
+#define IDD_CONFIG_DLG                  107
+#define IDS_TOOLTIP_END_CRYPTO_SESSION  108
+#define IDS_TOOLTIP_END_SESSION         108
+#define IDR_XML_CONFIG_STUB             108
+#define IDS_NON_UOLVOIP_WARNING         109
+#define IDS_CONFIG_FILE_STUB            110
+#define IDC_CHECK_DONT_LOG_MESSAGE      1001
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        109
+#define _APS_NEXT_COMMAND_VALUE         40001
+#define _APS_NEXT_CONTROL_VALUE         1002
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

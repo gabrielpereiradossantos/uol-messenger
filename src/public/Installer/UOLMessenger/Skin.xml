@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<skin version="2">
+	<!-- ContactNodeLayoutCfg Bitmaps -->
+	<ContactNodeLayoutBitmap bitmapalias="Skin\Preferences\layout_alias.bmp" 
+		bitmapavatar="Skin\Preferences\layout_avatar.bmp" bitmapstatus="Skin\Preferences\layout_status.bmp"/>
+	
+	<!-- Application default icons -->
+	<Icon name="IconDefaultSmall" file="Skin\Main\app_window.ico" width="16" height="16" />
+	<Icon name="IconDefaultLarge" file="Skin\Main\app_window.ico" width="32" height="32" />
+	<AppDefaultIcon smallicon="IconDefaultSmall" largeicon="IconDefaultLarge" />
+
+	<DefaultEmoticonImage file="Skin\Main\default_emoticon.gif" width="21" height="21" />
+	<!-- 
+	<DefaultEmoticonImage file="Skin\Main\default_emoticon.bmp" width="48" height="48" />
+	-->
+	
+	<!-- WizardInit -->
+	<BitmapBackground name="WizardInitBackground" image="Skin\Wizard\WizardInit.png" mode="normal" />
+	<WizardInitDialog background="WizardInitBackground" />
+	<BitmapBackground name="WizardProfileBackground" image="Skin\Wizard\WizardProfile.png" mode="normal" />
+	<WizardProfileDialog background="WizardProfileBackground" />
+
+	<!-- WizardAccounts-->
+	<BitmapBackground name="WizardMSNBackground" image="Skin\Wizard\WizardMSN.png" mode="normal" />
+	<WizardMSNAccountDialog background="WizardMSNBackground" />
+	<BitmapBackground name="WizardUOLBackground" image="Skin\Wizard\WizardUOL.png" mode="normal" />
+	<WizardUOLAccountDialog background="WizardUOLBackground" />
+	<BitmapBackground name="WizardICQBackground" image="Skin\Wizard\WizardICQ.png" mode="normal" />
+	<WizardICQAccountDialog background="WizardICQBackground" />
+	<BitmapBackground name="WizardJabberBackground" image="Skin\Wizard\WizardJabber.png" mode="normal" />
+	<WizardJabberAccountDialog background="WizardJabberBackground" />
+	<BitmapBackground name="WizardYahooBackground" image="Skin\Wizard\WizardYahoo.png" mode="normal" />
+	<WizardYahooAccountDialog background="WizardYahooBackground" />
+	<BitmapBackground name="WizardPreferencesBackground" image="Skin\Wizard\WizardPreferences.png" mode="normal" />
+	<WizardPreferencesDialog background="WizardPreferencesBackground" />
+	<BitmapBackground name="WizardPersonalizeBackground" image="Skin\Wizard\WizardPersonAccounts.png" mode="normal" />
+	<WizardPersonalizeAccountsDialog background="WizardPersonalizeBackground" defaultusericon="Skin\Wizard\default_avatar.png" />
+	<BitmapBackground name="WizardFinishBackground" image="Skin\Wizard\WizardFinish.png" mode="normal" />
+	<WizardFinishDialog background="WizardFinishBackground" />
+	<BitmapBackground name="WizardSplashBackground" image="Skin\Wizard\WizardSplash.png" mode="normal" />
+	<WizardSplashDialog background="WizardSplashBackground" />
+	
+	<!-- Application window caption -->
+	<Font name="FontCaption" facename="Tahoma" size="13" bold="true" italic="false" color="#ffffff" />
+	<BitmapBackground name="AppWindowCaptionBackground" image="Skin\Caption\app_active.bmp" mode="tile" />
+	<BitmapBackground name="AppWindowCaptionInactiveBackground" image="Skin\Caption\app_inactive.bmp"
+		mode="tile" />
+	<WindowBorder name="AppWindowActiveBorder" color="#037498" height="2" width="2" />
+	<WindowBorder name="AppWindowInactiveBorder" color="#81b9cb" height="2" width="2" />
+	<WindowBorder name="EmoticonsWindowBorder" color="#037498" height="2" width="2" />
+	<Caption name="AppWindowCaption" background="AppWindowCaptionBackground" inactive_background="AppWindowCaptionInactiveBackground"
+		ButtonSpacement="2" height="24" font="FontCaption" color="#ffffff" frameSwitcher="Skin\Caption\frame_switcher.bmp"
+		inactiveframeSwitcher="Skin\Caption\frame_switcher_inactive.bmp" image="Skin\Caption\app_uol_title_active.bmp" inactive_image="skin\Caption\app_uol_title_inactive.bmp"
+		showtext="false" SwitcherTip="Expandir">
+		<button image="Skin\Caption\app_close.bmp" width="16" transparent="true" command="HideWindow" tip="Fechar" />
+		<button image="Skin\Caption\app_minimize.bmp" width="16" transparent="true" command="MinimizeWindow"
+			tip="Minimizar" />
+	</Caption>
+	
+	<!-- Application window menu -->
+	<menu name="AppWindowMenu">
+		<submenu desc="&amp;Arquivo">
+			<item desc="&amp;Preferências..." command="OpenPreferences" />
+			<menuSeparator />
+			<item desc="&amp;Fechar" command="CloseApp" />
+		</submenu>
+		<submenu desc="&amp;Ferramentas">
+			<item desc="&amp;Adicionar contato..." command="ShowAddContactDialog" />
+			<item desc="Adicionar &amp;grupo..." command="ShowAddGroupDialog" />
+			<menuSeparator />
+			<submenu desc="&amp;Estado">
+				<item desc="Online" command="SetOnlineStatusAll" />
+				<item desc="Ocupado" command="SetBusyStatusAll" />
+				<item desc="Ausente" command="SetAwayStatusAll" />
+				<item desc="Invisível" command="SetOfflineStatusAll" />
+				<item desc="Desconectado" command="DisconnectAllAccounts" />
+			</submenu>
+            <menuSeparator />
+            <item desc="Transferência de arquivos..." command="ShowFileTransfersDialog" />
+			<!-- <menuSeparator />
+			<item desc="Histórico de conversas..." command="ShowHistory" />-->
+		</submenu>
+		<submenu desc="A&amp;juda">
+			<item desc="&amp;Ajuda..." command="ShowHelp" />
+            <item desc="&amp;Teclas de atalho..." command="ShowHotKeysDialog" />
+            <menuSeparator />
+			<item desc="&amp;Fale conosco..." command="OpenBugReport" />
+      <item desc="Ferramenta de &amp;Diagnóstico..." command="ShowDiagnoseTool" />
+			<menuSeparator />
+			<item desc="&amp;Sobre..." command="ShowAboutDialog" />
+		</submenu>
+	</menu>
+	
+	<!-- Application window statusbar -->
+	<Font name="FontStatusBar" facename="Tahoma" size="11" bold="false" italic="false" />
+	<StatusBar name="StatusBar" background="AppWindowCaptionBackground" height="21" font="FontStatusBar"
+		statusbartextcolor="#ffffff" SizingGripColor="#007495" />
+
+	<!-- Application window backgrounds -->
+	<!-- <BitmapBackground name="GroupDefaultBackground" image="Skin\Main\contact_group_background.bmp" mode="tile" /> -->
+	<!-- <BitmapBackground name="UserStatusPanelBackground" image="Skin\Main\users_status_panel_background.bmp" mode="tile" /> -->
+	<BitmapBackground name="SplitterBackground" image="Skin\Main\splitter_background.bmp" mode="stretch" />
+	<BitmapBackground name="VerticalSplitterBackground" image="Skin\Main\vertical_splitter_background.bmp" mode="stretch" />
+	<BitmapBackground name="HorizontalSplitterBackground" image="Skin\Main\horizontal_splitter_background.bmp" mode="stretch" />
+	<BitmapBackground name="ContactListGroupBackground" image="Skin\Main\contact_list_group.bmp" mode="tile" />
+	<BitmapBackground name="AccountsPanelBackground" image="Skin\Main\accounts_panel.bmp" mode="tile" />
+	<BitmapBackground name="FindContactBackground" image="Skin\Main\find_contact_background.bmp" mode="tile" />
+	<BitmapBackground name="TitlePanelBackground" image="Skin\Main\title_panel_background.bmp" mode="tile" />
+  <BitmapBackground name="FindHistoryBackground" image="Skin\Main\find_history_background.bmp" mode="tile" />
+
+  <!-- Application window fonts -->
+	<Font name="FontUserStatusPanelStatus" facename="Tahoma" size="13" bold="false" italic="false" />
+  <Font name="FontUserStatusPanelStatusMessage" facename="Tahoma" size="13" bold="false" italic="false" />
+	<Font name="FontUserStatusPanelText" facename="Tahoma" size="16" bold="true" italic="false" />
+	<Font name="FontGroup" facename="Tahoma" size="13" bold="true" italic="false" />
+	<Font name="FontContactNormal" facename="Tahoma" size="13" bold="false" italic="false" />
+	<Font name="FontContactSelected" facename="Tahoma" size="13" bold="true" italic="false" />
+	<Font name="FontContactBlocked" facename="Tahoma" size="13" bold="false" italic="true" />
+	<Font name="FontTopTabView" facename="Tahoma" size="15" bold="true" color="#000000" />
+	<Font name="FontSelectedTopTabView" facename="Tahoma" size="15" bold="true" color="#000000" />
+	<Font name="FontActiveFindContact" facename="Tahoma" size="13" bold="false" italic="false" />
+	<Font name="FontInactiveFindContact" facename="Tahoma" size="13" bold="false" italic="true" />
+  <Font name="FontTitlePanel" facename="Tahoma" size="13" bold="true" italic="false" />
+  <Font name="FontFileTransferTitle" facename="Tahoma" size="16" bold="true" italic="false" />
+  <Font name="FontFileTransferNormal" facename="Tahoma" size="11" bold="false" italic="false" />
+  <Font name="FontFileTransferActions" facename="Tahoma" size="13" bold="false" italic="false" />
+
+  <!-- Application window -->
+	<AppWindow caption="AppWindowCaption" statusbar="StatusBar" border="AppWindowActiveBorder"
+		inactive_border="AppWindowInactiveBorder" menu="AppWindowMenu">
+		<UserStatusPanel background="#ffffff" height="52" statuscomboboxarrow="Skin\Main\status_combobox.bmp"
+			statusfont="FontUserStatusPanelStatus" statusmessagefont="FontUserStatusPanelStatusMessage" statuscolor="#999999#" statuscomboboxheight="20" textfont="FontUserStatusPanelText"
+			textcolor="#00000" />
+		<Tabview SelectedFont="FontTopTabView" Font="FontSelectedTopTabView" background="#ffffff"
+			inactive_background="#ffffff" Normal="Skin\Main\plugin_tab_left_inactive.bmp" Over="Skin\Main\plugin_tab_left_inactive.bmp"
+			Clicked="Skin\Main\plugin_tab_left_active.bmp" Selected="Skin\Main\plugin_tab_left_active.bmp" 
+			Blinking="Skin\Main\plugin_tab_left_inactive.bmp" CloseTab="Skin\Main\close_tab.bmp">
+			<TabButton>
+				<LeftImage Normal="Skin\Main\plugin_tab_left_inactive.bmp" Over="Skin\Main\plugin_tab_left_inactive.bmp" 
+					Clicked="Skin\Main\plugin_tab_left_active.bmp" Selected="Skin\Main\plugin_tab_left_active.bmp" 
+					Blinking="Skin\Main\plugin_tab_left_active.bmp" CloseTab="Skin\Main\close_tab.bmp" />
+				<FillImage Normal="Skin\Main\plugin_tab_fill_inactive.bmp" Over="Skin\Main\plugin_tab_fill_inactive.bmp" 
+					Clicked="Skin\Main\plugin_tab_fill_active.bmp" Selected="Skin\Main\plugin_tab_fill_active.bmp" 
+					Blinking="Skin\Main\plugin_tab_fill_active.bmp" CloseTab="Skin\Main\close_tab.bmp" />
+				<RightImage Normal="Skin\Main\plugin_tab_right_inactive.bmp" Over="Skin\Main\plugin_tab_right_inactive.bmp" 
+					Clicked="Skin\Main\plugin_tab_right_active.bmp" Selected="Skin\Main\plugin_tab_right_active.bmp" 
+					Blinking="Skin\Main\plugin_tab_right_active.bmp" CloseTab="Skin\Main\close_tab.bmp" />
+			</TabButton>
+		</Tabview>
+		<ContactListTab background="#000000">
+			<Toolbar background="#c1def0" ButtonSpacement="1" height="32">
+				<!-- <button image="Skin\Toolbar\send_msg.bmp" width="32" transparent="true" command="SendMessage" /> -->
+				<!-- <button image="Skin\Toolbar\send_file.bmp" width="32" transparent="true" command="SendFile" /> -->
+				<button image="Skin\Toolbar\add_contact.bmp" width="32" transparent="true" command="ShowAddContactDialog"
+					tip="Adicionar contato" />
+				<button image="Skin\Toolbar\add_group.bmp" width="32" transparent="true" command="ShowAddGroupDialog"
+					tip="Adicionar grupo" />
+				<button image="Skin\Toolbar\permissions.bmp" width="32" transparent="true" command="ShowPrivacy"
+					dndcommand="BlockContact" tip="Lista de permissões" />
+				<button image="Skin\Toolbar\open_prefs.bmp" width="32" transparent="true" command="OpenPreferences" tip="Preferências" />
+				<button image="Skin\Toolbar\uol.bmp" width="32" transparent="true" command="OpenUOLHome" tip="UOL" />
+				<button image="Skin\Toolbar\uolk.bmp" width="32" transparent="true" command="OpenUOLKut" tip="UOL K" />
+			</Toolbar>
+			<FindContactPanel background="FindContactBackground" defaulttext="Buscar Contato" activefont="FontActiveFindContact"
+				inactivefont="FontInactiveFindContact" activetextcolor="#000000" inactivetextcolor="#99A8AC">
+				<Toolbar background="#ffffff" ButtonSpacement="2" height="22">
+					<button image="Skin\Main\button_clean_find_contact.bmp" width="16" transparent="true" command="Clean"
+						tip="Limpar" />
+				</Toolbar>
+			</FindContactPanel>
+			<ContactList background="#ffffff">
+				<Group height="19" collapsedImage="Skin\Main\group_collapsed.bmp" expandedImage="Skin\Main\group_expanded.bmp"
+					font="FontGroup" textcolor="#ffffff" droptargetfont="FontGroup" droptargettextcolor="#037498">
+					<GroupDefaultPainter background="ContactListGroupBackground" timeout="0" />
+					<!-- <GroupSelectionPainter background="#0000ff" /> -->
+				</Group>
+				<Contact small="18" medium="28" large="38" font="FontContactNormal" textcolor="#000000" selectedfont="FontContactSelected"
+					selectedtextcolor="#ffffff" blockedfont="FontContactBlocked" blockedtextcolor="#999999"
+					droptargetfont="FontContactNormal" droptargettextcolor="#037498">
+					<ContactDefaultPainter background="#ffffff" timeout="0" />
+					<ContactSelectionPainter background="#3894BA" />
+					<OnlinePainter background="#CCFFD1" timeout="5" />
+					<OfflinePainter background="#FFCCCC" timeout="5" />
+					<TypingPainter background="#FEDC96" timeout="5" />
+					<NewMessagePainter background="#B8DCFF" timeout="2" />
+					<!--  <OnlinePainter background="#31ac09" timeout="5" /> -->
+					<!--  <OfflinePainter background="#ed301c" timeout="5" /> -->
+					<!--  <TypingPainter background="#f88a55" timeout="5" /> -->
+					<!--  <NewMessagePainter background="#5569dc" timeout="2" /> -->
+				</Contact>
+			</ContactList>
+			<ListSplitPanel background="SplitterBackground" centerimage="skin\Main\horizontal_splitter_center.bmp" splitterheight="7" />
+			<PluginCustomList background="#EEF6FF">
+				<PluginCustomGroup height="27" collapsedImage="skin\Main\plugin_group_collapsed.bmp" expandedImage="skin\Main\plugin_group_expanded.bmp"
+					font="FontGroup" textcolor="#037498" background="#EEF6FF" />
+				<PluginCustomEntry height="18" font="FontContactNormal" textcolor="#037498" selectedfont="FontContactSelected"
+					selectedtextcolor="#037498" background="#EEF6FF" />
+			</PluginCustomList>
+		</ContactListTab>
+    <!--<AccountsPanel background="AccountsPanelBackground" height="20" /> -->
+    <Toolbar background="#c0dcec" ButtonSpacement="0" height="20"/>
+		<!-- <AccountsPanel background="#e1f2fa" height="20" /> -->
+	</AppWindow>
+
+  <!-- Preferences window -->
+  <BitmapBackground name="PreferencesCaptionBackground" image="Skin\Caption\pref_active.bmp" mode="tile" />
+  <BitmapBackground name="PreferencesCaptionInactiveBackground" image="Skin\Caption\pref_inactive.bmp"
+		mode="tile" />
+  <BitmapBackground name="PreferencesBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+  <WindowBorder name="PreferencesActiveBorder" color="#037498" height="2" width="2" />
+  <WindowBorder name="PreferencesInactiveBorder" color="#81b9cb" height="2" width="2" />
+  <Caption name="PreferencesCaption" background="PreferencesCaptionBackground" inactive_background="PreferencesCaptionInactiveBackground"
+		ButtonSpacement="3" height="24" font="FontCaption" image="Skin\Caption\app_icon.bmp"
+		transparentimage="true">
+    <button image="Skin\Caption\pref_close.bmp" width="16" transparent="true" command="CloseWindow"
+			tip="Fechar" />
+  </Caption>
+  <PreferencesWindow caption="PreferencesCaption" border="PreferencesActiveBorder" inactive_border="PreferencesInactiveBorder"
+    resizable="false" background="PreferencesBackground" >
+    <Font name="ButtonTabControlFont" facename="Tahoma" size="11" color="#000000" />
+    <BitmapBackground name="ButtonTabControlInactiveBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+    <BitmapBackground name="ButtonTabControlBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+    <Toolbar Font="ButtonTabControlFont" background="ButtonTabControlBackground" ButtonSpacement="1" height="53">
+      <button caption="Contas" image="Skin\Preferences\tab_account.bmp" width="44" transparent="true" command="Contas" tip="Contas" />
+      <button caption="Contatos" image="Skin\Preferences\tab_contact.bmp" width="44" transparent="true" command="Contatos" tip="Contatos" />
+      <button caption="Mensagens" image="Skin\Preferences\tab_message.bmp" width="44" transparent="true" command="Mensagens" tip="Mensagens" />
+      <button caption="Estado" image="Skin\Preferences\tab_status.bmp" width="44" transparent="true" command="Estado" tip="Estado" />
+      <button caption="Sons" image="Skin\Preferences\tab_sound.bmp" width="44" transparent="true" command="Sons" tip="Sons" />
+      <button caption="Emoticons" image="Skin\Preferences\tab_emoticon.bmp" width="44" transparent="true" command="Emoticons" tip="Emoticons" />
+      <button caption="Rede" image="Skin\Preferences\tab_network.bmp" width="44" transparent="true" command="Rede" tip="Rede" />
+      <button caption="Plugins" image="Skin\Preferences\tab_plugins.bmp" width="44" transparent="true" command="Plugins" tip="Plugins" />
+      <button caption="Geral" image="Skin\Preferences\tab_general.bmp" width="44" transparent="true" command="Geral" tip="Geral" />
+    </Toolbar>
+    <Accountproppage caption="Contas" editColor="#fefefe" listBoxColor="#fefefe"
+			dialogColor="#fefefe" buttonColor="#fefefe" staticColor="#fefefe" scrollBarColor="#fefefe" clrDlgBackgroundColor="#fefefe"></Accountproppage>
+    <Contactproppage caption="Contatos" editColor="#fefefe" listBoxColor="#fefefe"
+			dialogColor="#fefefe" buttonColor="#fefefe" staticColor="#fefefe" scrollBarColor="#fefefe" clrDlgBackgroundColor="#fefefe"></Contactproppage>
+    <Messageproppage caption="Mensagens" editColor="#fefefe" listBoxColor="#fefefe"
+			dialogColor="#fefefe" buttonColor="#fefefe" staticColor="#fefefe" scrollBarColor="#fefefe" clrDlgBackgroundColor="#fefefe"></Messageproppage>
+    <Statusproppage caption="Estado" editColor="#fefefe" listBoxColor="#fefefe"
+			dialogColor="#fefefe" buttonColor="#fefefe" staticColor="#fefefe" scrollBarColor="#fefefe" clrDlgBackgroundColor="#fefefe"></Statusproppage>
+    <Soundproppage caption="Sons" editColor="#fefefe" listBoxColor="#fefefe"
+			dialogColor="#fefefe" buttonColor="#fefefe" staticColor="#fefefe" scrollBarColor="#fefefe"
+			clrDlgBackgroundColor="#fefefe"></Soundproppage>
+    <Emoticonproppage caption="Emoticons" editColor="#fefefe" listBoxColor="#fefefe"
+			dialogColor="#fefefe" buttonColor="#fefefe" staticColor="#fefefe" scrollBarColor="#fefefe" 
+			clrDlgBackgroundColor="#fefefe" templateFile="Skin\Html\emoticonPropPageTemplate.html" 
+			templateFileWithCustom="Skin\Html\emoticonPropPageTemplateWithCustom.html" 
+			clrEmoticonViewCtrlBorder="#4ea2c6" ></Emoticonproppage>
+    <Networkproppage caption="Rede" editColor="#fefefe" listBoxColor="#fefefe"
+			dialogColor="#fefefe" buttonColor="#fefefe" staticColor="#fefefe" scrollBarColor="#fefefe" clrDlgBackgroundColor="#fefefe"></Networkproppage>
+    <Pluginsproppage caption="Plugins" editColor="#fefefe" listBoxColor="#fefefe"
+			dialogColor="#fefefe" buttonColor="#fefefe" staticColor="#fefefe" scrollBarColor="#fefefe" clrDlgBackgroundColor="#fefefe">
+		<PluginList background="#FFFFFF" button_check_on="Skin\Preferences\plugin_check_on.bmp" button_check_off="Skin\Preferences\plugin_check_off.bmp" 
+			button_config="Skin\Preferences\plugin_config_button.bmp" button_update="Skin\Preferences\plugin_update_button.bmp"
+			button_install="Skin\Preferences\plugin_install_button.bmp">
+			<PluginGroup height="27" collapsedImage="skin\Main\plugin_group_collapsed.bmp" expandedImage="skin\Main\plugin_group_expanded.bmp"
+				font="FontGroup" textcolor="#037498" />
+			<PluginEntry height="60" font="FontContactNormal" textcolor="#000000" selectedfont="FontContactSelected"
+				selectedtextcolor="#000000" TitleFont="FontContactSelected"	titletextcolor="#000000">
+				<PluginDefaultPainter background="#ffffff" timeout="0" />
+				<PluginSelectionPainter background="#D5D5D5" />
+			</PluginEntry>
+		</PluginList>
+	</Pluginsproppage>
+    <Generalproppage caption="Geral" editColor="#fefefe" listBoxColor="#fefefe"
+			dialogColor="#fefefe" buttonColor="#fefefe" staticColor="#fefefe" scrollBarColor="#fefefe" clrDlgBackgroundColor="#fefefe"></Generalproppage>
+  </PreferencesWindow>
+	
+	<Caption name="AppWindowChildCaption" background="AppWindowCaptionBackground" inactive_background="AppWindowCaptionInactiveBackground"
+		ButtonSpacement="2" height="24" font="FontCaption" color="#ffffff" image="Skin\Caption\app_icon.bmp"
+		transparentimage="true">
+		<button image="Skin\Caption\app_close.bmp" width="16" transparent="true" command="CloseWindow" tip="Fechar" />
+		<button image="Skin\Caption\app_minimize.bmp" width="16" transparent="true" command="MinimizeWindow"
+			tip="Minimizar" />
+	</Caption>
+
+	<!-- Generic frame window -->
+	<Font name="FontGenericFrameWindow" facename="Tahoma" size="14" />
+	<GenericFrameWindow caption="AppWindowChildCaption" statusbar="StatusBar" border="AppWindowActiveBorder"
+		inactive_border="AppWindowInactiveBorder" background="#c1def0" font="FontGenericFrameWindow"></GenericFrameWindow>
+
+	<!-- History window -->
+	<Font name="FontHistory" facename="Tahoma" size="14" />
+	<HistoryWindow caption="AppWindowChildCaption" border="AppWindowActiveBorder" inactive_border="AppWindowInactiveBorder"
+		statusbar="StatusBar" font="FontHistory" HighlightTextColor="#ffff00">
+		<Toolbar background="#c1def0" ButtonSpacement="1" height="32">
+			<button caption="" image="Skin\Toolbar\previous.bmp" width="32" transparent="true" command="PreviousHistory" tip="Anterior"/>
+			<button caption="" image="Skin\Toolbar\next.bmp" width="32" transparent="true" command="NextHistory" tip="Próximo"/>
+			<button caption="" image="Skin\Toolbar\delete_history.bmp" width="32" transparent="true" command="DeleteHistory" tip="Apagar Selecionado" />
+			<button caption="" image="Skin\Toolbar\delete_all_history.bmp" width="32" transparent="true" command="DeleteAllHistory" tip="Apagar Todos" />
+    </Toolbar>
+    <Toolbar background="#c1def0" ButtonSpacement="1" height="32" hOrientation="right">
+      <FindPanelButton width="180" command="SearchHistory" background="FindHistoryBackground" defaulttext="Buscar Histórico" activefont="FontActiveFindContact"
+				inactivefont="FontInactiveFindContact" activetextcolor="#000000" inactivetextcolor="#99A8AC">
+        <Toolbar background="#ffffff" ButtonSpacement="2" height="22">
+          <button image="Skin\Main\button_clean_find_contact.bmp" width="16" transparent="true" command="Clean"
+						tip="Limpar" />
+        </Toolbar>
+      </FindPanelButton>
+      <button caption="" image="Skin\Toolbar\find_next_history.bmp" width="32" transparent="true" command="FindNextHistory" tip="Próxima" />
+      <button caption="" image="Skin\Toolbar\find_prior_history.bmp" width="32" transparent="true" command="FindPriorHistory" tip="Anterior" />
+    </Toolbar>
+  </HistoryWindow>
+
+	<!-- Emoticons window -->
+	<EmoticonsWindow emoticonFile="Skin\Html\emoticon.html" border="EmoticonsWindowBorder" inactive_border="EmoticonsWindowBorder"
+		resizable="false"></EmoticonsWindow>
+
+	<!-- Message window -->
+	<BitmapBackground name="TabViewBackground" image="Skin\MessageWindow\tab_background.bmp" mode="tile" />
+	<BitmapBackground name="TabViewInactiveBackground" image="Skin\MessageWindow\tab_background.bmp" mode="tile" />
+	<MessageWindow caption="AppWindowChildCaption" statusbar="StatusBar" border="AppWindowActiveBorder"
+		inactive_border="AppWindowInactiveBorder">
+		<Toolbar background="#c1def0" ButtonSpacement="1" height="32">
+			<button image="Skin\Toolbar\send_file.bmp" width="32" transparent="true" command="SendFile" tip="Enviar arquivo" />
+			<button image="Skin\Toolbar\show_history.bmp" width="32" transparent="true" command="ShowHistory" tip="Histórico" />
+			<multistatebutton width="32" defaultstate="unblocked" command="ToggleBlockedState">
+				<state name="blocked" transparent="true" image="Skin\Toolbar\unblock_contact.bmp" tip="Desbloquear contato" />
+				<state name="unblocked" transparent="true" image="Skin\Toolbar\block_contact.bmp" tip="Bloquear contato" />
+			</multistatebutton>
+			<button image="Skin\Toolbar\show_info.bmp" width="32" transparent="true" command="ShowUserInfo" tip="Informações" />
+			<button image="Skin\Toolbar\add_contact.bmp" width="32" transparent="true" command="ShowAddContactDialog"
+				tip="Adicionar contato" />
+			<button image="Skin\Toolbar\start_chat.bmp" width="32" transparent="true" command="StartChat"
+				tip="Iniciar conferência" />
+		</Toolbar>
+		<Font name="FontTabView" facename="Tahoma" size="13" color="#000000" />
+		<Font name="FontSelectedTabView" facename="Tahoma" size="13" color="#000000" />
+		<Tabview SelectedFont="FontTabView" Font="FontSelectedTabView" background="TabViewBackground"
+			inactive_background="TabViewInactiveBackground" Normal="Skin\MessageWindow\left_inactive.bmp" Over="Skin\MessageWindow\left_active.bmp"
+			Clicked="Skin\MessageWindow\left_active.bmp" Selected="Skin\MessageWindow\left_active.bmp" Blinking="Skin\MessageWindow\left_blink.bmp"
+			CloseTab="Skin\MessageWindow\close_tab.bmp">
+			<TabButton>
+				<leftImage Normal="Skin\MessageWindow\left_inactive.bmp" Over="Skin\MessageWindow\left_active.bmp" Clicked="Skin\MessageWindow\left_active.bmp"
+					Selected="Skin\MessageWindow\left_active.bmp" Blinking="Skin\MessageWindow\left_blink.bmp" CloseTab="Skin\MessageWindow\close_tab.bmp" />
+				<FillImage Normal="Skin\MessageWindow\fill_inactive.bmp" Over="Skin\MessageWindow\fill_active.bmp" Clicked="Skin\MessageWindow\fill_active.bmp"
+					Selected="Skin\MessageWindow\fill_active.bmp" Blinking="Skin\MessageWindow\fill_blink.bmp" CloseTab="Skin\MessageWindow\close_tab.bmp" />
+				<RightImage Normal="Skin\MessageWindow\right_inactive.bmp" Over="Skin\MessageWindow\right_active.bmp" Clicked="Skin\MessageWindow\right_active.bmp"
+					Selected="Skin\MessageWindow\right_active.bmp" Blinking="Skin\MessageWindow\right_blink.bmp" CloseTab="Skin\MessageWindow\close_tab.bmp" />
+			</TabButton>
+		</Tabview>
+		<MessageEditPanel>
+			<Toolbar background="#c1def0" ButtonSpacement="2" height="22">
+				<button image="Skin\MessageWindow\button_emoticon.bmp" width="16" transparent="true" command="Emoticons" tip="Emoticon" />
+				<button image="Skin\MessageWindow\button_nudge.bmp" width="16" transparent="true" command="NudgeContact" tip="Pedir atenção" />
+				<button image="Skin\MessageWindow\button_bold.bmp" pushbutton="true" width="16" transparent="true" command="Bold"
+					tip="Negrito" />
+				<button image="Skin\MessageWindow\button_italic.bmp" pushbutton="true" width="16" transparent="true" command="Italic"
+					tip="Itálico" />
+				<button image="Skin\MessageWindow\button_underlined.bmp" pushbutton="true" width="16" transparent="true" command="Underline"
+					tip="Sublinhado" />
+				<button image="Skin\MessageWindow\button_text_color.bmp" width="16" transparent="true" command="TextColor" tip="Cor" />
+				<!-- <button image="Skin\MessageWindow\button_text_bkg_color.bmp" width="23" transparent="true" command="TextBkColor" /> -->
+				<button image="Skin\MessageWindow\button_font.bmp" width="16" transparent="true" command="Font" tip="Fonte" />
+			</Toolbar>
+		</MessageEditPanel>
+		<ConversationWindowVerticalSplitter background="VerticalSplitterBackground" centerimage="skin\Main\vertical_splitter_center.bmp" splitterheight="7" />
+		<ConversationWindowHorizontalSplitter background="HorizontalSplitterBackground" centerimage="skin\Main\horizontal_splitter_center.bmp" splitterheight="7" />
+		<TitlePanel height="19" background="TitlePanelBackground" textfont="FontTitlePanel" textcolor="#000000" />
+	</MessageWindow>
+
+    <!-- Chat message window -->
+	<ChatList background="#ffffff">
+	    <Group height="19" collapsedImage="Skin\Main\group_collapsed.bmp" expandedImage="Skin\Main\group_expanded.bmp"
+			font="FontGroup" textcolor="#ffffff" droptargetfont="FontGroup" droptargettextcolor="#037498">
+			<GroupDefaultPainter background="ContactListGroupBackground" timeout="0" />
+		</Group>
+		<Contact small="18" medium="28" large="38" font="FontContactNormal" textcolor="#000000" selectedfont="FontContactSelected"
+		    selectedtextcolor="#ffffff" blockedfont="FontContactBlocked" blockedtextcolor="#999999"
+		    droptargetfont="FontContactNormal" droptargettextcolor="#037498">
+			<ContactDefaultPainter background="#ffffff" timeout="0" />
+			<ContactSelectionPainter background="#3894BA" />
+			<OnlinePainter background="#CCFFD1" timeout="5" />
+			<OfflinePainter background="#FFCCCC" timeout="5" />
+			<TypingPainter background="#FEDC96" timeout="5" />
+			<NewMessagePainter background="#B8DCFF" timeout="2" />
+		</Contact>
+	</ChatList>	
+	<ReadyForChatList background="#ffffff">
+	    <Group height="19" collapsedImage="Skin\Main\group_collapsed.bmp" expandedImage="Skin\Main\group_expanded.bmp"
+			font="FontGroup" textcolor="#ffffff" droptargetfont="FontGroup" droptargettextcolor="#037498">
+			<GroupDefaultPainter background="ContactListGroupBackground" timeout="0" />
+		</Group>
+		<Contact small="18" medium="28" large="38" font="FontContactNormal" textcolor="#000000" selectedfont="FontContactSelected"
+		    selectedtextcolor="#ffffff" blockedfont="FontContactBlocked" blockedtextcolor="#999999"
+		    droptargetfont="FontContactNormal" droptargettextcolor="#037498">
+			<ContactDefaultPainter background="#ffffff" timeout="0" />
+			<ContactSelectionPainter background="#3894BA" />
+			<OnlinePainter background="#CCFFD1" timeout="5" />
+			<OfflinePainter background="#FFCCCC" timeout="5" />
+			<TypingPainter background="#FEDC96" timeout="5" />
+			<NewMessagePainter background="#B8DCFF" timeout="2" />
+		</Contact>
+	</ReadyForChatList>
+
+  <!-- ChatInviteDialog -->
+  <BitmapBackground name="ChatInviteDialogCaptionBackground" image="Skin\Caption\pref_active.bmp" mode="tile" />
+  <BitmapBackground name="ChatInviteDialogCaptionInactiveBackground" image="Skin\Caption\pref_inactive.bmp"	mode="tile" />
+  <BitmapBackground name="ChatInviteDialogBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+  <WindowBorder name="ChatInviteDialogActiveBorder" color="#037498" height="2" width="2" />
+  <WindowBorder name="ChatInviteDialogInactiveBorder" color="#81b9cb" height="2" width="2" />
+  <Caption name="ChatInviteDialogCaption" background="ChatInviteDialogCaptionBackground"
+    inactive_background="ChatInviteDialogCaptionInactiveBackground" ButtonSpacement="3" height="24"
+    font="FontCaption" image="Skin\Caption\app_icon.bmp" transparentimage="true" >
+    <button image="Skin\Caption\app_close.bmp" width="16" transparent="true" command="CloseWindow" tip="Fechar" />
+  </Caption>
+  <Font name="ChatInviteDialogFont" facename="Tahoma" size="16" color="#000000" />
+  <ChatInviteDialog name="ChatInviteDialog" caption="ChatInviteDialogCaption" border="ChatInviteDialogActiveBorder"
+    inactive_border="ChatInviteDialogInactiveBorder" resizable="false" 
+    background="ChatInviteDialogBackground" font="ChatInviteDialogFont" />
+  <ChatInviteList background="#ffffff" button_check_on="Skin\Preferences\plugin_check_on.bmp" button_check_off="Skin\Preferences\plugin_check_off.bmp">
+    <Group height="19" collapsedImage="Skin\Main\group_collapsed.bmp" expandedImage="Skin\Main\group_expanded.bmp"
+    font="FontGroup" textcolor="#ffffff" droptargetfont="FontGroup" droptargettextcolor="#037498">
+      <GroupDefaultPainter background="ContactListGroupBackground" timeout="0" />
+    </Group>
+    <Contact small="18" medium="28" large="38" font="FontContactNormal" textcolor="#000000" selectedfont="FontContactSelected"
+		    selectedtextcolor="#ffffff" blockedfont="FontContactBlocked" blockedtextcolor="#999999"
+		    droptargetfont="FontContactNormal" droptargettextcolor="#037498">
+      <ContactDefaultPainter background="#ffffff" timeout="0" />
+      <ContactSelectionPainter background="#3894BA" />
+      <OnlinePainter background="#CCFFD1" timeout="5" />
+      <OfflinePainter background="#FFCCCC" timeout="5" />
+      <TypingPainter background="#FEDC96" timeout="5" />
+      <NewMessagePainter background="#B8DCFF" timeout="2" />
+    </Contact>
+  </ChatInviteList>
+
+	<!-- Info window -->
+	<InfoWindow caption="AppWindowChildCaption" statusbar="StatusBar" border="AppWindowActiveBorder"
+		inactive_border="AppWindowInactiveBorder" background="#9FD1F2"></InfoWindow>
+		
+	<!-- File Transfer window -->
+	<FileTransferWindow caption="AppWindowChildCaption" statusbar="StatusBar" border="AppWindowActiveBorder"
+		inactive_border="AppWindowInactiveBorder" background="#9FD1F2">
+		<Toolbar background="#c1def0" ButtonSpacement="1" height="32">
+			<button image="Skin\Toolbar\delete_file_transfer.bmp" width="32" transparent="true" command="DeleteAll"
+				tip="Limpar todas concluídas" />
+			<button image="Skin\Toolbar\open_file_transfer_folder.bmp" width="32" transparent="true" command="OpenFolder"
+				tip="Abrir pasta padrão" />
+		</Toolbar>
+    <FileTransferList background="#FFFFFF" >
+      <FileTransferGroup height="27" collapsedImage="skin\Main\plugin_group_collapsed.bmp" expandedImage="skin\Main\plugin_group_expanded.bmp"
+				font="FontGroup" textcolor="#037498" />
+      <FileTransferEntry height="72" font="FontFileTransferNormal" textcolor="#000000" selectedfont="FontFileTransferNormal"
+				  selectedtextcolor="#000000" TitleFont="FontFileTransferTitle"	titletextcolor="#000000"
+          ActionsFont="FontFileTransferActions"	ActionsTextColor="#027997" ItemSeparatorColor="#E1F2F9"
+          selectedBkgrndImage="Skin\FileTransfer\ItemSelectionBckgrnd.bmp" >
+        <FileTransferDefaultPainter background="#ffffff" timeout="0" />
+        <FileTransferSelectionPainter background="#D5D5D5" />
+        <ProgressBar progressBkgrndColor="#FFFFFF" progressBorderColor="#D2D2D2" progressFillColor="#F9B129"
+            progressLeftImage="Skin\FileTransfer\ProgressLeft.bmp" progressMiddleImage="Skin\FileTransfer\ProgressMiddle.bmp"
+            progressRightImage="Skin\FileTransfer\ProgressRight.bmp" />
+      </FileTransferEntry>
+		</FileTransferList>		
+	</FileTransferWindow>
+
+	<!-- NotifyPopUp window -->
+	<BitmapBackground name="NotifyPopUpCaptionBackground" image="Skin\Notify\notify_popup_title_background.bmp"
+		mode="tile" />
+	<BitmapBackground name="NotifyPopUpInternalBackground" image="Skin\Notify\notify_popup_background.png" mode="tile" />
+	<WindowBorder name="NotifyPopUpBorder" color="#81b9cb" height="1" width="1" />
+	<WindowBorder name="NotifyPopUpInternalBorder" color="#C1DEF0" height="1" width="1" />
+	<Font name="FontNotifyPopUpTitle" facename="Tahoma" size="13" bold="true" />
+	<Font name="FontNotifyPopUpLink" facename="Tahoma" size="13" />
+	<NotifyPopUp background="NotifyPopUpInternalBackground" border="NotifyPopUpBorder" internalborder="NotifyPopUpInternalBorder"
+		linkfont="FontNotifyPopUpLink" linkcolor="#000000" visitedlinkcolor="#800080">
+		<NotifyPopUpCaption height="20" background="NotifyPopUpCaptionBackground" titlefont="FontNotifyPopUpTitle"
+			titlecolor="#ffffff" linkfont="FontNotifyPopUpLink" linkcolor="#ffffff" visitedlinkcolor="#800080" />
+		<NotifyPopUpImages  default_image="Skin\Notify\default.bmp" online_image="Skin\Notify\online.bmp"
+			offline_image="Skin\Notify\offline.bmp" new_message_image="Skin\Notify\new_message.bmp"/>
+	</NotifyPopUp>
+
+	<!-- ContactTooltip window -->
+	<WindowBorder name="ContactTooltipBorder" color="#7fc0e8" height="3" width="3" />
+	<Font name="FontContactTooltipTitle" facename="Tahoma" size="13" bold="true" />
+	<Font name="FontContactTooltipBody" facename="Tahoma" size="13" />
+	<ContactTooltip name="ContactTooltip" background="#9fd1f2" titlearea="ContactTooltipTitleArea" border="ContactTooltipBorder"
+		bodyfont="FontContactTooltipBody" titlefont="FontContactTooltipTitle" titleheight="20" titlecolor="#7fc0e8" />
+
+	<!-- PluginTooltip window -->
+	<PluginTooltip name="PluginTooltip" background="#9FD1F2" border="ContactTooltipBorder" bodyfont="FontContactTooltipBody"
+		titlefont="FontContactTooltipTitle" titleheight="20" titlecolor="#7fc0e8" />
+
+	<!-- Connection error window -->
+	<StaticIcon name="IconConnectionError" image="Skin\Other\disconnect_icon.png" transparent="true" resize="true" />
+	<Font name="FontConnectionErrorWindow" facename="Tahoma" size="13" color="#000000" />
+	<Font name="FontConnectionErrorWindowTitle" facename="Tahoma" size="13" bold="true" color="#000000" />
+	<Font name="FontAccountListItem" facename="Tahoma" size="13" color="#000000" />
+	<Font name="FontSelectedAccountListItem" facename="Tahoma" size="13" color="#ffffff" />
+	<ConnectionErrorWindow erroricon="IconConnectionError" 
+		background="#c1def0" font="FontConnectionErrorWindow" titlefont="FontConnectionErrorWindowTitle">
+		<AccountList itembackground1="#ffffff" itembackground2="#edf3fe"
+			selectedbackground="#0a246a" focusbackground="#d4d0c8" 
+			font="FontAccountListItem" fontselected="FontSelectedAccountListItem" />
+	</ConnectionErrorWindow>
+
+	<!-- Application close alert window -->
+	<StaticIcon name="IconApplicationAlert" image="Skin\Other\close_window_icon.png" transparent="true"
+		resize="false" />
+	<StaticIcon name="IconTraySampleVista" image="Skin\Other\tray_sample_vista.png" />
+	<StaticIcon name="IconTraySampleXP" image="Skin\Other\tray_sample_xp.png" />
+	<StaticIcon name="IconTraySample2k" image="Skin\Other\tray_sample_2k.png" />
+	<AppCloseAlert alerticon="IconApplicationAlert" traysamplevista="IconTraySampleVista" traysamplexp="IconTraySampleXP" traysample2k="IconTraySample2k" />
+	
+	<!-- MessageBox -->
+  	<StaticIcon name="IconError" image="Skin\Other\icon_error.png" />
+	<StaticIcon name="IconInformation" image="Skin\Other\icon_information.png" />
+	<StaticIcon name="IconQuestion" image="Skin\Other\icon_question.png" />
+	<StaticIcon name="IconWarning" image="Skin\Other\icon_warning.png" />	
+  	<BitmapBackground name="MessageBoxCaptionBackground" image="Skin\Caption\pref_active.bmp" mode="tile" />
+  	<BitmapBackground name="MessageBoxCaptionInactiveBackground" image="Skin\Caption\pref_inactive.bmp"	mode="tile" />
+  	<BitmapBackground name="MessageBoxBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+  	<WindowBorder name="MessageBoxActiveBorder" color="#037498" height="2" width="2" />
+  	<WindowBorder name="MessageBoxInactiveBorder" color="#81b9cb" height="2" width="2" />
+  	<Caption name="MessageBoxCaption" background="MessageBoxCaptionBackground" 
+  		inactive_background="MessageBoxCaptionInactiveBackground" ButtonSpacement="3" height="24" 
+  		font="FontCaption" image="Skin\Caption\app_icon.bmp" transparentimage="true" >
+  		<button image="Skin\Caption\app_close.bmp" width="16" transparent="true" command="CloseWindow" tip="Fechar" />
+  	</Caption>
+    <Font name="MessageBoxFont" facename="Tahoma" size="13" color="#000000" />
+    <MessageBox name="MessageBox" caption="MessageBoxCaption" border="MessageBoxActiveBorder" 
+    	inactive_border="MessageBoxInactiveBorder" resizable="false" 
+    	background="MessageBoxBackground" font="MessageBoxFont" 
+    	icon_error="IconError" icon_information="IconInformation" 
+    	icon_question="IconQuestion" icon_warning="IconWarning" />
+	
+	<!-- About dialog -->
+    <BitmapBackground name="AboutDlgCaptionBackground" image="Skin\Caption\pref_active.bmp" mode="tile" />
+    <BitmapBackground name="AboutDlgCaptionInactiveBackground" image="Skin\Caption\pref_inactive.bmp"	mode="tile" />
+    <BitmapBackground name="AboutDlgBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+    <WindowBorder name="AboutDlgActiveBorder" color="#037498" height="2" width="2" />
+    <WindowBorder name="AboutDlgInactiveBorder" color="#81b9cb" height="2" width="2" />
+    <Caption name="AboutDlgCaption" background="AboutDlgCaptionBackground"
+  		inactive_background="AboutDlgCaptionInactiveBackground" ButtonSpacement="3" height="24"
+  		font="FontCaption" image="Skin\Caption\app_icon.bmp" transparentimage="true" >
+        <button image="Skin\Caption\app_close.bmp" width="16" transparent="true" command="CloseWindow" tip="Fechar" />
+    </Caption>
+    <AboutDlg name="AboutDlgBox" caption="AboutDlgCaption" border="AboutDlgActiveBorder"
+    	inactive_border="AboutDlgInactiveBorder" resizable="false"
+    	background="AboutDlgBackground" />
+	<AppAboutBox windowicon="IconApplicationAlert" />
+
+    <!-- HotKeys dialog -->
+    <BitmapBackground name="HotKeysDlgCaptionBackground" image="Skin\Caption\pref_active.bmp" mode="tile" />
+    <BitmapBackground name="HotKeysDlgCaptionInactiveBackground" image="Skin\Caption\pref_inactive.bmp"	mode="tile" />
+    <BitmapBackground name="HotKeysDlgBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+    <WindowBorder name="HotKeysDlgActiveBorder" color="#037498" height="2" width="2" />
+    <WindowBorder name="HotKeysDlgInactiveBorder" color="#81b9cb" height="2" width="2" />
+    <Caption name="HotKeysDlgCaption" background="HotKeysDlgCaptionBackground"
+  		inactive_background="HotKeysDlgCaptionInactiveBackground" ButtonSpacement="3" height="24"
+  		font="FontCaption" image="Skin\Caption\app_icon.bmp" transparentimage="true" >
+        <button image="Skin\Caption\app_close.bmp" width="16" transparent="true" command="CloseWindow" tip="Fechar" />
+    </Caption>
+    <HotKeysDlg name="HotKeysDlgBox" caption="HotKeysDlgCaption" border="HotKeysDlgActiveBorder"
+    	inactive_border="HotKeysDlgInactiveBorder" resizable="false"
+    	background="HotKeysDlgBackground" templateFile="Skin\Html\hotkeys.html" clrHTMLCtrlBorder="#4ea2c6" />
+	
+	<!-- Add Custom Emoticon Dialog -->
+  	<BitmapBackground name="AddCustomEmoticonCaptionBackground" image="Skin\Caption\pref_active.bmp" mode="tile" />
+  	<BitmapBackground name="AddCustomEmoticonCaptionInactiveBackground" image="Skin\Caption\pref_inactive.bmp"	mode="tile" />
+  	<BitmapBackground name="AddCustomEmoticonBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+  	<WindowBorder name="AddCustomEmoticonActiveBorder" color="#037498" height="2" width="2" />
+  	<WindowBorder name="AddCustomEmoticonInactiveBorder" color="#81b9cb" height="2" width="2" />
+  	<Caption name="AddCustomEmoticonCaption" background="AddCustomEmoticonCaptionBackground" 
+  		inactive_background="AddCustomEmoticonCaptionInactiveBackground" ButtonSpacement="3" height="24" 
+  		font="FontCaption" image="Skin\Caption\app_icon.bmp" transparentimage="true" >
+  		<button image="Skin\Caption\app_close.bmp" width="16" transparent="true" command="CloseWindow" tip="Fechar" />
+  	</Caption>
+    <AddCustomEmoticonDialog name="AddCustomEmoticonBox" caption="AddCustomEmoticonCaption" border="AddCustomEmoticonActiveBorder" 
+    	inactive_border="AddCustomEmoticonInactiveBorder" resizable="false" 
+    	background="AddCustomEmoticonBackground" background_color="#dee8f3" 
+    	openFileButtonImage="Skin\Main\button_open_file.bmp"/>
+
+    <!-- Add Contact Dialog -->
+    <BitmapBackground name="ContactDialogCaptionBackground" image="Skin\Caption\pref_active.bmp" mode="tile" />
+    <BitmapBackground name="ContactDialogCaptionInactiveBackground" image="Skin\Caption\pref_inactive.bmp"	mode="tile" />
+    <BitmapBackground name="ContactDialogBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+    <WindowBorder name="ContactDialogActiveBorder" color="#037498" height="2" width="2" />
+    <WindowBorder name="ContactDialogInactiveBorder" color="#81b9cb" height="2" width="2" />
+    <Caption name="ContactDialogCaption" background="ContactDialogCaptionBackground"
+  		inactive_background="ContactDialogCaptionInactiveBackground" ButtonSpacement="3" height="24"
+  		font="FontCaption" image="Skin\Caption\app_icon.bmp" transparentimage="true" >
+        <button image="Skin\Caption\app_close.bmp" width="16" transparent="true" command="CloseWindow" tip="Fechar" />
+    </Caption>
+    <ContactDialog name="ContactDialogBox" caption="ContactDialogCaption" border="ContactDialogActiveBorder"
+    	inactive_border="ContactDialogInactiveBorder" resizable="false"
+    	background="ContactDialogBackground" />
+
+    <!-- Input Dialog -->
+    <BitmapBackground name="InputDialogCaptionBackground" image="Skin\Caption\pref_active.bmp" mode="tile" />
+    <BitmapBackground name="InputDialogCaptionInactiveBackground" image="Skin\Caption\pref_inactive.bmp"	mode="tile" />
+    <BitmapBackground name="InputDialogBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+    <WindowBorder name="InputDialogActiveBorder" color="#037498" height="2" width="2" />
+    <WindowBorder name="InputDialogInactiveBorder" color="#81b9cb" height="2" width="2" />
+    <Caption name="InputDialogCaption" background="InputDialogCaptionBackground"
+  		inactive_background="InputDialogCaptionInactiveBackground" ButtonSpacement="3" height="24"
+  		font="FontCaption" image="Skin\Caption\app_icon.bmp" transparentimage="true" >
+        <button image="Skin\Caption\app_close.bmp" width="16" transparent="true" command="CloseWindow" tip="Fechar" />
+    </Caption>
+    <InputDialog name="InputDialogBox" caption="InputDialogCaption" border="InputDialogActiveBorder"
+    	inactive_border="InputDialogInactiveBorder" resizable="false"
+    	background="InputDialogBackground" />
+
+    <!-- Privacy Dialog -->
+    <BitmapBackground name="PrivacyDialogCaptionBackground" image="Skin\Caption\pref_active.bmp" mode="tile" />
+    <BitmapBackground name="PrivacyDialogCaptionInactiveBackground" image="Skin\Caption\pref_inactive.bmp"	mode="tile" />
+    <BitmapBackground name="PrivacyDialogBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+    <WindowBorder name="PrivacyDialogActiveBorder" color="#037498" height="2" width="2" />
+    <WindowBorder name="PrivacyDialogInactiveBorder" color="#81b9cb" height="2" width="2" />
+    <Caption name="PrivacyDialogCaption" background="PrivacyDialogCaptionBackground"
+  		inactive_background="PrivacyDialogCaptionInactiveBackground" ButtonSpacement="3" height="24"
+  		font="FontCaption" image="Skin\Caption\app_icon.bmp" transparentimage="true" >
+        <button image="Skin\Caption\app_close.bmp" width="16" transparent="true" command="CloseWindow" tip="Fechar" />
+    </Caption>
+    <PrivacyDialog name="PrivacyDialogBox" caption="PrivacyDialogCaption" border="PrivacyDialogActiveBorder"
+    	inactive_border="PrivacyDialogInactiveBorder" resizable="false"
+    	background="PrivacyDialogBackground" />
+
+    <!-- MessageReceiving Dialog -->
+    <BitmapBackground name="MessageReceivingDialogCaptionBackground" image="Skin\Caption\pref_active.bmp" mode="tile" />
+    <BitmapBackground name="MessageReceivingDialogCaptionInactiveBackground" image="Skin\Caption\pref_inactive.bmp"	mode="tile" />
+    <BitmapBackground name="MessageReceivingDialogBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+    <WindowBorder name="MessageReceivingDialogActiveBorder" color="#037498" height="2" width="2" />
+    <WindowBorder name="MessageReceivingDialogInactiveBorder" color="#81b9cb" height="2" width="2" />
+    <Caption name="MessageReceivingDialogCaption" background="MessageReceivingDialogCaptionBackground"
+  		inactive_background="MessageReceivingDialogCaptionInactiveBackground" ButtonSpacement="3" height="24"
+  		font="FontCaption" image="Skin\Caption\app_icon.bmp" transparentimage="true" >
+        <button image="Skin\Caption\app_close.bmp" width="16" transparent="true" command="CloseWindow" tip="Fechar" />
+    </Caption>
+    <MessageReceivingDialog name="MessageReceivingDialogBox" caption="MessageReceivingDialogCaption" border="MessageReceivingDialogActiveBorder"
+    	inactive_border="MessageReceivingDialogInactiveBorder" resizable="false"
+    	background="MessageReceivingDialogBackground" />
+
+    <!-- Authorize Dialog -->
+    <BitmapBackground name="AuthorizeDialogCaptionBackground" image="Skin\Caption\pref_active.bmp" mode="tile" />
+    <BitmapBackground name="AuthorizeDialogCaptionInactiveBackground" image="Skin\Caption\pref_inactive.bmp"	mode="tile" />
+    <BitmapBackground name="AuthorizeDialogBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+    <WindowBorder name="AuthorizeDialogActiveBorder" color="#037498" height="2" width="2" />
+    <WindowBorder name="AuthorizeDialogInactiveBorder" color="#81b9cb" height="2" width="2" />
+    <Caption name="AuthorizeDialogCaption" background="AuthorizeDialogCaptionBackground"
+  		inactive_background="AuthorizeDialogCaptionInactiveBackground" ButtonSpacement="3" height="24"
+  		font="FontCaption" image="Skin\Caption\app_icon.bmp" transparentimage="true" >
+        <button image="Skin\Caption\app_close.bmp" width="16" transparent="true" command="CloseWindow" tip="Fechar" />
+    </Caption>
+    <AuthorizeDialog name="AuthorizeDialogBox" caption="AuthorizeDialogCaption" border="AuthorizeDialogActiveBorder"
+    	inactive_border="AuthorizeDialogInactiveBorder" resizable="false"
+    	background="AuthorizeDialogBackground" />
+
+    <!-- Confirm Dialog -->
+    <BitmapBackground name="ConfirmDialogCaptionBackground" image="Skin\Caption\pref_active.bmp" mode="tile" />
+    <BitmapBackground name="ConfirmDialogCaptionInactiveBackground" image="Skin\Caption\pref_inactive.bmp"	mode="tile" />
+    <BitmapBackground name="ConfirmDialogBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+    <WindowBorder name="ConfirmDialogActiveBorder" color="#037498" height="2" width="2" />
+    <WindowBorder name="ConfirmDialogInactiveBorder" color="#81b9cb" height="2" width="2" />
+    <Caption name="ConfirmDialogCaption" background="ConfirmDialogCaptionBackground"
+  		inactive_background="ConfirmDialogCaptionInactiveBackground" ButtonSpacement="3" height="24"
+  		font="FontCaption" image="Skin\Caption\app_icon.bmp" transparentimage="true" >
+        <button image="Skin\Caption\app_close.bmp" width="16" transparent="true" command="CloseWindow" tip="Fechar" />
+    </Caption>
+    <ConfirmDialog name="ConfirmDialogBox" caption="ConfirmDialogCaption" border="ConfirmDialogActiveBorder"
+    	inactive_border="ConfirmDialogInactiveBorder" resizable="false"
+    	background="ConfirmDialogBackground" />
+
+    <!-- PasswordChange Dialog -->
+    <BitmapBackground name="PasswordChangeDlgCaptionBackground" image="Skin\Caption\pref_active.bmp" mode="tile" />
+    <BitmapBackground name="PasswordChangeDlgCaptionInactiveBackground" image="Skin\Caption\pref_inactive.bmp"	mode="tile" />
+    <BitmapBackground name="PasswordChangeDlgBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+    <WindowBorder name="PasswordChangeDlgActiveBorder" color="#037498" height="2" width="2" />
+    <WindowBorder name="PasswordChangeDlgInactiveBorder" color="#81b9cb" height="2" width="2" />
+    <Caption name="PasswordChangeDlgCaption" background="PasswordChangeDlgCaptionBackground"
+  		inactive_background="PasswordChangeDlgCaptionInactiveBackground" ButtonSpacement="3" height="24"
+  		font="FontCaption" image="Skin\Caption\app_icon.bmp" transparentimage="true" >
+        <button image="Skin\Caption\app_close.bmp" width="16" transparent="true" command="CloseWindow" tip="Fechar" />
+    </Caption>
+    <PasswordChangeDlg name="PasswordChangeDlgBox" caption="PasswordChangeDlgCaption" border="PasswordChangeDlgActiveBorder"
+    	inactive_border="PasswordChangeDlgInactiveBorder" resizable="false"
+    	background="PasswordChangeDlgBackground" />
+
+    <!-- Alert Dialog -->
+    <BitmapBackground name="AlertDialogCaptionBackground" image="Skin\Caption\pref_active.bmp" mode="tile" />
+    <BitmapBackground name="AlertDialogCaptionInactiveBackground" image="Skin\Caption\pref_inactive.bmp"	mode="tile" />
+    <BitmapBackground name="AlertDialogBackground" image="Skin\Preferences\tab_control_background.bmp" mode="tile" />
+    <WindowBorder name="AlertDialogActiveBorder" color="#037498" height="2" width="2" />
+    <WindowBorder name="AlertDialogInactiveBorder" color="#81b9cb" height="2" width="2" />
+    <Caption name="AlertDialogCaption" background="AlertDialogCaptionBackground"
+  		inactive_background="AlertDialogCaptionInactiveBackground" ButtonSpacement="3" height="24"
+  		font="FontCaption" image="Skin\Caption\app_icon.bmp" transparentimage="true" >
+        <button image="Skin\Caption\app_close.bmp" width="16" transparent="true" command="CloseWindow" tip="Fechar" />
+    </Caption>
+    <AlertDialog name="AlertDialogBox" caption="AlertDialogCaption" border="AlertDialogActiveBorder"
+    	inactive_border="AlertDialogInactiveBorder" resizable="false"
+    	background="AlertDialogBackground" />
+    
+	<!-- System tray status icons -->
+	<Icon name="OfflineIcon" file="Skin\Icon\offline.ico" />
+	<Icon name="OnlineIcon" file="Skin\Icon\online.ico" />
+	<Icon name="AwayIcon" file="Skin\Icon\away.ico" />
+	<Icon name="BusyIcon" file="Skin\Icon\busy.ico" />
+	<Icon name="IdleIcon" file="Skin\Icon\idle.ico" />
+	<Icon name="InvisibleIcon" file="Skin\Icon\invisible.ico" />
+	<Icon name="CustomIcon" file="Skin\Icon\custom.ico" />
+	
+	<SystemTrayIconList>
+		<OfflineStatusTrayIcon icon="OfflineIcon" />
+		<OnlineStatusTrayIcon icon="OnlineIcon" />
+		<AwayStatusTrayIcon icon="AwayIcon" />
+		<BusyStatusTrayIcon icon="BusyIcon" />
+		<IdleStatusTrayIcon icon="IdleIcon" />
+		<InvisibleStatusTrayIcon icon="InvisibleIcon" />
+		<CustomStatusTrayIcon icon="CustomIcon" />
+	</SystemTrayIconList>
+
+	<!-- Protocol skin settings -->
+	<ProtocolBagList>
+		<ProtocolBag protocol="ICQ" image="Skin\Icon\icq_16x16.bmp">
+			<ProtocolImageList>
+				<UserIcon image="Skin\Icon\default_contact_icon.bmp" />
+				<UserStatus online_image="Skin\Icon\icq_online.bmp" offline_image="Skin\Icon\icq_offline.bmp"
+					busy_image="Skin\Icon\icq_busy.bmp" away_image="Skin\Icon\icq_away.bmp" invisible_image="Skin\Icon\icq_invisible.bmp" 
+					unknown_image="Skin\Icon\icq_unknown.bmp" />
+				<ContactIcon image="Skin\Icon\default_contact_icon.bmp" />
+        <ContactStatus online_image="Skin\Icon\icq_online.bmp" offline_image="Skin\Icon\icq_offline.bmp"
+					busy_image="Skin\Icon\icq_busy.bmp" idle_image="Skin\Icon\icq_idle.bmp" away_image="Skin\Icon\icq_away.bmp" 
+					unknown_image="Skin\Icon\icq_unknown.bmp" />
+        <StatusButton online_image="Skin\Main\ProtocolButtons\icq_online_tb.bmp" offline_image="Skin\Main\ProtocolButtons\icq_offline_tb.bmp"
+					busy_image="Skin\Main\ProtocolButtons\icq_busy_tb.bmp" away_image="Skin\Main\ProtocolButtons\icq_away_tb.bmp"
+					invisible_image="Skin\Main\ProtocolButtons\icq_invisible_tb.bmp" unknown_image="Skin\Main\ProtocolButtons\icq_unknown_tb.bmp" />
+        <ContactBlocked image="Skin\Icon\blocked_emblem.bmp" />
+				<ContactAuthorization not_authorized_image="Skin\Icon\not_authorized_emblem.bmp" />
+			</ProtocolImageList>
+		</ProtocolBag>
+		<ProtocolBag protocol="MSN" image="Skin\Icon\msn_16x16.bmp">
+			<ProtocolImageList>
+				<UserIcon image="Skin\Icon\default_contact_icon.bmp" />
+				<UserStatus online_image="Skin\Icon\msn_online.bmp" offline_image="Skin\Icon\msn_offline.bmp"
+					busy_image="Skin\Icon\msn_busy.bmp" away_image="Skin\Icon\msn_away.bmp" invisible_image="Skin\Icon\msn_invisible.bmp" 
+					unknown_image="Skin\Icon\msn_unknown.bmp" />
+				<ContactIcon image="Skin\Icon\default_contact_icon.bmp" />
+        <ContactStatus online_image="Skin\Icon\msn_online.bmp" offline_image="Skin\Icon\msn_offline.bmp"
+					busy_image="Skin\Icon\msn_busy.bmp" idle_image="Skin\Icon\msn_idle.bmp" away_image="Skin\Icon\msn_away.bmp" 
+					unknown_image="Skin\Icon\msn_unknown.bmp" />
+        <StatusButton online_image="Skin\Main\ProtocolButtons\msn_online_tb.bmp" offline_image="Skin\Main\ProtocolButtons\msn_offline_tb.bmp"
+					busy_image="Skin\Main\ProtocolButtons\msn_busy_tb.bmp" away_image="Skin\Main\ProtocolButtons\msn_away_tb.bmp"
+					invisible_image="Skin\Main\ProtocolButtons\msn_invisible_tb.bmp" unknown_image="Skin\Main\ProtocolButtons\msn_unknown_tb.bmp" />
+        <ContactBlocked image="Skin\Icon\blocked_emblem.bmp" />
+				<ContactAuthorization not_authorized_image="Skin\Icon\not_authorized_emblem.bmp" />
+			</ProtocolImageList>
+		</ProtocolBag>
+		<ProtocolBag protocol="Jabber" image="Skin\Icon\jabber_16x16.bmp">
+			<ProtocolImageList>
+				<UserIcon image="Skin\Icon\default_contact_icon.bmp" />
+				<UserStatus online_image="Skin\Icon\jabber_online.bmp" offline_image="Skin\Icon\jabber_offline.bmp"
+					busy_image="Skin\Icon\jabber_busy.bmp" away_image="Skin\Icon\jabber_away.bmp" invisible_image="Skin\Icon\jabber_invisible.bmp" 
+					unknown_image="Skin\Icon\jabber_unknown.bmp" />
+				<ContactIcon image="Skin\Icon\default_contact_icon.bmp" />
+				<ContactStatus online_image="Skin\Icon\jabber_online.bmp" offline_image="Skin\Icon\jabber_offline.bmp"
+					busy_image="Skin\Icon\jabber_busy.bmp" idle_image="Skin\Icon\jabber_idle.bmp" away_image="Skin\Icon\jabber_away.bmp" 
+					unknown_image="Skin\Icon\jabber_unknown.bmp" />
+        <StatusButton online_image="Skin\Main\ProtocolButtons\jabber_online_tb.bmp" offline_image="Skin\Main\ProtocolButtons\jabber_offline_tb.bmp"
+					busy_image="Skin\Main\ProtocolButtons\jabber_busy_tb.bmp" away_image="Skin\Main\ProtocolButtons\jabber_away_tb.bmp"
+					invisible_image="Skin\Main\ProtocolButtons\jabber_invisible_tb.bmp" unknown_image="Skin\Main\ProtocolButtons\jabber_unknown_tb.bmp" />
+        <ContactBlocked image="Skin\Icon\blocked_emblem.bmp" />
+				<ContactAuthorization not_authorized_image="Skin\Icon\not_authorized_emblem.bmp" />
+			</ProtocolImageList>
+		</ProtocolBag>
+		<ProtocolBag protocol="TodaOferta" image="Skin\Icon\todaoferta_16x16.bmp">
+			<ProtocolImageList>
+				<UserIcon image="Skin\Icon\default_user_icon.bmp" />
+				<UserStatus online_image="Skin\Icon\todaoferta_online.bmp" offline_image="Skin\Icon\todaoferta_offline.bmp"
+					busy_image="Skin\Icon\todaoferta_busy.bmp" away_image="Skin\Icon\todaoferta_away.bmp" invisible_image="Skin\Icon\todaoferta_invisible.bmp" 
+					unknown_image="Skin\Icon\todaoferta_unknown.bmp" />
+				<ContactIcon image="Skin\Icon\default_contact_icon.bmp" />
+        <ContactStatus online_image="Skin\Icon\todaoferta_online.bmp" offline_image="Skin\Icon\todaoferta_offline.bmp"
+					busy_image="Skin\Icon\todaoferta_busy.bmp" idle_image="Skin\Icon\todaoferta_idle.bmp" away_image="Skin\Icon\todaoferta_away.bmp" 
+					unknown_image="Skin\Icon\todaoferta_unknown.bmp" />
+        <StatusButton online_image="Skin\Main\ProtocolButtons\todaoferta_online_tb.bmp" offline_image="Skin\Main\ProtocolButtons\todaoferta_offline_tb.bmp"
+					busy_image="Skin\Main\ProtocolButtons\todaoferta_busy_tb.bmp" away_image="Skin\Main\ProtocolButtons\todaoferta_away_tb.bmp"
+					invisible_image="Skin\Main\ProtocolButtons\todaoferta_invisible_tb.bmp" unknown_image="Skin\Main\ProtocolButtons\todaoferta_unknown_tb.bmp" />
+        <ContactBlocked image="Skin\Icon\blocked_emblem.bmp" />
+				<ContactAuthorization not_authorized_image="Skin\Icon\not_authorized_emblem.bmp" />
+			</ProtocolImageList>
+		</ProtocolBag>
+		<ProtocolBag protocol="UOL" image="Skin\Icon\uol_16x16.bmp">
+			<ProtocolImageList>
+				<UserIcon image="Skin\Icon\default_contact_icon.bmp" />
+				<UserStatus online_image="Skin\Icon\uol_online.bmp" offline_image="Skin\Icon\uol_offline.bmp"
+					busy_image="Skin\Icon\uol_busy.bmp" away_image="Skin\Icon\uol_away.bmp" invisible_image="Skin\Icon\uol_invisible.bmp" 
+					unknown_image="Skin\Icon\uol_unknown.bmp" />
+				<ContactIcon image="Skin\Icon\default_contact_icon.bmp" />
+        <ContactStatus online_image="Skin\Icon\uol_online.bmp" offline_image="Skin\Icon\uol_offline.bmp"
+					busy_image="Skin\Icon\uol_busy.bmp" idle_image="Skin\Icon\uol_idle.bmp" away_image="Skin\Icon\uol_away.bmp" 
+					unknown_image="Skin\Icon\uol_unknown.bmp" />
+        <StatusButton online_image="Skin\Main\ProtocolButtons\uol_online_tb.bmp" offline_image="Skin\Main\ProtocolButtons\uol_offline_tb.bmp"
+					busy_image="Skin\Main\ProtocolButtons\uol_busy_tb.bmp" away_image="Skin\Main\ProtocolButtons\uol_away_tb.bmp"
+					invisible_image="Skin\Main\ProtocolButtons\uol_invisible_tb.bmp" unknown_image="Skin\Main\ProtocolButtons\uol_unknown_tb.bmp" />
+        <ContactBlocked image="Skin\Icon\blocked_emblem.bmp" />
+				<ContactAuthorization not_authorized_image="Skin\Icon\not_authorized_emblem.bmp" />
+			</ProtocolImageList>
+		</ProtocolBag>
+		<ProtocolBag protocol="Yahoo" image="Skin\Icon\yahoo_16x16.bmp">
+			<ProtocolImageList>
+				<UserIcon image="Skin\Icon\default_contact_icon.bmp" />
+				<UserStatus online_image="Skin\Icon\yahoo_online.bmp" offline_image="Skin\Icon\yahoo_offline.bmp"
+					busy_image="Skin\Icon\yahoo_busy.bmp" away_image="Skin\Icon\yahoo_away.bmp" invisible_image="Skin\Icon\yahoo_invisible.bmp" 
+					unknown_image="Skin\Icon\yahoo_unknown.bmp" />
+				<ContactIcon image="Skin\Icon\default_contact_icon.bmp" />
+				<ContactStatus online_image="Skin\Icon\yahoo_online.bmp" offline_image="Skin\Icon\yahoo_offline.bmp"
+					busy_image="Skin\Icon\yahoo_busy.bmp" idle_image="Skin\Icon\yahoo_idle.bmp" away_image="Skin\Icon\yahoo_away.bmp" 
+					unknown_image="Skin\Icon\yahoo_unknown.bmp" />
+        <StatusButton online_image="Skin\Main\ProtocolButtons\yahoo_online_tb.bmp" offline_image="Skin\Main\ProtocolButtons\yahoo_offline_tb.bmp"
+					busy_image="Skin\Main\ProtocolButtons\yahoo_busy_tb.bmp" away_image="Skin\Main\ProtocolButtons\yahoo_away_tb.bmp" 
+          invisible_image="Skin\Main\ProtocolButtons\yahoo_invisible_tb.bmp" unknown_image="Skin\Main\ProtocolButtons\yahoo_unknown_tb.bmp" />
+        <ContactBlocked image="Skin\Icon\blocked_emblem.bmp" />
+				<ContactAuthorization not_authorized_image="Skin\Icon\not_authorized_emblem.bmp" />
+			</ProtocolImageList>
+		</ProtocolBag>
+	</ProtocolBagList>
+</skin>
+
+
+<!-- 
+<BitmapBackground 
+	name="bgName" 
+	image="filename.bmp" 
+	mode="tile | normal | stretch"/>
+-->
+<!--
+	
+	<TabButton>
+		<leftImage  image="a.bmp" onclick="b.bmp" onover="c.bmp"/>
+		<fillImage  image="a.bmp" onclick="b.bmp" onover="c.bmp"/>
+		<rightImage image="a.bmp" onclick="b.bmp" onover="c.bmp"/>		
+	</TabButton>
+	-->

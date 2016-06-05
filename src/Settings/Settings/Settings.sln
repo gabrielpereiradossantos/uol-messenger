@@ -1,0 +1,44 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Settings", "..\Settings.vcproj", "{0EA924D2-BE0E-472C-B709-90A25B15313A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "..\Test\Test.vcproj", "{9BD93DAE-3A38-413F-B533-647FA00EBC00}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0EA924D2-BE0E-472C-B709-90A25B15313A} = {0EA924D2-BE0E-472C-B709-90A25B15313A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccProjectUniqueName0 = ..\\Settings.vcproj
+		SccLocalPath0 = ..
+		CanCheckoutShared = false
+		SccProjectName1 = SAK
+		SccLocalPath1 = .
+		SccProvider1 = MSSCCI:ClearCase
+		CanCheckoutShared = false
+		SolutionUniqueID = {4CC5C7DE-2C48-4D9F-AF15-DCCE098F6A96}
+		SccProjectUniqueName2 = ..\\Test\\Test.vcproj
+		SccLocalPath2 = ..\\Test
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{0EA924D2-BE0E-472C-B709-90A25B15313A}.Debug.ActiveCfg = Debug|Win32
+		{0EA924D2-BE0E-472C-B709-90A25B15313A}.Debug.Build.0 = Debug|Win32
+		{0EA924D2-BE0E-472C-B709-90A25B15313A}.Release.ActiveCfg = Release|Win32
+		{0EA924D2-BE0E-472C-B709-90A25B15313A}.Release.Build.0 = Release|Win32
+		{9BD93DAE-3A38-413F-B533-647FA00EBC00}.Debug.ActiveCfg = Debug|Win32
+		{9BD93DAE-3A38-413F-B533-647FA00EBC00}.Debug.Build.0 = Debug|Win32
+		{9BD93DAE-3A38-413F-B533-647FA00EBC00}.Release.ActiveCfg = Release|Win32
+		{9BD93DAE-3A38-413F-B533-647FA00EBC00}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

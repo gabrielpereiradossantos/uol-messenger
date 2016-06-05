@@ -1,0 +1,198 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,17
+ PRODUCTVERSION 1,0,0,17
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080004b0"
+        BEGIN
+            VALUE "CompanyName", "Universo Online S/A"
+            VALUE "FileDescription", "UOL Messenger Rádio UOL Plugin"
+            VALUE "FileVersion", "1, 0, 0, 17"
+            VALUE "InternalName", "RadioUOL"
+            VALUE "LegalCopyright", "Direitos Autorais Reservados (c) 2006 Universo Online S/A"
+            VALUE "OriginalFilename", "RadioUOL.dll"
+            VALUE "ProductName", "UOL Messenger Rádio UOL Plugin Beta"
+            VALUE "ProductVersion", "1, 0, 0, 17"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x800, 1200
+    END
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_RADIO_LIST_ENTRY    BITMAP                  "UOLRadio.bmp"
+IDB_CHANNELS            BITMAP                  "Channels.bmp"
+IDB_CHANNELS_CLICKED    BITMAP                  "ChannelsClicked.bmp"
+IDB_CHANNELS_OFF        BITMAP                  "ChannelsOff.bmp"
+IDB_CHANNELS_OVER       BITMAP                  "ChannelsOver.bmp"
+IDB_FILLTOP             BITMAP                  "FillTop.bmp"
+IDB_FILLTOP_LEFT        BITMAP                  "FillTopLeft.bmp"
+IDB_POPUP               BITMAP                  "popup.bmp"
+IDB_POPUP_CLICKED       BITMAP                  "popupClicked.bmp"
+IDB_POPUP_OFF           BITMAP                  "popupOff.bmp"
+IDB_POPUP_OVER          BITMAP                  "popupOver.bmp"
+IDB_RADIO_UOL_BAR       BITMAP                  "RadioUOL.bmp"
+IDB_SEARCH              BITMAP                  "Search.bmp"
+IDB_SEARCH_CLICKED      BITMAP                  "SearchClicked.bmp"
+IDB_SEARCH_OFF          BITMAP                  "SearchOff.bmp"
+IDB_SEARCH_OVER         BITMAP                  "SearchOver.bmp"
+IDB_SPLITTER            BITMAP                  "Spliter.bmp"
+IDB_BUY_OVER            BITMAP                  "buyOver.bmp"
+IDB_BUY                 BITMAP                  "buy.bmp"
+IDB_BUY_CLICKED         BITMAP                  "buyClicked.bmp"
+IDB_BUY_OFF             BITMAP                  "buyOff.bmp"
+IDB_RADIOUOL_PLUGIN     BITMAP                  "RadioUOLPlugin.bmp"
+IDB_NOTIFICATION        BITMAP                  "notification.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CONFIG_XML_URL      "http://ubpv.multi.uol.com.br/messenger/plugins/RadioUOL.xml"
+    IDS_ERRORMSG_008        "Para usar o plugin da Rádio UOL é necessário ter o Windows Media Player versão 9 ou superior. \r\nPor favor, atualize o Windows Media Player e tente novamente. (PRU0008)"
+    IDS_PLAY_MENU_LABEL     "Reproduzir"
+    IDS_ERRORMSG_001        "Não existe conexão com a internet. (PRU0001)"
+    IDS_PRIOR_MENU_LABEL    "Anterior"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONFIG_XML_FILENAME "RadioUOL.xml"
+    IDS_ERRORMSG_002        "Arquivo de configuração não encontrado ou danificado. (PRU0002)"
+    IDS_CHOOSE_STATION      "Escolha um canal para ouvir a Rádio UOL"
+    IDS_SONGINFO_ARTIST     "Artista : %s"
+    IDS_SONGINFO_SONG       "Música: %s"
+    IDS_NEXT_MENU_LABEL     "Próxima"
+    IDS_SONGINFO_NEXT       "Próxima: %s"
+    IDS_ERRORMSG_003        "Não foi possível conectar com o servidor da Rádio UOL. (PRU0003)"
+    IDS_SEARCH_CAPTION      "Rádio UOL"
+    IDS_CHANNEL_CAPTION     "Rádio UOL"
+    IDS_PLUGIN_DESC         "Ouça a Rádio UOL enquanto conversa com seus amigos."
+    IDS_ERRORMSG_004        "Não foi possível atualizar o arquivo de configuração. (PRU0004)"
+    IDS_ERRORMSG_005        "Não foi possível gravar o arquivo de configuração em disco. (PRU0005)"
+    IDS_ERRORMSG_006        "Não existe conexão com a internet para atualizar o arquivo de configuração. (PRU0006)"
+    IDS_ERRORMSG_007        "Não foi possível tocar a música. (PRU0007)"
+    IDS_PAUSE_MENU_LABEL    "Pausar"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RADIO_NOTIFICATION  "Rádio UOL"
+    IDS_SONGINFO_CD         "Reproduzir"
+    IDS_STOP_MENU_LABEL     "Parar"
+    IDS_CHANNELS_MENU_LABEL "Canais"
+END
+
+#endif    // Portuguese (Brazil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

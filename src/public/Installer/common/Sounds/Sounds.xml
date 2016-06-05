@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIM>
+	<Sounds Version="1">
+		<Sound Enabled="1">
+			<EventType><![CDATA[ContactOnline]]></EventType>
+			<EventDescription><![CDATA[Contato online]]></EventDescription>
+			<FilePath><![CDATA[Sounds\online.wav]]></FilePath>
+		</Sound>
+		<Sound Enabled="1">
+			<EventType><![CDATA[NewMessage]]></EventType>
+			<EventDescription><![CDATA[Nova mensagem]]></EventDescription>
+			<FilePath><![CDATA[Sounds\message.wav]]></FilePath>
+		</Sound>
+		<Sound Enabled="1">
+			<EventType><![CDATA[NudgeReceived]]></EventType>
+			<EventDescription><![CDATA[Pedido de atenção recebido]]></EventDescription>
+			<FilePath><![CDATA[Sounds\nudge.wav]]></FilePath>
+		</Sound>
+		<Sound Enabled="1">
+			<EventType><![CDATA[FileTransferAlert]]></EventType>
+			<EventDescription><![CDATA[Alerta de transferência de arquivo]]></EventDescription>
+			<FilePath><![CDATA[Sounds\message.wav]]></FilePath>
+		</Sound>
+		<Sound Enabled="1">
+			<EventType><![CDATA[FileTransferFinished]]></EventType>
+			<EventDescription><![CDATA[Alerta de transferência de arquivo encerrada]]></EventDescription>
+			<FilePath><![CDATA[Sounds\message.wav]]></FilePath>
+		</Sound>
+	</Sounds>
+</UIM>

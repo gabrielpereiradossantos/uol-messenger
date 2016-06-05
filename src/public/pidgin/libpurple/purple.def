@@ -1,0 +1,2819 @@
+EXPORTS
+;    MySHGetFolderPathA @1 DATA
+;    MySHGetFolderPathW @2 DATA
+;    disco_callback_helper @3
+;    expire_last_auto_responses @4
+;    flush_last_auto_responses @5
+    purple_account_clear_settings @6
+    purple_account_connect @7
+    purple_account_destroy @8
+    purple_account_destroy_log @9
+    purple_account_disconnect @10
+    purple_account_get_alias @11
+;    purple_account_get_auto_login @12
+    purple_account_get_bool @13
+;    purple_account_get_buddy_icon @14				// update to libpurple
+    purple_account_get_check_mail @15
+    purple_account_get_connection @16
+    purple_account_get_int @17
+    purple_account_get_log @18
+    purple_account_get_password @19
+    purple_account_get_protocol_id @20
+    purple_account_get_protocol_name @21
+    purple_account_get_proxy_info @22
+    purple_account_get_remember_password @23
+    purple_account_get_string @24
+    purple_account_get_ui_bool @25
+    purple_account_get_ui_int @26
+    purple_account_get_ui_string @27
+    purple_account_get_user_info @28
+    purple_account_get_username @29
+    purple_account_is_connected @30
+    purple_account_new @31
+    purple_account_notify_added @32
+    purple_account_option_add_list_item @33
+    purple_account_option_bool_new @34
+    purple_account_option_destroy @35
+    purple_account_option_get_default_bool @36
+    purple_account_option_get_default_int @37
+    purple_account_option_get_default_string @38
+    purple_account_option_get_list @39
+    purple_account_option_get_masked @40
+    purple_account_option_get_setting @41
+    purple_account_option_get_text @42
+    purple_account_option_get_type @43
+    purple_account_option_int_new @44
+    purple_account_option_list_new @45
+    purple_account_option_new @46
+    purple_account_option_set_default_bool @47
+    purple_account_option_set_default_int @48
+    purple_account_option_set_default_string @49
+    purple_account_option_set_list @50
+    purple_account_option_set_masked @51
+    purple_account_option_string_new @52
+    purple_account_register @53
+    purple_account_request_add @54
+    purple_account_request_change_password @55
+    purple_account_request_change_user_info @56
+    purple_account_set_alias @57
+;    purple_account_set_auto_login @58
+    purple_account_set_bool @59
+;    purple_account_set_buddy_icon @60			// update to libpurple
+    purple_account_set_check_mail @61
+    purple_account_set_connection @62
+    purple_account_set_int @63
+    purple_account_set_password @64
+    purple_account_set_protocol_id @65
+    purple_account_set_proxy_info @66
+    purple_account_set_remember_password @67
+    purple_account_set_string @68
+    purple_account_set_ui_bool @69
+    purple_account_set_ui_int @70
+    purple_account_set_ui_string @71
+    purple_account_set_user_info @72
+    purple_account_set_username @73
+    purple_account_user_split_destroy @74
+    purple_account_user_split_get_default_value @75
+    purple_account_user_split_get_separator @76
+    purple_account_user_split_get_text @77
+    purple_account_user_split_new @78
+    purple_accounts_add @79
+;    purple_accounts_auto_login @80
+    purple_accounts_delete @81
+    purple_accounts_find @82
+    purple_accounts_get_all @83
+    purple_accounts_get_handle @84
+    purple_accounts_get_ui_ops @85
+    purple_accounts_init @86
+;    purple_accounts_load @87
+    purple_accounts_remove @88
+    purple_accounts_reorder @89
+    purple_accounts_set_ui_ops @90
+;    purple_accounts_sync @91
+    purple_accounts_uninit @92
+    purple_base16_decode @93
+    purple_base16_encode @94
+    purple_base64_decode @95
+    purple_base64_encode @96
+    purple_blist_add_account @97
+    purple_blist_add_buddy @98
+    purple_blist_add_chat @99
+    purple_blist_add_contact @100
+    purple_blist_add_group @101
+    purple_blist_alias_buddy @102
+    purple_blist_alias_chat @103
+    purple_blist_destroy @104
+    purple_blist_find_chat @105
+    purple_blist_get_group_online_count @106
+    purple_blist_get_group_size @107
+    purple_blist_get_handle @108
+    purple_blist_get_ui_ops @109
+    purple_blist_init @110
+    purple_blist_load @111
+    purple_blist_merge_contact @112
+    purple_blist_new @113
+;    purple_blist_node_action_new @114
+    purple_blist_node_get_bool @115
+    purple_blist_node_get_extended_menu @116
+    purple_blist_node_get_int @117
+    purple_blist_node_get_string @118
+    purple_blist_node_remove_setting @119
+    purple_blist_node_set_bool @120
+    purple_blist_node_set_int @121
+    purple_blist_node_set_string @122
+    purple_blist_remove_account @123
+    purple_blist_remove_buddy @124
+    purple_blist_remove_chat @125
+    purple_blist_remove_contact @126
+    purple_blist_remove_group @127
+    purple_blist_rename_buddy @128
+    purple_blist_rename_group @129
+    purple_blist_request_add_buddy @130
+    purple_blist_request_add_chat @131
+    purple_blist_request_add_group @132
+    purple_blist_schedule_save @133
+    purple_blist_server_alias_buddy @134
+    purple_blist_set_ui_ops @135
+    purple_blist_set_visible @136
+    purple_blist_show @137
+;    purple_blist_sync @138
+    purple_blist_uninit @139
+;    purple_blist_update_buddy_evil @140
+    purple_blist_update_buddy_icon @141
+;    purple_blist_update_buddy_idle @142
+;    purple_blist_update_buddy_presence @143
+;    purple_blist_update_buddy_signon @144
+    purple_blist_update_buddy_status @145
+    purple_buddy_get_alias @146
+    purple_buddy_get_alias_only @147
+    purple_buddy_get_contact @148
+    purple_buddy_get_contact_alias @149
+    purple_buddy_get_icon @150
+;    purple_buddy_icon_cache @151					// update to libpurple
+;    purple_buddy_icon_destroy @152					// update to libpurple
+    purple_buddy_icon_get_account @153
+    purple_buddy_icon_get_data @154
+;    purple_buddy_icon_get_type @155				// update to libpurple
+    purple_buddy_icon_get_username @156
+    purple_buddy_icon_new @157
+    purple_buddy_icon_ref @158
+;    purple_buddy_icon_set_account @159				// update to libpurple
+    purple_buddy_icon_set_data @160
+;    purple_buddy_icon_set_username @161			// update to libpurple
+;    purple_buddy_icon_uncache @162					// update to libpurple
+    purple_buddy_icon_unref @163
+    purple_buddy_icon_update @164
+    purple_buddy_icons_find @165
+    purple_buddy_icons_get_cache_dir @166
+    purple_buddy_icons_get_handle @167
+    purple_buddy_icons_init @168
+    purple_buddy_icons_is_caching @169
+    purple_buddy_icons_set_cache_dir @170
+    purple_buddy_icons_set_caching @171
+    purple_buddy_icons_set_for_user @172
+    purple_buddy_icons_uninit @173
+    purple_buddy_new @174
+    purple_buddy_set_icon @175
+    purple_build_dir @176
+;    purple_chat_get_display_name @177
+    purple_chat_get_group @178
+    purple_chat_get_name @179
+    purple_chat_new @180
+    purple_cmd_do_command @181
+    purple_cmd_help @182
+    purple_cmd_list @183
+    purple_cmd_register @184
+    purple_cmd_unregister @185
+;    purple_connection_connect @186
+    purple_connection_destroy @187
+;    purple_connection_disconnect @188
+;    purple_connection_disconnect_cb @189
+    purple_connection_error @190
+    purple_connection_get_account @191
+    purple_connection_get_display_name @192
+    purple_connection_get_state @193
+    purple_connection_new @194
+    purple_connection_notice @195
+;    purple_connection_register @196
+    purple_connection_set_account @197
+    purple_connection_set_display_name @198
+    purple_connection_set_state @199
+    purple_connection_update_progress @200
+    purple_connections_disconnect_all @201
+    purple_connections_get_all @202
+    purple_connections_get_connecting @203
+    purple_connections_get_handle @204
+    purple_connections_get_ui_ops @205
+    purple_connections_init @206
+    purple_connections_set_ui_ops @207
+    purple_connections_uninit @208
+    purple_contact_get_alias @209
+    purple_contact_get_priority_buddy @210
+    purple_contact_new @211
+    purple_contact_on_account @212
+    purple_contact_set_alias @213
+    purple_conv_chat_add_user @214
+    purple_conv_chat_add_users @215
+    purple_conv_chat_cb_destroy @216
+    purple_conv_chat_cb_find @217
+    purple_conv_chat_cb_get_name @218
+    purple_conv_chat_cb_new @219
+    purple_conv_chat_clear_users @220
+    purple_conv_chat_find_user @221
+    purple_conv_chat_get_conversation @222
+    purple_conv_chat_get_id @223
+    purple_conv_chat_get_ignored @224
+    purple_conv_chat_get_ignored_user @225
+    purple_conv_chat_get_nick @226
+    purple_conv_chat_get_topic @227
+    purple_conv_chat_get_users @228
+    purple_conv_chat_has_left @229
+    purple_conv_chat_ignore @230
+    purple_conv_chat_is_user_ignored @231
+    purple_conv_chat_left @232
+    purple_conv_chat_remove_user @233
+    purple_conv_chat_remove_users @234
+    purple_conv_chat_rename_user @235
+    purple_conv_chat_send @236
+    purple_conv_chat_set_id @237
+    purple_conv_chat_set_ignored @238
+    purple_conv_chat_set_nick @239
+    purple_conv_chat_set_topic @240
+    purple_conv_chat_set_users @241
+    purple_conv_chat_unignore @242
+    purple_conv_chat_user_get_flags @243
+    purple_conv_chat_user_set_flags @244
+    purple_conv_chat_write @245
+    purple_conv_im_get_conversation @246
+    purple_conv_im_get_icon @247
+    purple_conv_im_get_type_again @248
+;    purple_conv_im_get_type_again_timeout @249
+    purple_conv_im_get_typing_state @250
+    purple_conv_im_get_typing_timeout @251
+    purple_conv_im_send @252
+    purple_conv_im_set_icon @253
+    purple_conv_im_set_type_again @254
+    purple_conv_im_set_typing_state @255
+;    purple_conv_im_start_type_again_timeout @256
+    purple_conv_im_start_typing_timeout @257
+;    purple_conv_im_stop_type_again_timeout @258
+    purple_conv_im_stop_typing_timeout @259
+    purple_conv_im_update_typing @260
+    purple_conv_im_write @261
+;    purple_conv_placement_add_fnc @262
+;    purple_conv_placement_get_current_func @263
+;    purple_conv_placement_get_fnc @264
+;    purple_conv_placement_get_name @265
+;    purple_conv_placement_get_options @266
+;    purple_conv_placement_remove_fnc @267
+;    purple_conv_placement_set_current_func @268
+    purple_conv_present_error @269
+;    purple_conv_window_add_conversation @270
+;    purple_conv_window_destroy @271
+;    purple_conv_window_flash @272
+;    purple_conv_window_get_active_conversation @273
+;    purple_conv_window_get_conversation_at @274
+;    purple_conv_window_get_conversation_count @275
+;    purple_conv_window_get_conversations @276
+;    purple_conv_window_get_ui_ops @277
+;    purple_conv_window_has_focus @278
+;    purple_conv_window_hide @279
+;    purple_conv_window_move_conversation @280
+;    purple_conv_window_new @281
+;    purple_conv_window_raise @282
+;    purple_conv_window_remove_conversation @283
+;    purple_conv_window_set_ui_ops @284
+;    purple_conv_window_show @285
+;    purple_conv_window_switch_conversation @286
+    purple_conversation_autoset_title @287
+    purple_conversation_destroy @288
+    purple_conversation_foreach @289
+    purple_conversation_get_account @290
+    purple_conversation_get_chat_data @291
+    purple_conversation_get_data @292
+    purple_conversation_get_features @293
+    purple_conversation_get_gc @294
+;    purple_conversation_get_history @295
+    purple_conversation_get_im_data @296
+;    purple_conversation_get_index @297
+    purple_conversation_get_name @298
+;    purple_conversation_get_send_history @299
+    purple_conversation_get_title @300
+    purple_conversation_get_type @301
+    purple_conversation_get_ui_ops @302
+;    purple_conversation_get_unseen @303
+;    purple_conversation_get_window @304
+    purple_conversation_has_focus @305
+    purple_conversation_is_logging @306
+    purple_conversation_new @307
+    purple_conversation_set_account @308
+    purple_conversation_set_data @309
+    purple_conversation_set_features @310
+;    purple_conversation_set_history @311
+    purple_conversation_set_logging @312
+    purple_conversation_set_name @313
+    purple_conversation_set_title @314
+    purple_conversation_set_ui_ops @315
+;    purple_conversation_set_unseen @316
+    purple_conversation_update @317
+;    purple_conversation_update_progress @318
+    purple_conversation_write @319
+    purple_conversations_get_handle @320
+;    purple_conversations_get_win_ui_ops @321
+    purple_conversations_init @322
+;    purple_conversations_set_win_ui_ops @323
+    purple_conversations_uninit @324
+    purple_core_get_ui @325
+    purple_core_get_ui_ops @326
+    purple_core_get_version @327
+    purple_core_init @328
+    purple_core_quit @329
+    purple_core_quit_cb @330
+    purple_core_set_ui_ops @331
+;    purple_date @332
+;    purple_date_full @333
+    purple_debug @334
+    purple_debug_error @335
+    purple_debug_fatal @336
+    purple_debug_get_ui_ops @337
+    purple_debug_info @338
+    purple_debug_misc @339
+    purple_debug_set_ui_ops @340
+;    purple_debug_vargs @341
+    purple_debug_warning @342
+    purple_debug_set_enabled @1185
+    purple_email_is_valid @343
+    purple_escape_filename @344
+;    purple_escape_html @345
+    purple_eventloop_get_ui_ops @346
+    purple_eventloop_set_ui_ops @347
+    purple_fd_get_ip @348
+    purple_find_buddies @349
+    purple_find_buddy @350
+    purple_find_buddy_in_group @351
+;    purple_find_buddys_group @352
+    purple_find_chat @353
+;    purple_find_conversation @354
+    purple_find_conversation_with_account @355
+    purple_find_group @356
+    purple_find_pounce @357
+    purple_find_prpl @358
+    purple_get_blist @359
+    purple_get_chats @360
+    purple_get_conversations @361
+    purple_get_core @362
+;    purple_get_first_window_with_type @363
+    purple_get_ims @364
+;    purple_get_last_window_with_type @365
+;    purple_get_windows @366
+;    purple_gethostbyname_async @367
+    purple_global_proxy_get_info @368
+    purple_group_get_accounts @369
+    purple_group_new @370
+    purple_group_on_account @371
+    purple_home_dir @372
+    purple_imgstore_add @373
+;    purple_imgstore_get @374					// update to libpurple
+    purple_imgstore_get_data @375
+    purple_imgstore_get_filename @376
+    purple_imgstore_get_size @377
+    purple_imgstore_ref @378
+    purple_imgstore_unref @379
+    purple_input_add @380
+    purple_input_remove @381
+    purple_log_compare @382
+    purple_log_free @383
+    purple_log_get_logs @384
+    purple_log_get_size @385
+    purple_log_get_system_logs @386
+    purple_log_get_total_size @387
+    purple_log_init @388
+    purple_log_logger_add @389
+    purple_log_logger_free @390
+    purple_log_logger_get @391
+    purple_log_logger_get_options @392
+    purple_log_logger_new @393
+    purple_log_logger_remove @394
+    purple_log_logger_set @395
+    purple_log_new @396
+    purple_log_read @397
+    purple_log_write @398
+    purple_markup_extract_info_field @399
+    purple_markup_find_tag @400
+    purple_markup_get_tag_name @401
+    purple_markup_html_to_xhtml @402
+    purple_markup_linkify @403
+    purple_markup_slice @404
+    purple_markup_strip_html @405
+    purple_marshal_BOOLEAN__POINTER @406
+    purple_marshal_BOOLEAN__POINTER_POINTER @407
+    purple_marshal_BOOLEAN__POINTER_POINTER_POINTER @408
+    purple_marshal_BOOLEAN__POINTER_POINTER_POINTER_POINTER @409
+    purple_marshal_BOOLEAN__POINTER_POINTER_POINTER_POINTER_POINTER @410
+    purple_marshal_BOOLEAN__POINTER_POINTER_POINTER_UINT @411
+    purple_marshal_BOOLEAN__POINTER_POINTER_UINT @412
+    purple_marshal_INT__INT @413
+    purple_marshal_INT__INT_INT @414
+    purple_marshal_VOID @415
+    purple_marshal_VOID__INT @416
+    purple_marshal_VOID__INT_INT @417
+    purple_marshal_VOID__POINTER @418
+    purple_marshal_VOID__POINTER_POINTER @419
+    purple_marshal_VOID__POINTER_POINTER_POINTER @420
+    purple_marshal_VOID__POINTER_POINTER_POINTER_POINTER @421
+    purple_marshal_VOID__POINTER_POINTER_POINTER_POINTER_POINTER @422
+    purple_marshal_VOID__POINTER_POINTER_POINTER_UINT @423
+    purple_marshal_VOID__POINTER_POINTER_POINTER_UINT_UINT @424
+    purple_marshal_VOID__POINTER_POINTER_UINT @425
+    purple_marshal_VOID__POINTER_POINTER_UINT_UINT @426
+    purple_marshal_VOID__POINTER_UINT @427
+    purple_message_meify @428
+    purple_mime_decode_field @429
+    purple_mkstemp @430
+    purple_network_get_local_system_ip @431
+    purple_network_get_my_ip @432
+    purple_network_get_port_from_fd @433
+    purple_network_get_public_ip @434
+    purple_network_init @435
+    purple_network_ip_atoi @436
+    purple_network_listen @437
+    purple_network_listen_range @438
+    purple_network_set_public_ip @439
+    purple_normalize @440
+    purple_normalize_nocase @441
+    purple_notify_close @442
+    purple_notify_close_with_handle @443
+    purple_notify_email @444
+    purple_notify_emails @445
+    purple_notify_formatted @446
+    purple_notify_get_ui_ops @447
+    purple_notify_message @448
+    purple_notify_set_ui_ops @449
+    purple_notify_uri @450
+    purple_notify_userinfo @451
+    purple_plugin_action_new @452
+    purple_plugin_destroy @453
+    purple_plugin_ipc_call @454
+    purple_plugin_ipc_get_params @455
+    purple_plugin_ipc_register @456
+    purple_plugin_ipc_unregister @457
+    purple_plugin_ipc_unregister_all @458
+    purple_plugin_is_loaded @459
+    purple_plugin_load @460
+    purple_plugin_new @461
+    purple_plugin_pref_add_choice @462
+    purple_plugin_pref_destroy @463
+    purple_plugin_pref_frame_add @464
+    purple_plugin_pref_frame_destroy @465
+    purple_plugin_pref_frame_get_prefs @466
+    purple_plugin_pref_frame_new @467
+    purple_plugin_pref_get_bounds @468
+    purple_plugin_pref_get_choices @469
+    purple_plugin_pref_get_label @470
+    purple_plugin_pref_get_masked @471
+    purple_plugin_pref_get_max_length @472
+    purple_plugin_pref_get_name @473
+    purple_plugin_pref_get_type @474
+    purple_plugin_pref_new @475
+    purple_plugin_pref_new_with_label @476
+    purple_plugin_pref_new_with_name @477
+    purple_plugin_pref_new_with_name_and_label @478
+    purple_plugin_pref_set_bounds @479
+    purple_plugin_pref_set_label @480
+    purple_plugin_pref_set_masked @481
+    purple_plugin_pref_set_max_length @482
+    purple_plugin_pref_set_name @483
+    purple_plugin_pref_set_type @484
+    purple_plugin_probe @485
+    purple_plugin_register @486
+    purple_plugin_reload @487
+    purple_plugin_unload @488
+    purple_plugins_destroy_all @489
+    purple_plugins_enabled @490
+    purple_plugins_find_with_basename @491
+    purple_plugins_find_with_filename @492
+    purple_plugins_find_with_id @493
+    purple_plugins_find_with_name @494
+    purple_plugins_get_all @495
+    purple_plugins_get_handle @496
+    purple_plugins_get_loaded @497
+    purple_plugins_get_protocols @498
+    purple_plugins_load_saved @499
+    purple_plugins_probe @500
+    purple_plugins_register_load_notify_cb @501
+    purple_plugins_register_probe_notify_cb @502
+    purple_plugins_register_unload_notify_cb @503
+;    purple_plugins_set_search_paths @504
+    purple_plugins_unload_all @505
+    purple_plugins_unregister_load_notify_cb @506
+    purple_plugins_unregister_probe_notify_cb @507
+    purple_plugins_unregister_unload_notify_cb @508
+    purple_pounce_action_get_attribute @509
+    purple_pounce_action_is_enabled @510
+    purple_pounce_action_register @511
+    purple_pounce_action_set_attribute @512
+    purple_pounce_action_set_enabled @513
+    purple_pounce_destroy @514
+    purple_pounce_destroy_all_by_account @515
+    purple_pounce_execute @516
+    purple_pounce_get_data @517
+    purple_pounce_get_events @518
+    purple_pounce_get_pouncee @519
+    purple_pounce_get_pouncer @520
+    purple_pounce_get_save @521
+    purple_pounce_new @522
+    purple_pounce_set_data @523
+    purple_pounce_set_events @524
+    purple_pounce_set_pouncee @525
+    purple_pounce_set_pouncer @526
+    purple_pounce_set_save @527
+    purple_pounces_get_all @528
+    purple_pounces_get_handle @529
+    purple_pounces_init @530
+    purple_pounces_load @531
+    purple_pounces_register_handler @532
+;    purple_pounces_sync @533
+    purple_pounces_uninit @534
+    purple_pounces_unregister_handler @535
+    purple_prefs_add_bool @536
+    purple_prefs_add_int @537
+    purple_prefs_add_none @538
+    purple_prefs_add_string @539
+    purple_prefs_add_string_list @540
+    purple_prefs_connect_callback @541
+    purple_prefs_destroy @542
+    purple_prefs_disconnect_callback @543
+    purple_prefs_exists @544
+    purple_prefs_get_bool @545
+    purple_prefs_get_int @546
+    purple_prefs_get_string @547
+    purple_prefs_get_string_list @548
+    purple_prefs_get_type @549
+    purple_prefs_init @550
+    purple_prefs_load @551
+    purple_prefs_remove @552
+    purple_prefs_rename @553
+    purple_prefs_rename_boolean_toggle @554
+    purple_prefs_set_bool @555
+    purple_prefs_set_generic @556
+    purple_prefs_set_int @557
+    purple_prefs_set_string @558
+    purple_prefs_set_string_list @559
+;    purple_prefs_sync @560
+    purple_prefs_trigger_callback @561
+    purple_prefs_uninit @562
+    purple_prefs_update_old @563
+    purple_privacy_deny_add @564
+    purple_privacy_deny_remove @565
+    purple_privacy_get_ui_ops @566
+    purple_privacy_init @567
+    purple_privacy_permit_add @568
+    purple_privacy_permit_remove @569
+    purple_privacy_set_ui_ops @570
+    purple_program_is_valid @571
+    purple_proxy_connect @572
+    purple_proxy_connect_socks5 @573
+    purple_proxy_info_destroy @574
+    purple_proxy_info_get_host @575
+    purple_proxy_info_get_password @576
+    purple_proxy_info_get_port @577
+    purple_proxy_info_get_type @578
+    purple_proxy_info_get_username @579
+    purple_proxy_info_new @580
+    purple_proxy_info_set_host @581
+    purple_proxy_info_set_password @582
+    purple_proxy_info_set_port @583
+    purple_proxy_info_set_type @584
+    purple_proxy_info_set_username @585
+    purple_proxy_init @586
+    purple_quotedp_decode @587
+    purple_request_action @588
+    purple_request_action_varg @589
+    purple_request_choice @590
+    purple_request_choice_varg @591
+    purple_request_close @592
+    purple_request_close_with_handle @593
+    purple_request_field_account_get_default_value @594
+    purple_request_field_account_get_filter @595
+    purple_request_field_account_get_show_all @596
+    purple_request_field_account_get_value @597
+    purple_request_field_account_new @598
+    purple_request_field_account_set_default_value @599
+    purple_request_field_account_set_filter @600
+    purple_request_field_account_set_show_all @601
+    purple_request_field_account_set_value @602
+    purple_request_field_bool_get_default_value @603
+    purple_request_field_bool_get_value @604
+    purple_request_field_bool_new @605
+    purple_request_field_bool_set_default_value @606
+    purple_request_field_bool_set_value @607
+    purple_request_field_choice_add @608
+    purple_request_field_choice_get_default_value @609
+    purple_request_field_choice_get_labels @610
+    purple_request_field_choice_get_value @611
+    purple_request_field_choice_new @612
+    purple_request_field_choice_set_default_value @613
+    purple_request_field_choice_set_value @614
+    purple_request_field_destroy @615
+    purple_request_field_get_id @616
+    purple_request_field_get_label @617
+    purple_request_field_get_type @618
+    purple_request_field_get_type_hint @619
+    purple_request_field_group_add_field @620
+    purple_request_field_group_destroy @621
+    purple_request_field_group_get_fields @622
+    purple_request_field_group_get_title @623
+    purple_request_field_group_new @624
+    purple_request_field_int_get_default_value @625
+    purple_request_field_int_get_value @626
+    purple_request_field_int_new @627
+    purple_request_field_int_set_default_value @628
+    purple_request_field_int_set_value @629
+    purple_request_field_is_required @630
+    purple_request_field_is_visible @631
+    purple_request_field_label_new @632
+    purple_request_field_list_add @633
+    purple_request_field_list_add_selected @634
+    purple_request_field_list_clear_selected @635
+    purple_request_field_list_get_data @636
+    purple_request_field_list_get_items @637
+    purple_request_field_list_get_multi_select @638
+    purple_request_field_list_get_selected @639
+    purple_request_field_list_is_selected @640
+    purple_request_field_list_new @641
+    purple_request_field_list_set_multi_select @642
+    purple_request_field_list_set_selected @643
+    purple_request_field_new @644
+    purple_request_field_set_label @645
+    purple_request_field_set_required @646
+    purple_request_field_set_type_hint @647
+    purple_request_field_set_visible @648
+    purple_request_field_string_get_default_value @649
+    purple_request_field_string_get_value @650
+    purple_request_field_string_is_editable @651
+    purple_request_field_string_is_masked @652
+    purple_request_field_string_is_multiline @653
+    purple_request_field_string_new @654
+    purple_request_field_string_set_default_value @655
+    purple_request_field_string_set_editable @656
+    purple_request_field_string_set_masked @657
+    purple_request_field_string_set_value @658
+    purple_request_fields @659
+    purple_request_fields_add_group @660
+    purple_request_fields_all_required_filled @661
+    purple_request_fields_destroy @662
+    purple_request_fields_exists @663
+    purple_request_fields_get_account @664
+    purple_request_fields_get_bool @665
+    purple_request_fields_get_choice @666
+    purple_request_fields_get_field @667
+    purple_request_fields_get_groups @668
+    purple_request_fields_get_integer @669
+    purple_request_fields_get_required @670
+    purple_request_fields_get_string @671
+    purple_request_fields_is_field_required @672
+    purple_request_fields_new @673
+    purple_request_file @674
+    purple_request_get_ui_ops @675
+    purple_request_input @676
+    purple_request_set_ui_ops @677
+    purple_roomlist_cancel_get_list @678
+    purple_roomlist_expand_category @679
+    purple_roomlist_field_new @680
+    purple_roomlist_get_in_progress @681
+    purple_roomlist_get_list @682
+    purple_roomlist_get_ui_ops @683
+    purple_roomlist_new @684
+    purple_roomlist_ref @685
+    purple_roomlist_room_add @686
+    purple_roomlist_room_add_field @687
+    purple_roomlist_room_join @688
+    purple_roomlist_room_new @689
+    purple_roomlist_set_fields @690
+    purple_roomlist_set_in_progress @691
+    purple_roomlist_set_ui_ops @692
+    purple_roomlist_show_with_account @693
+    purple_roomlist_unref @694
+    purple_set_blist @695
+    purple_signal_connect @696
+    purple_signal_connect_priority @697
+    purple_signal_connect_priority_vargs @698
+    purple_signal_connect_vargs @699
+    purple_signal_disconnect @700
+    purple_signal_emit @701
+    purple_signal_emit_return_1 @702
+    purple_signal_emit_vargs @703
+    purple_signal_emit_vargs_return_1 @704
+    purple_signal_get_values @705
+    purple_signal_register @706
+    purple_signal_unregister @707
+    purple_signals_disconnect_by_handle @708
+    purple_signals_init @709
+    purple_signals_uninit @710
+    purple_signals_unregister_by_instance @711
+    purple_sound_get_ui_ops @712
+    purple_sound_init @713
+    purple_sound_play_event @714
+    purple_sound_play_file @715
+    purple_sound_set_ui_ops @716
+;    purple_sound_shutdown @717
+    purple_ssl_close @718
+    purple_ssl_connect @719
+    purple_ssl_connect_fd @720
+    purple_ssl_get_ops @721
+    purple_ssl_init @722
+    purple_ssl_input_add @723
+    purple_ssl_is_supported @724
+    purple_ssl_read @725
+    purple_ssl_set_ops @726
+    purple_ssl_uninit @727
+    purple_ssl_write @728
+    purple_str_add_cr @729
+    purple_str_binary_to_ascii @730
+    purple_str_has_prefix @731
+    purple_str_has_suffix @732
+    purple_str_seconds_to_string @733
+    purple_str_size_to_units @734
+;    purple_str_strip_cr @735
+;    purple_str_sub_away_formatters @736
+    purple_str_to_time @737
+    purple_strcasereplace @738
+    purple_strcasestr @739
+    purple_strdup_withhtml @740
+    purple_stringref_cmp @741
+    purple_stringref_len @742
+    purple_stringref_new @743
+    purple_stringref_new_noref @744
+    purple_stringref_printf @745
+    purple_stringref_ref @746
+    purple_stringref_unref @747
+    purple_stringref_value @748
+    purple_strreplace @749
+    purple_text_strip_mnemonic @750
+    purple_time_build @751
+    purple_timeout_add @752
+    purple_timeout_remove @753
+    purple_unescape_filename @754
+    purple_unescape_html @755
+    purple_uri_list_extract_filenames @756
+    purple_uri_list_extract_uris @757
+    purple_url_decode @758
+    purple_url_encode @759
+;    purple_url_fetch @760
+    purple_url_parse @761
+    purple_user_dir @762
+    purple_utf8_ncr_decode @763
+    purple_utf8_salvage @764
+    purple_utf8_strcasecmp @765
+    purple_utf8_try_convert @766
+    purple_value_destroy @767
+    purple_value_dup @768
+    purple_value_get_boolean @769
+    purple_value_get_boxed @770
+    purple_value_get_char @771
+    purple_value_get_enum @772
+    purple_value_get_int @773
+    purple_value_get_int64 @774
+    purple_value_get_long @775
+    purple_value_get_object @776
+    purple_value_get_pointer @777
+    purple_value_get_short @778
+    purple_value_get_specific_type @779
+    purple_value_get_string @780
+    purple_value_get_subtype @781
+    purple_value_get_type @782
+    purple_value_get_uchar @783
+    purple_value_get_uint @784
+    purple_value_get_uint64 @785
+    purple_value_get_ulong @786
+    purple_value_get_ushort @787
+    purple_value_is_outgoing @788
+    purple_value_new @789
+    purple_value_new_outgoing @790
+    purple_value_set_boolean @791
+    purple_value_set_boxed @792
+    purple_value_set_char @793
+    purple_value_set_enum @794
+    purple_value_set_int @795
+    purple_value_set_int64 @796
+    purple_value_set_long @797
+    purple_value_set_object @798
+    purple_value_set_pointer @799
+    purple_value_set_short @800
+    purple_value_set_string @801
+    purple_value_set_uchar @802
+    purple_value_set_uint @803
+    purple_value_set_uint64 @804
+    purple_value_set_ulong @805
+    purple_value_set_ushort @806
+    purple_xfer_add @807
+    purple_xfer_cancel_local @808
+    purple_xfer_cancel_remote @809
+    purple_xfer_conversation_write @810
+    purple_xfer_end @811
+    purple_xfer_error @812
+    purple_xfer_get_account @813
+    purple_xfer_get_bytes_remaining @814
+    purple_xfer_get_bytes_sent @815
+    purple_xfer_get_filename @816
+    purple_xfer_get_local_filename @817
+    purple_xfer_get_local_port @818
+    purple_xfer_get_progress @819
+    purple_xfer_get_remote_ip @820
+    purple_xfer_get_remote_port @821
+    purple_xfer_get_size @822
+    purple_xfer_get_status @823
+    purple_xfer_get_type @824
+    purple_xfer_get_ui_ops @825
+    purple_xfer_is_canceled @826
+    purple_xfer_is_completed @827
+    purple_xfer_new @828
+    purple_xfer_read @829
+    purple_xfer_ref @830
+    purple_xfer_request @831
+    purple_xfer_request_accepted @832
+    purple_xfer_request_denied @833
+    purple_xfer_set_ack_fnc @834
+    purple_xfer_set_cancel_recv_fnc @835
+    purple_xfer_set_cancel_send_fnc @836
+    purple_xfer_set_completed @837
+    purple_xfer_set_end_fnc @838
+    purple_xfer_set_filename @839
+    purple_xfer_set_init_fnc @840
+    purple_xfer_set_local_filename @841
+    purple_xfer_set_message @842
+    purple_xfer_set_read_fnc @843
+    purple_xfer_set_request_denied_fnc @844
+    purple_xfer_set_size @845
+    purple_xfer_set_start_fnc @846
+    purple_xfer_set_write_fnc @847
+    purple_xfer_start @848
+    purple_xfer_unref @849
+    purple_xfer_update_progress @850
+    purple_xfer_write @851
+    purple_xfers_get_ui_ops @852
+    purple_xfers_set_ui_ops @853
+;    purplebuddylist @854 DATA
+;    purpledll_hInstance @855 DATA
+;    purpleexe_hInstance @856 DATA
+;    get_last_auto_response @857
+;    last_auto_responses @858 DATA
+;    log_sizer_common @859
+    md5_append @860
+;    md5_finish @861
+    md5_init @862
+;    remove_pref @863
+;    serv_add_buddies @864
+;    serv_add_buddy @865
+    serv_add_deny @866
+    serv_add_permit @867
+    serv_alias_buddy @868
+;    serv_change_passwd @869
+    serv_chat_invite @870
+    serv_chat_leave @871
+    serv_chat_send @872
+    serv_chat_whisper @873
+;    serv_close @874
+;    serv_finish_login @875
+    serv_get_info @876
+    serv_got_alias @877
+    serv_got_chat_in @878
+    serv_got_chat_invite @879
+    serv_got_chat_left @880
+;    serv_got_eviled @881
+    serv_got_im @882
+    serv_got_joined_chat @883
+    serv_got_typing @884
+    serv_got_typing_stopped @885
+;    serv_got_update @886
+    serv_join_chat @887
+;    serv_login @888
+    serv_move_buddy @889
+    serv_reject_chat @890
+    serv_rem_deny @891
+    serv_rem_permit @892
+;    serv_remove_buddies @893
+;    serv_remove_buddy @894
+;    serv_remove_group @895
+;    serv_rename_group @896
+    serv_send_file @897
+    serv_send_im @898
+    serv_send_typing @899
+    serv_set_alias @900
+;    serv_set_away @901
+;    serv_set_away_all @902
+;    serv_set_buddyicon @903
+;    serv_set_idle @904
+    serv_set_info @905
+    serv_set_permit_deny @906
+;    serv_touch_idle @907
+;    serv_warn @908
+;    set_purple_user_dir @909
+;    shaBlock @910
+;    shaFinal @911
+;    shaInit @912
+;    shaUpdate @913
+;    socks5errors @914 DATA
+    static_proto_init @915
+    wpurple_bind @916
+    wpurple_close @917
+    wpurple_connect @918
+    wpurple_data_dir @919
+    wpurple_escape_dirsep @920
+    wpurple_fcntl @921
+    wpurple_find_and_loadproc @922
+    wpurple_fopen @923
+    wpurple_gethostbyname @924
+    wpurple_gethostname @925
+    wpurple_getsockname @926
+    wpurple_getsockopt @927
+    wpurple_gettimeofday @928
+    wpurple_inet_aton @929
+    wpurple_install_dir @930
+    wpurple_ioctl @931
+    wpurple_lib_dir @932
+    wpurple_listen @933
+    wpurple_locale_dir @934
+    wpurple_localtime_r @935
+    wpurple_read @936
+    wpurple_rename @937
+    wpurple_setsockopt @938
+    wpurple_socket @939
+    wpurple_strerror @940
+    wpurple_write @941
+    xmlnode_copy @942
+    xmlnode_free @943
+    xmlnode_from_str @944
+    xmlnode_get_attrib @945
+    xmlnode_get_child @946
+    xmlnode_get_child_with_namespace @947
+    xmlnode_get_data @948
+    xmlnode_get_next_twin @949
+    xmlnode_insert_child @950
+    xmlnode_insert_data @951
+    xmlnode_new @952
+    xmlnode_new_child @953
+    xmlnode_remove_attrib @954
+    xmlnode_set_attrib @955
+    xmlnode_to_formatted_str @956
+    xmlnode_to_str @957
+    
+;	Purple 2.0.0
+	
+;	Exigidos pela libjabber
+	
+    purple_menu_action_new							@958
+    purple_account_get_presence						@959
+    purple_buddy_get_group							@960
+    purple_cipher_digest_region						@961
+    purple_connection_get_password					@962
+    purple_notify_user_info_add_pair				@963
+    purple_presence_get_active_status				@964
+    purple_prpl_got_user_status						@965
+    purple_status_get_type							@966
+    purple_status_type_get_primitive				@967
+    xmlnode_get_namespace							@968
+    xmlnode_set_namespace							@969
+    purple_account_is_disconnected					@970
+    purple_account_request_authorization			@971
+    purple_buddy_get_presence						@972
+;    purple_buddy_icons_get_full_path				@973	// update to libpurple
+    purple_cipher_context_append					@974
+    purple_cipher_context_destroy					@975
+    purple_cipher_context_digest					@976
+    purple_cipher_context_new						@977
+    purple_cipher_context_reset						@978
+    purple_ciphers_find_cipher						@979
+    purple_circ_buffer_append						@980
+    purple_circ_buffer_destroy						@981
+    purple_circ_buffer_get_max_read					@982
+    purple_circ_buffer_mark_read					@983
+    purple_circ_buffer_new							@984
+    purple_network_listen_cancel					@985
+    purple_notify_searchresults						@986
+    purple_notify_searchresults_button_add			@987
+    purple_notify_searchresults_column_add			@988
+    purple_notify_searchresults_column_new			@989
+    purple_notify_searchresults_new					@990
+    purple_notify_searchresults_row_add				@991
+    purple_notify_user_info_add_section_break		@992
+    purple_notify_user_info_destroy					@993
+    purple_notify_user_info_new						@994
+    purple_presence_is_online						@995
+    purple_proxy_connect_cancel						@996
+    purple_srv_cancel								@997
+    purple_srv_resolve								@998
+    purple_status_get_attr_int						@999
+    purple_status_get_attr_string					@1000
+    purple_status_get_id							@1001
+    purple_status_get_name							@1002
+    purple_status_is_active							@1003
+    purple_status_is_available						@1004
+    purple_status_type_get_id						@1005
+    purple_status_type_new_with_attrs				@1006
+    purple_utf8_strftime							@1007
+    xmlCreatePushParserCtxt							@1008
+    xmlFreeParserCtxt								@1009
+    xmlnode_get_attrib_with_namespace				@1010
+    xmlnode_set_attrib_with_namespace				@1011
+    xmlParseChunk									@1012
+    xmlStrcmp										@1013
+    purple_cipher_context_set_key					@1168
+	purple_util_fetch_url_request_len				@1169
+	purple_notify_user_info_prepend_section_break	@1170 
+	purple_notify_user_info_get_entries				@1171
+	purple_serv_got_join_chat_failed				@1172
+	xmlCtxtGetLastError								@1173
+	purple_serv_got_private_alias					@1174
+	purple_cipher_context_digest_to_str				@1175
+    
+;	Exigidos pela libmsn
+	
+	purple_buddy_get_name							@1014
+	purple_presence_is_idle							@1015
+	purple_blist_get_root							@1016
+	purple_buddy_get_account						@1017
+	purple_cipher_context_new_by_name				@1018
+	purple_conv_custom_smiley_add					@1019
+	purple_conv_custom_smiley_close					@1020
+	purple_conv_custom_smiley_write					@1021
+	purple_notify_user_info_add_section_header		@1022
+	purple_notify_user_info_prepend_pair			@1023
+	purple_notify_user_info_remove_last_item		@1024
+	purple_presence_is_available					@1025
+	purple_presence_is_status_active				@1026
+	purple_proxy_get_setup							@1027
+	purple_prpl_got_user_idle						@1028
+	purple_status_type_new_full						@1029
+	purple_str_strip_char							@1030
+	purple_util_fetch_url_request					@1031
+	purple_imgstore_new_from_file					@1176
+	purple_cipher_context_set_key_with_len			@1177
+	purple_cipher_context_encrypt 					@1178
+	purple_cipher_context_decrypt 					@1179
+	purple_cipher_context_set_iv 					@1180
+	purple_cipher_context_set_batch_mode			@1181
+	purple_prpl_got_attention_in_chat				@1182
+	
+;	Exigidos pela oscar
+	
+	wpurple_recv									@1032
+	wpurple_send									@1033
+	purple_account_add_buddies						@1034
+	purple_account_get_active_status				@1035
+	purple_account_remove_buddies					@1036
+	purple_conversation_present						@1037
+	purple_date_format_full							@1038
+	purple_date_format_short						@1039
+	purple_prefs_disconnect_by_handle				@1040
+	purple_presence_get_login_time					@1041
+	purple_presence_is_status_primitive_active		@1042
+	purple_presence_set_status_active				@1043
+	purple_prpl_got_user_login_time					@1044
+	purple_status_is_online							@1045
+	purple_status_set_attr_string					@1046
+	purple_time_format								@1047
+	purple_util_chrreplace							@1048
+	purple_xfer_set_bytes_sent						@1049
+	
+;	Exigidos pela yahoo
+	
+	purple_whiteboard_create						@1050
+	purple_whiteboard_get_session					@1051
+	purple_account_remove_buddy						@1052
+	purple_cipher_context_set_option				@1053
+	purple_privacy_check							@1054
+	purple_status_get_presence						@1055
+	purple_status_type_new							@1056
+	purple_util_fetch_url_cancel					@1057
+	purple_whiteboard_clear							@1058
+	purple_whiteboard_destroy						@1059
+	purple_whiteboard_draw_line						@1060
+	purple_whiteboard_set_brush						@1061
+	purple_whiteboard_start							@1062
+	purple_prpl_got_attention						@1164
+	purple_prpl_send_attention						@1165
+	purple_certificate_verify						@1166
+	purple_certificate_destroy_list					@1167
+	
+;	Exigidos pelo projeto Protocols
+	
+	purple_plugins_add_search_path					@1063
+	
+;	Exigidos pelo projeto UIM
+	
+	purple_account_add_buddy						@1064
+	purple_account_change_password					@1065
+	purple_account_remove_group						@1066
+	purple_account_set_status						@1067
+	purple_conversations_set_ui_ops					@1068
+	purple_notify_user_info_get_text_with_newline	@1069
+	purple_presence_set_idle						@1070
+	purple_account_set_enabled						@1071
+	purple_account_get_enabled						@1072
+	wpurple_g_io_channel_win32_new_socket			@1073
+	
+;	Exigidos pelos diversos projetos apos a atualizacao para libpurple (Pidgin)
+	
+;	Jabber
+	
+	purple_buddy_icons_find_account_icon			@1074
+	purple_imgstore_add_with_id						@1075
+	purple_imgstore_unref_by_id						@1076
+	purple_buddy_icons_get_checksum_for_user		@1077
+	purple_imgstore_get_extension					@1183
+	purple_util_get_image_checksum					@1184
+	
+;	MSN
+	
+	purple_markup_get_css_property					@1078
+	purple_prpl_got_user_status_deactive			@1079
+	
+;	Yahoo
+	
+	purple_plugin_get_id							@1080
+	
+;	Oscar
+	
+	purple_buddy_icons_get_account_icon_timestamp	@1081
+	purple_imgstore_find_by_id						@1082
+	
+;	UIM
+	
+	purple_account_set_buddy_icon_path				@1083
+	
+	
+;	Connection Destroy Mutex
+	
+;    lockConnectionDestroyMutex						@1090
+;    unlockConnectionDestroyMutex					@1091
+    
+    
+;	New method for node deletion
+    
+;    xmlnode_remove_child							@1100
+
+	
+;	
+	
+	purple_conv_send_confirm						@1110
+	purple_get_tzoff_str							@1111
+	purple_core_get_ui_info							@1112
+	purple_account_user_split_set_reverse			@1113
+	
+	
+;	Pidgin/libpurple 2.2.0
+	
+	purple_presence_get_idle_time					@1114
+	serv_got_attention								@1115
+	purple_conv_im_send_with_flags					@1116
+	serv_send_attention								@1117
+	purple_ssl_connect_with_host_fd					@1118
+	purple_ssl_strerror								@1119
+	purple_status_get_attr_value					@1120
+	purple_status_get_attr_boolean					@1121
+	purple_util_read_xml_from_file					@1122
+	purple_util_write_data_to_file					@1123
+	purple_util_write_data_to_file_absolute			@1124
+	purple_certificate_register_scheme				@1125
+	purple_certificate_unregister_scheme			@1126
+	
+	
+;	Pidgin/libpurple 2.3.0
+	
+	purple_connection_error_reason					@1127
+	purple_connection_ssl_error						@1128
+	purple_presence_get_status						@1129
+	wpurple_get_tz_offset							@1130
+	purple_timeout_add_seconds						@1131
+	
+	
+;	Smiley API
+	
+	purple_smiley_new								@1132
+;	purple_smiley_new_from_stream					@1133
+	purple_smiley_new_from_file						@1134
+	purple_smiley_delete							@1135
+	purple_smiley_set_shortcut						@1136
+	purple_smiley_set_data							@1137
+	purple_smiley_get_shortcut						@1138
+	purple_smiley_get_checksum						@1139
+	purple_smiley_get_stored_image					@1140
+	purple_smiley_get_data							@1141
+	purple_smiley_get_extension						@1142
+	purple_smiley_get_full_path						@1143
+	purple_smileys_get_all							@1144
+;	purple_smileys_add								@1145
+;	purple_smileys_remove							@1146
+	purple_smileys_find_by_shortcut					@1147
+	purple_smileys_find_by_checksum					@1148
+	purple_smileys_get_storing_dir					@1149
+	purple_smileys_init								@1150
+	purple_smileys_uninit							@1151
+	
+	
+	purple_util_get_image_extension					@1152
+	purple_buddy_icons_set_account_icon				@1154
+	purple_util_set_user_dir						@1156
+	
+	
+;	Pidgin/libpurple 2.4.0
+	
+	purple_status_type_get_name						@1157
+	purple_blist_node_get_type						@1158
+	purple_ip_address_is_valid						@1159
+	purple_util_format_song_info					@1160
+	purple_attention_type_new						@1161
+	purple_status_is_exclusive						@1162
+	purple_dnsquery_a								@1163
+	
+	
+;	Pidgin/libpurple 2.5.5
+	
+	xmlnode_set_prefix								@1186
+	
+	
+;	Mobile status adjustment
+	
+	purple_primitive_get_name_from_type				@1187
+	purple_primitive_get_id_from_type				@1188
+	
+	
+;LAST ID @1188
+	
+;IMPORTS
+
+;    intl.dll.bind_textdomain_codeset
+;    intl.dll.bindtextdomain
+;    intl.dll.dcgettext
+;    intl.dll.dcngettext
+;    intl.dll.dgettext
+;    intl.dll.dngettext
+;    intl.dll.gettext
+;    intl.dll.libintl_bind_textdomain_codeset
+;    intl.dll.libintl_bindtextdomain
+;    intl.dll.libintl_dcgettext
+;    intl.dll.libintl_dcngettext
+;    intl.dll.libintl_dgettext
+;    intl.dll.libintl_dngettext
+;    intl.dll.libintl_fprintf
+;    intl.dll.libintl_gettext
+;    intl.dll.libintl_ngettext
+;    intl.dll.libintl_printf
+;    intl.dll.libintl_set_relocation_prefix
+;    intl.dll.libintl_sprintf
+;    intl.dll.libintl_textdomain
+;    intl.dll.libintl_vfprintf
+;    intl.dll.libintl_vprintf
+;    intl.dll.libintl_vsprintf
+;    intl.dll.ngettext
+;    intl.dll.textdomain
+;    nss3.dll.ATOB_AsciiToData
+;    nss3.dll.ATOB_ConvertAsciiToItem
+;    nss3.dll.BTOA_ConvertItemToAscii
+;    nss3.dll.BTOA_DataToAscii
+;    nss3.dll.CERT_AddCertToListTail
+;    nss3.dll.CERT_AddExtension
+;    nss3.dll.CERT_AddOCSPAcceptableResponses
+;    nss3.dll.CERT_AddOKDomainName
+;    nss3.dll.CERT_AddRDN
+;    nss3.dll.CERT_AsciiToName
+;    nss3.dll.CERT_CRLCacheRefreshIssuer
+;    nss3.dll.CERT_CertChainFromCert
+;    nss3.dll.CERT_CertListFromCert
+;    nss3.dll.CERT_CertTimesValid
+;    nss3.dll.CERT_ChangeCertTrust
+;    nss3.dll.CERT_CheckCertUsage
+;    nss3.dll.CERT_CheckCertValidTimes
+;    nss3.dll.CERT_CompareName
+;    nss3.dll.CERT_CompleteCRLDecodeEntries
+;    nss3.dll.CERT_CopyName
+;    nss3.dll.CERT_CopyRDN
+;    nss3.dll.CERT_CreateAVA
+;    nss3.dll.CERT_CreateCertificate
+;    nss3.dll.CERT_CreateCertificateRequest
+;    nss3.dll.CERT_CreateName
+;    nss3.dll.CERT_CreateOCSPCertID
+;    nss3.dll.CERT_CreateOCSPRequest
+;    nss3.dll.CERT_CreateRDN
+;    nss3.dll.CERT_CreateSubjectCertList
+;    nss3.dll.CERT_CreateValidity
+;    nss3.dll.CERT_DecodeAVAValue
+;    nss3.dll.CERT_DecodeBasicConstraintValue
+;    nss3.dll.CERT_DecodeCertificatePoliciesExtension
+;    nss3.dll.CERT_DecodeDERCrl
+;    nss3.dll.CERT_DecodeDERCrlWithFlags
+;    nss3.dll.CERT_DecodeGeneralName
+;    nss3.dll.CERT_DecodeOCSPResponse
+;    nss3.dll.CERT_DecodeOidSequence
+;    nss3.dll.CERT_DecodeTrustString
+;    nss3.dll.CERT_DecodeUserNotice
+;    nss3.dll.CERT_DerNameToAscii
+;    nss3.dll.CERT_DestroyCertArray
+;    nss3.dll.CERT_DestroyCertList
+;    nss3.dll.CERT_DestroyCertificate
+;    nss3.dll.CERT_DestroyCertificateList
+;    nss3.dll.CERT_DestroyCertificatePoliciesExtension
+;    nss3.dll.CERT_DestroyCertificateRequest
+;    nss3.dll.CERT_DestroyName
+;    nss3.dll.CERT_DestroyOCSPCertID
+;    nss3.dll.CERT_DestroyOCSPRequest
+;    nss3.dll.CERT_DestroyOCSPResponse
+;    nss3.dll.CERT_DestroyOidSequence
+;    nss3.dll.CERT_DestroyValidity
+;    nss3.dll.CERT_DisableOCSPChecking
+;    nss3.dll.CERT_DisableOCSPDefaultResponder
+;    nss3.dll.CERT_DupCertList
+;    nss3.dll.CERT_DupCertificate
+;    nss3.dll.CERT_EnableOCSPChecking
+;    nss3.dll.CERT_EnableOCSPDefaultResponder
+;    nss3.dll.CERT_EncodeAltNameExtension
+;    nss3.dll.CERT_EncodeAndAddBitStrExtension
+;    nss3.dll.CERT_EncodeAuthKeyID
+;    nss3.dll.CERT_EncodeBasicConstraintValue
+;    nss3.dll.CERT_EncodeCRLDistributionPoints
+;    nss3.dll.CERT_EncodeGeneralName
+;    nss3.dll.CERT_EncodeOCSPRequest
+;    nss3.dll.CERT_ExtractPublicKey
+;    nss3.dll.CERT_FilterCertListByCANames
+;    nss3.dll.CERT_FilterCertListByUsage
+;    nss3.dll.CERT_FilterCertListForUserCerts
+;    nss3.dll.CERT_FindCertByDERCert
+;    nss3.dll.CERT_FindCertByIssuerAndSN
+;    nss3.dll.CERT_FindCertByName
+;    nss3.dll.CERT_FindCertByNickname
+;    nss3.dll.CERT_FindCertByNicknameOrEmailAddr
+;    nss3.dll.CERT_FindCertBySubjectKeyID
+;    nss3.dll.CERT_FindCertExtension
+;    nss3.dll.CERT_FindCertIssuer
+;    nss3.dll.CERT_FindKeyUsageExtension
+;    nss3.dll.CERT_FindSMimeProfile
+;    nss3.dll.CERT_FindSubjectKeyIDExtension
+;    nss3.dll.CERT_FindUserCertByUsage
+;    nss3.dll.CERT_FindUserCertsByUsage
+;    nss3.dll.CERT_FinishExtensions
+;    nss3.dll.CERT_FormatName
+;    nss3.dll.CERT_FreeDistNames
+;    nss3.dll.CERT_FreeNicknames
+;    nss3.dll.CERT_GenTime2FormattedAscii
+;    nss3.dll.CERT_GetAVATag
+;    nss3.dll.CERT_GetCertChainFromCert
+;    nss3.dll.CERT_GetCertEmailAddress
+;    nss3.dll.CERT_GetCertIssuerAndSN
+;    nss3.dll.CERT_GetCertNicknames
+;    nss3.dll.CERT_GetCertTimes
+;    nss3.dll.CERT_GetCertTrust
+;    nss3.dll.CERT_GetCertUid
+;    nss3.dll.CERT_GetCommonName
+;    nss3.dll.CERT_GetCountryName
+;    nss3.dll.CERT_GetDBContentVersion
+;    nss3.dll.CERT_GetDefaultCertDB
+;    nss3.dll.CERT_GetDomainComponentName
+;    nss3.dll.CERT_GetFirstEmailAddress
+;    nss3.dll.CERT_GetLocalityName
+;    nss3.dll.CERT_GetNextEmailAddress
+;    nss3.dll.CERT_GetOCSPAuthorityInfoAccessLocation
+;    nss3.dll.CERT_GetOCSPResponseStatus
+;    nss3.dll.CERT_GetOCSPStatusForCertID
+;    nss3.dll.CERT_GetOidString
+;    nss3.dll.CERT_GetOrgName
+;    nss3.dll.CERT_GetOrgUnitName
+;    nss3.dll.CERT_GetSSLCACerts
+;    nss3.dll.CERT_GetSlopTime
+;    nss3.dll.CERT_GetStateName
+;    nss3.dll.CERT_Hexify
+;    nss3.dll.CERT_ImportCAChain
+;    nss3.dll.CERT_ImportCAChainTrusted
+;    nss3.dll.CERT_ImportCRL
+;    nss3.dll.CERT_ImportCerts
+;    nss3.dll.CERT_IsCACert
+;    nss3.dll.CERT_IsCADERCert
+;    nss3.dll.CERT_IsRootDERCert
+;    nss3.dll.CERT_IsUserCert
+;    nss3.dll.CERT_KeyFromDERCrl
+;    nss3.dll.CERT_MakeCANickname
+;    nss3.dll.CERT_NameToAscii
+;    nss3.dll.CERT_NewCertList
+;    nss3.dll.CERT_NicknameStringsFromCertList
+;    nss3.dll.CERT_OpenCertDBFilename
+;    nss3.dll.CERT_RFC1485_EscapeAndQuote
+;    nss3.dll.CERT_RemoveCertListNode
+;    nss3.dll.CERT_SaveSMimeProfile
+;    nss3.dll.CERT_SetOCSPDefaultResponder
+;    nss3.dll.CERT_SetSlopTime
+;    nss3.dll.CERT_StartCertExtensions
+;    nss3.dll.CERT_VerifyCACertForUsage
+;    nss3.dll.CERT_VerifyCert
+;    nss3.dll.CERT_VerifyCertName
+;    nss3.dll.CERT_VerifyCertNow
+;    nss3.dll.CERT_VerifyCertificate
+;    nss3.dll.CERT_VerifyCertificateNow
+;    nss3.dll.CERT_VerifyOCSPResponseSignature
+;    nss3.dll.CERT_VerifySignedData
+;    nss3.dll.CERT_VerifySignedDataWithPublicKey
+;    nss3.dll.CERT_VerifySignedDataWithPublicKeyInfo
+;    nss3.dll.DER_AsciiToTime
+;    nss3.dll.DER_DecodeTimeChoice
+;    nss3.dll.DER_Encode
+;    nss3.dll.DER_EncodeTimeChoice
+;    nss3.dll.DER_GeneralizedTimeToTime
+;    nss3.dll.DER_GetInteger
+;    nss3.dll.DER_Lengths
+;    nss3.dll.DER_TimeToUTCTime
+;    nss3.dll.DER_UTCDayToAscii
+;    nss3.dll.DER_UTCTimeToAscii
+;    nss3.dll.DER_UTCTimeToTime
+;    nss3.dll.DSAU_DecodeDerSig
+;    nss3.dll.DSAU_DecodeDerSigToLen
+;    nss3.dll.DSAU_EncodeDerSig
+;    nss3.dll.DSAU_EncodeDerSigWithLen
+;    nss3.dll.HASH_Begin
+;    nss3.dll.HASH_Create
+;    nss3.dll.HASH_Destroy
+;    nss3.dll.HASH_End
+;    nss3.dll.HASH_GetHashObject
+;    nss3.dll.HASH_GetHashObjectByOidTag
+;    nss3.dll.HASH_GetHashTypeByOidTag
+;    nss3.dll.HASH_ResultLen
+;    nss3.dll.HASH_Update
+;    nss3.dll.NSSAlgorithmAndParameters_CreateMD5Digest
+;    nss3.dll.NSSAlgorithmAndParameters_CreateSHA1Digest
+;    nss3.dll.NSSArena_Create
+;    nss3.dll.NSSArena_Destroy
+;    nss3.dll.NSSBase64Decoder_Create
+;    nss3.dll.NSSBase64Decoder_Destroy
+;    nss3.dll.NSSBase64Decoder_Update
+;    nss3.dll.NSSBase64Encoder_Create
+;    nss3.dll.NSSBase64Encoder_Destroy
+;    nss3.dll.NSSBase64Encoder_Update
+;    nss3.dll.NSSBase64_DecodeBuffer
+;    nss3.dll.NSSBase64_EncodeItem
+;    nss3.dll.NSSCertificateArray_Destroy
+;    nss3.dll.NSSCertificate_BuildChain
+;    nss3.dll.NSSCertificate_CreateCryptoContext
+;    nss3.dll.NSSCertificate_DeleteStoredObject
+;    nss3.dll.NSSCertificate_Destroy
+;    nss3.dll.NSSCertificate_Encode
+;    nss3.dll.NSSCertificate_Encrypt
+;    nss3.dll.NSSCertificate_FindPrivateKey
+;    nss3.dll.NSSCertificate_GetModule
+;    nss3.dll.NSSCertificate_GetPublicKey
+;    nss3.dll.NSSCertificate_GetSlot
+;    nss3.dll.NSSCertificate_GetToken
+;    nss3.dll.NSSCertificate_GetTrustDomain
+;    nss3.dll.NSSCertificate_IsPrivateKeyAvailable
+;    nss3.dll.NSSCertificate_Validate
+;    nss3.dll.NSSCertificate_ValidateAndDiscoverUsagesAndPolicies
+;    nss3.dll.NSSCertificate_ValidateCompletely
+;    nss3.dll.NSSCertificate_Verify
+;    nss3.dll.NSSCertificate_VerifyRecover
+;    nss3.dll.NSSCertificate_WrapSymmetricKey
+;    nss3.dll.NSSCryptoContext_BeginDecrypt
+;    nss3.dll.NSSCryptoContext_BeginDigest
+;    nss3.dll.NSSCryptoContext_BeginEncrypt
+;    nss3.dll.NSSCryptoContext_BeginSign
+;    nss3.dll.NSSCryptoContext_BeginSignRecover
+;    nss3.dll.NSSCryptoContext_BeginVerify
+;    nss3.dll.NSSCryptoContext_BeginVerifyRecover
+;    nss3.dll.NSSCryptoContext_Clone
+;    nss3.dll.NSSCryptoContext_ContinueDecrypt
+;    nss3.dll.NSSCryptoContext_ContinueDigest
+;    nss3.dll.NSSCryptoContext_ContinueEncrypt
+;    nss3.dll.NSSCryptoContext_ContinueSign
+;    nss3.dll.NSSCryptoContext_ContinueSignRecover
+;    nss3.dll.NSSCryptoContext_ContinueVerify
+;    nss3.dll.NSSCryptoContext_ContinueVerifyRecover
+;    nss3.dll.NSSCryptoContext_Decrypt
+;    nss3.dll.NSSCryptoContext_DeriveSymmetricKey
+;    nss3.dll.NSSCryptoContext_Destroy
+;    nss3.dll.NSSCryptoContext_Digest
+;    nss3.dll.NSSCryptoContext_Encrypt
+;    nss3.dll.NSSCryptoContext_FindBestCertificateByEmail
+;    nss3.dll.NSSCryptoContext_FindBestCertificateByNameComponents
+;    nss3.dll.NSSCryptoContext_FindBestCertificateByNickname
+;    nss3.dll.NSSCryptoContext_FindBestCertificateBySubject
+;    nss3.dll.NSSCryptoContext_FindBestUserCertificate
+;    nss3.dll.NSSCryptoContext_FindBestUserCertificateForEmailSigning
+;    nss3.dll.NSSCryptoContext_FindBestUserCertificateForSSLClientAuth
+;    nss3.dll.NSSCryptoContext_FindCertificateByEncodedCertificate
+;    nss3.dll.NSSCryptoContext_FindCertificateByIssuerAndSerialNumber
+;    nss3.dll.NSSCryptoContext_FindCertificateByOCSPHash
+;    nss3.dll.NSSCryptoContext_FindCertificatesByEmail
+;    nss3.dll.NSSCryptoContext_FindCertificatesByNameComponents
+;    nss3.dll.NSSCryptoContext_FindCertificatesByNickname
+;    nss3.dll.NSSCryptoContext_FindCertificatesBySubject
+;    nss3.dll.NSSCryptoContext_FindSymmetricKeyByAlgorithmAndKeyID
+;    nss3.dll.NSSCryptoContext_FindUserCertificates
+;    nss3.dll.NSSCryptoContext_FindUserCertificatesForEmailSigning
+;    nss3.dll.NSSCryptoContext_FindUserCertificatesForSSLClientAuth
+;    nss3.dll.NSSCryptoContext_FinishDecrypt
+;    nss3.dll.NSSCryptoContext_FinishDigest
+;    nss3.dll.NSSCryptoContext_FinishEncrypt
+;    nss3.dll.NSSCryptoContext_FinishSign
+;    nss3.dll.NSSCryptoContext_FinishSignRecover
+;    nss3.dll.NSSCryptoContext_FinishVerify
+;    nss3.dll.NSSCryptoContext_FinishVerifyRecover
+;    nss3.dll.NSSCryptoContext_GenerateKeyPair
+;    nss3.dll.NSSCryptoContext_GenerateSymmetricKey
+;    nss3.dll.NSSCryptoContext_GenerateSymmetricKeyFromPassword
+;    nss3.dll.NSSCryptoContext_GetDefaultCallback
+;    nss3.dll.NSSCryptoContext_GetTrustDomain
+;    nss3.dll.NSSCryptoContext_ImportCertificate
+;    nss3.dll.NSSCryptoContext_ImportEncodedCertificate
+;    nss3.dll.NSSCryptoContext_ImportEncodedPKIXCertificateChain
+;    nss3.dll.NSSCryptoContext_ImportPKIXCertificate
+;    nss3.dll.NSSCryptoContext_SetDefaultCallback
+;    nss3.dll.NSSCryptoContext_Sign
+;    nss3.dll.NSSCryptoContext_SignRecover
+;    nss3.dll.NSSCryptoContext_UnwrapSymmetricKey
+;    nss3.dll.NSSCryptoContext_Verify
+;    nss3.dll.NSSCryptoContext_VerifyRecover
+;    nss3.dll.NSSCryptoContext_WrapSymmetricKey
+;    nss3.dll.NSSPrivateKey_CreateCryptoContext
+;    nss3.dll.NSSPrivateKey_Decrypt
+;    nss3.dll.NSSPrivateKey_DeleteStoredObject
+;    nss3.dll.NSSPrivateKey_DeriveSymmetricKey
+;    nss3.dll.NSSPrivateKey_Destroy
+;    nss3.dll.NSSPrivateKey_Encode
+;    nss3.dll.NSSPrivateKey_FindBestCertificate
+;    nss3.dll.NSSPrivateKey_FindCertificates
+;    nss3.dll.NSSPrivateKey_FindPublicKey
+;    nss3.dll.NSSPrivateKey_GetModule
+;    nss3.dll.NSSPrivateKey_GetPrivateModulusLength
+;    nss3.dll.NSSPrivateKey_GetSignatureLength
+;    nss3.dll.NSSPrivateKey_GetSlot
+;    nss3.dll.NSSPrivateKey_GetToken
+;    nss3.dll.NSSPrivateKey_GetTrustDomain
+;    nss3.dll.NSSPrivateKey_IsStillPresent
+;    nss3.dll.NSSPrivateKey_Sign
+;    nss3.dll.NSSPrivateKey_SignRecover
+;    nss3.dll.NSSPrivateKey_UnwrapSymmetricKey
+;    nss3.dll.NSSPublicKey_CreateCryptoContext
+;    nss3.dll.NSSPublicKey_DeleteStoredObject
+;    nss3.dll.NSSPublicKey_Destroy
+;    nss3.dll.NSSPublicKey_Encode
+;    nss3.dll.NSSPublicKey_Encrypt
+;    nss3.dll.NSSPublicKey_FindBestCertificate
+;    nss3.dll.NSSPublicKey_FindCertificates
+;    nss3.dll.NSSPublicKey_FindPrivateKey
+;    nss3.dll.NSSPublicKey_GetModule
+;    nss3.dll.NSSPublicKey_GetSlot
+;    nss3.dll.NSSPublicKey_GetToken
+;    nss3.dll.NSSPublicKey_GetTrustDomain
+;    nss3.dll.NSSPublicKey_Verify
+;    nss3.dll.NSSPublicKey_VerifyRecover
+;    nss3.dll.NSSPublicKey_WrapSymmetricKey
+;    nss3.dll.NSSRWLock_Destroy
+;    nss3.dll.NSSRWLock_HaveWriteLock
+;    nss3.dll.NSSRWLock_LockRead
+;    nss3.dll.NSSRWLock_LockWrite
+;    nss3.dll.NSSRWLock_New
+;    nss3.dll.NSSRWLock_UnlockRead
+;    nss3.dll.NSSRWLock_UnlockWrite
+;    nss3.dll.NSSSlotArray_Destroy
+;    nss3.dll.NSSSlot_Destroy
+;    nss3.dll.NSSSymmetricKey_CreateCryptoContext
+;    nss3.dll.NSSSymmetricKey_Decrypt
+;    nss3.dll.NSSSymmetricKey_DeleteStoredObject
+;    nss3.dll.NSSSymmetricKey_DeriveSymmetricKey
+;    nss3.dll.NSSSymmetricKey_Destroy
+;    nss3.dll.NSSSymmetricKey_Encrypt
+;    nss3.dll.NSSSymmetricKey_GetKeyLength
+;    nss3.dll.NSSSymmetricKey_GetKeyStrength
+;    nss3.dll.NSSSymmetricKey_GetModule
+;    nss3.dll.NSSSymmetricKey_GetSlot
+;    nss3.dll.NSSSymmetricKey_GetToken
+;    nss3.dll.NSSSymmetricKey_GetTrustDomain
+;    nss3.dll.NSSSymmetricKey_IsStillPresent
+;    nss3.dll.NSSSymmetricKey_Sign
+;    nss3.dll.NSSSymmetricKey_SignRecover
+;    nss3.dll.NSSSymmetricKey_UnwrapPrivateKey
+;    nss3.dll.NSSSymmetricKey_UnwrapSymmetricKey
+;    nss3.dll.NSSSymmetricKey_Verify
+;    nss3.dll.NSSSymmetricKey_VerifyRecover
+;    nss3.dll.NSSSymmetricKey_WrapPrivateKey
+;    nss3.dll.NSSSymmetricKey_WrapSymmetricKey
+;    nss3.dll.NSSTime_GetPRTime
+;    nss3.dll.NSSTime_Now
+;    nss3.dll.NSSTime_SetPRTime
+;    nss3.dll.NSSTokenArray_Destroy
+;    nss3.dll.NSSToken_Destroy
+;    nss3.dll.NSSToken_GetName
+;    nss3.dll.NSSTrustDomain_Create
+;    nss3.dll.NSSTrustDomain_CreateCryptoContext
+;    nss3.dll.NSSTrustDomain_CreateCryptoContextForAlgorithm
+;    nss3.dll.NSSTrustDomain_CreateCryptoContextForAlgorithmAndParameters
+;    nss3.dll.NSSTrustDomain_Destroy
+;    nss3.dll.NSSTrustDomain_DisableToken
+;    nss3.dll.NSSTrustDomain_EnableToken
+;    nss3.dll.NSSTrustDomain_FindBestCertificateByEmail
+;    nss3.dll.NSSTrustDomain_FindBestCertificateByNameComponents
+;    nss3.dll.NSSTrustDomain_FindBestCertificateByNickname
+;    nss3.dll.NSSTrustDomain_FindBestCertificateBySubject
+;    nss3.dll.NSSTrustDomain_FindBestTokenForAlgorithms
+;    nss3.dll.NSSTrustDomain_FindBestUserCertificate
+;    nss3.dll.NSSTrustDomain_FindBestUserCertificateForEmailSigning
+;    nss3.dll.NSSTrustDomain_FindBestUserCertificateForSSLClientAuth
+;    nss3.dll.NSSTrustDomain_FindCertificateByEncodedCertificate
+;    nss3.dll.NSSTrustDomain_FindCertificateByIssuerAndSerialNumber
+;    nss3.dll.NSSTrustDomain_FindCertificateByOCSPHash
+;    nss3.dll.NSSTrustDomain_FindCertificatesByEmail
+;    nss3.dll.NSSTrustDomain_FindCertificatesByNameComponents
+;    nss3.dll.NSSTrustDomain_FindCertificatesByNickname
+;    nss3.dll.NSSTrustDomain_FindCertificatesBySubject
+;    nss3.dll.NSSTrustDomain_FindSlotByName
+;    nss3.dll.NSSTrustDomain_FindSymmetricKeyByAlgorithmAndKeyID
+;    nss3.dll.NSSTrustDomain_FindTokenByName
+;    nss3.dll.NSSTrustDomain_FindTokenBySlotName
+;    nss3.dll.NSSTrustDomain_FindTokenForAlgorithm
+;    nss3.dll.NSSTrustDomain_FindUserCertificates
+;    nss3.dll.NSSTrustDomain_FindUserCertificatesForEmailSigning
+;    nss3.dll.NSSTrustDomain_FindUserCertificatesForSSLClientAuth
+;    nss3.dll.NSSTrustDomain_GenerateKeyPair
+;    nss3.dll.NSSTrustDomain_GenerateSymmetricKey
+;    nss3.dll.NSSTrustDomain_GenerateSymmetricKeyFromPassword
+;    nss3.dll.NSSTrustDomain_GetDefaultCallback
+;    nss3.dll.NSSTrustDomain_ImportCertificate
+;    nss3.dll.NSSTrustDomain_ImportEncodedCertificate
+;    nss3.dll.NSSTrustDomain_ImportEncodedCertificateChain
+;    nss3.dll.NSSTrustDomain_ImportEncodedPrivateKey
+;    nss3.dll.NSSTrustDomain_ImportEncodedPublicKey
+;    nss3.dll.NSSTrustDomain_ImportPKIXCertificate
+;    nss3.dll.NSSTrustDomain_IsTokenEnabled
+;    nss3.dll.NSSTrustDomain_LoadModule
+;    nss3.dll.NSSTrustDomain_Login
+;    nss3.dll.NSSTrustDomain_Logout
+;    nss3.dll.NSSTrustDomain_SetDefaultCallback
+;    nss3.dll.NSSTrustDomain_TraverseCertificates
+;    nss3.dll.NSSUserCertificate_Decrypt
+;    nss3.dll.NSSUserCertificate_DeriveSymmetricKey
+;    nss3.dll.NSSUserCertificate_IsStillPresent
+;    nss3.dll.NSSUserCertificate_Sign
+;    nss3.dll.NSSUserCertificate_SignRecover
+;    nss3.dll.NSSUserCertificate_UnwrapSymmetricKey
+;    nss3.dll.NSS_GetError
+;    nss3.dll.NSS_GetErrorStack
+;    nss3.dll.NSS_Get_CERT_CertificateRequestTemplate
+;    nss3.dll.NSS_Get_CERT_CertificateTemplate
+;    nss3.dll.NSS_Get_CERT_CrlTemplate
+;    nss3.dll.NSS_Get_CERT_IssuerAndSNTemplate
+;    nss3.dll.NSS_Get_CERT_NameTemplate
+;    nss3.dll.NSS_Get_CERT_SetOfSignedCrlTemplate
+;    nss3.dll.NSS_Get_CERT_SignedDataTemplate
+;    nss3.dll.NSS_Get_CERT_SubjectPublicKeyInfoTemplate
+;    nss3.dll.NSS_Get_CERT_TimeChoiceTemplate
+;    nss3.dll.NSS_Get_SECKEY_DSAPublicKeyTemplate
+;    nss3.dll.NSS_Get_SECKEY_EncryptedPrivateKeyInfoTemplate
+;    nss3.dll.NSS_Get_SECKEY_PointerToEncryptedPrivateKeyInfoTemplate
+;    nss3.dll.NSS_Get_SECKEY_PointerToPrivateKeyInfoTemplate
+;    nss3.dll.NSS_Get_SECKEY_PrivateKeyInfoTemplate
+;    nss3.dll.NSS_Get_SECKEY_RSAPublicKeyTemplate
+;    nss3.dll.NSS_Get_SECOID_AlgorithmIDTemplate
+;    nss3.dll.NSS_Get_SEC_AnyTemplate
+;    nss3.dll.NSS_Get_SEC_BMPStringTemplate
+;    nss3.dll.NSS_Get_SEC_BitStringTemplate
+;    nss3.dll.NSS_Get_SEC_BooleanTemplate
+;    nss3.dll.NSS_Get_SEC_GeneralizedTimeTemplate
+;    nss3.dll.NSS_Get_SEC_IA5StringTemplate
+;    nss3.dll.NSS_Get_SEC_IntegerTemplate
+;    nss3.dll.NSS_Get_SEC_NullTemplate
+;    nss3.dll.NSS_Get_SEC_ObjectIDTemplate
+;    nss3.dll.NSS_Get_SEC_OctetStringTemplate
+;    nss3.dll.NSS_Get_SEC_PointerToAnyTemplate
+;    nss3.dll.NSS_Get_SEC_PointerToOctetStringTemplate
+;    nss3.dll.NSS_Get_SEC_SetOfAnyTemplate
+;    nss3.dll.NSS_Get_SEC_SignedCertificateTemplate
+;    nss3.dll.NSS_Get_SEC_UTCTimeTemplate
+;    nss3.dll.NSS_Get_SEC_UTF8StringTemplate
+;    nss3.dll.NSS_Get_sgn_DigestInfoTemplate
+;    nss3.dll.NSS_Init
+;    nss3.dll.NSS_InitReadWrite
+;    nss3.dll.NSS_Initialize
+;    nss3.dll.NSS_NoDB_Init
+;    nss3.dll.NSS_PutEnv
+;    nss3.dll.NSS_Shutdown
+;    nss3.dll.NSS_VersionCheck
+;    nss3.dll.PBE_CreateContext
+;    nss3.dll.PBE_DestroyContext
+;    nss3.dll.PBE_GenerateBits
+;    nss3.dll.PK11SDR_Decrypt
+;    nss3.dll.PK11SDR_Encrypt
+;    nss3.dll.PK11_AlgtagToMechanism
+;    nss3.dll.PK11_Authenticate
+;    nss3.dll.PK11_BlockData
+;    nss3.dll.PK11_ChangePW
+;    nss3.dll.PK11_CheckSSOPassword
+;    nss3.dll.PK11_CheckUserPassword
+;    nss3.dll.PK11_CipherOp
+;    nss3.dll.PK11_CloneContext
+;    nss3.dll.PK11_ConfigurePKCS11
+;    nss3.dll.PK11_ConvertSessionPrivKeyToTokenPrivKey
+;    nss3.dll.PK11_ConvertSessionSymKeyToTokenSymKey
+;    nss3.dll.PK11_CopySymKeyForSigning
+;    nss3.dll.PK11_CreateContextBySymKey
+;    nss3.dll.PK11_CreateDigestContext
+;    nss3.dll.PK11_CreatePBEAlgorithmID
+;    nss3.dll.PK11_CreatePBEParams
+;    nss3.dll.PK11_DEREncodePublicKey
+;    nss3.dll.PK11_DeleteTokenCertAndKey
+;    nss3.dll.PK11_DeleteTokenPrivateKey
+;    nss3.dll.PK11_DeleteTokenPublicKey
+;    nss3.dll.PK11_DeleteTokenSymKey
+;    nss3.dll.PK11_Derive
+;    nss3.dll.PK11_DeriveWithFlags
+;    nss3.dll.PK11_DeriveWithFlagsPerm
+;    nss3.dll.PK11_DestroyContext
+;    nss3.dll.PK11_DestroyObject
+;    nss3.dll.PK11_DestroyPBEParams
+;    nss3.dll.PK11_DestroyTokenObject
+;    nss3.dll.PK11_DigestBegin
+;    nss3.dll.PK11_DigestFinal
+;    nss3.dll.PK11_DigestKey
+;    nss3.dll.PK11_DigestOp
+;    nss3.dll.PK11_DoesMechanism
+;    nss3.dll.PK11_ExportEncryptedPrivKeyInfo
+;    nss3.dll.PK11_ExportEncryptedPrivateKeyInfo
+;    nss3.dll.PK11_ExportPrivateKeyInfo
+;    nss3.dll.PK11_ExtractKeyValue
+;    nss3.dll.PK11_Finalize
+;    nss3.dll.PK11_FindBestKEAMatch
+;    nss3.dll.PK11_FindCertAndKeyByRecipientList
+;    nss3.dll.PK11_FindCertAndKeyByRecipientListNew
+;    nss3.dll.PK11_FindCertByIssuerAndSN
+;    nss3.dll.PK11_FindCertFromDERCert
+;    nss3.dll.PK11_FindCertFromNickname
+;    nss3.dll.PK11_FindCertInSlot
+;    nss3.dll.PK11_FindCertsFromNickname
+;    nss3.dll.PK11_FindFixedKey
+;    nss3.dll.PK11_FindKeyByAnyCert
+;    nss3.dll.PK11_FindKeyByDERCert
+;    nss3.dll.PK11_FindKeyByKeyID
+;    nss3.dll.PK11_FindPrivateKeyFromCert
+;    nss3.dll.PK11_FindSlotByName
+;    nss3.dll.PK11_FindSlotsByNames
+;    nss3.dll.PK11_FortezzaHasKEA
+;    nss3.dll.PK11_FortezzaMapSig
+;    nss3.dll.PK11_FreeSlot
+;    nss3.dll.PK11_FreeSlotList
+;    nss3.dll.PK11_FreeSymKey
+;    nss3.dll.PK11_GenerateFortezzaIV
+;    nss3.dll.PK11_GenerateKeyPair
+;    nss3.dll.PK11_GenerateNewParam
+;    nss3.dll.PK11_GenerateRandom
+;    nss3.dll.PK11_GetAllTokens
+;    nss3.dll.PK11_GetBestKeyLength
+;    nss3.dll.PK11_GetBestSlot
+;    nss3.dll.PK11_GetBestSlotMultiple
+;    nss3.dll.PK11_GetBestWrapMechanism
+;    nss3.dll.PK11_GetBlockSize
+;    nss3.dll.PK11_GetCurrentWrapIndex
+;    nss3.dll.PK11_GetDefaultArray
+;    nss3.dll.PK11_GetDefaultFlags
+;    nss3.dll.PK11_GetDisabledReason
+;    nss3.dll.PK11_GetFirstSafe
+;    nss3.dll.PK11_GetIVLength
+;    nss3.dll.PK11_GetInternalKeySlot
+;    nss3.dll.PK11_GetInternalSlot
+;    nss3.dll.PK11_GetKeyData
+;    nss3.dll.PK11_GetKeyGen
+;    nss3.dll.PK11_GetKeyLength
+;    nss3.dll.PK11_GetKeyStrength
+;    nss3.dll.PK11_GetKeyType
+;    nss3.dll.PK11_GetLowLevelKeyIDForCert
+;    nss3.dll.PK11_GetLowLevelKeyIDForPrivateKey
+;    nss3.dll.PK11_GetMechanism
+;    nss3.dll.PK11_GetMinimumPwdLength
+;    nss3.dll.PK11_GetModInfo
+;    nss3.dll.PK11_GetModule
+;    nss3.dll.PK11_GetModuleID
+;    nss3.dll.PK11_GetNextSafe
+;    nss3.dll.PK11_GetNextSymKey
+;    nss3.dll.PK11_GetPBEIV
+;    nss3.dll.PK11_GetPQGParamsFromPrivateKey
+;    nss3.dll.PK11_GetPadMechanism
+;    nss3.dll.PK11_GetPrivateKeyNickname
+;    nss3.dll.PK11_GetPrivateModulusLen
+;    nss3.dll.PK11_GetPublicKeyNickname
+;    nss3.dll.PK11_GetSlotFromKey
+;    nss3.dll.PK11_GetSlotFromPrivateKey
+;    nss3.dll.PK11_GetSlotID
+;    nss3.dll.PK11_GetSlotInfo
+;    nss3.dll.PK11_GetSlotName
+;    nss3.dll.PK11_GetSlotPWValues
+;    nss3.dll.PK11_GetSlotSeries
+;    nss3.dll.PK11_GetSymKeyNickname
+;    nss3.dll.PK11_GetSymKeyType
+;    nss3.dll.PK11_GetTokenInfo
+;    nss3.dll.PK11_GetTokenName
+;    nss3.dll.PK11_GetWindow
+;    nss3.dll.PK11_GetWrapKey
+;    nss3.dll.PK11_HasRootCerts
+;    nss3.dll.PK11_HashBuf
+;    nss3.dll.PK11_IVFromParam
+;    nss3.dll.PK11_ImportCRL
+;    nss3.dll.PK11_ImportCert
+;    nss3.dll.PK11_ImportCertForKey
+;    nss3.dll.PK11_ImportCertForKeyToSlot
+;    nss3.dll.PK11_ImportDERCert
+;    nss3.dll.PK11_ImportDERCertForKey
+;    nss3.dll.PK11_ImportDERPrivateKeyInfo
+;    nss3.dll.PK11_ImportDERPrivateKeyInfoAndReturnKey
+;    nss3.dll.PK11_ImportEncryptedPrivateKeyInfo
+;    nss3.dll.PK11_ImportPrivateKeyInfo
+;    nss3.dll.PK11_ImportPrivateKeyInfoAndReturnKey
+;    nss3.dll.PK11_ImportPublicKey
+;    nss3.dll.PK11_ImportSymKey
+;    nss3.dll.PK11_ImportSymKeyWithFlags
+;    nss3.dll.PK11_InitPin
+;    nss3.dll.PK11_IsDisabled
+;    nss3.dll.PK11_IsFIPS
+;    nss3.dll.PK11_IsFriendly
+;    nss3.dll.PK11_IsHW
+;    nss3.dll.PK11_IsInternal
+;    nss3.dll.PK11_IsLoggedIn
+;    nss3.dll.PK11_IsPresent
+;    nss3.dll.PK11_IsReadOnly
+;    nss3.dll.PK11_KeyForCertExists
+;    nss3.dll.PK11_KeyForDERCertExists
+;    nss3.dll.PK11_KeyGen
+;    nss3.dll.PK11_ListCerts
+;    nss3.dll.PK11_ListCertsInSlot
+;    nss3.dll.PK11_ListFixedKeysInSlot
+;    nss3.dll.PK11_ListPrivKeysInSlot
+;    nss3.dll.PK11_ListPrivateKeysInSlot
+;    nss3.dll.PK11_ListPublicKeysInSlot
+;    nss3.dll.PK11_LoadPrivKey
+;    nss3.dll.PK11_Logout
+;    nss3.dll.PK11_LogoutAll
+;    nss3.dll.PK11_MakeIDFromPubKey
+;    nss3.dll.PK11_MakeKEAPubKey
+;    nss3.dll.PK11_MapPBEMechanismToCryptoMechanism
+;    nss3.dll.PK11_MechanismToAlgtag
+;    nss3.dll.PK11_MoveSymKey
+;    nss3.dll.PK11_NeedLogin
+;    nss3.dll.PK11_NeedPWInit
+;    nss3.dll.PK11_NeedUserInit
+;    nss3.dll.PK11_PBEKeyGen
+;    nss3.dll.PK11_PQG_DestroyParams
+;    nss3.dll.PK11_PQG_DestroyVerify
+;    nss3.dll.PK11_PQG_GetBaseFromParams
+;    nss3.dll.PK11_PQG_GetCounterFromVerify
+;    nss3.dll.PK11_PQG_GetHFromVerify
+;    nss3.dll.PK11_PQG_GetPrimeFromParams
+;    nss3.dll.PK11_PQG_GetSeedFromVerify
+;    nss3.dll.PK11_PQG_GetSubPrimeFromParams
+;    nss3.dll.PK11_PQG_NewParams
+;    nss3.dll.PK11_PQG_NewVerify
+;    nss3.dll.PK11_PQG_ParamGen
+;    nss3.dll.PK11_PQG_ParamGenSeedLen
+;    nss3.dll.PK11_PQG_VerifyParams
+;    nss3.dll.PK11_ParamFromAlgid
+;    nss3.dll.PK11_ParamFromIV
+;    nss3.dll.PK11_ParamToAlgid
+;    nss3.dll.PK11_ProtectedAuthenticationPath
+;    nss3.dll.PK11_PubDecryptRaw
+;    nss3.dll.PK11_PubDerive
+;    nss3.dll.PK11_PubDeriveWithKDF
+;    nss3.dll.PK11_PubEncryptRaw
+;    nss3.dll.PK11_PubUnwrapSymKey
+;    nss3.dll.PK11_PubUnwrapSymKeyWithFlags
+;    nss3.dll.PK11_PubUnwrapSymKeyWithFlagsPerm
+;    nss3.dll.PK11_PubWrapSymKey
+;    nss3.dll.PK11_RandomUpdate
+;    nss3.dll.PK11_RawPBEKeyGen
+;    nss3.dll.PK11_ReferenceSlot
+;    nss3.dll.PK11_ReferenceSymKey
+;    nss3.dll.PK11_ResetToken
+;    nss3.dll.PK11_RestoreContext
+;    nss3.dll.PK11_SaveContext
+;    nss3.dll.PK11_SaveContextAlloc
+;    nss3.dll.PK11_SeedRandom
+;    nss3.dll.PK11_SetFortezzaHack
+;    nss3.dll.PK11_SetPasswordFunc
+;    nss3.dll.PK11_SetPrivateKeyNickname
+;    nss3.dll.PK11_SetPublicKeyNickname
+;    nss3.dll.PK11_SetSlotPWValues
+;    nss3.dll.PK11_SetSymKeyNickname
+;    nss3.dll.PK11_SetWrapKey
+;    nss3.dll.PK11_Sign
+;    nss3.dll.PK11_SignatureLen
+;    nss3.dll.PK11_SymKeyFromHandle
+;    nss3.dll.PK11_TokenExists
+;    nss3.dll.PK11_TokenKeyGen
+;    nss3.dll.PK11_TokenRefresh
+;    nss3.dll.PK11_TraverseCertsForNicknameInSlot
+;    nss3.dll.PK11_TraverseCertsForSubjectInSlot
+;    nss3.dll.PK11_TraverseSlotCerts
+;    nss3.dll.PK11_UnwrapPrivKey
+;    nss3.dll.PK11_UnwrapSymKey
+;    nss3.dll.PK11_UnwrapSymKeyWithFlags
+;    nss3.dll.PK11_UnwrapSymKeyWithFlagsPerm
+;    nss3.dll.PK11_UpdateSlotAttribute
+;    nss3.dll.PK11_UserDisableSlot
+;    nss3.dll.PK11_UserEnableSlot
+;    nss3.dll.PK11_Verify
+;    nss3.dll.PK11_VerifyKeyOK
+;    nss3.dll.PK11_VerifyRecover
+;    nss3.dll.PK11_WaitForTokenEvent
+;    nss3.dll.PK11_WrapPrivKey
+;    nss3.dll.PK11_WrapSymKey
+;    nss3.dll.PORT_Alloc
+;    nss3.dll.PORT_ArenaAlloc
+;    nss3.dll.PORT_ArenaGrow
+;    nss3.dll.PORT_ArenaMark
+;    nss3.dll.PORT_ArenaRelease
+;    nss3.dll.PORT_ArenaStrdup
+;    nss3.dll.PORT_ArenaUnmark
+;    nss3.dll.PORT_ArenaZAlloc
+;    nss3.dll.PORT_Free
+;    nss3.dll.PORT_FreeArena
+;    nss3.dll.PORT_GetError
+;    nss3.dll.PORT_NewArena
+;    nss3.dll.PORT_Realloc
+;    nss3.dll.PORT_SetError
+;    nss3.dll.PORT_SetUCS2_ASCIIConversionFunction
+;    nss3.dll.PORT_SetUCS2_UTF8ConversionFunction
+;    nss3.dll.PORT_SetUCS4_UTF8ConversionFunction
+;    nss3.dll.PORT_Strdup
+;    nss3.dll.PORT_UCS2_ASCIIConversion
+;    nss3.dll.PORT_UCS2_UTF8Conversion
+;    nss3.dll.PORT_ZAlloc
+;    nss3.dll.PORT_ZFree
+;    nss3.dll.RSA_FormatBlock
+;    nss3.dll.SECITEM_AllocItem
+;    nss3.dll.SECITEM_ArenaDupItem
+;    nss3.dll.SECITEM_CompareItem
+;    nss3.dll.SECITEM_CopyItem
+;    nss3.dll.SECITEM_DupItem
+;    nss3.dll.SECITEM_FreeItem
+;    nss3.dll.SECITEM_ItemsAreEqual
+;    nss3.dll.SECITEM_ZfreeItem
+;    nss3.dll.SECKEY_AddPrivateKeyToListTail
+;    nss3.dll.SECKEY_ConvertToPublicKey
+;    nss3.dll.SECKEY_CopyEncryptedPrivateKeyInfo
+;    nss3.dll.SECKEY_CopyPrivateKey
+;    nss3.dll.SECKEY_CopyPrivateKeyInfo
+;    nss3.dll.SECKEY_CopyPublicKey
+;    nss3.dll.SECKEY_CopySubjectPublicKeyInfo
+;    nss3.dll.SECKEY_CreateDHPrivateKey
+;    nss3.dll.SECKEY_CreateECPrivateKey
+;    nss3.dll.SECKEY_CreateRSAPrivateKey
+;    nss3.dll.SECKEY_CreateSubjectPublicKeyInfo
+;    nss3.dll.SECKEY_DecodeDERSubjectPublicKeyInfo
+;    nss3.dll.SECKEY_DestroyEncryptedPrivateKeyInfo
+;    nss3.dll.SECKEY_DestroyPrivateKey
+;    nss3.dll.SECKEY_DestroyPrivateKeyInfo
+;    nss3.dll.SECKEY_DestroyPrivateKeyList
+;    nss3.dll.SECKEY_DestroyPublicKey
+;    nss3.dll.SECKEY_DestroyPublicKeyList
+;    nss3.dll.SECKEY_DestroySubjectPublicKeyInfo
+;    nss3.dll.SECKEY_EncodeDERSubjectPublicKeyInfo
+;    nss3.dll.SECKEY_ExtractPublicKey
+;    nss3.dll.SECKEY_GetPrivateKeyType
+;    nss3.dll.SECKEY_GetPublicKeyType
+;    nss3.dll.SECKEY_HashPassword
+;    nss3.dll.SECKEY_ImportDERPublicKey
+;    nss3.dll.SECKEY_NewPrivateKeyList
+;    nss3.dll.SECKEY_PublicKeyStrength
+;    nss3.dll.SECKEY_PublicKeyStrengthInBits
+;    nss3.dll.SECKEY_RemovePrivateKeyListNode
+;    nss3.dll.SECKEY_UpdateCertPQG
+;    nss3.dll.SECMOD_AddNewModule
+;    nss3.dll.SECMOD_AddNewModuleEx
+;    nss3.dll.SECMOD_CanDeleteInternalModule
+;    nss3.dll.SECMOD_CreateModule
+;    nss3.dll.SECMOD_DeleteInternalModule
+;    nss3.dll.SECMOD_DeleteModule
+;    nss3.dll.SECMOD_DestroyModule
+;    nss3.dll.SECMOD_FindModule
+;    nss3.dll.SECMOD_FindSlot
+;    nss3.dll.SECMOD_FreeModuleSpecList
+;    nss3.dll.SECMOD_GetDBModuleList
+;    nss3.dll.SECMOD_GetDeadModuleList
+;    nss3.dll.SECMOD_GetDefaultModuleList
+;    nss3.dll.SECMOD_GetDefaultModuleListLock
+;    nss3.dll.SECMOD_GetInternalModule
+;    nss3.dll.SECMOD_GetModuleSpecList
+;    nss3.dll.SECMOD_GetReadLock
+;    nss3.dll.SECMOD_IsModulePresent
+;    nss3.dll.SECMOD_LoadModule
+;    nss3.dll.SECMOD_LoadUserModule
+;    nss3.dll.SECMOD_LookupSlot
+;    nss3.dll.SECMOD_PubCipherFlagstoInternal
+;    nss3.dll.SECMOD_PubMechFlagstoInternal
+;    nss3.dll.SECMOD_ReferenceModule
+;    nss3.dll.SECMOD_ReleaseReadLock
+;    nss3.dll.SECMOD_UnloadUserModule
+;    nss3.dll.SECMOD_UpdateModule
+;    nss3.dll.SECOID_CompareAlgorithmID
+;    nss3.dll.SECOID_CopyAlgorithmID
+;    nss3.dll.SECOID_DestroyAlgorithmID
+;    nss3.dll.SECOID_FindOID
+;    nss3.dll.SECOID_FindOIDByTag
+;    nss3.dll.SECOID_FindOIDTag
+;    nss3.dll.SECOID_FindOIDTagDescription
+;    nss3.dll.SECOID_GetAlgorithmTag
+;    nss3.dll.SECOID_SetAlgorithmID
+;    nss3.dll.SEC_ASN1Decode
+;    nss3.dll.SEC_ASN1DecodeInteger
+;    nss3.dll.SEC_ASN1DecodeItem
+;    nss3.dll.SEC_ASN1DecoderAbort
+;    nss3.dll.SEC_ASN1DecoderClearFilterProc
+;    nss3.dll.SEC_ASN1DecoderClearNotifyProc
+;    nss3.dll.SEC_ASN1DecoderFinish
+;    nss3.dll.SEC_ASN1DecoderSetFilterProc
+;    nss3.dll.SEC_ASN1DecoderSetNotifyProc
+;    nss3.dll.SEC_ASN1DecoderStart
+;    nss3.dll.SEC_ASN1DecoderUpdate
+;    nss3.dll.SEC_ASN1Encode
+;    nss3.dll.SEC_ASN1EncodeInteger
+;    nss3.dll.SEC_ASN1EncodeItem
+;    nss3.dll.SEC_ASN1EncoderAbort
+;    nss3.dll.SEC_ASN1EncoderClearNotifyProc
+;    nss3.dll.SEC_ASN1EncoderClearStreaming
+;    nss3.dll.SEC_ASN1EncoderClearTakeFromBuf
+;    nss3.dll.SEC_ASN1EncoderFinish
+;    nss3.dll.SEC_ASN1EncoderSetNotifyProc
+;    nss3.dll.SEC_ASN1EncoderSetStreaming
+;    nss3.dll.SEC_ASN1EncoderSetTakeFromBuf
+;    nss3.dll.SEC_ASN1EncoderStart
+;    nss3.dll.SEC_ASN1EncoderUpdate
+;    nss3.dll.SEC_ASN1LengthLength
+;    nss3.dll.SEC_CertNicknameConflict
+;    nss3.dll.SEC_DeletePermCRL
+;    nss3.dll.SEC_DeletePermCertificate
+;    nss3.dll.SEC_DerSignData
+;    nss3.dll.SEC_DestroyCrl
+;    nss3.dll.SEC_DupCrl
+;    nss3.dll.SEC_FindCrlByDERCert
+;    nss3.dll.SEC_FindCrlByName
+;    nss3.dll.SEC_LookupCrls
+;    nss3.dll.SEC_NewCrl
+;    nss3.dll.SEC_PKCS5GetCryptoAlgorithm
+;    nss3.dll.SEC_PKCS5GetIV
+;    nss3.dll.SEC_PKCS5GetKeyLength
+;    nss3.dll.SEC_PKCS5GetPBEAlgorithm
+;    nss3.dll.SEC_PKCS5IsAlgorithmPBEAlg
+;    nss3.dll.SEC_QuickDERDecodeItem
+;    nss3.dll.SEC_SignData
+;    nss3.dll.SGN_Begin
+;    nss3.dll.SGN_CompareDigestInfo
+;    nss3.dll.SGN_CopyDigestInfo
+;    nss3.dll.SGN_CreateDigestInfo
+;    nss3.dll.SGN_DestroyContext
+;    nss3.dll.SGN_DestroyDigestInfo
+;    nss3.dll.SGN_Digest
+;    nss3.dll.SGN_End
+;    nss3.dll.SGN_NewContext
+;    nss3.dll.SGN_Update
+;    nss3.dll.STAN_AddModuleToDefaultTrustDomain
+;    nss3.dll.STAN_ChangeCertTrust
+;    nss3.dll.STAN_ForceCERTCertificateUpdate
+;    nss3.dll.STAN_GetCERTCertificate
+;    nss3.dll.STAN_GetCERTCertificateName
+;    nss3.dll.STAN_GetCERTCertificateNameForInstance
+;    nss3.dll.STAN_GetCertIdentifierFromDER
+;    nss3.dll.STAN_GetDefaultCryptoContext
+;    nss3.dll.STAN_GetDefaultTrustDomain
+;    nss3.dll.STAN_GetNSSCertificate
+;    nss3.dll.STAN_LoadDefaultNSS3TrustDomain
+;    nss3.dll.STAN_RemoveModuleFromDefaultTrustDomain
+;    nss3.dll.STAN_Shutdown
+;    nss3.dll.VFY_Begin
+;    nss3.dll.VFY_CreateContext
+;    nss3.dll.VFY_DestroyContext
+;    nss3.dll.VFY_End
+;    nss3.dll.VFY_EndWithSignature
+;    nss3.dll.VFY_Update
+;    nss3.dll.VFY_VerifyData
+;    nss3.dll.VFY_VerifyDigest
+;    nss3.dll.__CERT_AddTempCertToPerm
+;    nss3.dll.__CERT_ClosePermCertDB
+;    nss3.dll.__CERT_DecodeDERCertificate
+;    nss3.dll.__CERT_NewTempCertificate
+;    nss3.dll.__CERT_TraversePermCertsForNickname
+;    nss3.dll.__CERT_TraversePermCertsForSubject
+;    nss3.dll.__PBE_CreateContext
+;    nss3.dll.__PBE_DestroyContext
+;    nss3.dll.__PBE_GenerateBits
+;    nss3.dll.__PK11_CreateContextByRawKey
+;    nss3.dll.__PK11_GetKeyData
+;    nss3.dll.__nss_InitLock
+;    nss3.dll.g_ck_class_cert
+;    nss3.dll.g_ck_class_privkey
+;    nss3.dll.g_ck_class_pubkey
+;    nss3.dll.g_ck_false
+;    nss3.dll.g_ck_true
+;    nss3.dll.mktemp
+;    nss3.dll.nssArenaHashAllocOps
+;    nss3.dll.nssArena_Create
+;    nss3.dll.nssArena_Destroy
+;    nss3.dll.nssArena_Mark
+;    nss3.dll.nssArena_Release
+;    nss3.dll.nssArena_Unmark
+;    nss3.dll.nssBestCertificate_Callback
+;    nss3.dll.nssBestCertificate_SetArgs
+;    nss3.dll.nssCKObject_GetAttributeItem
+;    nss3.dll.nssCKObject_GetAttributes
+;    nss3.dll.nssCKObject_IsAttributeTrue
+;    nss3.dll.nssCKObject_IsTokenObjectTemplate
+;    nss3.dll.nssCKObject_SetAttributes
+;    nss3.dll.nssCRLArray_Destroy
+;    nss3.dll.nssCRLCollection_Create
+;    nss3.dll.nssCRL_AddRef
+;    nss3.dll.nssCRL_Create
+;    nss3.dll.nssCRL_DeleteStoredObject
+;    nss3.dll.nssCRL_Destroy
+;    nss3.dll.nssCRL_GetEncoding
+;    nss3.dll.nssCertificateArray_Destroy
+;    nss3.dll.nssCertificateArray_FindBestCertificate
+;    nss3.dll.nssCertificateArray_Join
+;    nss3.dll.nssCertificateArray_Traverse
+;    nss3.dll.nssCertificateCollection_Create
+;    nss3.dll.nssCertificateList_AddReferences
+;    nss3.dll.nssCertificateList_DoCallback
+;    nss3.dll.nssCertificateStore_Add
+;    nss3.dll.nssCertificateStore_AddSMIMEProfile
+;    nss3.dll.nssCertificateStore_AddTrust
+;    nss3.dll.nssCertificateStore_Create
+;    nss3.dll.nssCertificateStore_Destroy
+;    nss3.dll.nssCertificateStore_DumpStoreInfo
+;    nss3.dll.nssCertificateStore_FindCertificateByEncodedCertificate
+;    nss3.dll.nssCertificateStore_FindCertificateByIssuerAndSerialNumber
+;    nss3.dll.nssCertificateStore_FindCertificatesByEmail
+;    nss3.dll.nssCertificateStore_FindCertificatesByNickname
+;    nss3.dll.nssCertificateStore_FindCertificatesBySubject
+;    nss3.dll.nssCertificateStore_FindSMIMEProfileForCertificate
+;    nss3.dll.nssCertificateStore_FindTrustForCertificate
+;    nss3.dll.nssCertificateStore_Lock
+;    nss3.dll.nssCertificateStore_RemoveCertLOCKED
+;    nss3.dll.nssCertificateStore_Unlock
+;    nss3.dll.nssCertificate_AddRef
+;    nss3.dll.nssCertificate_BuildChain
+;    nss3.dll.nssCertificate_Create
+;    nss3.dll.nssCertificate_Destroy
+;    nss3.dll.nssCertificate_GetCryptoContext
+;    nss3.dll.nssCertificate_GetDecoding
+;    nss3.dll.nssCertificate_GetEmailAddress
+;    nss3.dll.nssCertificate_GetEncoding
+;    nss3.dll.nssCertificate_GetIssuer
+;    nss3.dll.nssCertificate_GetNickname
+;    nss3.dll.nssCertificate_GetSerialNumber
+;    nss3.dll.nssCertificate_GetSubject
+;    nss3.dll.nssCertificate_GetTrustDomain
+;    nss3.dll.nssCryptoContext_Create
+;    nss3.dll.nssCryptoContext_FindCertificatesBySubject
+;    nss3.dll.nssCryptoContext_FindSMIMEProfileForCertificate
+;    nss3.dll.nssCryptoContext_FindTrustForCertificate
+;    nss3.dll.nssCryptoContext_ImportSMIMEProfile
+;    nss3.dll.nssCryptoContext_ImportTrust
+;    nss3.dll.nssCryptokiCRL_GetAttributes
+;    nss3.dll.nssCryptokiCertificate_GetAttributes
+;    nss3.dll.nssCryptokiObjectArray_Destroy
+;    nss3.dll.nssCryptokiObject_Clone
+;    nss3.dll.nssCryptokiObject_Create
+;    nss3.dll.nssCryptokiObject_Destroy
+;    nss3.dll.nssCryptokiObject_Equal
+;    nss3.dll.nssCryptokiPrivateKey_SetCertificate
+;    nss3.dll.nssCryptokiTrust_GetAttributes
+;    nss3.dll.nssDecodedCert_Create
+;    nss3.dll.nssDecodedCert_Destroy
+;    nss3.dll.nssDecodedPKIXCertificate_Create
+;    nss3.dll.nssDecodedPKIXCertificate_Destroy
+;    nss3.dll.nssHash_Add
+;    nss3.dll.nssHash_Count
+;    nss3.dll.nssHash_Create
+;    nss3.dll.nssHash_CreateCertificate
+;    nss3.dll.nssHash_CreateItem
+;    nss3.dll.nssHash_CreatePointer
+;    nss3.dll.nssHash_CreateString
+;    nss3.dll.nssHash_Destroy
+;    nss3.dll.nssHash_Exists
+;    nss3.dll.nssHash_Iterate
+;    nss3.dll.nssHash_Lookup
+;    nss3.dll.nssHash_Remove
+;    nss3.dll.nssItem_Create
+;    nss3.dll.nssItem_Destroy
+;    nss3.dll.nssItem_Duplicate
+;    nss3.dll.nssItem_Equal
+;    nss3.dll.nssListIterator_Destroy
+;    nss3.dll.nssListIterator_Finish
+;    nss3.dll.nssListIterator_Next
+;    nss3.dll.nssListIterator_Start
+;    nss3.dll.nssList_Add
+;    nss3.dll.nssList_AddUnique
+;    nss3.dll.nssList_Clear
+;    nss3.dll.nssList_Clone
+;    nss3.dll.nssList_Count
+;    nss3.dll.nssList_Create
+;    nss3.dll.nssList_CreateIterator
+;    nss3.dll.nssList_Destroy
+;    nss3.dll.nssList_Get
+;    nss3.dll.nssList_GetArray
+;    nss3.dll.nssList_GetCompareFunction
+;    nss3.dll.nssList_Remove
+;    nss3.dll.nssList_SetCompareFunction
+;    nss3.dll.nssList_SetSortFunction
+;    nss3.dll.nssPKCS11String_Length
+;    nss3.dll.nssPKIObjectCollection_AddInstanceAsObject
+;    nss3.dll.nssPKIObjectCollection_AddInstances
+;    nss3.dll.nssPKIObjectCollection_AddObject
+;    nss3.dll.nssPKIObjectCollection_Count
+;    nss3.dll.nssPKIObjectCollection_Destroy
+;    nss3.dll.nssPKIObjectCollection_GetCRLs
+;    nss3.dll.nssPKIObjectCollection_GetCertificates
+;    nss3.dll.nssPKIObjectCollection_Traverse
+;    nss3.dll.nssPKIObject_AddInstance
+;    nss3.dll.nssPKIObject_AddRef
+;    nss3.dll.nssPKIObject_Create
+;    nss3.dll.nssPKIObject_DeleteStoredObject
+;    nss3.dll.nssPKIObject_Destroy
+;    nss3.dll.nssPKIObject_GetInstances
+;    nss3.dll.nssPKIObject_GetNicknameForToken
+;    nss3.dll.nssPKIObject_GetTokens
+;    nss3.dll.nssPKIObject_HasInstance
+;    nss3.dll.nssPKIObject_RemoveInstanceForToken
+;    nss3.dll.nssPKIX509_GetIssuerAndSerialFromDER
+;    nss3.dll.nssRWLock_AtomicCreate
+;    nss3.dll.nssSMIMEProfile_AddRef
+;    nss3.dll.nssSMIMEProfile_Create
+;    nss3.dll.nssSMIMEProfile_Destroy
+;    nss3.dll.nssSession_Destroy
+;    nss3.dll.nssSession_EnterMonitor
+;    nss3.dll.nssSession_ExitMonitor
+;    nss3.dll.nssSession_ImportNSS3Session
+;    nss3.dll.nssSession_IsReadWrite
+;    nss3.dll.nssSlotArray_Clone
+;    nss3.dll.nssSlotArray_Destroy
+;    nss3.dll.nssSlot_AddRef
+;    nss3.dll.nssSlot_CreateSession
+;    nss3.dll.nssSlot_Destroy
+;    nss3.dll.nssSlot_EnterMonitor
+;    nss3.dll.nssSlot_ExitMonitor
+;    nss3.dll.nssSlot_GetCryptokiEPV
+;    nss3.dll.nssSlot_GetName
+;    nss3.dll.nssSlot_GetToken
+;    nss3.dll.nssSlot_GetTokenName
+;    nss3.dll.nssSlot_IsFriendly
+;    nss3.dll.nssSlot_IsLoggedIn
+;    nss3.dll.nssSlot_IsPermanent
+;    nss3.dll.nssSlot_IsTokenPresent
+;    nss3.dll.nssSlot_Refresh
+;    nss3.dll.nssTokenArray_Destroy
+;    nss3.dll.nssTokenObjectCache_Clear
+;    nss3.dll.nssTokenObjectCache_Create
+;    nss3.dll.nssTokenObjectCache_Destroy
+;    nss3.dll.nssTokenObjectCache_FindObjectsByTemplate
+;    nss3.dll.nssTokenObjectCache_GetObjectAttributes
+;    nss3.dll.nssTokenObjectCache_HaveObjectClass
+;    nss3.dll.nssTokenObjectCache_ImportObject
+;    nss3.dll.nssTokenObjectCache_RemoveObject
+;    nss3.dll.nssToken_AddRef
+;    nss3.dll.nssToken_BeginDigest
+;    nss3.dll.nssToken_ContinueDigest
+;    nss3.dll.nssToken_CreateFromPK11SlotInfo
+;    nss3.dll.nssToken_DeleteStoredObject
+;    nss3.dll.nssToken_Destroy
+;    nss3.dll.nssToken_Digest
+;    nss3.dll.nssToken_FindCRLs
+;    nss3.dll.nssToken_FindCRLsBySubject
+;    nss3.dll.nssToken_FindCertificateByEncodedCertificate
+;    nss3.dll.nssToken_FindCertificateByIssuerAndSerialNumber
+;    nss3.dll.nssToken_FindCertificates
+;    nss3.dll.nssToken_FindCertificatesByEmail
+;    nss3.dll.nssToken_FindCertificatesByID
+;    nss3.dll.nssToken_FindCertificatesByNickname
+;    nss3.dll.nssToken_FindCertificatesBySubject
+;    nss3.dll.nssToken_FindPrivateKeyByID
+;    nss3.dll.nssToken_FindPrivateKeys
+;    nss3.dll.nssToken_FindPublicKeyByID
+;    nss3.dll.nssToken_FindTrustForCertificate
+;    nss3.dll.nssToken_FindTrustObjects
+;    nss3.dll.nssToken_FinishDigest
+;    nss3.dll.nssToken_GetCachedObjectAttributes
+;    nss3.dll.nssToken_GetCryptokiEPV
+;    nss3.dll.nssToken_GetDefaultSession
+;    nss3.dll.nssToken_GetName
+;    nss3.dll.nssToken_GetSlot
+;    nss3.dll.nssToken_GetTrustOrder
+;    nss3.dll.nssToken_ImportCRL
+;    nss3.dll.nssToken_ImportCertificate
+;    nss3.dll.nssToken_ImportTrust
+;    nss3.dll.nssToken_IsLoginRequired
+;    nss3.dll.nssToken_IsPresent
+;    nss3.dll.nssToken_IsPrivateKeyAvailable
+;    nss3.dll.nssToken_NeedsPINInitialization
+;    nss3.dll.nssToken_NotifyCertsNotVisible
+;    nss3.dll.nssToken_Refresh
+;    nss3.dll.nssToken_Remove
+;    nss3.dll.nssToken_TraverseCertificates
+;    nss3.dll.nssToken_UpdateName
+;    nss3.dll.nssTrustDomain_AddCertsToCache
+;    nss3.dll.nssTrustDomain_CreateCryptoContext
+;    nss3.dll.nssTrustDomain_DestroyCache
+;    nss3.dll.nssTrustDomain_DumpCacheInfo
+;    nss3.dll.nssTrustDomain_FindBestCertificateByNickname
+;    nss3.dll.nssTrustDomain_FindBestCertificateBySubject
+;    nss3.dll.nssTrustDomain_FindCRLsBySubject
+;    nss3.dll.nssTrustDomain_FindCertificateByEncodedCertificate
+;    nss3.dll.nssTrustDomain_FindCertificateByIssuerAndSerialNumber
+;    nss3.dll.nssTrustDomain_FindCertificatesByNickname
+;    nss3.dll.nssTrustDomain_FindCertificatesBySubject
+;    nss3.dll.nssTrustDomain_FindTrustForCertificate
+;    nss3.dll.nssTrustDomain_GetCertByDERFromCache
+;    nss3.dll.nssTrustDomain_GetCertForIssuerAndSNFromCache
+;    nss3.dll.nssTrustDomain_GetCertsForEmailAddressFromCache
+;    nss3.dll.nssTrustDomain_GetCertsForNicknameFromCache
+;    nss3.dll.nssTrustDomain_GetCertsForSubjectFromCache
+;    nss3.dll.nssTrustDomain_GetCertsFromCache
+;    nss3.dll.nssTrustDomain_GetDefaultCallback
+;    nss3.dll.nssTrustDomain_InitializeCache
+;    nss3.dll.nssTrustDomain_LockCertCache
+;    nss3.dll.nssTrustDomain_RemoveCertFromCacheLOCKED
+;    nss3.dll.nssTrustDomain_RemoveTokenCertsFromCache
+;    nss3.dll.nssTrustDomain_TraverseCertificatesByNickname
+;    nss3.dll.nssTrustDomain_TraverseCertificatesBySubject
+;    nss3.dll.nssTrustDomain_UnlockCertCache
+;    nss3.dll.nssTrustDomain_UpdateCachedTokenCerts
+;    nss3.dll.nssTrust_AddRef
+;    nss3.dll.nssTrust_Create
+;    nss3.dll.nssTrust_Destroy
+;    nss3.dll.nssTrust_GetCERTCertTrustForCert
+;    nss3.dll.nssUTF8_CaseIgnoreMatch
+;    nss3.dll.nssUTF8_CopyIntoFixedBuffer
+;    nss3.dll.nssUTF8_Create
+;    nss3.dll.nssUTF8_Duplicate
+;    nss3.dll.nssUTF8_Equal
+;    nss3.dll.nssUTF8_GetEncoding
+;    nss3.dll.nssUTF8_Length
+;    nss3.dll.nssUTF8_PrintableMatch
+;    nss3.dll.nssUTF8_Size
+;    nss3.dll.nss_ClearErrorStack
+;    nss3.dll.nss_DumpCertificateCacheInfo
+;    nss3.dll.nss_GetThreadPrivate
+;    nss3.dll.nss_NewThreadPrivateIndex
+;    nss3.dll.nss_SetError
+;    nss3.dll.nss_SetThreadPrivate
+;    nss3.dll.nss_ZAlloc
+;    nss3.dll.nss_ZFreeIf
+;    nss3.dll.nss_ZRealloc
+;    nss3.dll.nsslibc_memcmp
+;    nss3.dll.nsslibc_memcpy
+;    nss3.dll.nsslibc_memequal
+;    nss3.dll.nsslibc_memset
+;    nss3.dll.sec_port_ucs2_utf8_conversion_function
+;    nss3.dll.sec_port_ucs4_utf8_conversion_function
+;    nspr4.dll.GetExecutionEnvironment
+;    nspr4.dll.LL_MaxInt
+;    nspr4.dll.LL_MaxUint
+;    nspr4.dll.LL_MinInt
+;    nspr4.dll.LL_Zero
+;    nspr4.dll.PRP_DestroyNakedCondVar
+;    nspr4.dll.PRP_NakedBroadcast
+;    nspr4.dll.PRP_NakedNotify
+;    nspr4.dll.PRP_NakedWait
+;    nspr4.dll.PRP_NewNakedCondVar
+;    nspr4.dll.PRP_TryLock
+;    nspr4.dll.PR_Abort
+;    nspr4.dll.PR_Accept
+;    nspr4.dll.PR_AcceptRead
+;    nspr4.dll.PR_Access
+;    nspr4.dll.PR_AddToCounter
+;    nspr4.dll.PR_AddWaitFileDesc
+;    nspr4.dll.PR_AllocFileDesc
+;    nspr4.dll.PR_Assert
+;    nspr4.dll.PR_AtomicAdd
+;    nspr4.dll.PR_AtomicDecrement
+;    nspr4.dll.PR_AtomicIncrement
+;    nspr4.dll.PR_AtomicSet
+;    nspr4.dll.PR_AttachSharedMemory
+;    nspr4.dll.PR_AttachThread
+;    nspr4.dll.PR_AttachThreadGCAble
+;    nspr4.dll.PR_Available
+;    nspr4.dll.PR_Available64
+;    nspr4.dll.PR_Bind
+;    nspr4.dll.PR_BlockClockInterrupts
+;    nspr4.dll.PR_BlockInterrupt
+;    nspr4.dll.PR_CEnterMonitor
+;    nspr4.dll.PR_CExitMonitor
+;    nspr4.dll.PR_CNotify
+;    nspr4.dll.PR_CNotifyAll
+;    nspr4.dll.PR_CSetOnMonitorRecycle
+;    nspr4.dll.PR_CWait
+;    nspr4.dll.PR_CallOnce
+;    nspr4.dll.PR_CallOnceWithArg
+;    nspr4.dll.PR_Calloc
+;    nspr4.dll.PR_CancelJob
+;    nspr4.dll.PR_CancelWaitFileDesc
+;    nspr4.dll.PR_CancelWaitGroup
+;    nspr4.dll.PR_CeilingLog2
+;    nspr4.dll.PR_ChangeFileDescNativeHandle
+;    nspr4.dll.PR_Cleanup
+;    nspr4.dll.PR_ClearInterrupt
+;    nspr4.dll.PR_ClearThreadGCAble
+;    nspr4.dll.PR_Close
+;    nspr4.dll.PR_CloseDir
+;    nspr4.dll.PR_CloseFileMap
+;    nspr4.dll.PR_CloseSemaphore
+;    nspr4.dll.PR_CloseSharedMemory
+;    nspr4.dll.PR_Connect
+;    nspr4.dll.PR_ConnectContinue
+;    nspr4.dll.PR_ConvertIPv4AddrToIPv6
+;    nspr4.dll.PR_CreateAlarm
+;    nspr4.dll.PR_CreateCounter
+;    nspr4.dll.PR_CreateFileMap
+;    nspr4.dll.PR_CreateIOLayer
+;    nspr4.dll.PR_CreateIOLayerStub
+;    nspr4.dll.PR_CreateMWaitEnumerator
+;    nspr4.dll.PR_CreateOrderedLock
+;    nspr4.dll.PR_CreatePipe
+;    nspr4.dll.PR_CreateProcess
+;    nspr4.dll.PR_CreateProcessDetached
+;    nspr4.dll.PR_CreateSocketPollFd
+;    nspr4.dll.PR_CreateStack
+;    nspr4.dll.PR_CreateThread
+;    nspr4.dll.PR_CreateThreadGCAble
+;    nspr4.dll.PR_CreateThreadPool
+;    nspr4.dll.PR_CreateTrace
+;    nspr4.dll.PR_CreateWaitGroup
+;    nspr4.dll.PR_DecrementCounter
+;    nspr4.dll.PR_Delete
+;    nspr4.dll.PR_DeleteSemaphore
+;    nspr4.dll.PR_DeleteSharedMemory
+;    nspr4.dll.PR_DestroyAlarm
+;    nspr4.dll.PR_DestroyCondVar
+;    nspr4.dll.PR_DestroyCounter
+;    nspr4.dll.PR_DestroyLock
+;    nspr4.dll.PR_DestroyMWaitEnumerator
+;    nspr4.dll.PR_DestroyMonitor
+;    nspr4.dll.PR_DestroyOrderedLock
+;    nspr4.dll.PR_DestroyPollableEvent
+;    nspr4.dll.PR_DestroyProcessAttr
+;    nspr4.dll.PR_DestroyRWLock
+;    nspr4.dll.PR_DestroySem
+;    nspr4.dll.PR_DestroySocketPollFd
+;    nspr4.dll.PR_DestroyStack
+;    nspr4.dll.PR_DestroyTrace
+;    nspr4.dll.PR_DestroyWaitGroup
+;    nspr4.dll.PR_DetachProcess
+;    nspr4.dll.PR_DetachSharedMemory
+;    nspr4.dll.PR_DetachThread
+;    nspr4.dll.PR_DisableClockInterrupts
+;    nspr4.dll.PR_EmulateAcceptRead
+;    nspr4.dll.PR_EmulateSendFile
+;    nspr4.dll.PR_EnableClockInterrupts
+;    nspr4.dll.PR_EnterMonitor
+;    nspr4.dll.PR_EnumerateHostEnt
+;    nspr4.dll.PR_EnumerateThreads
+;    nspr4.dll.PR_EnumerateWaitGroup
+;    nspr4.dll.PR_ErrorInstallCallback
+;    nspr4.dll.PR_ErrorInstallTable
+;    nspr4.dll.PR_ErrorLanguages
+;    nspr4.dll.PR_ErrorToName
+;    nspr4.dll.PR_ErrorToString
+;    nspr4.dll.PR_ExitMonitor
+;    nspr4.dll.PR_ExplodeTime
+;    nspr4.dll.PR_ExportFileMapAsString
+;    nspr4.dll.PR_FD_CLR
+;    nspr4.dll.PR_FD_ISSET
+;    nspr4.dll.PR_FD_NCLR
+;    nspr4.dll.PR_FD_NISSET
+;    nspr4.dll.PR_FD_NSET
+;    nspr4.dll.PR_FD_SET
+;    nspr4.dll.PR_FD_ZERO
+;    nspr4.dll.PR_FileDesc2NativeHandle
+;    nspr4.dll.PR_FindFunctionSymbol
+;    nspr4.dll.PR_FindFunctionSymbolAndLibrary
+;    nspr4.dll.PR_FindLibrary
+;    nspr4.dll.PR_FindNextCounterQname
+;    nspr4.dll.PR_FindNextCounterRname
+;    nspr4.dll.PR_FindNextTraceQname
+;    nspr4.dll.PR_FindNextTraceRname
+;    nspr4.dll.PR_FindSymbol
+;    nspr4.dll.PR_FindSymbolAndLibrary
+;    nspr4.dll.PR_FloorLog2
+;    nspr4.dll.PR_FormatTime
+;    nspr4.dll.PR_FormatTimeUSEnglish
+;    nspr4.dll.PR_Free
+;    nspr4.dll.PR_FreeFileDesc
+;    nspr4.dll.PR_FreeLibraryName
+;    nspr4.dll.PR_GMTParameters
+;    nspr4.dll.PR_GetConnectStatus
+;    nspr4.dll.PR_GetCounter
+;    nspr4.dll.PR_GetCounterHandleFromName
+;    nspr4.dll.PR_GetCounterNameFromHandle
+;    nspr4.dll.PR_GetCurrentThread
+;    nspr4.dll.PR_GetDefaultIOMethods
+;    nspr4.dll.PR_GetDescType
+;    nspr4.dll.PR_GetDirectorySeparator
+;    nspr4.dll.PR_GetDirectorySepartor
+;    nspr4.dll.PR_GetEnv
+;    nspr4.dll.PR_GetError
+;    nspr4.dll.PR_GetErrorText
+;    nspr4.dll.PR_GetErrorTextLength
+;    nspr4.dll.PR_GetFileInfo
+;    nspr4.dll.PR_GetFileInfo64
+;    nspr4.dll.PR_GetFileMethods
+;    nspr4.dll.PR_GetGCRegisters
+;    nspr4.dll.PR_GetHostByAddr
+;    nspr4.dll.PR_GetHostByName
+;    nspr4.dll.PR_GetIPNodeByName
+;    nspr4.dll.PR_GetIdentitiesLayer
+;    nspr4.dll.PR_GetInheritedFD
+;    nspr4.dll.PR_GetInheritedFileMap
+;    nspr4.dll.PR_GetLayersIdentity
+;    nspr4.dll.PR_GetLibraryFilePathname
+;    nspr4.dll.PR_GetLibraryName
+;    nspr4.dll.PR_GetLibraryPath
+;    nspr4.dll.PR_GetMemMapAlignment
+;    nspr4.dll.PR_GetMonitorEntryCount
+;    nspr4.dll.PR_GetNameForIdentity
+;    nspr4.dll.PR_GetNumberOfProcessors
+;    nspr4.dll.PR_GetOSError
+;    nspr4.dll.PR_GetOpenFileInfo
+;    nspr4.dll.PR_GetOpenFileInfo64
+;    nspr4.dll.PR_GetPageShift
+;    nspr4.dll.PR_GetPageSize
+;    nspr4.dll.PR_GetPathSeparator
+;    nspr4.dll.PR_GetPeerName
+;    nspr4.dll.PR_GetPipeMethods
+;    nspr4.dll.PR_GetProtoByName
+;    nspr4.dll.PR_GetProtoByNumber
+;    nspr4.dll.PR_GetRandomNoise
+;    nspr4.dll.PR_GetSP
+;    nspr4.dll.PR_GetSockName
+;    nspr4.dll.PR_GetSocketOption
+;    nspr4.dll.PR_GetSpecialFD
+;    nspr4.dll.PR_GetStackSpaceLeft
+;    nspr4.dll.PR_GetSystemInfo
+;    nspr4.dll.PR_GetTCPMethods
+;    nspr4.dll.PR_GetThreadAffinityMask
+;    nspr4.dll.PR_GetThreadID
+;    nspr4.dll.PR_GetThreadPriority
+;    nspr4.dll.PR_GetThreadPrivate
+;    nspr4.dll.PR_GetThreadScope
+;    nspr4.dll.PR_GetThreadState
+;    nspr4.dll.PR_GetThreadType
+;    nspr4.dll.PR_GetTraceEntries
+;    nspr4.dll.PR_GetTraceHandleFromName
+;    nspr4.dll.PR_GetTraceNameFromHandle
+;    nspr4.dll.PR_GetTraceOption
+;    nspr4.dll.PR_GetUDPMethods
+;    nspr4.dll.PR_GetUniqueIdentity
+;    nspr4.dll.PR_ImplodeTime
+;    nspr4.dll.PR_ImportFile
+;    nspr4.dll.PR_ImportFileMapFromString
+;    nspr4.dll.PR_ImportPipe
+;    nspr4.dll.PR_ImportTCPSocket
+;    nspr4.dll.PR_ImportUDPSocket
+;    nspr4.dll.PR_IncrementCounter
+;    nspr4.dll.PR_Init
+;    nspr4.dll.PR_Initialize
+;    nspr4.dll.PR_InitializeNetAddr
+;    nspr4.dll.PR_Initialized
+;    nspr4.dll.PR_Interrupt
+;    nspr4.dll.PR_IntervalNow
+;    nspr4.dll.PR_IntervalToMicroseconds
+;    nspr4.dll.PR_IntervalToMilliseconds
+;    nspr4.dll.PR_IntervalToSeconds
+;    nspr4.dll.PR_IsNetAddrType
+;    nspr4.dll.PR_JoinJob
+;    nspr4.dll.PR_JoinThread
+;    nspr4.dll.PR_JoinThreadPool
+;    nspr4.dll.PR_KillProcess
+;    nspr4.dll.PR_Listen
+;    nspr4.dll.PR_LoadLibrary
+;    nspr4.dll.PR_LoadLibraryWithFlags
+;    nspr4.dll.PR_LoadStaticLibrary
+;    nspr4.dll.PR_LocalTimeParameters
+;    nspr4.dll.PR_Lock
+;    nspr4.dll.PR_LockFile
+;    nspr4.dll.PR_LockOrderedLock
+;    nspr4.dll.PR_LogFlush
+;    nspr4.dll.PR_LogPrint
+;    nspr4.dll.PR_MakeDir
+;    nspr4.dll.PR_Malloc
+;    nspr4.dll.PR_MemMap
+;    nspr4.dll.PR_MemUnmap
+;    nspr4.dll.PR_MicrosecondsToInterval
+;    nspr4.dll.PR_MillisecondsToInterval
+;    nspr4.dll.PR_MkDir
+;    nspr4.dll.PR_NetAddrToString
+;    nspr4.dll.PR_NewCondVar
+;    nspr4.dll.PR_NewLock
+;    nspr4.dll.PR_NewLogModule
+;    nspr4.dll.PR_NewMonitor
+;    nspr4.dll.PR_NewNamedMonitor
+;    nspr4.dll.PR_NewPollableEvent
+;    nspr4.dll.PR_NewProcessAttr
+;    nspr4.dll.PR_NewRWLock
+;    nspr4.dll.PR_NewSem
+;    nspr4.dll.PR_NewTCPSocket
+;    nspr4.dll.PR_NewTCPSocketPair
+;    nspr4.dll.PR_NewThreadPrivateIndex
+;    nspr4.dll.PR_NewUDPSocket
+;    nspr4.dll.PR_NormalizeTime
+;    nspr4.dll.PR_Notify
+;    nspr4.dll.PR_NotifyAll
+;    nspr4.dll.PR_NotifyAllCondVar
+;    nspr4.dll.PR_NotifyCondVar
+;    nspr4.dll.PR_Now
+;    nspr4.dll.PR_Open
+;    nspr4.dll.PR_OpenAnonFileMap
+;    nspr4.dll.PR_OpenDir
+;    nspr4.dll.PR_OpenFile
+;    nspr4.dll.PR_OpenSemaphore
+;    nspr4.dll.PR_OpenSharedMemory
+;    nspr4.dll.PR_OpenTCPSocket
+;    nspr4.dll.PR_OpenUDPSocket
+;    nspr4.dll.PR_ParseTimeString
+;    nspr4.dll.PR_Poll
+;    nspr4.dll.PR_PopIOLayer
+;    nspr4.dll.PR_PostSem
+;    nspr4.dll.PR_PostSemaphore
+;    nspr4.dll.PR_ProcessAttrSetCurrentDirectory
+;    nspr4.dll.PR_ProcessAttrSetInheritableFD
+;    nspr4.dll.PR_ProcessAttrSetInheritableFileMap
+;    nspr4.dll.PR_ProcessAttrSetStdioRedirect
+;    nspr4.dll.PR_ProcessExit
+;    nspr4.dll.PR_PushIOLayer
+;    nspr4.dll.PR_QueueJob
+;    nspr4.dll.PR_QueueJob_Accept
+;    nspr4.dll.PR_QueueJob_Connect
+;    nspr4.dll.PR_QueueJob_Read
+;    nspr4.dll.PR_QueueJob_Timer
+;    nspr4.dll.PR_QueueJob_Write
+;    nspr4.dll.PR_RWLock_Rlock
+;    nspr4.dll.PR_RWLock_Unlock
+;    nspr4.dll.PR_RWLock_Wlock
+;    nspr4.dll.PR_Read
+;    nspr4.dll.PR_ReadDir
+;    nspr4.dll.PR_Realloc
+;    nspr4.dll.PR_RecordTraceEntries
+;    nspr4.dll.PR_Recv
+;    nspr4.dll.PR_RecvFrom
+;    nspr4.dll.PR_Rename
+;    nspr4.dll.PR_ResetAlarm
+;    nspr4.dll.PR_ResetProcessAttr
+;    nspr4.dll.PR_ResumeAll
+;    nspr4.dll.PR_RmDir
+;    nspr4.dll.PR_ScanStackPointers
+;    nspr4.dll.PR_SecondsToInterval
+;    nspr4.dll.PR_Seek
+;    nspr4.dll.PR_Seek64
+;    nspr4.dll.PR_Select
+;    nspr4.dll.PR_Send
+;    nspr4.dll.PR_SendFile
+;    nspr4.dll.PR_SendTo
+;    nspr4.dll.PR_SetAlarm
+;    nspr4.dll.PR_SetCPUAffinityMask
+;    nspr4.dll.PR_SetConcurrency
+;    nspr4.dll.PR_SetCounter
+;    nspr4.dll.PR_SetEnv
+;    nspr4.dll.PR_SetError
+;    nspr4.dll.PR_SetErrorText
+;    nspr4.dll.PR_SetFDCacheSize
+;    nspr4.dll.PR_SetFDInheritable
+;    nspr4.dll.PR_SetLibraryPath
+;    nspr4.dll.PR_SetLogBuffering
+;    nspr4.dll.PR_SetLogFile
+;    nspr4.dll.PR_SetNetAddr
+;    nspr4.dll.PR_SetPollableEvent
+;    nspr4.dll.PR_SetSocketOption
+;    nspr4.dll.PR_SetStdioRedirect
+;    nspr4.dll.PR_SetThreadAffinityMask
+;    nspr4.dll.PR_SetThreadDumpProc
+;    nspr4.dll.PR_SetThreadGCAble
+;    nspr4.dll.PR_SetThreadPriority
+;    nspr4.dll.PR_SetThreadPrivate
+;    nspr4.dll.PR_SetThreadRecycleMode
+;    nspr4.dll.PR_SetTraceOption
+;    nspr4.dll.PR_ShowStatus
+;    nspr4.dll.PR_Shutdown
+;    nspr4.dll.PR_ShutdownThreadPool
+;    nspr4.dll.PR_Sleep
+;    nspr4.dll.PR_Socket
+;    nspr4.dll.PR_StackPop
+;    nspr4.dll.PR_StackPush
+;    nspr4.dll.PR_Stat
+;    nspr4.dll.PR_StringToNetAddr
+;    nspr4.dll.PR_SubtractFromCounter
+;    nspr4.dll.PR_SuspendAll
+;    nspr4.dll.PR_Sync
+;    nspr4.dll.PR_TLockFile
+;    nspr4.dll.PR_TestAndEnterMonitor
+;    nspr4.dll.PR_TestAndLock
+;    nspr4.dll.PR_ThreadScanStackPointers
+;    nspr4.dll.PR_TicksPerSecond
+;    nspr4.dll.PR_Trace
+;    nspr4.dll.PR_TransmitFile
+;    nspr4.dll.PR_USPacificTimeParameters
+;    nspr4.dll.PR_UnblockClockInterrupts
+;    nspr4.dll.PR_UnblockInterrupt
+;    nspr4.dll.PR_UnloadLibrary
+;    nspr4.dll.PR_Unlock
+;    nspr4.dll.PR_UnlockFile
+;    nspr4.dll.PR_UnlockOrderedLock
+;    nspr4.dll.PR_VersionCheck
+;    nspr4.dll.PR_Wait
+;    nspr4.dll.PR_WaitCondVar
+;    nspr4.dll.PR_WaitForPollableEvent
+;    nspr4.dll.PR_WaitProcess
+;    nspr4.dll.PR_WaitRecvReady
+;    nspr4.dll.PR_WaitSem
+;    nspr4.dll.PR_WaitSemaphore
+;    nspr4.dll.PR_Write
+;    nspr4.dll.PR_Writev
+;    nspr4.dll.PR_Yield
+;    nspr4.dll.PR_cnvtf
+;    nspr4.dll.PR_dtoa
+;    nspr4.dll.PR_fprintf
+;    nspr4.dll.PR_htonl
+;    nspr4.dll.PR_htonll
+;    nspr4.dll.PR_htons
+;    nspr4.dll.PR_ntohl
+;    nspr4.dll.PR_ntohll
+;    nspr4.dll.PR_ntohs
+;    nspr4.dll.PR_smprintf
+;    nspr4.dll.PR_smprintf_free
+;    nspr4.dll.PR_snprintf
+;    nspr4.dll.PR_sprintf_append
+;    nspr4.dll.PR_sscanf
+;    nspr4.dll.PR_strtod
+;    nspr4.dll.PR_sxprintf
+;    nspr4.dll.PR_vfprintf
+;    nspr4.dll.PR_vsmprintf
+;    nspr4.dll.PR_vsnprintf
+;    nspr4.dll.PR_vsprintf_append
+;    nspr4.dll.PR_vsxprintf
+;    nspr4.dll.PT_FPrintStats
+;    nspr4.dll.SetExecutionEnvironment
+;    nspr4.dll._PR_AddSleepQ
+;    nspr4.dll._PR_CreateThread
+;    nspr4.dll._PR_DelSleepQ
+;    nspr4.dll._PR_GetPrimordialCPU
+;    nspr4.dll._PR_MD_FREE_CV
+;    nspr4.dll._PR_MD_NEW_CV
+;    nspr4.dll._PR_MD_NOTIFYALL_CV
+;    nspr4.dll._PR_MD_NOTIFY_CV
+;    nspr4.dll._PR_MD_UNLOCK
+;    nspr4.dll._PR_MD_WAIT_CV
+;    nspr4.dll._PR_NativeCreateThread
+;    nspr4.dll._pr_push_ipv6toipv4_layer
+;    nspr4.dll.libVersionPoint
+;    ssl3.dll.NSSSSL_VersionCheck
+;    ssl3.dll.NSS_CmpCertChainWCANames
+;    ssl3.dll.NSS_FindCertKEAType
+;    ssl3.dll.NSS_GetClientAuthData
+;    ssl3.dll.NSS_SetDomesticPolicy
+;    ssl3.dll.NSS_SetExportPolicy
+;    ssl3.dll.NSS_SetFrancePolicy
+;    ssl3.dll.SSL_AuthCertificate
+;    ssl3.dll.SSL_AuthCertificateHook
+;    ssl3.dll.SSL_BadCertHook
+;    ssl3.dll.SSL_CertDBHandleSet
+;    ssl3.dll.SSL_CipherPolicyGet
+;    ssl3.dll.SSL_CipherPolicySet
+;    ssl3.dll.SSL_CipherPrefGet
+;    ssl3.dll.SSL_CipherPrefGetDefault
+;    ssl3.dll.SSL_CipherPrefSet
+;    ssl3.dll.SSL_CipherPrefSetDefault
+;    ssl3.dll.SSL_ClearSessionCache
+;    ssl3.dll.SSL_ConfigMPServerSIDCache
+;    ssl3.dll.SSL_ConfigSecureServer
+;    ssl3.dll.SSL_ConfigServerSessionIDCache
+;    ssl3.dll.SSL_DataPending
+;    ssl3.dll.SSL_ForceHandshake
+;    ssl3.dll.SSL_GetChannelInfo
+;    ssl3.dll.SSL_GetCipherSuiteInfo
+;    ssl3.dll.SSL_GetClientAuthDataHook
+;    ssl3.dll.SSL_GetMaxServerCacheLocks
+;    ssl3.dll.SSL_GetSessionID
+;    ssl3.dll.SSL_GetStatistics
+;    ssl3.dll.SSL_HandshakeCallback
+;    ssl3.dll.SSL_ImplementedCiphers
+;    ssl3.dll.SSL_ImportFD
+;    ssl3.dll.SSL_InheritMPServerSIDCache
+;    ssl3.dll.SSL_InvalidateSession
+;    ssl3.dll.SSL_LocalCertificate
+;    ssl3.dll.SSL_NumImplementedCiphers
+;    ssl3.dll.SSL_OptionGet
+;    ssl3.dll.SSL_OptionGetDefault
+;    ssl3.dll.SSL_OptionSet
+;    ssl3.dll.SSL_OptionSetDefault
+;    ssl3.dll.SSL_PeerCertificate
+;    ssl3.dll.SSL_PreencryptedFileToStream
+;    ssl3.dll.SSL_PreencryptedStreamToFile
+;    ssl3.dll.SSL_ReHandshake
+;    ssl3.dll.SSL_ResetHandshake
+;    ssl3.dll.SSL_RestartHandshakeAfterCertReq
+;    ssl3.dll.SSL_RestartHandshakeAfterServerCert
+;    ssl3.dll.SSL_RevealCert
+;    ssl3.dll.SSL_RevealPinArg
+;    ssl3.dll.SSL_RevealURL
+;    ssl3.dll.SSL_SecurityStatus
+;    ssl3.dll.SSL_SetMaxServerCacheLocks
+;    ssl3.dll.SSL_SetPKCS11PinArg
+;    ssl3.dll.SSL_SetSockPeerID
+;    ssl3.dll.SSL_SetURL
+;    ssl3.dll.SSL_ShutdownServerSessionIDCache

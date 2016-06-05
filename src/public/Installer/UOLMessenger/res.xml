@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<settings>
+	<uol.resouce.appmode_uolfone><![CDATA[UOLFone]]></uol.resouce.appmode_uolfone>
+	<!--uol.resource.wizard -->
+	<uol.resource.wizard.JABBER_HEADER><![CDATA[Converse com seus amigos do Jabber informando seu e-mail, senha e clicando em "Adicionar conta".
+
+Se o $(APP_NAME) detectar suas contas Jabber, elas serão listadas abaixo. Neste caso, apenas selecione a conta e informe a senha.]]></uol.resource.wizard.JABBER_HEADER>
+	<uol.resource.wizard.JABBER_INFO><![CDATA[Preenchimento opcional. Para avançar ao próximo passo, clique "Avançar"]]></uol.resource.wizard.JABBER_INFO>
+	<uol.resource.wizard.MSN_HEADER><![CDATA[Cadastre suas contas do MSN Messenger no $(APP_NAME) informando o e-mail, senha e clicando em "Adicionar conta".
+
+Se o $(APP_NAME) detectar suas contas MSN, elas serão listadas abaixo. Neste caso, apenas selecione a conta e informe a senha.]]></uol.resource.wizard.MSN_HEADER>
+	<uol.resource.wizard.MSN_INFO><![CDATA[Preenchimento opcional. Para avançar ao próximo passo, clique "Avançar"]]></uol.resource.wizard.MSN_INFO>
+	<uol.resource.wizard.YAHOO_HEADER><![CDATA[Converse com seus amigos do Yahoo Messenger informando seu ID, senha e clicando em "Adicionar conta".
+
+Se o $(APP_NAME) detectar suas contas Yahoo, elas serão listadas abaixo. Neste caso, apenas selecione a conta e informe a senha.]]></uol.resource.wizard.YAHOO_HEADER>
+	<uol.resource.wizard.YAHOO_INFO><![CDATA[Preenchimento opcional. Para avançar ao próximo passo, clique "Avançar"]]></uol.resource.wizard.YAHOO_INFO>
+	<uol.resource.wizard.ICQ_HEADER><![CDATA[Converse com seus amigos do ICQ informando seu UIN, senha e clicando em "Adicionar conta".
+
+Se o $(APP_NAME) detectar suas contas ICQ, elas serão listadas abaixo. Neste caso, apenas selecione a conta e informe a senha.]]></uol.resource.wizard.ICQ_HEADER>
+	<uol.resource.wizard.ICQ_INFO><![CDATA[Preenchimento opcional. Para avançar ao próximo passo, clique "Avançar"]]></uol.resource.wizard.ICQ_INFO>
+	<uol.resource.wizard.PROFILE_HEADER><![CDATA[Digite o e-mail que identificará seu perfil no $(APP_NAME). Pode ser seu e-mail UOL, BOL, ou de outro provedor.
+
+Preenchimento obrigatório. Para avançar ao próximo passo, clique "Avançar"]]></uol.resource.wizard.PROFILE_HEADER>
+	<uol.resource.wizard.PROFILE_INFO><![CDATA[* Use sua senha do e-mail UOL/BOL ou cadastre uma caso seu e-mail seja de outro provedor.]]></uol.resource.wizard.PROFILE_INFO>
+	<uol.resource.wizard.UOL_HEADER><![CDATA[Informe seu e-mail e senha do UOL ou BOL e veja seus amigos do UOL online.
+
+Preenchimento opcional. Para avançar ao próximo passo, clique "Avançar"]]></uol.resource.wizard.UOL_HEADER>
+	<uol.resource.wizard.UOL_SUBSCRIBE><![CDATA[Ainda não tem e-mail BOL? Crie o seu agora e participe da rede UOL.]]></uol.resource.wizard.UOL_SUBSCRIBE>
+	<!--uol.resource.error -->
+	<uol.resource.error.IDS_SHOW_PRIVACY_DIALOG_NO_ONLINE_ACCOUNTS_MSG><![CDATA[Para alterar a sua lista de permissões é necessário estar conectado. 
+Por favor, repita a operação após conectar-se. (UIM0172)]]></uol.resource.error.IDS_SHOW_PRIVACY_DIALOG_NO_ONLINE_ACCOUNTS_MSG>
+	<uol.resource.error.IDS_SHOW_PRIVACY_DIALOG_NO_ONLINE_ACCOUNTS_WITH_BLOCK_SUPPORT_MSG><![CDATA[Nenhuma das contas on-line possui a funcionalidade de bloqueio/desbloqueio de contatos. (UIM0300)]]></uol.resource.error.IDS_SHOW_PRIVACY_DIALOG_NO_ONLINE_ACCOUNTS_WITH_BLOCK_SUPPORT_MSG>
+	<uol.resource.error.IDS_ACCOUNTS_PROPPAGE_INVALID_FILE_MSG><![CDATA[O formato do arquivo selecionado não é válido. A imagem deve estar no formato BMP, GIF ou JPEG. (UIM0102)]]></uol.resource.error.IDS_ACCOUNTS_PROPPAGE_INVALID_FILE_MSG>
+	<uol.resource.error.IDS_SHOW_INFO_NO_ONLINE_ACCOUNTS_MSG><![CDATA[Para exibir os detalhes é necessário estar conectado. 
+Por favor, repita a operação após conectar-se. (UIM0168)]]></uol.resource.error.IDS_SHOW_INFO_NO_ONLINE_ACCOUNTS_MSG>
+	<uol.resource.error.IDS_SHOW_GROUP_DIALOG_NO_ONLINE_ACCOUNTS_MSG><![CDATA[Para criar um grupo é necessário estar conectado. 
+Por favor, repita a operação após conectar-se. (UIM0167)]]></uol.resource.error.IDS_SHOW_GROUP_DIALOG_NO_ONLINE_ACCOUNTS_MSG>
+	<uol.resource.error.IDS_SEND_FILE_NO_ONLINE_ACCOUNTS_MSG><![CDATA[Não é possível enviar um arquivo, pois você está desconectado. 
+Por favor, repita a operação após conectar-se.(UIM0113)]]></uol.resource.error.IDS_SEND_FILE_NO_ONLINE_ACCOUNTS_MSG>
+	<uol.resource.error.IDS_SHOW_MESSAGE_WINDOW_NO_ONLINE_ACCOUNTS_MSG><![CDATA[Não é possível enviar mensagem desconectado. 
+Por favor, repita a operação após conectar-se. (UIM0107)]]></uol.resource.error.IDS_SHOW_MESSAGE_WINDOW_NO_ONLINE_ACCOUNTS_MSG>
+	<uol.resource.error.IDS_FILE_TRANSFER_ZERO_SIZE_FILE_MESSAGE><![CDATA[Não é possível enviar um arquivo com 0 KBytes de tamanho. 
+Por favor, selecione outro arquivo. (UIM0104)]]></uol.resource.error.IDS_FILE_TRANSFER_ZERO_SIZE_FILE_MESSAGE>
+	<uol.resource.error.IDS_WIZARD_INVALID_LOGIN_PASS><![CDATA[Login ou senha inválidos. Por favor, digite novamente. (UIM0601)]]></uol.resource.error.IDS_WIZARD_INVALID_LOGIN_PASS>
+	<uol.resource.error.IDS_WIZARD_ERROR_SERVER><![CDATA[Não foi possível conectar nos servidores do UOL. (UIM0602)]]></uol.resource.error.IDS_WIZARD_ERROR_SERVER>
+	<uol.resource.error.IDS_ACCOUNTS_PROPPAGE_EMPTY_USER_MESSAGE><![CDATA[Por favor, preencha o campo "Identificação do usuário". (UIM0106)]]></uol.resource.error.IDS_ACCOUNTS_PROPPAGE_EMPTY_USER_MESSAGE>
+	<uol.resource.error.IDS_ACCOUNTS_PROPPAGE_USER_ALREADY_EXISTS_MSG_FORMAT><![CDATA[Já existe uma conta da rede %s para o usuário %s. (UIM0101)]]></uol.resource.error.IDS_ACCOUNTS_PROPPAGE_USER_ALREADY_EXISTS_MSG_FORMAT>
+	<uol.resource.error.IDS_GROUP_NODE_ERROR_NO_EMPTY_GROUP><![CDATA[Não foi possível remover o grupo %s porque ele não está vazio. (UIM0166)]]></uol.resource.error.IDS_GROUP_NODE_ERROR_NO_EMPTY_GROUP>
+	<uol.resource.error.IDS_ACCOUNTS_PROPPAGE_INVALID_USERNAME_MSG_FORMAT><![CDATA[%s não é uma identificação de usuário válida para a rede %s. (UIM0103)]]></uol.resource.error.IDS_ACCOUNTS_PROPPAGE_INVALID_USERNAME_MSG_FORMAT>
+	<uol.resource.error.IDS_SKIN_ERROR_TAG_NOTFOUND><![CDATA[Há um erro no código do arquivo 
+%s. Linha: %i Coluna: %i. (UIM0403)]]></uol.resource.error.IDS_SKIN_ERROR_TAG_NOTFOUND>
+	<uol.resource.error.IDS_CONTACT_DIALOG_CONTACT_ALREADY_EXISTS_MSG_FORMAT><![CDATA[O usuário %s já existe na sua lista de contatos, dentro do grupo %s. (UIM0157)]]></uol.resource.error.IDS_CONTACT_DIALOG_CONTACT_ALREADY_EXISTS_MSG_FORMAT>
+	<uol.resource.error.IDS_DIALOG_PROFILE_INVALID><![CDATA[O nome do perfil contém caracteres inválidos. Por favor, escolha outro nome. (UIM0303)]]></uol.resource.error.IDS_DIALOG_PROFILE_INVALID>
+	<uol.resource.error.IDS_SKIN_ERROR_VERSION><![CDATA[O arquivo de tema atual é incompatível com esta versão do $(APP_NAME). (UIM0408)]]></uol.resource.error.IDS_SKIN_ERROR_VERSION>
+	<uol.resource.error.IDS_CONTACT_DIALOG_NAME_NOTFOUND><![CDATA[Por favor, preencha o nome do usuário. (UIM0156)]]></uol.resource.error.IDS_CONTACT_DIALOG_NAME_NOTFOUND>
+	<uol.resource.error.IDS_CONTACT_DIALOG_GROUP_NOTFOUND><![CDATA[Por favor, digite ou selecione o nome do grupo. (UIM0153)]]></uol.resource.error.IDS_CONTACT_DIALOG_GROUP_NOTFOUND>
+	<uol.resource.error.IDS_CONTACT_DIALOG_ERROR_ADD_CONTACT><![CDATA[Não foi possível adicionar o contato. Por favor, tente novamente. (UIM0004)]]></uol.resource.error.IDS_CONTACT_DIALOG_ERROR_ADD_CONTACT>
+	<uol.resource.error.IDS_DIALOG_PROFILE_EXISTS><![CDATA[Já existe um perfil com esse nome. Por favor, escolha outro. (UIM0301)]]></uol.resource.error.IDS_DIALOG_PROFILE_EXISTS>
+	<uol.resource.error.IDS_EMOTICONS_PROPPAGE_ERROR_SPACE><![CDATA[Não é permitido usar espaço para definir o atalho de um emoticon. (UIM0201)]]></uol.resource.error.IDS_EMOTICONS_PROPPAGE_ERROR_SPACE>
+	<uol.resource.error.IDS_EMOTICONS_PROPPAGE_ERROR_SHORTCUT><![CDATA[Esse atalho já existe. Por favor, escolha outro para cadastrar o emoticon. (UIM0202)]]></uol.resource.error.IDS_EMOTICONS_PROPPAGE_ERROR_SHORTCUT>
+	<uol.resource.error.IDS_ACCOUNTS_USER_CONNECTED><![CDATA[Você conectou a conta. Suas alterações não serão salvas. (UIM0140)]]></uol.resource.error.IDS_ACCOUNTS_USER_CONNECTED>
+	<uol.resource.error.IDS_CONTACT_NODE_ERROR_NAME_INVALID><![CDATA[Por favor, digite um nome para o contato. (UIM0151)]]></uol.resource.error.IDS_CONTACT_NODE_ERROR_NAME_INVALID>
+	<uol.resource.error.IDS_UI_MANAGER_ERROR_GROUP_EXISTS><![CDATA[Já existe um grupo com o nome "%s". (UIM0163)]]></uol.resource.error.IDS_UI_MANAGER_ERROR_GROUP_EXISTS>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_UOL_SERVER_ERROR><![CDATA[Não foi possível conectar a conta %s (%s). 
+%s.]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_UOL_SERVER_ERROR>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_REGISTRATION_REQUIRED><![CDATA[Não foi possível conectar a conta %s (%s). 
+Você não está cadastrado neste serviço. (UIM0173)]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_REGISTRATION_REQUIRED>
+	<uol.resource.error.IDS_GROUP_NODE_ERROR_GROUP_EXISTS><![CDATA[Já existe um grupo com o nome "%s". (UIM0165)]]></uol.resource.error.IDS_GROUP_NODE_ERROR_GROUP_EXISTS>
+	<uol.resource.error.IDS_SKIN_ERROR_ACCESSDENIED><![CDATA[Você não tem permissão para acessar o arquivo %s. (UIM0406)]]></uol.resource.error.IDS_SKIN_ERROR_ACCESSDENIED>
+	<uol.resource.error.IDS_SKIN_ERROR_ATTRIBUTE_NOTFOUND><![CDATA[Há um erro no código do arquivo 
+%s. Linha: %i Coluna: %i. (UIM0404)]]></uol.resource.error.IDS_SKIN_ERROR_ATTRIBUTE_NOTFOUND>
+	<uol.resource.error.IDS_CONTACT_DIALOG_ACCOUNT_NOTFOUND><![CDATA[Por favor, selecione uma conta. (UIM0155)]]></uol.resource.error.IDS_CONTACT_DIALOG_ACCOUNT_NOTFOUND>
+	<uol.resource.error.IDS_SKIN_ERROR_GENERAL><![CDATA[Ocorreu um erro ao carregar as suas configurações de tema. (UIM0407)]]></uol.resource.error.IDS_SKIN_ERROR_GENERAL>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_USER_LOGGED><![CDATA[Você conectou a conta %s (%s) em outro computador ou programa de mensagem instantânea. (UIM0018)]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_USER_LOGGED>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_USER_DATA_INVALID><![CDATA[Não foi possível conectar a conta %s (%s). 
+Verifique seu usuário e senha e tente novamente. (UIM0002)]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_USER_DATA_INVALID>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_TOO_MANY_CONNECTION_ATTEMPTS><![CDATA[Não foi possível conectar a conta %s (%s). 
+Por favor, aguarde alguns minutos e tente novamente. (UIM0009)]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_TOO_MANY_CONNECTION_ATTEMPTS>
+	<uol.resource.error.IDS_GROUP_MENU_EMPTY_NEW_NAME_MESSAGE><![CDATA[Por favor, digite o novo nome do grupo. (UIM0164)]]></uol.resource.error.IDS_GROUP_MENU_EMPTY_NEW_NAME_MESSAGE>
+	<uol.resource.error.IDS_SKIN_ERROR_FILE_INVALID><![CDATA[O arquivo de skin (%s) não é um XML válido. (UIM0405)]]></uol.resource.error.IDS_SKIN_ERROR_FILE_INVALID>
+	<uol.resource.error.IDS_UI_MANAGER_ERROR_EMPTY_NAME><![CDATA[Por favor, digite um nome para o novo grupo. (UIM0162)]]></uol.resource.error.IDS_UI_MANAGER_ERROR_EMPTY_NAME>
+	<uol.resource.error.IDS_UIM_APPLICATION_CURRENT_THEME_INVALID><![CDATA[O arquivo de tema atual não existe ou é inválido. O aplicativo será iniciado com o tema padrão. (UIM0401)]]></uol.resource.error.IDS_UIM_APPLICATION_CURRENT_THEME_INVALID>
+	<uol.resource.error.IDS_UIM_APPLICATION_DEFAULT_THEME_INVALID><![CDATA[O arquivo de tema atual não existe ou é inválido. Não foi possível carregar o tema padrão. (UIM0402)]]></uol.resource.error.IDS_UIM_APPLICATION_DEFAULT_THEME_INVALID>
+	<uol.resource.error.IDS_CONTACT_DIALOG_INVALID_USERNAME_FORMAT><![CDATA["%s" não é um usuário válido para a rede %s. (UIM0152)]]></uol.resource.error.IDS_CONTACT_DIALOG_INVALID_USERNAME_FORMAT>
+	<uol.resource.error.IDS_FILE_TRANSFER_CONTACT_NOT_ONLINE_MESSAGE><![CDATA[Não é possível enviar um arquivo para contatos desconectados. 
+Por favor, tente novamente mais tarde. (UIM0109)]]></uol.resource.error.IDS_FILE_TRANSFER_CONTACT_NOT_ONLINE_MESSAGE>
+    <uol.resource.error.IDS_EMOTICONS_PROPPAGE_INVALID_IMAGE_FILE><![CDATA[O formato do arquivo %s não é válido. A imagem deve estar no formato GIF ou JPG. (UIM0203)]]></uol.resource.error.IDS_EMOTICONS_PROPPAGE_INVALID_IMAGE_FILE>
+	<uol.resource.error.IDS_ADD_CONTACT_NO_ONLINE_ACCOUNTS_ERROR_MSG><![CDATA[Para adicionar contato é necessário estar conectado. 
+Por favor, repita a operação após conectar-se. (UIM0154)]]></uol.resource.error.IDS_ADD_CONTACT_NO_ONLINE_ACCOUNTS_ERROR_MSG>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_GENERIC_CONNECTION_ERROR><![CDATA[Não foi possível conectar a conta %s (%s). 
+Por favor, tente novamente mais tarde. (UIM0015)]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_GENERIC_CONNECTION_ERROR>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_UNABLE_TO_CONNECT><![CDATA[Não foi possível conectar a conta %s (%s). 
+Por favor, tente novamente mais tarde. (UIM0005)]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_UNABLE_TO_CONNECT>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_INVALID_USER_NAME><![CDATA[Não foi possível conectar a conta %s (%s). 
+Verifique seu usuário e tente novamente. (UIM0006)]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_INVALID_USER_NAME>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_SUSPENDED_ACCOUNT><![CDATA[Não foi possível conectar a conta %s (%s). 
+No momento, sua conta está suspensa. (UIM0008)]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_SUSPENDED_ACCOUNT>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_CONNECTION_TERMINATED><![CDATA[A conexão da conta %s (%s) com o servidor foi encerrada. 
+Por favor, tente novamente mais tarde. (UIM0016)]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_CONNECTION_TERMINATED>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_INVALID_SECURID><![CDATA[Não foi possível autenticar a conta %s (%s). 
+Por favor, tente novamente mais tarde. (UIM0010)]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_INVALID_SECURID>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_ERROR_PARSING_HTTP><![CDATA[Não foi possível conectar a conta %s (%s). 
+Por favor, tente novamente mais tarde. (UIM0017)]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_ERROR_PARSING_HTTP>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_UNAVAILABLE_BUDDY_LIST><![CDATA[A lista de contatos da conta %s (%s) está temporariamente indisponível. 
+Por favor, tente conectar novamente mais tarde. (UIM0105)]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_UNAVAILABLE_BUDDY_LIST>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_SSL_SUPPORT><![CDATA[Não foi possível conectar a conta %s (%s). 
+Por favor, tente novamente mais tarde. (UIM0012)]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_SSL_SUPPORT>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_CONNECTION_FAILED><![CDATA[Não foi possível conectar a conta %s (%s). 
+Por favor, tente novamente mais tarde. (UIM0001)]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_CONNECTION_FAILED>
+	<uol.resource.error.IDS_MESSAGE_PROTOCOL_PROXY_ERROR><![CDATA[Ocorreu um erro na conexão com o servidor proxy e não foi possível conectar a conta %s (%s). 
+Por favor, tente novamente mais tarde. (UIM0014)]]></uol.resource.error.IDS_MESSAGE_PROTOCOL_PROXY_ERROR>
+	<uol.resource.error.IDS_WIZARD_DIFFERENT_PASSWORD><![CDATA[As senhas não conferem. Digite novamente. (UIM0603)]]></uol.resource.error.IDS_WIZARD_DIFFERENT_PASSWORD>
+	<uol.resource.error.IDS_WIZARD_INVALID_EMAIL><![CDATA[Por favor, digite um e-mail válido. (UIM0604)]]></uol.resource.error.IDS_WIZARD_INVALID_EMAIL>
+	<uol.resource.error.IDS_WIZARD_REQUIRED_PASSWORD><![CDATA[O preenchimento do campo senha é obrigatório. (UIM0605)]]></uol.resource.error.IDS_WIZARD_REQUIRED_PASSWORD>
+	<uol.resource.error.IDS_WIZARD_EXISTS_ACCOUNT><![CDATA[A conta %s já está cadastrada. (UIM0606)]]></uol.resource.error.IDS_WIZARD_EXISTS_ACCOUNT>
+	<uol.resource.error.IDS_WIZARD_INVALID_UIN><![CDATA[Por favor, digite um UIN válido. (UIM0607)]]></uol.resource.error.IDS_WIZARD_INVALID_UIN>
+	<uol.resource.error.IDS_PLUGIN_INSTALLATION_FAILED_MESSAGE><![CDATA[Não possível concluir a instalação do plugin. 
+Por favor, tente novamente mais tarde. (UIM0501)]]></uol.resource.error.IDS_PLUGIN_INSTALLATION_FAILED_MESSAGE>
+	<uol.resource.error.IDS_PLUGIN_UPDATE_FAILED_MESSAGE><![CDATA[Não foi possível concluir a atualização do plugin. 
+Por favor, tente novamente mais tarde. (UIM0503)]]></uol.resource.error.IDS_PLUGIN_UPDATE_FAILED_MESSAGE>
+	<uol.resource.error.IDS_GROUP_NODE_ERROR_LIMIT_NAME><![CDATA[O nome do grupo deve conter no máximo 15 caracteres. (UIM0161)]]></uol.resource.error.IDS_GROUP_NODE_ERROR_LIMIT_NAME>
+	<uol.resource.error.IDS_CONTACT_DIALOG_BLOCK_LIST><![CDATA["%s" está na sua lista de contatos bloqueados. (UIM0171)]]></uol.resource.error.IDS_CONTACT_DIALOG_BLOCK_LIST>
+	<uol.resource.error.IDS_WIZARD_INVALID_ID><![CDATA[Por favor, digite um ID válido. (UIM0609)]]></uol.resource.error.IDS_WIZARD_INVALID_ID>
+	<uol.resource.error.IDS_ACCOUNT_EDIT_EMPTY_PORT><![CDATA[Porta do servidor Jabber inválida. (UIM0141)]]></uol.resource.error.IDS_ACCOUNT_EDIT_EMPTY_PORT>
+	<uol.resource.error.IDS_WIZARD_INVALID_PORT><![CDATA[Atenção! O número da porta deve ser menor que 65536. (UIM0608)]]></uol.resource.error.IDS_WIZARD_INVALID_PORT>
+	<uol.resource.error.IDS_WIZARD_EMPTY_PORT><![CDATA[Por favor, digite o número da porta do servidor. (UIM0610)]]></uol.resource.error.IDS_WIZARD_EMPTY_PORT>
+	<uol.resource.error.IDS_JABBER_ADD_CONTACT_DENIED><![CDATA[O usuário %s não permitiu que você o adicionasse à sua lista de contatos. (UIM0158)]]></uol.resource.error.IDS_JABBER_ADD_CONTACT_DENIED>
+	<uol.resource.error.IDS_JABBER_ADD_CONTACT_DENIED_REASON><![CDATA[O usuário %s não permitiu que você o adicionasse à sua lista de contatos, 
+pelo seguinte motivo (UIM0159): 
+
+%s]]></uol.resource.error.IDS_JABBER_ADD_CONTACT_DENIED_REASON>
+	<uol.resource.error.IDS_BLOCKING_NOT_SUPPORTED><![CDATA[Não foi possível (des)bloquear o contato %s, 
+pelo seguinte motivo: 
+
+O protocolo %s não suporta bloqueio de contatos. (UIM0142)]]></uol.resource.error.IDS_BLOCKING_NOT_SUPPORTED>
+	<uol.resource.error.IDS_FILE_TRANSFER_NOT_SUPPORTED><![CDATA[O protocolo %s não dá suporte à transferência de arquivos. (UIM0114)]]></uol.resource.error.IDS_FILE_TRANSFER_NOT_SUPPORTED>
+  <uol.resource.error.IDS_FILE_TRANSFER_ERROR_UNSUPORTED><![CDATA[A rede do contato não dá suporte à transferência de arquivos.]]></uol.resource.error.IDS_FILE_TRANSFER_ERROR_UNSUPORTED>
+	<uol.resource.error.IDS_CONTACT_ALREADY_BLOCKED><![CDATA[O contato já está bloqueado. (UIM0143)]]></uol.resource.error.IDS_CONTACT_ALREADY_BLOCKED>
+	<uol.resource.error.IDS_FILE_TRANSFER_ACCOUNT_NOT_CONNECTED><![CDATA[Não é possível enviar arquivo com a conta desconectada. 
+Por favor, repita a operação após conectar-se. (UIM0117)]]></uol.resource.error.IDS_FILE_TRANSFER_ACCOUNT_NOT_CONNECTED>
+	<uol.resource.error.IDS_SHOW_INFO_ACCOUNT_NOT_CONNECTED_MSG><![CDATA[Para exibir os detalhes é necessário estar conectado. 
+Por favor, repita a operação após conectar-se. (UIM0169)]]></uol.resource.error.IDS_SHOW_INFO_ACCOUNT_NOT_CONNECTED_MSG>
+	<uol.resource.error.IDS_TOGGLE_DENIED_CONTACT_ACCOUNT_NOT_CONNECTED_MSG><![CDATA[Para (des)bloquear um contato é necessário estar conectado. 
+Por favor, repita a operação após conectar-se. (UIM0170)]]></uol.resource.error.IDS_TOGGLE_DENIED_CONTACT_ACCOUNT_NOT_CONNECTED_MSG>
+	<uol.resource.error.IDS_INCORRECT_PASSWORD><![CDATA[A senha atual informada está incorreta.(UIM0611)]]></uol.resource.error.IDS_INCORRECT_PASSWORD>
+	<uol.resource.error.NoContactListSupport><![CDATA[Para adicionar contato é necessário estar conectado com uma conta que tenha suporte à lista de contatos. (UIM0174)]]></uol.resource.error.NoContactListSupport>
+	<uol.resource.error.IDS_WIZARD_INVALID_SOUND_FILE><![CDATA[O arquivo de áudio informado não possui uma extensão válida! (UIM0612)]]></uol.resource.error.IDS_WIZARD_INVALID_SOUND_FILE>
+	<uol.resource.error.IDS_HISTORY_UNABLE_TO_SHOW><![CDATA[Não há histórico para a data selecionada.]]></uol.resource.error.IDS_HISTORY_UNABLE_TO_SHOW>
+	<!-- -->	
+	<uol.resource.IDR_MAINFRAME><![CDATA[uim]]></uol.resource.IDR_MAINFRAME>
+	<uol.resource.IDS_SOUNDS_PROPPAGE_EVENT_NEW_MESSAGE><![CDATA[Nova mensagem]]></uol.resource.IDS_SOUNDS_PROPPAGE_EVENT_NEW_MESSAGE>
+	<uol.resource.IDS_SOUNDS_PROPPAGE_EVENT_CONTACT_ONLINE><![CDATA[Contato online]]></uol.resource.IDS_SOUNDS_PROPPAGE_EVENT_CONTACT_ONLINE>
+	<uol.resource.IDS_HOME_URL><![CDATA[http://messenger.uol.com.br/welcomeredir.html]]></uol.resource.IDS_HOME_URL>
+	<uol.resource.IDS_YOU_WERE_ADDED><![CDATA[O usuário %s adicionou você em sua lista de contatos.]]></uol.resource.IDS_YOU_WERE_ADDED>
+	<uol.resource.IDS_ACCOUNT_REQUEST_PASSWORD_DIALOG_LABEL><![CDATA[Por favor, digite a senha para esta conta.]]></uol.resource.IDS_ACCOUNT_REQUEST_PASSWORD_DIALOG_LABEL>
+	<uol.resource.IDS_HELP_URL><![CDATA[http://messenger.uol.com.br/ajuda.html]]></uol.resource.IDS_HELP_URL>
+	<uol.resource.IDS_SOUNDS_DIR><![CDATA[Sounds]]></uol.resource.IDS_SOUNDS_DIR>
+	<uol.resource.IDS_DEFAULT_SOUND_NEW_MESSAGE><![CDATA[mensagem.wav]]></uol.resource.IDS_DEFAULT_SOUND_NEW_MESSAGE>
+	<uol.resource.IDS_DEFAULT_SOUND_CONTACT_ONLINE><![CDATA[online.wav]]></uol.resource.IDS_DEFAULT_SOUND_CONTACT_ONLINE>
+	<uol.resource.IDS_MUTEX_SINGLE_INSTANCE><![CDATA[UOLIMSingleInstanceMutex]]></uol.resource.IDS_MUTEX_SINGLE_INSTANCE>
+	<uol.resource.IDS_MUTEX_INSTALLER><![CDATA[UOLIMClientInstaller]]></uol.resource.IDS_MUTEX_INSTALLER>
+	<uol.resource.IDS_MESSAGE_WINDOW_GENERIC_IM_SEND_ERROR><![CDATA[Não foi possível enviar a mensagem anterior.]]></uol.resource.IDS_MESSAGE_WINDOW_GENERIC_IM_SEND_ERROR>
+	<uol.resource.IDS_REPORT_DISCONNECT_MSG_FORMAT><![CDATA[Ocorreu um erro de conexão na conta %s (%s):
+%s]]></uol.resource.IDS_REPORT_DISCONNECT_MSG_FORMAT>
+	<uol.resource.IDS_GROUP_NODE_RENAME_GROUP_LABEL><![CDATA[Digite o novo nome do grupo]]></uol.resource.IDS_GROUP_NODE_RENAME_GROUP_LABEL>
+	<uol.resource.IDS_DIALOG_ACCOUNTS><![CDATA[Contas]]></uol.resource.IDS_DIALOG_ACCOUNTS>
+	<uol.resource.IDS_NO><![CDATA[Não]]></uol.resource.IDS_NO>
+	<uol.resource.IDS_EMOTICONS_PROPPAGE_REMOVECONFIRM_MESSAGE><![CDATA[Tem certeza que deseja remover o emoticon selecionado?]]></uol.resource.IDS_EMOTICONS_PROPPAGE_REMOVECONFIRM_MESSAGE>
+	<uol.resource.IDS_SHOW_GROUP_DIALOG_NO_VISIBLE_GROUPS_MSG><![CDATA[Não é possível criar um grupo quando a lista de contatos não está exibindo os contatos em grupos. 
+Deseja ativar a exibição de contatos em grupos?]]></uol.resource.IDS_SHOW_GROUP_DIALOG_NO_VISIBLE_GROUPS_MSG>
+	<uol.resource.IDS_UOL_BUTTON_URL><![CDATA[http://www.uol.com.br]]></uol.resource.IDS_UOL_BUTTON_URL>
+	<uol.resource.IDS_WIZARD_REMEMBER_PASSWORD><![CDATA[Ao selecionar esta opção, qualquer pessoa que use o seu computador poderá utilizar o $(APP_NAME) com seu perfil. Para sua segurança, e-mail e serviços da central do assinante e outros específicos continuarão pedindo confirmação de senha sempre.]]></uol.resource.IDS_WIZARD_REMEMBER_PASSWORD>
+	<uol.resource.IDS_DONT_DISPLAY_AGAIN><![CDATA[Não perguntar novamente]]></uol.resource.IDS_DONT_DISPLAY_AGAIN>
+	<uol.resource.IDS_WIZARD_PROFILE_UNCHECK_AUTHENTICATION><![CDATA[Atenção! Ao desmarcar esta opção, você não conseguirá usar futuras funcionalidades do comunicador.
+O UOL recomenda manter a configuração, assim você poderá tirar o máximo proveito do $(APP_NAME) e suas funcionalidades.]]></uol.resource.IDS_WIZARD_PROFILE_UNCHECK_AUTHENTICATION>
+	<uol.resource.IDS_SOUNDS_PROPPAGE_COLUMN_FILE_PATH><![CDATA[Arquivo de som]]></uol.resource.IDS_SOUNDS_PROPPAGE_COLUMN_FILE_PATH>
+	<uol.resource.IDS_DIALOG_CONTACTS><![CDATA[Contatos]]></uol.resource.IDS_DIALOG_CONTACTS>
+	<uol.resource.IDS_DIALOG_MESSAGES><![CDATA[Mensagens]]></uol.resource.IDS_DIALOG_MESSAGES>
+	<uol.resource.IDS_DIALOG_STATUS><![CDATA[Estado]]></uol.resource.IDS_DIALOG_STATUS>
+	<uol.resource.IDS_DIALOG_SOUNDS><![CDATA[Sons]]></uol.resource.IDS_DIALOG_SOUNDS>
+	<uol.resource.IDS_STRING_COMPANY_NAME><![CDATA[UOL]]></uol.resource.IDS_STRING_COMPANY_NAME>
+	<uol.resource.IDS_STRING_PRODUCT_NAME><![CDATA[UIM]]></uol.resource.IDS_STRING_PRODUCT_NAME>
+	<uol.resource.IDS_ACCOUNTS_PROPPAGE_BUTTON_CONNECT><![CDATA[Conectar]]></uol.resource.IDS_ACCOUNTS_PROPPAGE_BUTTON_CONNECT>
+	<uol.resource.IDS_ACCOUNTS_PROPPAGE_BUTTON_DISCONNECT><![CDATA[Desconectar]]></uol.resource.IDS_ACCOUNTS_PROPPAGE_BUTTON_DISCONNECT>
+	<uol.resource.IDS_ACCOUNTS_PROPPAGE_REMOVE_ACCOUNT_MSG_FORMAT><![CDATA[Tem certeza que deseja remover a conta %s?
+Esta operação não poderá ser cancelada!]]></uol.resource.IDS_ACCOUNTS_PROPPAGE_REMOVE_ACCOUNT_MSG_FORMAT>
+	<uol.resource.IDS_ACCOUNTS_PROPPAGE_NEW_USER_ID><![CDATA[<Novo usuário>]]></uol.resource.IDS_ACCOUNTS_PROPPAGE_NEW_USER_ID>
+	<uol.resource.IDS_MENU_CONNECT_ALL><![CDATA[&Conectar todas  as redes]]></uol.resource.IDS_MENU_CONNECT_ALL>
+	<uol.resource.IDS_MENU_DISCONNECT_ALL><![CDATA[&Desconectar todas  as redes]]></uol.resource.IDS_MENU_DISCONNECT_ALL>
+	<uol.resource.IDS_MENU_STATUS><![CDATA[Estado]]></uol.resource.IDS_MENU_STATUS>
+	<uol.resource.IDS_MENU_CONNECT><![CDATA[Conectar]]></uol.resource.IDS_MENU_CONNECT>
+	<uol.resource.IDS_MENU_DISCONNECT><![CDATA[Desconectar]]></uol.resource.IDS_MENU_DISCONNECT>
+	<uol.resource.IDS_MENU_SHOW_CONVERSATION_HISTORY><![CDATA[Histórico de conversas...]]></uol.resource.IDS_MENU_SHOW_CONVERSATION_HISTORY>
+	<uol.resource.IDS_MENU_SEND_MESSAGE><![CDATA[Enviar mensagem]]></uol.resource.IDS_MENU_SEND_MESSAGE>
+	<uol.resource.IDS_MENU_BLOCK_CONTACT><![CDATA[Bloquear contato]]></uol.resource.IDS_MENU_BLOCK_CONTACT>
+	<uol.resource.IDS_MENU_REMOVE_CONTACT><![CDATA[Remover contato]]></uol.resource.IDS_MENU_REMOVE_CONTACT>
+	<uol.resource.IDS_MENU_RENAME_CONTACT><![CDATA[Renomear contato]]></uol.resource.IDS_MENU_RENAME_CONTACT>
+	<uol.resource.IDS_MESSAGE_WINDOW_SEND_BUTTON><![CDATA[Enviar]]></uol.resource.IDS_MESSAGE_WINDOW_SEND_BUTTON>
+	<uol.resource.IDS_MESSAGE_WINDOW_CONTACT_TYPING_FORMAT><![CDATA[%s está digitando...]]></uol.resource.IDS_MESSAGE_WINDOW_CONTACT_TYPING_FORMAT>
+	<uol.resource.IDS_MESSAGE_WINDOW_CONV_WINDOW_CLOSED_FORMAT><![CDATA[%s fechou a janela.]]></uol.resource.IDS_MESSAGE_WINDOW_CONV_WINDOW_CLOSED_FORMAT>
+	<uol.resource.IDS_MESSAGE_WINDOW_CONV_TIMEOUT_FORMAT><![CDATA[A conversa com %s expirou.]]></uol.resource.IDS_MESSAGE_WINDOW_CONV_TIMEOUT_FORMAT>
+	<uol.resource.IDS_SOUNDS_PROPPAGE_COLUMN_EVENT_TYPE><![CDATA[Evento]]></uol.resource.IDS_SOUNDS_PROPPAGE_COLUMN_EVENT_TYPE>
+	<uol.resource.IDS_CONTACT_NODE_HISTORY_CAPTION><![CDATA[Histórico]]></uol.resource.IDS_CONTACT_NODE_HISTORY_CAPTION>
+	<uol.resource.IDS_GROUP_NODE_REMOVEGROUP_CAPTION><![CDATA[Remover grupo]]></uol.resource.IDS_GROUP_NODE_REMOVEGROUP_CAPTION>
+	<uol.resource.IDS_GROUP_NODE_RENAMEGROUP_CAPTION><![CDATA[Renomear grupo]]></uol.resource.IDS_GROUP_NODE_RENAMEGROUP_CAPTION>
+	<uol.resource.IDS_ACCOUNT_MANAGER_ACCOUNTS_FILE><![CDATA[Accounts.xml]]></uol.resource.IDS_ACCOUNT_MANAGER_ACCOUNTS_FILE>
+	<uol.resource.IDS_LIVEUPDATE_URL><![CDATA[http://ubpv.multi.uol.com.br/uim.html]]></uol.resource.IDS_LIVEUPDATE_URL>
+	<uol.resource.IDS_LIVEUPDATE_MESSAGE><![CDATA[Há uma nova versão disponível do $(APP_NAME)]]></uol.resource.IDS_LIVEUPDATE_MESSAGE>
+	<uol.resource.IDS_APP_REG_KEY><![CDATA[Software\UOL\UIM]]></uol.resource.IDS_APP_REG_KEY>
+	<uol.resource.IDS_USER_AGENT><![CDATA[UIM]]></uol.resource.IDS_USER_AGENT>
+	<uol.resource.IDS_VERSION_PARAM><![CDATA[xid=%s]]></uol.resource.IDS_VERSION_PARAM>
+	<uol.resource.IDS_BUGREPORT_SERVLET_METHOD><![CDATA[POST]]></uol.resource.IDS_BUGREPORT_SERVLET_METHOD>
+	<uol.resource.IDS_BUGREPORT_SERVLET_URL><![CDATA[http://cr.multi.uol.com.br/creporter.html?prod=UIM]]></uol.resource.IDS_BUGREPORT_SERVLET_URL>
+	<uol.resource.IDS_PRODID_NAME><![CDATA[ProdId]]></uol.resource.IDS_PRODID_NAME>
+	<uol.resource.IDS_PRODID_VALUE><![CDATA[UIM]]></uol.resource.IDS_PRODID_VALUE>
+	<uol.resource.IDS_APP_NAME><![CDATA[UOL Messenger]]></uol.resource.IDS_APP_NAME>
+	<uol.resource.IDS_GROUP_NODE_RENAME_GROUP_TITLE><![CDATA[Renomear grupo]]></uol.resource.IDS_GROUP_NODE_RENAME_GROUP_TITLE>
+	<uol.resource.IDS_STRING_PROFILE_DIR><![CDATA[Profiles]]></uol.resource.IDS_STRING_PROFILE_DIR>
+	<uol.resource.IDS_STRING_BOL_SUBSCRIPTION_URL><![CDATA[https://visitante.cadastro.uol.com.br/index.html?skin=/messenger]]></uol.resource.IDS_STRING_BOL_SUBSCRIPTION_URL>
+	<uol.resource.IDS_DIALOG_GENERAL><![CDATA[Geral]]></uol.resource.IDS_DIALOG_GENERAL>
+	<uol.resource.IDS_DIALOG_EMOTICONS><![CDATA[Emoticons]]></uol.resource.IDS_DIALOG_EMOTICONS>
+	<uol.resource.IDS_EMOTICONS_PROPPAGE_COLUMN_SHORTCUT><![CDATA[Atalho]]></uol.resource.IDS_EMOTICONS_PROPPAGE_COLUMN_SHORTCUT>
+	<uol.resource.IDS_EMOTICONS_PROPPAGE_COLUMN_FILE_PATH><![CDATA[Arquivo de emoticon]]></uol.resource.IDS_EMOTICONS_PROPPAGE_COLUMN_FILE_PATH>
+	<uol.resource.IDS_FOLDER_EMOTICONS><![CDATA[Emoticon]]></uol.resource.IDS_FOLDER_EMOTICONS>
+	<uol.resource.IDS_FOLDER_SOUNDS><![CDATA[Sound]]></uol.resource.IDS_FOLDER_SOUNDS>
+	<uol.resource.IDS_FOLDER_ICONS><![CDATA[Icon]]></uol.resource.IDS_FOLDER_ICONS>
+	<uol.resource.IDS_ACCOUNTS_TITLE_ADD><![CDATA[Adicionar conta]]></uol.resource.IDS_ACCOUNTS_TITLE_ADD>
+	<uol.resource.IDS_CONTACT_NODE_REMOVECONTACT_CONFIRM_MESSAGE_FORMAT><![CDATA[Tem certeza que deseja remover %s da sua lista de contatos?]]></uol.resource.IDS_CONTACT_NODE_REMOVECONTACT_CONFIRM_MESSAGE_FORMAT>
+	<uol.resource.IDS_JABBER_UOL_EMAIL_DOMAIN><![CDATA[@uol.com.br]]></uol.resource.IDS_JABBER_UOL_EMAIL_DOMAIN>
+	<uol.resource.IDS_VERSION_FORMAT><![CDATA[$(APP_NAME) - Versão %d.%d.%d.%db
+Direitos Autorais Reservados (c) 2006 Universo Online S/A]]></uol.resource.IDS_VERSION_FORMAT>
+	<uol.resource.IDS_LIVEUPDATE_PLUGIN><![CDATA[Há um novo plugin disponível para instalação.]]></uol.resource.IDS_LIVEUPDATE_PLUGIN>
+	<uol.resource.IDS_CONNECTION_ERROR_DIALOG_CAPTION><![CDATA[%s - Reconectar contas]]></uol.resource.IDS_CONNECTION_ERROR_DIALOG_CAPTION>
+	<uol.resource.IDS_CONNECTION_ERROR_DIALOG_STATIC_TITLE><![CDATA[Contas desconectadas]]></uol.resource.IDS_CONNECTION_ERROR_DIALOG_STATIC_TITLE>
+	<uol.resource.IDS_CONNECTION_ERROR_DIALOG_STATIC_MESSAGE><![CDATA[As seguintes contas foram desconectadas:]]></uol.resource.IDS_CONNECTION_ERROR_DIALOG_STATIC_MESSAGE>
+	<uol.resource.IDS_CONNECTION_ERROR_DIALOG_STATIC_REASON><![CDATA[Motivo:]]></uol.resource.IDS_CONNECTION_ERROR_DIALOG_STATIC_REASON>
+	<uol.resource.IDS_CONNECTION_ERROR_DIALOG_RECONNECT_BUTTON_CAPTION><![CDATA[Reconectar todas]]></uol.resource.IDS_CONNECTION_ERROR_DIALOG_RECONNECT_BUTTON_CAPTION>
+	<uol.resource.IDS_CONNECTION_ERROR_DIALOG_CANCEL_BUTTON_CAPTION><![CDATA[Cancelar]]></uol.resource.IDS_CONNECTION_ERROR_DIALOG_CANCEL_BUTTON_CAPTION>
+	<uol.resource.IDS_CONNECTION_ERROR_DIALOG_ACCOUNT_COLUMN><![CDATA[Conta]]></uol.resource.IDS_CONNECTION_ERROR_DIALOG_ACCOUNT_COLUMN>
+	<uol.resource.IDS_CONNECTION_ERROR_DIALOG_DATE_COLUMN><![CDATA[Data]]></uol.resource.IDS_CONNECTION_ERROR_DIALOG_DATE_COLUMN>
+	<uol.resource.IDS_UNREAD_MESSAGES_ALERT><![CDATA[Há mensagens não lidas nesta janela. Tem certeza que deseja fechar a janela?]]></uol.resource.IDS_UNREAD_MESSAGES_ALERT>
+	<uol.resource.IDS_STATUS_BUSY><![CDATA[Ocupado]]></uol.resource.IDS_STATUS_BUSY>
+	<uol.resource.IDS_COMMON_SUB_KEY><![CDATA[Common]]></uol.resource.IDS_COMMON_SUB_KEY>
+	<uol.resource.IDS_JABBER_BOL_EMAIL_DOMAIN><![CDATA[@bol.com.br]]></uol.resource.IDS_JABBER_BOL_EMAIL_DOMAIN>
+	<uol.resource.IDS_UIMVIEW_AUTHORIZATION_GRANTED><![CDATA[O usuário %s autorizou você.]]></uol.resource.IDS_UIMVIEW_AUTHORIZATION_GRANTED>
+	<uol.resource.IDS_UIMVIEW_AUTHORIZATION_DENIED><![CDATA[O usuário %s não autorizou você.]]></uol.resource.IDS_UIMVIEW_AUTHORIZATION_DENIED>
+	<uol.resource.IDS_USER_INPUT_HANDLER_RECV_FILE_WARNING><![CDATA[
+
+ATENÇÃO: alguns arquivos podem conter vírus ou executarem
+                  operações potencialmente perigosas para seu computador.
+                  Evite abrir, executar ou aceitar arquivos de fontes não
+                  conhecidas.]]></uol.resource.IDS_USER_INPUT_HANDLER_RECV_FILE_WARNING>
+	<uol.resource.IDS_ACCOUNTS_TITLE_EDIT><![CDATA[Alterar conta]]></uol.resource.IDS_ACCOUNTS_TITLE_EDIT>
+	<uol.resource.IDS_STRING_THEME_DIR><![CDATA[Themes]]></uol.resource.IDS_STRING_THEME_DIR>
+	<uol.resource.IDS_DIALOG_PROFILE_REMOVE_MESSAGE><![CDATA[Deseja realmente remover esse perfil?]]></uol.resource.IDS_DIALOG_PROFILE_REMOVE_MESSAGE>
+	<uol.resource.IDS_JABBER_UOL_DEFAULT_CONNECT_PORT><![CDATA[5222]]></uol.resource.IDS_JABBER_UOL_DEFAULT_CONNECT_PORT>
+	<uol.resource.IDS_JABBER_UOL_SERVER><![CDATA[xmpp.uol.com.br]]></uol.resource.IDS_JABBER_UOL_SERVER>
+	<uol.resource.IDS_THEME_MANAGER_WARNING_FILE_EXISTS><![CDATA[Arquivo já existente no tema, deseja continuar com a importação?]]></uol.resource.IDS_THEME_MANAGER_WARNING_FILE_EXISTS>
+	<uol.resource.IDS_UI_MANAGER_ADDGROUP_CAPTION><![CDATA[$(APP_NAME) - Adicionar grupo]]></uol.resource.IDS_UI_MANAGER_ADDGROUP_CAPTION>
+	<uol.resource.IDS_UI_MANAGER_ADDGROUP_NAMEGROUP><![CDATA[Digite o nome do novo grupo a ser criado]]></uol.resource.IDS_UI_MANAGER_ADDGROUP_NAMEGROUP>
+	<uol.resource.IDS_STRING_UOLK_SUBSCRIPTION_URL><![CDATA[http://uolk.uol.com.br/profileQuickSignupView.html]]></uol.resource.IDS_STRING_UOLK_SUBSCRIPTION_URL>
+	<uol.resource.IDS_GROUP_NODE_RENAME_GROUP_CAPTION><![CDATA[$(APP_NAME) - Renomear grupo]]></uol.resource.IDS_GROUP_NODE_RENAME_GROUP_CAPTION>
+	<uol.resource.IDS_GROUP_NODE_RENAME_GROUP><![CDATA[Digite o novo nome do grupo]]></uol.resource.IDS_GROUP_NODE_RENAME_GROUP>
+	<uol.resource.IDS_UOLK_SUBSCRIPTION_REQUIRED_CODE><![CDATA[407]]></uol.resource.IDS_UOLK_SUBSCRIPTION_REQUIRED_CODE>
+	<uol.resource.IDS_DELETE_ALL_HISTORY_COMMAND_WARNING_DELETE_HISTORY><![CDATA[Deseja realmente apagar todo o histórico de mensagens desse contato?]]></uol.resource.IDS_DELETE_ALL_HISTORY_COMMAND_WARNING_DELETE_HISTORY>
+	<uol.resource.IDS_DELETE_HISTORY_COMMAND_WARNING_DEL_HISTORY><![CDATA[Deseja realmente apagar o histórico de mensagens selecionado?]]></uol.resource.IDS_DELETE_HISTORY_COMMAND_WARNING_DEL_HISTORY>
+	<uol.resource.IDS_EMPTY_HISTORY_WARNING><![CDATA[O histórico está vazio.]]></uol.resource.IDS_EMPTY_HISTORY_WARNING>
+	<uol.resource.IDS_IMPORT_HISTORY_FILES_WARNING><![CDATA[Importando histórico antigo. Aguarde.]]></uol.resource.IDS_IMPORT_HISTORY_FILES_WARNING>
+	<uol.resource.IDS_PREFERENCES_PROPERTYSHEET_TITLE><![CDATA[Preferências]]></uol.resource.IDS_PREFERENCES_PROPERTYSHEET_TITLE>
+	<uol.resource.IDS_HISTORY_WINDOW_TITLE><![CDATA[Histórico de ]]></uol.resource.IDS_HISTORY_WINDOW_TITLE>
+	<uol.resource.IDS_HISTORY_WINDOW_MESSAGES_TITLE><![CDATA[mensagens - %s]]></uol.resource.IDS_HISTORY_WINDOW_MESSAGES_TITLE>
+	<uol.resource.IDS_CONTACTS_PROPPAGE_SORT_METHOD_ALPHA><![CDATA[Alfabeticamente]]></uol.resource.IDS_CONTACTS_PROPPAGE_SORT_METHOD_ALPHA>
+	<uol.resource.IDS_CONTACTS_PROPPAGE_SORT_METHOD_STATUS><![CDATA[Por status]]></uol.resource.IDS_CONTACTS_PROPPAGE_SORT_METHOD_STATUS>
+	<uol.resource.IDS_DIALOG_NETWORK><![CDATA[Rede]]></uol.resource.IDS_DIALOG_NETWORK>
+	<uol.resource.IDS_NETWORK_PROPPAGE_PROXY_TYPE_NONE><![CDATA[Nenhum]]></uol.resource.IDS_NETWORK_PROPPAGE_PROXY_TYPE_NONE>
+	<uol.resource.IDS_NETWORK_PROPPAGE_PROXY_TYPE_HTTP><![CDATA[HTTP]]></uol.resource.IDS_NETWORK_PROPPAGE_PROXY_TYPE_HTTP>
+	<uol.resource.IDS_NETWORK_PROPPAGE_PROXY_TYPE_SOCKS4><![CDATA[SOCKS4]]></uol.resource.IDS_NETWORK_PROPPAGE_PROXY_TYPE_SOCKS4>
+	<uol.resource.IDS_NETWORK_PROPPAGE_PROXY_TYPE_SOCKS5><![CDATA[SOCKS5]]></uol.resource.IDS_NETWORK_PROPPAGE_PROXY_TYPE_SOCKS5>
+	<uol.resource.IDS_ABOUT_PROPPAGE_TITLE><![CDATA[Sobre]]></uol.resource.IDS_ABOUT_PROPPAGE_TITLE>
+    <uol.resource.IDS_HOTKEYS_TITLE><![CDATA[Teclas de atalho]]></uol.resource.IDS_HOTKEYS_TITLE>
+
+	<uol.resource.IDS_FILE_TRANSFER_DLG_FILE_FORMAT><![CDATA[%d de %dKB transferidos (%.0lf%%)]]></uol.resource.IDS_FILE_TRANSFER_DLG_FILE_FORMAT>
+	<uol.resource.IDS_FILE_TRANSFER_DLG_CONTACT_SEND_FORMAT><![CDATA[Para: %s]]></uol.resource.IDS_FILE_TRANSFER_DLG_CONTACT_SEND_FORMAT>
+	<uol.resource.IDS_FILE_TRANSFER_DLG_CONTACT_RECEIVE_FORMAT><![CDATA[De: %s]]></uol.resource.IDS_FILE_TRANSFER_DLG_CONTACT_RECEIVE_FORMAT>
+	<uol.resource.IDS_FILE_TRANSFER_DLG_CANCELED><![CDATA[Cancelada]]></uol.resource.IDS_FILE_TRANSFER_DLG_CANCELED>
+	<uol.resource.IDS_FILE_TRANSFER_DLG_DONE><![CDATA[Concluída]]></uol.resource.IDS_FILE_TRANSFER_DLG_DONE>
+	<uol.resource.IDS_FILE_TRANSFER_DLG_WAITING><![CDATA[Aguardando]]></uol.resource.IDS_FILE_TRANSFER_DLG_WAITING>
+	<uol.resource.IDS_FILE_TRANSFER_DLG_CAPTION><![CDATA[$(APP_NAME) - Transferência de arquivos]]></uol.resource.IDS_FILE_TRANSFER_DLG_CAPTION>
+	<uol.resource.IDS_FILE_TRANSFER_DLG_CANCEL_CONFIRMATION><![CDATA[Tem certeza que deseja cancelar a transferência do arquivo %s?]]></uol.resource.IDS_FILE_TRANSFER_DLG_CANCEL_CONFIRMATION>
+	<uol.resource.IDS_FILE_TRANSFER_DLG_CANCEL_ALL_CONFIRMATION><![CDATA[Tem certeza que deseja cancelar todas as transferências de arquivo?]]></uol.resource.IDS_FILE_TRANSFER_DLG_CANCEL_ALL_CONFIRMATION>
+  <uol.resource.IDS_FILE_TRANSFER_DLG_CLEAR_ALL_CONFIRMATION><![CDATA[Tem certeza de que deseja apagar as transferências de arquivos conluídas e canceladas?]]></uol.resource.IDS_FILE_TRANSFER_DLG_CLEAR_ALL_CONFIRMATION>
+  <uol.resource.IDS_FILE_TRANSFER_DLG_OPEN><![CDATA[Abrir]]></uol.resource.IDS_FILE_TRANSFER_DLG_OPEN>
+  <uol.resource.IDS_FILE_TRANSFER_DLG_REMOVE_FROM_LIST><![CDATA[Apagar da lista]]></uol.resource.IDS_FILE_TRANSFER_DLG_REMOVE_FROM_LIST>
+  <uol.resource.IDS_FILE_TRANSFER_DLG_CANCEL><![CDATA[Cancelar]]></uol.resource.IDS_FILE_TRANSFER_DLG_CANCEL>
+
+  <uol.resource.IDS_AWAY_MESSAGE_PREFIX><![CDATA[[MENSAGEM AUTOMÁTICA]: ]]></uol.resource.IDS_AWAY_MESSAGE_PREFIX>
+	<uol.resource.IDS_STRING_UOLK_SUBSCRIPTION_HOWTO_URL><![CDATA[http://messenger.uol.com.br/comofunciona_rede_uol.jhtm]]></uol.resource.IDS_STRING_UOLK_SUBSCRIPTION_HOWTO_URL>
+	<uol.resource.IDS_TITLE_WINDOW_DEFAULT><![CDATA[$(APP_NAME) - %s]]></uol.resource.IDS_TITLE_WINDOW_DEFAULT>
+	<uol.resource.IDS_STRING_UOLK_REGISTRATION_FAILED_MESSAGE><![CDATA[Não foi possível conectar à rede UOL. Deseja que o $(APP_NAME) tente conectar novamente mais tarde?]]></uol.resource.IDS_STRING_UOLK_REGISTRATION_FAILED_MESSAGE>
+	<uol.resource.IDS_MENU_APP_ABOUT><![CDATA[Sobre...]]></uol.resource.IDS_MENU_APP_ABOUT>
+	<uol.resource.IDS_MENU_CHANGE_STATUS><![CDATA[Estado]]></uol.resource.IDS_MENU_CHANGE_STATUS>
+	<uol.resource.IDS_MENU_SHOW_HELP><![CDATA[Ajuda]]></uol.resource.IDS_MENU_SHOW_HELP>
+	<uol.resource.IDS_MENU_APP_CLOSE><![CDATA[Fechar]]></uol.resource.IDS_MENU_APP_CLOSE>
+	<uol.resource.IDS_RENAME_CONTACT_DIALOG_LABEL><![CDATA[Digite o novo nome para o contato]]></uol.resource.IDS_RENAME_CONTACT_DIALOG_LABEL>
+	<uol.resource.IDS_RENAME_CONTACT_DIALOG_CAPTION><![CDATA[Renomear contato]]></uol.resource.IDS_RENAME_CONTACT_DIALOG_CAPTION>
+	<uol.resource.IDS_USER_INPUT_HANDLER_AUTHORIZE_CAPTION><![CDATA[$(APP_NAME) - Solicitar autorização]]></uol.resource.IDS_USER_INPUT_HANDLER_AUTHORIZE_CAPTION>
+	<uol.resource.IDS_USER_INPUT_HANDLER_AUTHORIZE_MESSAGE><![CDATA[Digite a mensagem para pedir autorização]]></uol.resource.IDS_USER_INPUT_HANDLER_AUTHORIZE_MESSAGE>
+	<uol.resource.IDS_YES><![CDATA[Sim]]></uol.resource.IDS_YES>
+	<uol.resource.IDS_USER_INPUT_HANDLER_RECV_FILE_ACCEPT><![CDATA[Receber de "%s" o arquivo "%s" ?]]></uol.resource.IDS_USER_INPUT_HANDLER_RECV_FILE_ACCEPT>
+	<uol.resource.IDS_CONTACT_NODE_MOVECONTACT_CAPTION><![CDATA[Mover contato para]]></uol.resource.IDS_CONTACT_NODE_MOVECONTACT_CAPTION>
+	<uol.resource.IDS_CONTACT_NODE_BLOCKCONTACT_CAPTION><![CDATA[Bloquear contato]]></uol.resource.IDS_CONTACT_NODE_BLOCKCONTACT_CAPTION>
+	<uol.resource.IDS_CONTACT_NODE_UNBLOCKCONTACT_CAPTION><![CDATA[Desbloquear contato]]></uol.resource.IDS_CONTACT_NODE_UNBLOCKCONTACT_CAPTION>
+	<uol.resource.IDS_CONTACT_NODE_INVISIBLE_CAPTION><![CDATA[Aparecer invisível para contato]]></uol.resource.IDS_CONTACT_NODE_INVISIBLE_CAPTION>
+	<uol.resource.IDS_CONTACT_NODE_VISIBLE_CAPTION><![CDATA[Não aparecer invisível para contato]]></uol.resource.IDS_CONTACT_NODE_VISIBLE_CAPTION>
+	<uol.resource.IDS_CONTACT_NODE_RENAMECONTACT_CAPTION><![CDATA[Renomear contato]]></uol.resource.IDS_CONTACT_NODE_RENAMECONTACT_CAPTION>
+	<uol.resource.IDS_CONTACT_NODE_REMOVECONTACT_CAPTION><![CDATA[Remover contato]]></uol.resource.IDS_CONTACT_NODE_REMOVECONTACT_CAPTION>
+	<uol.resource.IDS_CONTACT_NODE_SENDFILE_CAPTION><![CDATA[Enviar arquivo]]></uol.resource.IDS_CONTACT_NODE_SENDFILE_CAPTION>
+	<uol.resource.IDS_CONTACT_NODE_INFO_CAPTION><![CDATA[Info]]></uol.resource.IDS_CONTACT_NODE_INFO_CAPTION>
+	<uol.resource.IDS_CONTACT_NODE_INVITE_FOR_CHAT_CAPTION><![CDATA[Convidar para a conferência]]></uol.resource.IDS_CONTACT_NODE_INVITE_FOR_CHAT_CAPTION>
+	<uol.resource.IDS_CONTACT_NODE_ADDCONTACT_CAPTION><![CDATA[Adicionar contato]]></uol.resource.IDS_CONTACT_NODE_ADDCONTACT_CAPTION>	
+	<uol.resource.IDS_STATUS_AWAY><![CDATA[Ausente]]></uol.resource.IDS_STATUS_AWAY>
+	<uol.resource.IDS_STATUS_INVISIBLE><![CDATA[Invisível]]></uol.resource.IDS_STATUS_INVISIBLE>
+	<uol.resource.IDS_MENU_STATUS_ONLINE><![CDATA[Online]]></uol.resource.IDS_MENU_STATUS_ONLINE>
+	<uol.resource.IDS_STATUS_ONLINE><![CDATA[Online]]></uol.resource.IDS_STATUS_ONLINE>
+	<uol.resource.IDS_CONTEXT_MENU_CONNECT><![CDATA[Conectar]]></uol.resource.IDS_CONTEXT_MENU_CONNECT>
+	<uol.resource.IDS_CONTEXT_MENU_DISCONNECT><![CDATA[Desconectar]]></uol.resource.IDS_CONTEXT_MENU_DISCONNECT>
+	<uol.resource.IDS_MENU_STATUS_AWAY><![CDATA[Ausente]]></uol.resource.IDS_MENU_STATUS_AWAY>
+	<uol.resource.IDS_MENU_STATUS_OFFLINE><![CDATA[Desconectado]]></uol.resource.IDS_MENU_STATUS_OFFLINE>
+	<uol.resource.IDS_STATUS_IDLE><![CDATA[Inativo]]></uol.resource.IDS_STATUS_IDLE>
+	<uol.resource.IDS_NOTIFY_POPUP_CLOSE><![CDATA[Fechar]]></uol.resource.IDS_NOTIFY_POPUP_CLOSE>
+	<uol.resource.IDS_NOTIFY_POPUP_OPTIONS><![CDATA[Opções]]></uol.resource.IDS_NOTIFY_POPUP_OPTIONS>
+	<uol.resource.IDS_SEND_FILE_DIALOG_CAPTION><![CDATA[Enviar arquivo]]></uol.resource.IDS_SEND_FILE_DIALOG_CAPTION>
+	<uol.resource.IDS_CONTACT_ONLINE><![CDATA[%s ficou online]]></uol.resource.IDS_CONTACT_ONLINE>
+	<uol.resource.IDS_CONTACT_OFFLINE><![CDATA[%s ficou offline]]></uol.resource.IDS_CONTACT_OFFLINE>
+	<uol.resource.IDS_CONTACT_SAYS><![CDATA[%s disse:]]></uol.resource.IDS_CONTACT_SAYS>
+	<uol.resource.IDS_MESSAGE_WINDOW_RECEIPT_NOT_ONLINE_IM_SEND_ERROR><![CDATA[A mensagem anterior pode não ter sido enviada, pois o contato está offline.]]></uol.resource.IDS_MESSAGE_WINDOW_RECEIPT_NOT_ONLINE_IM_SEND_ERROR>
+	<uol.resource.IDS_MESSAGE_WINDOW_SENDER_NOT_ONLINE_IM_SEND_ERROR><![CDATA[A mensagem anterior não foi enviada, pois você não está online.]]></uol.resource.IDS_MESSAGE_WINDOW_SENDER_NOT_ONLINE_IM_SEND_ERROR>
+	<uol.resource.IDS_STATUS_OFFLINE><![CDATA[Desconectado]]></uol.resource.IDS_STATUS_OFFLINE>
+	<uol.resource.IDS_MENU_STATUS_INVISIBLE><![CDATA[Invisível]]></uol.resource.IDS_MENU_STATUS_INVISIBLE>
+	<uol.resource.IDS_STATUS_PERSONALIZED><![CDATA[Personalizado]]></uol.resource.IDS_STATUS_PERSONALIZED>
+	<uol.resource.IDS_STRING_UOLK_REGISTRATION_URL><![CDATA[http://uolk.uol.com.br/quickCreateProfile.html]]></uol.resource.IDS_STRING_UOLK_REGISTRATION_URL>
+	<uol.resource.IDS_MENU_STATUS_BUSY><![CDATA[Ocupado]]></uol.resource.IDS_MENU_STATUS_BUSY>
+	<uol.resource.IDS_GROUP_NODE_QUESTION_REMOVE_GROUP><![CDATA[Tem certeza que deseja remover o grupo %s?]]></uol.resource.IDS_GROUP_NODE_QUESTION_REMOVE_GROUP>
+	<uol.resource.IDS_GENERAL_PROPPAGE_THEME_CHANGED><![CDATA[O novo tema será carregado quando você reiniciar o $(APP_NAME).]]></uol.resource.IDS_GENERAL_PROPPAGE_THEME_CHANGED>
+	<uol.resource.IDS_PROP_PAGE_BTN_INSTALL_TEXT><![CDATA[Instalar]]></uol.resource.IDS_PROP_PAGE_BTN_INSTALL_TEXT>
+	<uol.resource.IDS_PROP_PAGE_BTN_CONFIG_TEXT><![CDATA[Configurar]]></uol.resource.IDS_PROP_PAGE_BTN_CONFIG_TEXT>
+	<uol.resource.IDS_HISTORY_COLUMN_PROTOCOL><![CDATA[Protocolo]]></uol.resource.IDS_HISTORY_COLUMN_PROTOCOL>
+	<uol.resource.IDS_HISTORY_COLUMN_FRIEND><![CDATA[Amigo]]></uol.resource.IDS_HISTORY_COLUMN_FRIEND>
+	<uol.resource.IDS_HISTORY_COLUMN_LAST_CONVERSATION><![CDATA[Data última conversa]]></uol.resource.IDS_HISTORY_COLUMN_LAST_CONVERSATION>
+	<uol.resource.IDS_WIZARD_CHECK_AUTHENTICATION><![CDATA[Ao selecionar esta opção, você terá acesso às futuras funcionalidades do comunicador, além de ter acesso aos produtos e serviços do UOL que serão integrados ao $(APP_NAME). Aguarde! ]]></uol.resource.IDS_WIZARD_CHECK_AUTHENTICATION>
+	<uol.resource.IDS_URL_SIGNATURE_UOL><![CDATA[http://cadastro.uol.com.br]]></uol.resource.IDS_URL_SIGNATURE_UOL>
+	<uol.resource.IDS_STRING_UOLK_SUCCESSFULLY_RESPONSE><![CDATA[<error>000</error>]]></uol.resource.IDS_STRING_UOLK_SUCCESSFULLY_RESPONSE>
+	<uol.resource.IDS_CHANGE_ALL_AVATAR><![CDATA[Trocar a imagem de todas as contas]]></uol.resource.IDS_CHANGE_ALL_AVATAR>
+	<uol.resource.IDS_CHANGE_ONE_AVATAR><![CDATA[Trocar a imagem dessa conta]]></uol.resource.IDS_CHANGE_ONE_AVATAR>
+	<uol.resource.IDS_CHANGE_ALL_NICKNAME><![CDATA[Trocar o apelido de todas as contas]]></uol.resource.IDS_CHANGE_ALL_NICKNAME>
+	<uol.resource.IDS_WIZARD_FINISH_BTNCANCEL><![CDATA[&Finalizar]]></uol.resource.IDS_WIZARD_FINISH_BTNCANCEL>
+	<uol.resource.IDS_PLUGIN_CUSTOM_LIST_MAIN_GROUP_NAME><![CDATA[Ferramentas UOL]]></uol.resource.IDS_PLUGIN_CUSTOM_LIST_MAIN_GROUP_NAME>
+	<uol.resource.IDS_PROP_PAGE_BTN_UPDATE_TEXT><![CDATA[Atualizar]]></uol.resource.IDS_PROP_PAGE_BTN_UPDATE_TEXT>
+	<uol.resource.IDS_CONFIRM_MESSAGE_RECEIVING_FORMAT><![CDATA[Você recebeu uma mensagem de um usuário que não está na sua lista de contatos. 
+Você deseja receber mensagens de %s?]]></uol.resource.IDS_CONFIRM_MESSAGE_RECEIVING_FORMAT>
+	<uol.resource.IDS_YOU_WERE_ADD><![CDATA[O usuário %s está tentando adicionar você à sua lista de contatos. O que você deseja fazer?]]></uol.resource.IDS_YOU_WERE_ADD>
+	<uol.resource.IDS_UOLKUT_BUTTON_URL><![CDATA[http://uolk.uol.com.br]]></uol.resource.IDS_UOLKUT_BUTTON_URL>
+	<uol.resource.IDS_CONTACT_NODE_SENDMESSAGE_CAPTION><![CDATA[Enviar mensagem]]></uol.resource.IDS_CONTACT_NODE_SENDMESSAGE_CAPTION>
+	<uol.resource.IDS_URL_SET_COOKIE_FORMAT><![CDATA[http://ubpv.multi.uol.com.br/uimconnect.html?uid=%s]]></uol.resource.IDS_URL_SET_COOKIE_FORMAT>
+	<uol.resource.IDS_APPLY><![CDATA[Aplicar]]></uol.resource.IDS_APPLY>
+	<uol.resource.IDS_FILE_EMOTICONS_SETTINGS><![CDATA[Emoticons.xml]]></uol.resource.IDS_FILE_EMOTICONS_SETTINGS>
+	<uol.resource.IDS_FILE_SOUNDS_SETTINGS><![CDATA[Sounds.xml]]></uol.resource.IDS_FILE_SOUNDS_SETTINGS>
+	<uol.resource.IDS_DIR_EMOTICONS><![CDATA[Emoticons]]></uol.resource.IDS_DIR_EMOTICONS>
+	<uol.resource.IDS_DIR_SOUNDS><![CDATA[Sounds]]></uol.resource.IDS_DIR_SOUNDS>
+	<uol.resource.IDS_FILE_COMMON_SETTINGS><![CDATA[Common.xml]]></uol.resource.IDS_FILE_COMMON_SETTINGS>
+	<uol.resource.IDS_DIR_COMMON_CONFIG><![CDATA[Config]]></uol.resource.IDS_DIR_COMMON_CONFIG>
+	<uol.resource.IDS_CHANGE_ONE_NICKNAME><![CDATA[Trocar o apelido dessa conta]]></uol.resource.IDS_CHANGE_ONE_NICKNAME>
+	<uol.resource.IDS_CHANGE_NICKNAME_TITLE><![CDATA[Novo apelido]]></uol.resource.IDS_CHANGE_NICKNAME_TITLE>
+	<uol.resource.IDS_CHANGE_NICKNAME_LABEL><![CDATA[Digite o novo apelido]]></uol.resource.IDS_CHANGE_NICKNAME_LABEL>
+  <uol.resource.IDS_CHANGE_STATUS_MESSAGE_TITLE><![CDATA[Nova frase do dia]]></uol.resource.IDS_CHANGE_STATUS_MESSAGE_TITLE>
+  <uol.resource.IDS_CHANGE_STATUS_MESSAGE_LABEL><![CDATA[Digite a nova frase do dia]]></uol.resource.IDS_CHANGE_STATUS_MESSAGE_LABEL>
+	<uol.resource.IDS_WIZARD_SPLASH_BTNCUSTOM><![CDATA[&Criar Perfil]]></uol.resource.IDS_WIZARD_SPLASH_BTNCUSTOM>
+	<uol.resource.IDS_WIZARD_UOL_BTNCUSTOM><![CDATA[Assine &UOL]]></uol.resource.IDS_WIZARD_UOL_BTNCUSTOM>
+	<uol.resource.IDS_WIZARD_PROFILE_BTNCUSTOM><![CDATA[Assine &UOL]]></uol.resource.IDS_WIZARD_PROFILE_BTNCUSTOM>
+	<uol.resource.IDS_PROP_PAGE_BTN_CONFIG_TEXT><![CDATA[Configurar]]></uol.resource.IDS_PROP_PAGE_BTN_CONFIG_TEXT>
+	<uol.resource.IDS_VALIDATE_ACCOUNTS_UOL_AUTH_LABEL><![CDATA[Validando perfil. Aguarde...]]></uol.resource.IDS_VALIDATE_ACCOUNTS_UOL_AUTH_LABEL>
+	<uol.resource.IDS_VALIDATE_ACCOUNTS_MSN_AUTH_LABEL><![CDATA[Aguarde, verificando e-mail e senha.]]></uol.resource.IDS_VALIDATE_ACCOUNTS_MSN_AUTH_LABEL>
+	<uol.resource.IDS_VALIDATE_ACCOUNTS_ICQ_AUTH_LABEL><![CDATA[Aguarde, verificando ID e senha.]]></uol.resource.IDS_VALIDATE_ACCOUNTS_ICQ_AUTH_LABEL>
+	<uol.resource.IDS_WIZARD_SPLASH_BTNNEXT><![CDATA[&OK]]></uol.resource.IDS_WIZARD_SPLASH_BTNNEXT>
+	<uol.resource.IDS_URL_PLUGINS_LIST><![CDATA[http://ubpv.multi.uol.com.br/messenger/uolmessengerplugins2.xml]]></uol.resource.IDS_URL_PLUGINS_LIST>
+    <uol.resource.IDS_METHOD_AUTHORIZING_FILE><![CDATA[http://ubpv.multi.uol.com.br/messenger/UOLMessengerAuthorizing.xml]]></uol.resource.IDS_METHOD_AUTHORIZING_FILE>
+	<uol.resource.IDS_WIZARD_PREFERENCES_PRESET_MSN_TEXT><![CDATA[MSN]]></uol.resource.IDS_WIZARD_PREFERENCES_PRESET_MSN_TEXT>
+	<uol.resource.IDS_WIZARD_PREFERENCES_PRESET_ICQ_TEXT><![CDATA[ICQ]]></uol.resource.IDS_WIZARD_PREFERENCES_PRESET_ICQ_TEXT>
+	<uol.resource.IDS_WIZARD_PREFERENCES_PRESET_UOL_TEXT><![CDATA[$(APP_NAME)]]></uol.resource.IDS_WIZARD_PREFERENCES_PRESET_UOL_TEXT>
+	<uol.resource.IDS_WIZARD_UNSAVE_ACCOUNT><![CDATA[A conta %s não foi salva. Deseja continuar?]]></uol.resource.IDS_WIZARD_UNSAVE_ACCOUNT>
+	<uol.resource.IDS_WIZARD_PERSONALIZE_NICK_DEFAULT><![CDATA[[Clique aqui para mudar o apelido]]]></uol.resource.IDS_WIZARD_PERSONALIZE_NICK_DEFAULT>
+	<uol.resource.IDS_PLUGIN_PROPPAGE_HEADER_ACTIVE><![CDATA[Ativo]]></uol.resource.IDS_PLUGIN_PROPPAGE_HEADER_ACTIVE>
+	<uol.resource.IDS_PLUGIN_PROPPAGE_HEADER_DESCRIPTION><![CDATA[Nome - Descrição]]></uol.resource.IDS_PLUGIN_PROPPAGE_HEADER_DESCRIPTION>
+	<uol.resource.IDS_PLUGIN_DOWNLOAD_INIT_FILE_NAME_FORMAT><![CDATA[Iniciando transferência de %s]]></uol.resource.IDS_PLUGIN_DOWNLOAD_INIT_FILE_NAME_FORMAT>
+	<uol.resource.IDS_WIZARD_ADD_ACCOUNT_SUCCESS><![CDATA[Conta %s adicionada com sucesso!]]></uol.resource.IDS_WIZARD_ADD_ACCOUNT_SUCCESS>
+	<uol.resource.IDS_ACCOUNT_EDIT_DIALOG_OK_BUTTON><![CDATA[OK]]></uol.resource.IDS_ACCOUNT_EDIT_DIALOG_OK_BUTTON>
+	<uol.resource.IDS_ACCOUNT_EDIT_DIALOG_CANCEL_BUTTON><![CDATA[Cancelar]]></uol.resource.IDS_ACCOUNT_EDIT_DIALOG_CANCEL_BUTTON>
+	<uol.resource.IDS_ACCOUNT_EDIT_PROPPAGE_CAPTION><![CDATA[Básico]]></uol.resource.IDS_ACCOUNT_EDIT_PROPPAGE_CAPTION>
+	<uol.resource.IDS_ACCOUNT_EDIT_ADVANCED_PROPPAGE_CAPTION><![CDATA[Avançado]]></uol.resource.IDS_ACCOUNT_EDIT_ADVANCED_PROPPAGE_CAPTION>
+	<uol.resource.IDS_REMOVE_TO_BLOCK><![CDATA["%s" será removido da sua lista de contatos. 
+Deseja continuar?]]></uol.resource.IDS_REMOVE_TO_BLOCK>
+	<uol.resource.IDS_CONTACT_TOOLTIP_ACCOUNT_LINE_FORMAT><![CDATA[%s: %s]]></uol.resource.IDS_CONTACT_TOOLTIP_ACCOUNT_LINE_FORMAT>
+	<uol.resource.IDS_REMOVE_TO_BLOCK_CAPTION><![CDATA[Bloquear contato]]></uol.resource.IDS_REMOVE_TO_BLOCK_CAPTION>
+	<uol.resource.IDS_CONTACT_TOOLTIP_CONNECTED_LINE><![CDATA[Conectado desde: ]]></uol.resource.IDS_CONTACT_TOOLTIP_CONNECTED_LINE>
+	<uol.resource.IDS_SHOW_PLUGIN_PREFERENCES_CAPTION><![CDATA[Configurar...]]></uol.resource.IDS_SHOW_PLUGIN_PREFERENCES_CAPTION>
+	<uol.resource.IDS_CONTACT_TOOLTIP_CONTACT_OF_ACCOUNT_LINE><![CDATA[Conta: ]]></uol.resource.IDS_CONTACT_TOOLTIP_CONTACT_OF_ACCOUNT_LINE>
+	<uol.resource.IDS_CONTACT_TOOLTIP_GROUP_LINE><![CDATA[Grupo: ]]></uol.resource.IDS_CONTACT_TOOLTIP_GROUP_LINE>
+	<uol.resource.IDS_CONTACT_TOOLTIP_STATUS_LINE><![CDATA[Status: ]]></uol.resource.IDS_CONTACT_TOOLTIP_STATUS_LINE>
+	<uol.resource.IDS_CONTACT_TOOLTIP_ND><![CDATA[N/D]]></uol.resource.IDS_CONTACT_TOOLTIP_ND>
+	<uol.resource.IDS_TOOLTIP_STATUS_PAINEL_AVATAR><![CDATA[Trocar foto]]></uol.resource.IDS_TOOLTIP_STATUS_PAINEL_AVATAR>
+	<uol.resource.IDS_TOOLTIP_STATUS_PAINEL_TEXT><![CDATA[Trocar apelido]]></uol.resource.IDS_TOOLTIP_STATUS_PAINEL_TEXT>
+	<uol.resource.IDS_TOOLTIP_STATUS_PAINEL_STATUS><![CDATA[Status Geral]]></uol.resource.IDS_TOOLTIP_STATUS_PAINEL_STATUS>
+  <uol.resource.IDS_TOOLTIP_STATUS_PAINEL_STATUS_MESSAGE><![CDATA[Trocar frase do dia]]></uol.resource.IDS_TOOLTIP_STATUS_PAINEL_STATUS_MESSAGE>
+  <uol.resource.IDS_STATUS_PAINEL_STATUS_MESSAGE_TEXT><![CDATA[<<Frase do dia>>]]></uol.resource.IDS_STATUS_PAINEL_STATUS_MESSAGE_TEXT>
+	<uol.resource.IDS_TOOLTIP_MESSAGE_WINDOW_SEND_BUTTON><![CDATA[Enviar mensagem]]></uol.resource.IDS_TOOLTIP_MESSAGE_WINDOW_SEND_BUTTON>
+	<uol.resource.IDS_VALIDATE_ACCOUNTS_YAHOO_AUTH_LABEL><![CDATA[Aguarde, verificando ID e senha.]]></uol.resource.IDS_VALIDATE_ACCOUNTS_YAHOO_AUTH_LABEL>
+	<uol.resource.IDS_VALIDATE_ACCOUNTS_JABBER_AUTH_LABEL><![CDATA[Aguarde, validando e-mail e senha.]]></uol.resource.IDS_VALIDATE_ACCOUNTS_JABBER_AUTH_LABEL>
+	<uol.resource.IDS_CONTACT_TOOLTIP_BLOCKED><![CDATA[%s  (Bloqueado)]]></uol.resource.IDS_CONTACT_TOOLTIP_BLOCKED>
+	<uol.resource.IDS_ADD_TO_LIST_CAPTION><![CDATA[Adicionar contato]]></uol.resource.IDS_ADD_TO_LIST_CAPTION>
+	<uol.resource.IDS_ADD_TO_LIST><![CDATA["%s" será desbloqueado. Deseja adicioná-lo à sua lista de contatos?]]></uol.resource.IDS_ADD_TO_LIST>
+	<uol.resource.IDS_PRIVACY_DIALOG_SAVE_SETTINGS_MSG_FORMAT><![CDATA[Você deseja salvar as alterações feitas para a conta %s (%s) ?]]></uol.resource.IDS_PRIVACY_DIALOG_SAVE_SETTINGS_MSG_FORMAT>
+	<uol.resource.IDS_MESSAGE_WINDOW_CONTACT_SIGNED_ON_FORMAT><![CDATA[%s ficou online.]]></uol.resource.IDS_MESSAGE_WINDOW_CONTACT_SIGNED_ON_FORMAT>
+	<uol.resource.IDS_MESSAGE_WINDOW_CONTACT_SIGNED_OFF_FORMAT><![CDATA[%s ficou offline.]]></uol.resource.IDS_MESSAGE_WINDOW_CONTACT_SIGNED_OFF_FORMAT>
+	<uol.resource.IDS_NOTIFY_POPUP_URL_CONTACT_ONLINE><![CDATA[http://ubpv.multi.uol.com.br/messenger/images/online.bmp]]></uol.resource.IDS_NOTIFY_POPUP_URL_CONTACT_ONLINE>
+	<uol.resource.IDS_NOTIFY_POPUP_URL_CONTACT_OFFLINE><![CDATA[http://ubpv.multi.uol.com.br/messenger/images/offline.bmp]]></uol.resource.IDS_NOTIFY_POPUP_URL_CONTACT_OFFLINE>
+	<uol.resource.IDS_NOTIFY_POPUP_URL_NEW_MESSAGE><![CDATA[http://ubpv.multi.uol.com.br/messenger/images/message.bmp]]></uol.resource.IDS_NOTIFY_POPUP_URL_NEW_MESSAGE>
+	<uol.resource.IDS_NOTIFY_POPUP_URL_DEFAULT><![CDATA[http://ubpv.multi.uol.com.br/messenger/images/notification.bmp]]></uol.resource.IDS_NOTIFY_POPUP_URL_DEFAULT>
+	<uol.resource.IDS_CONTACT_NODE_REQUEST_AUTHORIZATION><![CDATA[Pedir autorização novamente]]></uol.resource.IDS_CONTACT_NODE_REQUEST_AUTHORIZATION>
+	<uol.resource.IDS_SKIN_ERROR_LOAD_DEFAULT_THEME_MSG><![CDATA[Não foi possível carregar o tema atual pelo seguinte motivo: 
+
+%s
+
+O $(APP_NAME) será reinciado com o tema padrão.]]></uol.resource.IDS_SKIN_ERROR_LOAD_DEFAULT_THEME_MSG>
+	<uol.resource.IDS_JABBER_GTALK_SERVER><![CDATA[talk.google.com]]></uol.resource.IDS_JABBER_GTALK_SERVER>
+	<uol.resource.IDS_JABBER_UOLINC_SERVER><![CDATA[messenger.uolcorp.intranet]]></uol.resource.IDS_JABBER_UOLINC_SERVER>
+	<uol.resource.IDS_JABBER_DEFAULT_CONNECT_PORT><![CDATA[5222]]></uol.resource.IDS_JABBER_DEFAULT_CONNECT_PORT>
+	<uol.resource.IDS_JABBER_GTALK_EMAIL_DOMAIN><![CDATA[@gmail.com]]></uol.resource.IDS_JABBER_GTALK_EMAIL_DOMAIN>
+	<uol.resource.IDS_URL_FILE_TRANSFER_FILTER><![CDATA[http://ubpv.multi.uol.com.br/messenger/filter.ext]]></uol.resource.IDS_URL_FILE_TRANSFER_FILTER>
+	<uol.resource.IDS_JABBER_UOLINC_EMAIL_DOMAIN><![CDATA[@uolinc.com]]></uol.resource.IDS_JABBER_UOLINC_EMAIL_DOMAIN>
+	<uol.resource.IDS_ADD_CONTACT_DIALOG_TITLE><![CDATA[Adicionar contato]]></uol.resource.IDS_ADD_CONTACT_DIALOG_TITLE>
+	<uol.resource.IDS_CHECK_AUTO_STARTUP_FORMAT><![CDATA[Iniciar $(APP_NAME) automaticamente]]></uol.resource.IDS_CHECK_AUTO_STARTUP_FORMAT>
+	<uol.resource.IDS_ALERT_WINDOW_MESSAGE1_FORMAT><![CDATA[O $(APP_NAME) continuará em execução e você poderá acessá-lo através do ícone na barra de tarefas (próximo ao relógio), para que você possa continuar a receber alertas e mensagens.
+
+]]>
+    </uol.resource.IDS_ALERT_WINDOW_MESSAGE1_FORMAT>
+	<uol.resource.IDS_NUDGE_RECEIVING_MESSAGE><![CDATA[O usuário "%s" pediu a sua atenção!]]></uol.resource.IDS_NUDGE_RECEIVING_MESSAGE>
+	<uol.resource.IDS_NUDGE_SENDING_MESSAGE><![CDATA[Você acabou de pedir a atenção.]]></uol.resource.IDS_NUDGE_SENDING_MESSAGE>
+	<uol.resource.IDS_NUDGE_ERROR_CONTACT_OFF_LINE><![CDATA[O contato está off-line, portanto você não pode pedir a atenção dele.]]></uol.resource.IDS_NUDGE_ERROR_CONTACT_OFF_LINE>
+	<uol.resource.IDS_NUDGE_ERROR_ACCOUNT_OFF_LINE><![CDATA[Não é possível pedir a atenção com a conta desconectada. Por favor, repita a operação após conectar-se.]]></uol.resource.IDS_NUDGE_ERROR_ACCOUNT_OFF_LINE>
+	<uol.resource.IDS_NUDGE_WAIT_COMMAND_COOLDOWN><![CDATA[Você não pode pedir a atenção de alguém tantas vezes.]]></uol.resource.IDS_NUDGE_WAIT_COMMAND_COOLDOWN>
+	<uol.resource.IDS_ERROR_COMMAND_NOT_SUPPORTED><![CDATA[O comando não é suportado por este protocolo.]]></uol.resource.IDS_ERROR_COMMAND_NOT_SUPPORTED>
+	<uol.resource.IDS_ERROR_COMMAND_NOT_FOUND><![CDATA[Este comando não está disponível ou não existe.]]></uol.resource.IDS_ERROR_COMMAND_NOT_FOUND>
+	<uol.resource.IDS_ERROR_COMMAND_WRONG_ARGS><![CDATA[O número de parâmetros informado para este comando está incorreto.]]></uol.resource.IDS_ERROR_COMMAND_WRONG_ARGS>
+	<uol.resource.IDS_ERROR_COMMAND_FAILED><![CDATA[O comando falhou por um motivo não definido.]]></uol.resource.IDS_ERROR_COMMAND_FAILED>
+	<uol.resource.IDS_ERROR_COMMAND_ONLY_CHAT_ALLOWED><![CDATA[Este comando pode ser utilizado em conversas por chat.]]></uol.resource.IDS_ERROR_COMMAND_ONLY_CHAT_ALLOWED>
+	<uol.resource.IDS_ERROR_COMMAND_ONLY_IM_ALLOWED><![CDATA[Este comando pode ser utilizado em conversas por IM.]]></uol.resource.IDS_ERROR_COMMAND_ONLY_IM_ALLOWED>
+	<uol.resource.IDS_ERROR_COMMAND_WRONG_PRPL><![CDATA[Este comando não funciona neste protocolo.]]></uol.resource.IDS_ERROR_COMMAND_WRONG_PRPL>
+    <uol.resource.IDS_FIND_CONTACT_GROUP_NAME><![CDATA[Encontrado]]></uol.resource.IDS_FIND_CONTACT_GROUP_NAME>
+    <uol.resource.IDS_FIND_CONTACT_DEFAULT_TEXT><![CDATA[Buscar Contato (Ctrl + F)]]></uol.resource.IDS_FIND_CONTACT_DEFAULT_TEXT>
+  <uol.resource.IDS_FIND_HISTORY_DEFAULT_TEXT><![CDATA[Buscar Histórico (Ctrl + F)]]></uol.resource.IDS_FIND_HISTORY_DEFAULT_TEXT>
+  <uol.resource.domain.todaoferta><![CDATA[xmpp.uol.com.br]]></uol.resource.domain.todaoferta>
+	<uol.resource.error.IDS_ADD_CUSTOM_EMOTICON_NO_ONLINE_ACCOUNTS_ERROR_MSG><![CDATA[Para adicionar um custom emoticon é necessário estar conectado. 
+Por favor, repita a operação após conectar-se. (UIM0175)]]></uol.resource.error.IDS_ADD_CUSTOM_EMOTICON_NO_ONLINE_ACCOUNTS_ERROR_MSG>
+	<uol.resource.error.IDS_NO_ADD_CUSTOM_EMOTICON_SUPPORT_ERROR_MSG><![CDATA[Essa conta não permite a adição de custom emoticons. (UIM0176)]]></uol.resource.error.IDS_NO_ADD_CUSTOM_EMOTICON_SUPPORT_ERROR_MSG>
+	<uol.resource.IDS_ADD_CUSTOM_EMOTICON_DIALOG_TITLE><![CDATA[Adicionar custom emoticon]]></uol.resource.IDS_ADD_CUSTOM_EMOTICON_DIALOG_TITLE>
+	<uol.resource.error.IDS_CUSTOM_EMOTICON_INVALID_SHORTCUT_ERROR_MSG><![CDATA[Por favor, preencha o atalho para o custom emoticon. (UIM0177)]]></uol.resource.error.IDS_CUSTOM_EMOTICON_INVALID_SHORTCUT_ERROR_MSG>
+	<uol.resource.error.IDS_CUSTOM_EMOTICON_INVALID_FILE_PATH_ERROR_MSG><![CDATA[O caminho do arquivo informado para o custom emoticon é inválido. (UIM0178)]]></uol.resource.error.IDS_CUSTOM_EMOTICON_INVALID_FILE_PATH_ERROR_MSG>
+	<uol.resource.error.IDS_CUSTOM_EMOTICON_SHORTCUT_FOUND_ERROR_MSG><![CDATA[O atalho informado já está em uso. Por favor escolha outro. (UIM0179)]]></uol.resource.error.IDS_CUSTOM_EMOTICON_SHORTCUT_FOUND_ERROR_MSG>
+	<uol.resource.error.IDS_CUSTOM_EMOTICON_OPERATION_PENDING_ERROR_MSG><![CDATA[Existe uma operação pendente para esse atalho na janela de propriedades. Escolha outro atalho ou aplique as alterações antes de prosseguir. (UIM0181)]]></uol.resource.error.IDS_CUSTOM_EMOTICON_OPERATION_PENDING_ERROR_MSG>
+	<uol.resource.IDS_ADD_CUSTOM_EMOTICON_MENU><![CDATA[Adicionar]]></uol.resource.IDS_ADD_CUSTOM_EMOTICON_MENU>
+	<uol.resource.IDS_PROPERTY_PAGE_EMOTICON_DEL_EMOTICON_MENU><![CDATA[Excluir]]></uol.resource.IDS_PROPERTY_PAGE_EMOTICON_DEL_EMOTICON_MENU>
+    <uol.resource.IDS_PROPERTY_PAGE_EMOTICON_EDIT_SHORTCUT_MENU><![CDATA[Editar Atalho]]></uol.resource.IDS_PROPERTY_PAGE_EMOTICON_EDIT_SHORTCUT_MENU>
+    <uol.resource.IDS_PROPERTY_PAGE_EMOTICON_EDIT_FILEPATH_MENU><![CDATA[Editar Imagem]]></uol.resource.IDS_PROPERTY_PAGE_EMOTICON_EDIT_FILEPATH_MENU>
+    <uol.resource.error.IDS_ADD_CUSTOM_EMOTICON_NO_ACCOUNTS_ERROR_MSG><![CDATA[Para adicionar um custom emoticon é necessário ter contas cadastradas. 
+Por favor, repita a operação após cadastrar alguma conta. (UIM0180)]]></uol.resource.error.IDS_ADD_CUSTOM_EMOTICON_NO_ACCOUNTS_ERROR_MSG>
+    <uol.resource.error.IDS_ADD_CUSTOM_EMOTICON_WINDOW_IN_USE_ERROR_MSG><![CDATA[A janela de adição de emoticons já se encontra em uso. Por favor, finalize a operação em curso antes de abrí-la novamente. (UIM0182)]]></uol.resource.error.IDS_ADD_CUSTOM_EMOTICON_WINDOW_IN_USE_ERROR_MSG>
+    <uol.resource.IDS_CHAT_ERROR_CONTACT_OFF_LINE><![CDATA[O contato está off-line, portanto você não pode iniciar uma conferência com ele.]]></uol.resource.IDS_CHAT_ERROR_CONTACT_OFF_LINE>
+	<uol.resource.IDS_CHAT_ERROR_ACCOUNT_OFF_LINE><![CDATA[Não é possível iniciar uma conferência com a conta desconectada. Por favor, repita a operação após conectar-se.]]></uol.resource.IDS_CHAT_ERROR_ACCOUNT_OFF_LINE>
+	<uol.resource.IDS_CHAT_ERROR_DISCONNECTED><![CDATA[Sua conta foi desconectada. A conferência foi encerrada.]]></uol.resource.IDS_CHAT_ERROR_DISCONNECTED>
+	<uol.resource.IDS_CHAT_CONFIRM_CLOSE_WND><![CDATA[A conferência será encerrada. Tem certeza que deseja fechar a janela?]]></uol.resource.IDS_CHAT_CONFIRM_CLOSE_WND>
+	<uol.resource.IDS_CHAT_ADD_PARTICIPANT_MSG><![CDATA[%s entrou na conferência]]></uol.resource.IDS_CHAT_ADD_PARTICIPANT_MSG>
+	<uol.resource.IDS_CHAT_REMOVE_PARTICIPANT_MSG><![CDATA[%s saiu da conferência]]></uol.resource.IDS_CHAT_REMOVE_PARTICIPANT_MSG>
+	<uol.resource.IDS_CHAT_PARTICIPANT_CHAT_LIST_TITLE><![CDATA[Participantes]]></uol.resource.IDS_CHAT_PARTICIPANT_CHAT_LIST_TITLE>
+	<uol.resource.IDS_CHAT_READY_FOR_CHAT_LIST_TITLE><![CDATA[Contatos de %s (%s)]]></uol.resource.IDS_CHAT_READY_FOR_CHAT_LIST_TITLE>
+	<uol.resource.IDS_CHAT_TAB_CAPTION><![CDATA[Iniciando conferência...]]></uol.resource.IDS_CHAT_TAB_CAPTION>
+	<uol.resource.IDS_CHAT_END_TAB_CAPTION><![CDATA[Conferência encerrada]]></uol.resource.IDS_CHAT_END_TAB_CAPTION>
+	<uol.resource.IDS_CHAT_STARTING_MSG><![CDATA[Iniciando conferência...]]></uol.resource.IDS_CHAT_STARTING_MSG>
+	<uol.resource.IDS_CHAT_INVITING_MSG><![CDATA[Adicionando %s à conferência...]]></uol.resource.IDS_CHAT_INVITING_MSG>
+	<uol.resource.IDS_CHAT_STARTING_ERROR_MSG><![CDATA[Falha ao iniciar conferência.]]></uol.resource.IDS_CHAT_STARTING_ERROR_MSG>
+    <uol.resource.IDS_CHAT_INVITE_DLG_TEXT><![CDATA[Selecione os contatos que deseja adicionar nesta conferência.]]></uol.resource.IDS_CHAT_INVITE_DLG_TEXT>
+    <uol.resource.IDS_CHAT_INVITE_DLG_WARNING><![CDATA[Selecione pelo menos um contato para ser adicionado à conferência.]]></uol.resource.IDS_CHAT_INVITE_DLG_WARNING>
+    <uol.resource.IDS_SHOW_THIS_ACCOUNT_ON_PANEL><![CDATA[Mostrar essa conta no painel]]></uol.resource.IDS_SHOW_THIS_ACCOUNT_ON_PANEL>
+    <uol.resource.IDS_ADD_CONTACT_DIALOG_TITLE><![CDATA[Adicionar contato]]></uol.resource.IDS_ADD_CONTACT_DIALOG_TITLE>
+
+  <!-- HistoryRecord -->
+	<uol.resource.IDS_HISTORY_RECORD_SERVICE_MESSAGE><![CDATA[Message]]></uol.resource.IDS_HISTORY_RECORD_SERVICE_MESSAGE>
+	<uol.resource.IDS_HISTORY_RECORD_SERVICE_FILE_TRANSFER><![CDATA[FileTransfer]]></uol.resource.IDS_HISTORY_RECORD_SERVICE_FILE_TRANSFER>
+	<uol.resource.IDS_HISTORY_RECORD_TYPE_ACCOUNT><![CDATA[Account]]></uol.resource.IDS_HISTORY_RECORD_TYPE_ACCOUNT>
+	<uol.resource.IDS_HISTORY_RECORD_TYPE_CONTACT><![CDATA[Contact]]></uol.resource.IDS_HISTORY_RECORD_TYPE_CONTACT>
+	<uol.resource.IDS_HISTORY_RECORD_TYPE_SYSTEM><![CDATA[System]]></uol.resource.IDS_HISTORY_RECORD_TYPE_SYSTEM>
+	<uol.resource.IDS_HISTORY_RECORD_TYPE_FILE_TRANSFER><![CDATA[FileTransfer]]></uol.resource.IDS_HISTORY_RECORD_TYPE_FILE_TRANSFER>
+  <uol.resource.IDS_HISTORY_RECORD_TYPE_FILE_TRANSFER_SEND><![CDATA[Send]]></uol.resource.IDS_HISTORY_RECORD_TYPE_FILE_TRANSFER_SEND>
+  <uol.resource.IDS_HISTORY_RECORD_TYPE_FILE_TRANSFER_RECEIVE><![CDATA[Receive]]></uol.resource.IDS_HISTORY_RECORD_TYPE_FILE_TRANSFER_RECEIVE>
+  <uol.resource.IDS_HISTORY_RECORD_FILE_TRANSFER_STATUS_CANCELED><![CDATA[Canceled]]></uol.resource.IDS_HISTORY_RECORD_FILE_TRANSFER_STATUS_CANCELED>
+  <uol.resource.IDS_HISTORY_RECORD_FILE_TRANSFER_STATUS_DONE><![CDATA[Done]]></uol.resource.IDS_HISTORY_RECORD_FILE_TRANSFER_STATUS_DONE>
+	
+	<!-- History XML -->
+	<uol.resource.IDS_HISTORY_XML_HISTORY_ELEMENT><![CDATA[History]]></uol.resource.IDS_HISTORY_XML_HISTORY_ELEMENT>
+	<uol.resource.IDS_HISTORY_XML_HISTORY_ELEMENT_VERSION_ATT><![CDATA[Version]]></uol.resource.IDS_HISTORY_XML_HISTORY_ELEMENT_VERSION_ATT>
+	<uol.resource.IDS_HISTORY_XML_HISTORY_ELEMENT_SERVICE_ATT><![CDATA[Service]]></uol.resource.IDS_HISTORY_XML_HISTORY_ELEMENT_SERVICE_ATT>
+	<uol.resource.IDS_HISTORY_XML_HISTORY_ELEMENT_USER_ID_ATT><![CDATA[UserId]]></uol.resource.IDS_HISTORY_XML_HISTORY_ELEMENT_USER_ID_ATT>
+	<uol.resource.IDS_HISTORY_XML_HISTORY_ELEMENT_PROTOCOL_ID_ATT><![CDATA[ProtocolId]]></uol.resource.IDS_HISTORY_XML_HISTORY_ELEMENT_PROTOCOL_ID_ATT>
+	<uol.resource.IDS_HISTORY_XML_EVENT_ELEMENT><![CDATA[Event]]></uol.resource.IDS_HISTORY_XML_EVENT_ELEMENT>
+	<uol.resource.IDS_HISTORY_XML_EVENT_ELEMENT_DATE_ATT><![CDATA[Date]]></uol.resource.IDS_HISTORY_XML_EVENT_ELEMENT_DATE_ATT>
+	<uol.resource.IDS_HISTORY_XML_EVENT_ELEMENT_TIME_ATT><![CDATA[Time]]></uol.resource.IDS_HISTORY_XML_EVENT_ELEMENT_TIME_ATT>
+	<uol.resource.IDS_HISTORY_XML_EVENT_ELEMENT_STATUS_ATT><![CDATA[Status]]></uol.resource.IDS_HISTORY_XML_EVENT_ELEMENT_STATUS_ATT>
+	<uol.resource.IDS_HISTORY_XML_EVENT_ELEMENT_TYPE_ATT><![CDATA[Type]]></uol.resource.IDS_HISTORY_XML_EVENT_ELEMENT_TYPE_ATT>
+	<uol.resource.IDS_HISTORY_XML_EVENT_FROM_ELEMENT><![CDATA[From]]></uol.resource.IDS_HISTORY_XML_EVENT_FROM_ELEMENT>
+	<uol.resource.IDS_HISTORY_XML_EVENT_FROM_ID_ATT><![CDATA[Id]]></uol.resource.IDS_HISTORY_XML_EVENT_FROM_ID_ATT>
+	<uol.resource.IDS_HISTORY_XML_EVENT_TO_ELEMENT><![CDATA[To]]></uol.resource.IDS_HISTORY_XML_EVENT_TO_ELEMENT>
+	<uol.resource.IDS_HISTORY_XML_EVENT_TO_ID_ATT><![CDATA[Id]]></uol.resource.IDS_HISTORY_XML_EVENT_TO_ID_ATT>
+	<uol.resource.IDS_HISTORY_XML_EVENT_TEXT_ELEMENT><![CDATA[Text]]></uol.resource.IDS_HISTORY_XML_EVENT_TEXT_ELEMENT>
+	<uol.resource.IDS_HISTORY_OLD_XML_EVENT_FROM_ID_ATT><![CDATA[FROM]]></uol.resource.IDS_HISTORY_OLD_XML_EVENT_FROM_ID_ATT>
+	<uol.resource.IDS_HISTORY_OLD_XML_EVENT_TO_ID_ATT><![CDATA[CONTACT]]></uol.resource.IDS_HISTORY_OLD_XML_EVENT_TO_ID_ATT>
+	<uol.resource.IDS_HISTORY_OLD_XML_EVENT_ELEMENT_STATUS_ATT><![CDATA[CALLSTATUS]]></uol.resource.IDS_HISTORY_OLD_XML_EVENT_ELEMENT_STATUS_ATT>
+	<uol.resource.IDS_HISTORY_OLD_XML_EVENT_ELEMENT_TIME_ATT><![CDATA[TIME]]></uol.resource.IDS_HISTORY_OLD_XML_EVENT_ELEMENT_TIME_ATT>
+	<uol.resource.IDS_HISTORY_OLD_XML_EVENT_ELEMENT_DATE_ATT><![CDATA[DATE]]></uol.resource.IDS_HISTORY_OLD_XML_EVENT_ELEMENT_DATE_ATT>
+	<uol.resource.IDS_HISTORY_OLD_XML_HISTORY_ELEMENT_PROTOCOL_ID_ATT><![CDATA[PROTOCOL]]></uol.resource.IDS_HISTORY_OLD_XML_HISTORY_ELEMENT_PROTOCOL_ID_ATT>
+	<uol.resource.IDS_HISTORY_OLD_XML_EVENT_ELEMENT_TYPE_ATT><![CDATA[TYPE]]></uol.resource.IDS_HISTORY_OLD_XML_EVENT_ELEMENT_TYPE_ATT>
+	<uol.resource.IDS_HISTORY_OLD_XML_EVENT_TEXT_ELEMENT><![CDATA[MESSAGE]]></uol.resource.IDS_HISTORY_OLD_XML_EVENT_TEXT_ELEMENT>
+  <uol.resource.IDS_HISTORY_XML_FILE_TRANSFER_FILE_NAME><![CDATA[FileTransfers.xml]]></uol.resource.IDS_HISTORY_XML_FILE_TRANSFER_FILE_NAME>
+  <uol.resource.IDS_HISTORY_XML_BASE_FOLDER_NAME><![CDATA[History]]></uol.resource.IDS_HISTORY_XML_BASE_FOLDER_NAME>
+    
+    <uol.resource.IDS_HISTORY_FILE_TRANSFER_MESSAGE_FORMAT><![CDATA["%s" quer lhe enviar o arquivo [%s]. Deseja recebê-lo?]]></uol.resource.IDS_HISTORY_FILE_TRANSFER_MESSAGE_FORMAT>
+    <uol.resource.IDS_HISTORY_FILE_TRANSFER_STATUS_MESSAGE_FORMAT><![CDATA["%s" quer lhe enviar o arquivo [%s]. Deseja recebê-lo? <br /> <span><a href="#" onclick="%saveFileAsHandler%">Sim</a></span> <span><a href="#" onclick="%cancelRequestHandler%">Não</a></span>]]></uol.resource.IDS_HISTORY_FILE_TRANSFER_STATUS_MESSAGE_FORMAT>
+    <uol.resource.IDS_HISTORY_FILE_TRANSFER_ACEPTED_MESSAGE_FORMAT><![CDATA[O usuário aceitou o arquivo [%s].]]></uol.resource.IDS_HISTORY_FILE_TRANSFER_ACEPTED_MESSAGE_FORMAT>
+    <uol.resource.IDS_HISTORY_FILE_TRANSFER_REFUSED_MESSAGE_FORMAT><![CDATA[O usuário rejeitou o arquivo [%s].]]></uol.resource.IDS_HISTORY_FILE_TRANSFER_REFUSED_MESSAGE_FORMAT>
+    <uol.resource.IDS_HISTORY_FILE_TRANSFER_CANCELED_MESSAGE_FORMAT><![CDATA[A transferência do arquivo [%s] foi cancelada.]]></uol.resource.IDS_HISTORY_FILE_TRANSFER_CANCELED_MESSAGE_FORMAT>
+    <uol.resource.IDS_HISTORY_FILE_TRANSFER_FINISHED_MESSAGE_FORMAT><![CDATA[A transferência do arquivo [%s] foi concluída.]]></uol.resource.IDS_HISTORY_FILE_TRANSFER_FINISHED_MESSAGE_FORMAT>
+    <uol.resource.IDS_HISTORY_FILE_TRANSFER_ACCEPTED_MESSAGE_FORMAT><![CDATA[O contato aceitou a transferência do arquivo [%s].]]></uol.resource.IDS_HISTORY_FILE_TRANSFER_ACCEPTED_MESSAGE_FORMAT>
+    <uol.resource.IDS_HISTORY_FILE_TRANSFER_SAVE_FORMAT><![CDATA[external.AcceptFile(%d)]]></uol.resource.IDS_HISTORY_FILE_TRANSFER_SAVE_FORMAT>
+    <uol.resource.IDS_HISTORY_FILE_TRANSFER_SAVE_AS_FORMAT><![CDATA[external.AcceptFile(%d)]]></uol.resource.IDS_HISTORY_FILE_TRANSFER_SAVE_AS_FORMAT>
+    <uol.resource.IDS_HISTORY_FILE_TRANSFER_CANCEL_FORMAT><![CDATA[external.RejectFile(%d)]]></uol.resource.IDS_HISTORY_FILE_TRANSFER_CANCEL_FORMAT>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_ADITION_POINT><![CDATA[<div id="Chat">]]></uol.resource.IDS_MESSAGE_TEMPLATE_ADITION_POINT>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_REPLACE_INFO_TAG><![CDATA[<base href=]]></uol.resource.IDS_MESSAGE_TEMPLATE_REPLACE_INFO_TAG>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_APPENDING_INFO_TAG><![CDATA[id="insert"]]></uol.resource.IDS_MESSAGE_TEMPLATE_APPENDING_INFO_TAG>
+    <!-- KEYWORDS for HEADER and FOOTER template elements. -->
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_CHAT_NAME><![CDATA[%chatName%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_CHAT_NAME>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SOURCE_NAME><![CDATA[%sourceName%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SOURCE_NAME>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_DESTINATION_NAME><![CDATA[%destinationName%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_DESTINATION_NAME>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_DESTINATION_DISPLAY_NAME><![CDATA[%destinationDisplayName%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_DESTINATION_DISPLAY_NAME>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_INCOMING_ICON_PATH><![CDATA[%incomingIconPath%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_INCOMING_ICON_PATH>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_OUTGOING_ICON_PATH><![CDATA[%outgoingIconPath%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_OUTGOING_ICON_PATH>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_TIME_OPENED><![CDATA[%timeOpened]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_TIME_OPENED>
+    <!-- KEYWORDS for CONTENT, NEXT_CONTENT, CONTEXT and NEXT_CONTEXT template elements. -->
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_USER_ICON_PATH><![CDATA[%userIconPath%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_USER_ICON_PATH>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SENDER_SCREEN_NAME><![CDATA[%senderScreenName%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SENDER_SCREEN_NAME>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SENDER><![CDATA[%sender%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SENDER>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SERVICE><![CDATA[%service%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SERVICE>
+	    <!-- Client especific tags for Adium and Kopete... not handled for now...
+	    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SENDER_COLOR><![CDATA[%senderColor%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SENDER_COLOR>
+	    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SENDER_STATUS_ICON><![CDATA[%senderStatusIcon%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SENDER_STATUS_ICON>
+	    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_MESSAGE_DIRECTION><![CDATA[%messageDirection%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_MESSAGE_DIRECTION>
+	    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SENDER_DISPLAY_NAME><![CDATA[%senderDisplayName%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SENDER_DISPLAY_NAME>
+	    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_TEXT_BACKGROUND_COLOR><![CDATA[%textbackgroundcolor{]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_TEXT_BACKGROUND_COLOR>
+	    -->
+    <!-- KEYWORDS for STATUS and message (CONTENT, NEXT_CONTENT, CONTEXT and NEXT_CONTEXT) template elements. -->
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_MESSAGE><![CDATA[%message%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_MESSAGE>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_TIME><![CDATA[%time]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_TIME>
+	    <!-- Client especific tags for Adium and Kopete... not handled for now...
+	    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SHORT_TIME><![CDATA[%shortTime%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SHORT_TIME>
+	    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_STATUS><![CDATA[%status%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_STATUS>
+	    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_MESSAGE_CLASSES><![CDATA[%messageClasses%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_MESSAGE_CLASSES>
+	    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_MESSAGE_DIRECTION><![CDATA[%messageDirection%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_MESSAGE_DIRECTION>
+		-->
+    <!-- KEYWORDS for STATUS and message (CONTENT, NEXT_CONTENT, CONTEXT and NEXT_CONTEXT) template elements. -->
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_FILE_ICON_PATH><![CDATA[%fileIconPath%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_FILE_ICON_PATH>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_FILE_NAME><![CDATA[%fileName%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_FILE_NAME>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SAVE_FILE_HANDLER><![CDATA[%saveFileHandler%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SAVE_FILE_HANDLER>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SAVE_AS_FILE_HANDLER><![CDATA[%saveFileAsHandler%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_SAVE_AS_FILE_HANDLER>
+    <uol.resource.IDS_MESSAGE_TEMPLATE_TAG_CANCEL_REQUEST_HANDLER><![CDATA[%cancelRequestHandler%]]></uol.resource.IDS_MESSAGE_TEMPLATE_TAG_CANCEL_REQUEST_HANDLER>
+    
+    <uol.resource.IDS_HISTORY_CALL_STATUS_MISSED><![CDATA[MISSED]]></uol.resource.IDS_HISTORY_CALL_STATUS_MISSED>
+    <uol.resource.IDS_HISTORY_CALL_STATUS_RECEIVED><![CDATA[RECEIVED]]></uol.resource.IDS_HISTORY_CALL_STATUS_RECEIVED>
+    <uol.resource.IDS_HISTORY_CALL_STATUS_NONE><![CDATA[NONE]]></uol.resource.IDS_HISTORY_CALL_STATUS_NONE>
+    <uol.resource.IDS_HISTORY_CALL_STATUS_DIALED><![CDATA[DIALED]]></uol.resource.IDS_HISTORY_CALL_STATUS_DIALED>
+    <uol.resource.IDS_HISTORY_CALL_STATUS_ALL><![CDATA[ALL]]></uol.resource.IDS_HISTORY_CALL_STATUS_ALL>
+    <uol.resource.IDS_HISTORY_CALL_PARAMETER_CALLS><![CDATA[CALLS]]></uol.resource.IDS_HISTORY_CALL_PARAMETER_CALLS>
+    <uol.resource.IDS_HISTORY_CALL_PARAMETER_CONTACT><![CDATA[CONTACT]]></uol.resource.IDS_HISTORY_CALL_PARAMETER_CONTACT>
+    <uol.resource.IDS_HISTORY_CALL_PC2PC><![CDATA[PC2PC]]></uol.resource.IDS_HISTORY_CALL_PC2PC>
+    <uol.resource.IDS_HISTORY_CALL_PC2Phone><![CDATA[PC2Phone]]></uol.resource.IDS_HISTORY_CALL_PC2Phone>
+    <uol.resource.IDS_HISTORY_CALL_Phone2PC><![CDATA[Phone2PC]]></uol.resource.IDS_HISTORY_CALL_Phone2PC>
+    <uol.resource.IDS_HISTORY_TEXT><![CDATA[TEXT]]></uol.resource.IDS_HISTORY_TEXT>
+
+  <uol.resource.IDS_RECENT_HISTORY_INFO><![CDATA[As mensagens anteriores são da última conversa com esse contato.]]></uol.resource.IDS_RECENT_HISTORY_INFO>
+  
+</settings>

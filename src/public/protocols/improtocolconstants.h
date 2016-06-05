@@ -1,0 +1,169 @@
+/* UOL Messenger
+ * Copyright (c) 2005 Universo Online S/A
+ *
+ * Direitos Autorais Reservados
+ * All rights reserved
+ *
+ * Este programa é software livre; você pode redistribuí-lo e/ou modificá-lo
+ * sob os termos da Licença Pública Geral GNU conforme publicada pela Free
+ * Software Foundation; tanto a versão 2 da Licença, como (a seu critério)
+ * qualquer versão posterior.
+ * Este programa é distribuído na expectativa de que seja útil, porém,
+ * SEM NENHUMA GARANTIA; nem mesmo a garantia implícita de COMERCIABILIDADE
+ * OU ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA. Consulte a Licença Pública Geral
+ * do GNU para mais detalhes. 
+ * Você deve ter recebido uma cópia da Licença Pública Geral do GNU junto
+ * com este programa; se não, escreva para a Free Software Foundation, Inc.,
+ * no endereço 59 Temple Street, Suite 330, Boston, MA 02111-1307 USA. 
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+ *
+ * Universo Online S/A - A/C: UOL Messenger 5o. Andar
+ * Avenida Brigadeiro Faria Lima, 1.384 - Jardim Paulistano
+ * São Paulo SP - CEP 01452-002 - BRASIL  */
+ 
+#ifndef _IM_PROTOCOL_CONSTANTS_H_
+#define _IM_PROTOCOL_CONSTANTS_H_
+
+
+// Typing states
+enum TypingState
+{
+	NOT_TYPING = 0,
+	TYPING,
+	TYPED
+};
+
+
+// Error codes
+enum IMProtocolError
+{
+	IM_PROTOCOL_ERROR_SUCCESS = 0,
+	IM_PROTOCOL_ERROR_FAILED,
+	IM_PROTOCOL_ERROR_INVALID_ARG,
+	IM_PROTOCOL_ERROR_NOT_SUPPORTED,
+	IM_PROTOCOL_ERROR_NOT_CONNECTED,
+	IM_PROTOCOL_ERROR_ALREADY_CONNECTED,
+	IM_PROTOCOL_ERROR_CONTACT_NOT_FOUND,
+	IM_PROTOCOL_ERROR_CONTACT_ALREADY_EXISTS,
+	IM_PROTOCOL_ERROR_CONTACT_EXISTS_ON_ANOTHER_GROUP,
+	IM_PROTOCOL_ERROR_GROUP_NOT_FOUND,
+	IM_PROTOCOL_ERROR_GROUP_ALREADY_EXISTS,
+	IM_PROTOCOL_ERROR_GROUP_NOT_EMPTY,
+	IM_PROTOCOL_ERROR_RECEIPT_NOT_ONLINE,
+	IM_PROTOCOL_ERROR_SENDER_NOT_ONLINE,
+	IM_PROTOCOL_ERROR_OPERATION_TIMEOUT,
+	IM_PROTOCOL_ERROR_CONNECTION_ERROR,
+	IM_PROTOCOL_ERROR_INVALID_RECEIPT,
+	IM_PROTOCOL_ERROR_MESSAGE_TOO_LARGE,
+	IM_PROTOCOL_ERROR_UNKNOWN_SEND_ERROR,
+	IM_PROTOCOL_ERROR_ACCOUNT_NOT_CONNECTED,
+	IM_PROTOCOL_ERROR_ACCOUNT_NOT_FOUND,
+	IM_PROTOCOL_ERROR_CONTACT_NOT_CONNECTED,
+	IM_PROTOCOL_ERROR_WAIT_COMMAND_COOLDOWN,
+	IM_PROTOCOL_ERROR_COMMAND_NOT_SUPPORTED,
+	IM_PROTOCOL_ERROR_COMMAND_NOT_FOUND,
+	IM_PROTOCOL_ERROR_COMMAND_WRONG_ARGS,
+	IM_PROTOCOL_ERROR_COMMAND_FAILED,
+	IM_PROTOCOL_ERROR_COMMAND_ONLY_CHAT_ALLOWED,
+	IM_PROTOCOL_ERROR_COMMAND_ONLY_IM_ALLOWED,
+	IM_PROTOCOL_ERROR_COMMAND_WRONG_PRPL,
+	IM_PROTOCOL_ERROR_CANT_CREATE_EMOTICON,
+	IM_PROTOCOL_ERROR_EMOTICON_ALREADY_EXIST,
+	IM_PROTOCOL_ERROR_EMOTICON_NOT_FOUND,
+	IM_PROTOCOL_ERROR_FAILURE_LOADING_FILE, 
+	IM_PROTOCOL_ERROR_CANCELED_BY_APP_CLOSING
+};
+
+
+// Connection error
+enum ConnectionError
+{
+	CONNECTION_ERROR_UNKNOWN = -1,
+	CONNECTION_ERROR_AUTHENTICATION_DATA_INVALID = 1,
+	CONNECTION_ERROR_UNABLE_TO_CONNECT,
+	CONNECTION_ERROR_LOGGED_ON_ANOTHER_LOCATION,
+	CONNECTION_ERROR_SERVER_CONNECTION_FAILED,
+	CONNECTION_ERROR_SERVER_UNAVAILABLE,
+	CONNECTION_ERROR_UNKNOWN_SERVER_ERROR,
+	CONNECTION_ERROR_UNAVAILABLE_BUDDY_LIST,
+	CONNECTION_ERROR_PROXY_CONNECTION_ERROR,
+	CONNECTION_ERROR_PROXY_ACCESS_DENIED,
+	CONNECTION_ERROR_SERVER_CONNECTION_TERMINATED,
+	CONNECTION_ERROR_PARSE_ERROR,
+	CONNECTION_ERROR_SSL_SUPPORT_NEEDED,
+	CONNECTION_ERROR_SECURITY_ERROR,
+	CONNECTION_ERROR_SUSPENDED_ACCOUNT,
+	CONNECTION_ERROR_TOO_MANY_ATTEMPTS,
+	CONNECTION_ERROR_INVALID_USERNAME,
+	CONNECTION_ERROR_UOL_SERVER_ERROR,
+	CONNECTION_ERROR_REGISTRATION_REQUIRED
+
+};
+
+
+
+// Request input reasons
+enum RequestReason
+{
+	REQUEST_REASON_AUTHORIZE_MESSAGE = 0,
+	REQUEST_REASON_DENY_MESSAGE,
+	REQUEST_REASON_ENTER_PASSWORD
+};
+
+
+// Request callback return values
+enum RequestResult
+{
+	REQUEST_RESULT_OK = 0,
+	REQUEST_RESULT_CANCEL,
+	REQUEST_RESULT_NONE,
+	REQUEST_RESULT_ERROR
+};
+
+
+// Notify reasons
+enum NotifyReason
+{
+	NOTIFY_REASON_AUTHORIZATION_GRANTED = 0,
+	NOTIFY_REASON_AUTHORIZATION_DENIED
+};
+
+
+// Privacy flags
+enum PrivacyFlags
+{
+	PRIVACY_FLAGS_HAS_PERMIT_LIST = 1,
+	PRIVACY_FLAGS_HAS_DENIED_LIST = 2,
+	PRIVACY_FLAGS_REMOVE_DENIED_CONTACT = 4,	// Denied contact is removed from contact list
+	PRIVACY_FLAGS_NO_LIST_INTERSECTION = 8		// Same contact can't exists on permit and denied list
+};
+
+
+// Commands defines.
+#define			NUDGE_DEFAULT_SENDING_COOLDOWN_SECS					12
+#define			NUDGE_DEFAULT_RECEIVING_COOLDOWN_SECS				12
+#define			NUDGE_COMMAND_ID									"nudge"
+
+
+// Custom Emoticon Addition Results
+enum CustomEmoticonAddResult
+{
+	CUSTOM_EMOTICON_ADD_RESULT_NEW = 0,
+	CUSTOM_EMOTICON_ADD_RESULT_ALREADY_EXISTS,
+	CUSTOM_EMOTICON_ADD_RESULT_NOT_ALLOWED,
+	CUSTOM_EMOTICON_ADD_RESULT_ERROR
+};
+
+
+#endif

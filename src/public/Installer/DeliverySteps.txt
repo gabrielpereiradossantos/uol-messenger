@@ -1,0 +1,21 @@
+Passos para liberação de instaladores:
+
+1- Verificar se houve atualização da Microsoft.VC80.CRT na pasta C:\WINDOWS\WinSxS e caso positivo, atualiza-las na pasta correspondente dentro de installer;
+
+2- Build da aplicação (validar necessidade de build completo);
+
+3- Validar necessidade e, dependendo do caso, atualizar os arquivos compactados "Default.zip" (do UOLFone, e do UOLMessenger), "Sound.zip" e "Emoticons.zip";
+
+4- Caso necessário, atualizar a pasta lib do Installer com as dll's da libUOLFone;
+
+5- Gerar o instalador do UOLVoip, fazer uma cópia do mesmo e alterar o nome para a data invertida acompanhada da versão (por exemplo: "uolvoip_2008-05-29_2.0.13.10.exe");
+
+6- Gerar o instalador do UOLMessenger, fazer uma cópia do mesmo e alterar o nome para a data invertida acompanhada da versão (por exemplo: "uolmessenger_2008-05-29_2.0.13.10.exe");
+
+7- Gerar o pacote de binários e validar se foram corretamente gerados e salvos na pasta "Binarios-Delivery" dentro da "Proposta" do "trunk";
+
+8- Adicionar os instaladores no site de downloads da TQI;
+
+9- Notificar o cliente via email da liberação dos instaladores.
+
+10 - Criar uma TAG da revisão referente ao Delivery no SVN seguindo o padrão  "Baseline_AAAA-MM-DD_VERSAO" exemplo "Baseline_2009-03-17_2.0.15.11"

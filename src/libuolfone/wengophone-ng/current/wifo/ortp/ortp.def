@@ -1,0 +1,35 @@
+LIBRARY "ortp.dll"
+
+
+EXPORTS
+
+	ortp_init @2
+	ortp_scheduler_init @3
+	ortp_set_debug_file @4
+	rtp_session_destroy @5
+	rtp_session_new @6
+	rtp_session_recv_with_ts @7
+	rtp_session_send_with_ts @8
+	rtp_session_set_blocking_mode @9
+	rtp_session_set_local_addr @10
+	rtp_session_set_jitter_compensation @11
+	rtp_session_set_payload_type @12
+	rtp_session_set_profile @13
+	rtp_session_set_remote_addr @14
+	rtp_session_set_scheduling_mode @15
+	rtp_session_signal_connect @16
+	rtp_session_signal_disconnect_by_callback @17
+	rtp_session_recvm_with_ts @18
+	rtp_session_send_dtmf2 @19
+	rtp_profile_move_payload @20
+	rtp_profile_clone_full @21
+	rtp_session_reset @23
+	rtp_profile_destroy @24
+	ortp_session_stats_display @25
+	freemsg @26
+	rtp_profile_get_payload_number_from_rtpmap @27
+	rtp_session_resync @28
+	get_av_profile @29
+	get_telephone_event @30
+	rtp_gettimeofday @31
+	rtp_session_set_tunnels @32

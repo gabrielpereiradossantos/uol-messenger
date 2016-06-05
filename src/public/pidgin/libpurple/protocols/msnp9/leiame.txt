@@ -1,0 +1,2 @@
+Esta versão da MSNp9 deixou de ser utilizada pelo UOL Messenger.
+O último merge com a libPurple foi da versão 2.5.1.

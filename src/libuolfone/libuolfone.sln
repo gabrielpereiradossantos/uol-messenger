@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UOLFoneClientTest", "UOLFoneClientTest\UOLFoneClientTest.vcproj", "{6CC22913-387E-47F2-A953-BCDE82B1D30D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{074751A4-5F3F-4D96-9865-3F48FE115258} = {074751A4-5F3F-4D96-9865-3F48FE115258}
+		{F3375AAC-FAA8-4A66-9B55-8834B8AB82B7} = {F3375AAC-FAA8-4A66-9B55-8834B8AB82B7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UOLFoneClientPS", "UOLFoneClient\UOLFoneClientPS.vcproj", "{F7B986AD-7230-45FD-AD73-478B4FD1230E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F3375AAC-FAA8-4A66-9B55-8834B8AB82B7} = {F3375AAC-FAA8-4A66-9B55-8834B8AB82B7}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UOLFoneClient", "UOLFoneClient\UOLFoneClient.vcproj", "{F3375AAC-FAA8-4A66-9B55-8834B8AB82B7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UOLFoneServerConfigProvider", "UOLFoneServerConfigProvider\UOLFoneServerConfigProvider.vcproj", "{074751A4-5F3F-4D96-9865-3F48FE115258}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UOLFoneServerConfigProviderPS", "UOLFoneServerConfigProvider\UOLFoneServerConfigProviderPS.vcproj", "{089AE2E2-338D-4FBC-AA5B-DAB1E1FFE0C2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{074751A4-5F3F-4D96-9865-3F48FE115258} = {074751A4-5F3F-4D96-9865-3F48FE115258}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CC22913-387E-47F2-A953-BCDE82B1D30D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6CC22913-387E-47F2-A953-BCDE82B1D30D}.Debug|Win32.Build.0 = Debug|Win32
+		{6CC22913-387E-47F2-A953-BCDE82B1D30D}.Release|Win32.ActiveCfg = Release|Win32
+		{6CC22913-387E-47F2-A953-BCDE82B1D30D}.Release|Win32.Build.0 = Release|Win32
+		{F7B986AD-7230-45FD-AD73-478B4FD1230E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F7B986AD-7230-45FD-AD73-478B4FD1230E}.Release|Win32.ActiveCfg = Release|Win32
+		{F3375AAC-FAA8-4A66-9B55-8834B8AB82B7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F3375AAC-FAA8-4A66-9B55-8834B8AB82B7}.Debug|Win32.Build.0 = Debug|Win32
+		{F3375AAC-FAA8-4A66-9B55-8834B8AB82B7}.Release|Win32.ActiveCfg = Release|Win32
+		{F3375AAC-FAA8-4A66-9B55-8834B8AB82B7}.Release|Win32.Build.0 = Release|Win32
+		{074751A4-5F3F-4D96-9865-3F48FE115258}.Debug|Win32.ActiveCfg = Debug|Win32
+		{074751A4-5F3F-4D96-9865-3F48FE115258}.Debug|Win32.Build.0 = Debug|Win32
+		{074751A4-5F3F-4D96-9865-3F48FE115258}.Release|Win32.ActiveCfg = Release|Win32
+		{074751A4-5F3F-4D96-9865-3F48FE115258}.Release|Win32.Build.0 = Release|Win32
+		{089AE2E2-338D-4FBC-AA5B-DAB1E1FFE0C2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{089AE2E2-338D-4FBC-AA5B-DAB1E1FFE0C2}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

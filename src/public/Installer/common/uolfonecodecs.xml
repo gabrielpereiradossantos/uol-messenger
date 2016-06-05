@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<codecs>
+	<codec name="ILBC" type="audio" order="100" version="1.0.0.1" />
+	<codec name="G729" type="audio" order="200" version="1.0.0.2" url="http://ubpv.multi.uol.com.br/libs/codecs/" optional="true" criticalUpdate="true">
+		<file name="g729.dll" />
+		<update url="http://ubpv.multi.uol.com.br/libs/codecs/g729/1.0.0.4/" version="1.0.0.4" minClientDllVersion="1.0.0.21">
+			<file name="g729.dll" version="1.0.0.4"/>
+		</update>/>
+	</codec>
+	<codec name="PCMA" type="audio" order="300" version="1.0.0.1" />
+	<codec name="PCMU" type="audio" order="400" version="1.0.0.1" />
+</codecs>

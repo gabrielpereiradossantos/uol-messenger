@@ -1,0 +1,6 @@
+<plugins>
+	<plugin internalname="FotoblogPlugin" pluginFileName="FotoBlogPlugin.dll" pluginDirname="Fotoblog"/>	
+	<plugin internalname="uolcrypto" pluginFileName="uolcrypto.dll" pluginDirname="crypto"/>
+	<plugin internalname="radioUol" pluginFileName="RadioUOL.dll" pluginDirname="radioUOL"/>
+	<plugin internalname="UOLFone" pluginFileName="UOLFonePlugin.dll" pluginDirname="uolfone"/>	
+</plugins>

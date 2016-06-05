@@ -1,0 +1,2026 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_MESSAGES       HTML                    "res\\messages.html"
+IDR_HTML_MESSAGE_EDIT   HTML                    "res\\messageedit.html"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ISP                 BITMAP                  "res\\UOLICO.bmp"
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDB_UOL_BUTTON_NOT_AUTHENTICATED BITMAP                  "res\\uol_button_not_auth.bmp"
+IDB_UOL_BUTTON_AUTHENTICATED BITMAP                  "res\\uol_button_auth.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_NEW_VERSION_NOTIFY DIALOGEX 0, 0, 105, 83
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP
+EXSTYLE WS_EX_TOPMOST | WS_EX_TOOLWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Tem coisa nova pra voce",IDC_STATIC_NEW_VERSION_MESSAGE,7,25,91,51,SS_NOTIFY
+    RTEXT           "fechar",IDC_STATIC_NEW_VERSION_CLOSE,65,2,33,8,SS_NOTIFY
+END
+
+IDD_DIALOG_NETWORK DIALOGEX 0, 0, 348, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Servidor proxy",IDC_STATIC,12,14,322,83
+    LTEXT           "Tipo:",IDC_STATIC,37,31,17,8
+    COMBOBOX        IDC_COMBO_PROXY_TYPE,56,29,80,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Servidor:",IDC_STATIC,24,52,30,8
+    EDITTEXT        IDC_EDIT_PROXY_HOST,56,49,105,14,ES_AUTOHSCROLL
+    LTEXT           "Porta:",IDC_STATIC,187,52,21,8
+    EDITTEXT        IDC_EDIT_PROXY_PORT,215,49,105,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Usuário:",IDC_STATIC,26,72,28,8
+    EDITTEXT        IDC_EDIT_PROXY_USERNAME,56,69,105,14,ES_AUTOHSCROLL
+    LTEXT           "Senha:",IDC_STATIC,187,71,24,8
+    EDITTEXT        IDC_EDIT_PROXY_PASSWORD,215,68,105,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 356, 247
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UOL Messenger"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,151,215,50,14
+    CTEXT           "UOL Messenger - Versão x.xb\r\nDireitos Autorais Reservados (c) 2006 Universo Online S/A",IDC_STATIC_VERSION_INFO,42,36,271,16
+    GROUPBOX        "",IDC_STATIC,11,24,334,38
+    EDITTEXT        IDC_EDIT_ABOUT_CONTRACT,10,80,336,124,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL | NOT WS_TABSTOP
+END
+
+IDD_UIM_FORM DIALOGEX 0, 0, 185, 93
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_ACCOUNTS DIALOGEX 0, 0, 348, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Adicionar",IDC_BUTTON_ADDCONTACT,266,14,68,14
+    PUSHBUTTON      "Remover",IDC_BUTTON_REMOVE,266,35,68,14
+    PUSHBUTTON      "Alterar",IDC_BUTTON_CHANGE,266,55,68,14
+    PUSHBUTTON      "Conectar",IDC_BUTTON_CONNECT,266,75,68,14
+    LISTBOX         IDC_LIST_ACCOUNTS2,14,14,242,218,LBS_SORT | LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_SOUNDS DIALOGEX 0, 0, 348, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Tocar som",IDC_CHECK_SOUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,14,49,10
+    CONTROL         "Desligar som quando ausente",IDC_CHECK_MUTE_WHILE_AWAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,30,110,10
+    LTEXT           "Conjunto de Sons:",IDC_STATIC_SOUNDS,14,58,60,8
+    CONTROL         "",IDC_LIST_SOUNDS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,14,73,320,115
+    PUSHBUTTON      "Tocar",IDC_BUTTON_PLAY_SOUND,14,196,50,14
+    PUSHBUTTON      "Alterar...",IDC_BUTTON_CHANGE_SOUND,284,196,50,14
+END
+
+IDD_DIALOG_STATUS DIALOGEX 0, 0, 348, 245
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Mude automaticamente para ausente após",IDC_CHECK_AUTO_AWAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,14,153,10
+    EDITTEXT        IDC_EDIT_INACTIVITY_MINUTES,167,13,17,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_SPIN_INACTIVITY_MINUTES,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,184,13,11,14
+    LTEXT           "minutos de inatividade...",IDC_STATIC_TEXT1,202,14,80,8
+    LTEXT           "... e use a seguinte mensagem:",IDC_STATIC_TEXT2,14,40,102,8
+    EDITTEXT        IDC_EDIT_AWAY_MESSAGE,14,54,320,123,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Trocar",IDC_BUTTON_CHANGE,284,191,50,14,NOT WS_VISIBLE
+END
+
+IDD_INPUT_DIALOG DIALOGEX 0, 0, 199, 102
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,41,79,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,107,79,50,14
+    EDITTEXT        IDC_EDIT_INPUT_TEXT,7,47,185,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Texto Texto Texto Texto",IDC_STATIC_INPUT_LABEL,7,24,185,16
+    CONTROL         "Gravar senha",IDC_INPUT_CHECK_SAVE_PASSWORD,"Button",BS_AUTOCHECKBOX,7,64,59,10
+END
+
+IDD_DIALOG_ADD_CONTACT DIALOGEX 0, 0, 258, 108
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UOL Messenger - Adicionar contato"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Usuário",IDC_ADD_CONTACT_STATIC_USER,7,27,35,8
+    EDITTEXT        IDC_EDIT_USER,49,24,202,14,ES_LOWERCASE | ES_AUTOHSCROLL
+    LTEXT           "Conta",IDC_ADD_CONTACT_STATIC_ACCOUNT,7,47,35,8
+    COMBOBOX        IDC_COMBO_ACCOUNT,49,45,202,80,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | CBS_SORT | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Grupo",IDC_ADD_CONTACT_STATIC_GROUP,7,67,35,8
+    COMBOBOX        IDC_COMBO_GROUP,49,65,202,124,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,71,87,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,137,87,50,14
+END
+
+IDD_DIALOG_YOU_WERE_ADDED DIALOGEX 0, 0, 277, 71
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Contato"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "O usuário XXX adicionou você em sua lista de contatos",IDC_STATIC_LABEL,7,7,263,13
+    PUSHBUTTON      "Adicionar usuário",IDC_BUTTON_ADD_CONTACT,7,29,68,14
+    PUSHBUTTON      "Ver informações",IDC_BUTTON_VIEW_INFO,202,29,68,14
+    DEFPUSHBUTTON   "OK",IDOK,113,50,50,14
+END
+
+IDD_DIALOG_AUTHORIZE DIALOGEX 0, 0, 287, 140
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UOL Messenger - Autorizar contato"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "O usuário XXX está tentando adicionar você à sua lista de contatos. O que você deseja fazer?",IDC_STATIC_LABEL,7,24,273,21
+    CONTROL         "Permitir que o usuário veja meu estado e entre em contato.",IDC_RADIO_ALLOW_CONTACT,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,14,45,266,10
+    CONTROL         "Bloquear o usuário para que não veja o meu estado e não entre em contato.",IDC_RADIO_BLOCK_CONTACT,
+                    "Button",BS_AUTORADIOBUTTON,14,58,266,10
+    CONTROL         "Adicionar o usuário à minha lista de contatos, no grupo: ",IDC_CHECK_ADD_CONTACT,
+                    "Button",BS_AUTOCHECKBOX,14,77,196,10
+    COMBOBOX        IDC_COMBO_ADD_CONTACT_GROUP,25,93,178,80,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Ver informações",IDC_BUTTON_SHOW_INFO,7,119,74,14
+    DEFPUSHBUTTON   "OK",IDOK,173,119,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,230,119,50,14
+END
+
+IDD_DIALOG_GENERAL DIALOGEX 0, 0, 348, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Abrir o navegador ao conectar",IDC_CHECK_OPEN_IE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,14,114,10
+    CONTROL         "Iniciar UOL Messenger automaticamente",IDC_CHECK_AUTO_STARTUP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,31,145,10
+    CONTROL         "Abrir automaticamente com o perfil atual",IDC_CHECK_DEFAULT_PROFILE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,48,145,10
+    DEFPUSHBUTTON   "Alterar senha do perfil atual",IDC_GENERAL_PASSWORD_CHANGE,14,74,103,14
+END
+
+IDD_DIALOG_EMOTICONS DIALOGEX 0, 0, 348, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Conjunto de Emoticons:",IDC_STATIC_EMOTICON_SET,14,16,77,8
+    PUSHBUTTON      "Adicionar Emoticon",IDC_EMOTICON_NEW,256,13,78,14
+    COMBOBOX        IDC_COMBO_EMOTICON_SET_NAMES,98,13,93,80,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | CBS_SORT | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,14,33,320,206,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_FILE_TRANSFER DIALOGEX 0, 0, 262, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UOL Messenger - Transferência de arquivo"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancelar",IDCANCEL,105,57,50,14
+    LTEXT           "Arquivo",IDC_STATIC_FILE_NAME,7,7,248,8
+    LTEXT           "Contato",IDC_STATIC_CONTACT,7,19,248,8
+    CONTROL         "",IDC_PROGRESS_TRANSFER,"msctls_progress32",WS_BORDER | 0x1,7,42,248,10,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Abrir",IDC_BUTTON_OPEN,35,57,50,14
+END
+
+IDD_DIALOG_PLUGIN DIALOGEX 0, 0, 348, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_EDIT_ACCOUNT DIALOGEX 0, 0, 235, 174
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Rede:",IDC_STATIC_NET,72,9,20,8
+    LTEXT           "Identificação do Usuário:",IDC_STATIC_USER,10,28,82,8
+    EDITTEXT        IDC_EDIT_USER,97,26,120,12,ES_LOWERCASE | ES_AUTOHSCROLL
+    LTEXT           "Senha:",IDC_STATIC_PASS,68,47,24,8
+    EDITTEXT        IDC_EDIT_PASS,97,45,120,12,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Gravar senha",IDC_CHECK_SAVE_PASSWORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,97,63,63,12
+    CONTROL         "Conectar ao iniciar aplicação",IDC_CHECK_CONNECT_ON_STARTUP,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,97,77,107,12
+    LTEXT           "Apelido:",IDC_STATIC_NICK,65,97,27,8
+    EDITTEXT        IDC_EDIT_NICK,97,95,120,12,ES_AUTOHSCROLL
+    LTEXT           "Sua foto:",IDC_STATIC_ICON,61,124,31,8
+    PUSHBUTTON      "Trocar...",IDC_BUTTON_CHANGE_AVATAR,167,121,50,14
+    COMBOBOX        IDC_COMBO_NET,97,7,120,80,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | CBS_SORT | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_MESSAGES DIALOGEX 0, 0, 348, 246
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Ao receber novas mensagens, exibir uma janela de notificação",IDC_CHECK_TRAY_NOTIFY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,14,216,10
+    CONTROL         "Utilizar abas para separar mensagens na janela de conversa",IDC_CHECK_NEW_MSGWINDOW,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,31,209,10
+    CONTROL         "Confirmar antes de fechar janela com mensagens não lidas",IDC_CHECK_UNREAD_MESSAGES_ALERT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,48,204,10
+    CONTROL         "Permitir que me enviem pedido de atenção",IDC_CHECK_ALLOW_NUDGES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,65,151,10
+    CONTROL         "Receber custom emoticons",IDC_CHECK_ACCEPT_CUSTOM_EMOTICONS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,82,101,10
+    CONTROL         "Manter histórico de mensagens",IDC_CHECK_LOG_MESSAGES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,99,115,10
+    CONTROL         "Exibir histórico recente",IDC_CHECK_SHOW_RECENT_HISTORY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,116,89,10
+    GROUPBOX        "Ao receber transferência de arquivos",IDC_STATIC,14,146,320,50
+    CONTROL         "Sempre perguntar qual pasta usar",IDC_RADIO_FILE_TRANSFER_SAVE_FOLDER_AWAYS_ASK,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,21,161,125,10
+    CONTROL         "Usar a seguinte pasta padrão:",IDC_RADIO_FILE_TRANSFER_SAVE_FOLDER_USE_DEFAULT,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,21,178,111,10
+    EDITTEXT        IDC_EDIT_FILE_TRANSFER_FOLDER,137,177,175,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BUTTON_FILE_TRANSFER_FOLDER,313,177,14,14,WS_DISABLED
+END
+
+IDD_DIALOG_MAINFRAME_CLOSED_ALERT DIALOGEX 0, 0, 271, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UOL Messenger"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,110,153,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,171,153,50,14,NOT WS_VISIBLE
+    CONTROL         "Não exibir esta mensagem novamente.",IDC_CHECK_CONFIRM,
+                    "Button",BS_AUTOCHECKBOX,39,136,225,10
+    LTEXT           "Para encerrar o programa, clique com o botão direito do mouse no ícone da barra de tarefas e selecione a opção ""Fechar"".",IDC_STATIC_MESSAGE2,39,59,225,26
+    LTEXT           "O UOL Messenger continuará em execução e você poderá acessá-lo através do ícone na barra de tarefas (próximo ao relógio), para que você possa continuar a receber alertas e mensagens.\r\n\r\n",IDC_STATIC_MESSAGE1,39,24,225,34
+END
+
+IDD_DIALOG_MESSAGE_RECEIVING_CONFIRM DIALOGEX 0, 0, 286, 75
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UOL Messenger"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Sim",IDYES,41,54,50,14
+    PUSHBUTTON      "Não",IDNO,118,54,50,14
+    PUSHBUTTON      "Ver informações",IDC_BUTTON_SHOW_INFO,195,54,63,14
+    LTEXT           "Você recebeu uma mensagem de um usuário que não está em sua lista de contatos. Você deseja ver a mensagem enviada por %s?",IDC_STATIC_CONFIRM_TEXT,7,24,272,25
+END
+
+IDD_DIALOG_CONTACTS DIALOGEX 0, 0, 348, 265
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Imagem dos contatos",IDC_STATIC_CONTACT_IMAGE,14,125,151,30
+    CONTROL         "Pequena",IDC_RADIO_SMALL_IMAGE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,21,138,44,10
+    CONTROL         "Média",IDC_RADIO_MEDIUM_IMAGE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,71,138,35,10
+    CONTROL         "Grande",IDC_RADIO_GREAT_IMAGE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,121,138,39,10
+    GROUPBOX        "Segurança",IDC_STATIC,14,160,320,61
+    CONTROL         "Receber mensagens/arquivos de qualquer pessoa",IDC_RADIO_SECURITY_RECEIVE_ALL,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,21,174,175,10
+    CONTROL         "Perguntar antes de receber mensagens/arquivos de pessoas que não estejam na lista",IDC_RADIO_SECURITY_ASK_BEFORE_RECEIVE,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,21,188,296,10
+    CONTROL         "Receber mensagens/arquivos somente de pessoas que estejam na lista",IDC_RADIO_SECURITY_RECEIVE_ONLY_FROM_CONTACT_LIST,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,21,202,244,10
+    GROUPBOX        "Apresentação dos contatos",IDC_STATIC_CONTACT_NODE_LAYOUT,174,62,159,93
+    LTEXT           "ESPAÇO RESERVADO PARA O COMPONENTE QUE CONTROLA O LAYOUT DO CONTACT NODE",IDC_STATIC,182,75,144,35,NOT WS_VISIBLE
+    LTEXT           "Arraste horizontalmente as colunas que deseja configurar, e verticalmente para que a coluna deixe de ser exibida.",IDC_STATIC_CONTACT_NODE_LAYOUT_EXPLANATION,182,120,144,28
+    GROUPBOX        "Ordenar contatos",IDC_STATIC_CONTACT_IMAGE2,14,90,151,30
+    CONTROL         "Alfabeticamente",IDC_RADIO_SORT_ALPHA,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,22,103,68,10
+    CONTROL         "Por status",IDC_RADIO_SORT_STATUS,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,105,103,49,10
+    CONTROL         "Exibir contatos em grupos",IDC_CHECK_SHOW_GROUPS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,25,99,10
+    CONTROL         "Exibir contatos que estejam offline",IDC_CHECK_SHOW_OFFLINE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,55,127,10
+    CONTROL         "Janela de contatos sempre visível",IDC_CHECK_TOPMOST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,70,126,10
+    CONTROL         "Agrupar por contas",IDC_CHECK_GROUP_BY_ACCOUNTS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,40,78,10
+    GROUPBOX        "Exibir aviso quando contato mudar de",IDC_STATIC,174,12,160,45
+    CONTROL         "Online para Desconectado",IDC_CHECK_NOTIFY_OFFLINE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,181,26,100,10
+    CONTROL         "Desconectado para Online",IDC_CHECK_NOTIFY_ONLINE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,181,42,100,10
+    GROUPBOX        "Exibição dos contatos",IDC_STATIC_CONTACT_IMAGE3,14,12,151,72
+END
+
+IDD_DIALOG_PRIVACY DIALOGEX 0, 0, 300, 140
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Privacidade"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Conta:",IDC_STATIC_PRIVACY_ACCOUNT,7,24,23,8
+    LTEXT           "Permitir / aparecer visível para:",IDC_STATIC_PRIVACY_ALLOW,7,48,101,8
+    LTEXT           "Bloquear / aparecer invisível para:",IDC_STATIC_PRIVACY_BLOCK,183,48,110,8
+    LISTBOX         IDC_LIST_PERMITED,7,62,111,70,LBS_SORT | LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<< Permitir",IDC_BUTTON_PERMIT,125,62,50,14
+    PUSHBUTTON      "Bloquear >>",IDC_BUTTON_DENY,125,82,50,14
+    LISTBOX         IDC_LIST_DENIED,182,62,111,70,LBS_SORT | LBS_OWNERDRAWVARIABLE | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Info",IDC_BUTTON_INFO,125,119,50,14
+    COMBOBOX        IDC_COMBO_ACCOUNT,43,24,139,80,CBS_DROPDOWNLIST | CBS_OWNERDRAWFIXED | CBS_AUTOHSCROLL | CBS_SORT | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_EDIT_JABBER_ACCOUNT_ADVANCED DIALOGEX 0, 0, 235, 174
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Servidor:",IDC_STATIC_SERVER,16,9,30,8
+    EDITTEXT        IDC_EDIT_SERVER,63,7,154,12,ES_LOWERCASE | ES_AUTOHSCROLL
+    LTEXT           "Porta:",IDC_STATIC_PORT,16,28,21,8
+    EDITTEXT        IDC_EDIT_PORT,63,26,154,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_DIALOG_CONFIRMATION DIALOGEX 0, 0, 275, 89
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Diálogo"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Text",IDC_STATIC_CONFIRM_TEXT,7,24,261,24
+    CONTROL         "Não exibir esta mensagem novamente",IDC_CHECK_CONFIRM,
+                    "Button",BS_AUTOCHECKBOX,7,52,261,10
+    DEFPUSHBUTTON   "OK",IDOK,80,68,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,146,68,50,14
+END
+
+IDD_DIALOG_EDIT_ICQ_ACCOUNT_ADVANCED DIALOGEX 0, 0, 235, 174
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Deixar meu status disponível no site do ICQ",IDC_CHK_WEB_AVAILABLE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,21,155,10
+    GROUPBOX        "Opções de privacidade do ICQ",IDC_STATIC,7,7,221,50
+    CONTROL         "Pedir autorização",IDC_CHK_REQUEST_AUTHORIZATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,38,71,10
+END
+
+IDD_DIALOG_PASSWORD_CHANGE DIALOGEX 0, 0, 210, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Alterar senha"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Senha atual:",IDC_CHANGE_PWD_STATIC_OLD,41,27,42,8
+    EDITTEXT        IDC_EDIT_ACTUAL_PASSWORD,83,24,120,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Nova senha:",IDC_CHANGE_PWD_STATIC_NEW,41,44,42,8
+    EDITTEXT        IDC_EDIT_NEW_PASSWORD,83,41,120,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Confirmar nova senha:",IDC_CHANGE_PWD_STATIC_CONFIRM,7,61,74,8
+    EDITTEXT        IDC_EDIT_NEW_PASSWORD_CONFIRM,83,58,120,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "A nova senha será adotada após o reinício da aplicação.",IDC_CHANGE_PWD_STATIC_INFO,58,86,92,16
+    DEFPUSHBUTTON   "OK",IDOK,49,108,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,109,108,50,14
+END
+
+IDD_DIALOG_ADD_CUSTOM_EMOTICON DIALOGEX 0, 0, 231, 89
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UOL Messenger - Adicionar custom emoticon"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,57,69,50,14
+    PUSHBUTTON      "Cancelar",IDCANCEL,123,69,50,14
+    EDITTEXT        IDC_EDIT_SHORTCUT,65,24,46,14,ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC_CUSTOM_EMOTICON,150,25,30,28
+    LTEXT           "Atalho",IDC_STATIC_ATALHO,32,27,31,8
+    PUSHBUTTON      "Selecionar Imagem",ID_BUTTON_OPEN_IMAGE,32,45,80,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_NEW_VERSION_NOTIFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 98
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 76
+    END
+
+    IDD_DIALOG_NETWORK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        VERTGUIDE, 12
+        VERTGUIDE, 21
+        VERTGUIDE, 63
+        VERTGUIDE, 187
+        VERTGUIDE, 215
+        VERTGUIDE, 320
+        VERTGUIDE, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+        HORZGUIDE, 14
+        HORZGUIDE, 29
+        HORZGUIDE, 49
+        HORZGUIDE, 69
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 349
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+        HORZGUIDE, 24
+    END
+
+    IDD_UIM_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_DIALOG_ACCOUNTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        VERTGUIDE, 14
+        VERTGUIDE, 120
+        VERTGUIDE, 126
+        VERTGUIDE, 208
+        VERTGUIDE, 216
+        VERTGUIDE, 256
+        VERTGUIDE, 266
+        VERTGUIDE, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+        HORZGUIDE, 14
+        HORZGUIDE, 35
+        HORZGUIDE, 55
+        HORZGUIDE, 75
+        HORZGUIDE, 95
+        HORZGUIDE, 115
+        HORZGUIDE, 135
+        HORZGUIDE, 166
+        HORZGUIDE, 211
+        HORZGUIDE, 232
+    END
+
+    IDD_DIALOG_SOUNDS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        VERTGUIDE, 14
+        VERTGUIDE, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+        HORZGUIDE, 14
+        HORZGUIDE, 24
+        HORZGUIDE, 35
+        HORZGUIDE, 40
+    END
+
+    IDD_DIALOG_STATUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        VERTGUIDE, 14
+        VERTGUIDE, 167
+        VERTGUIDE, 184
+        VERTGUIDE, 195
+        VERTGUIDE, 202
+        VERTGUIDE, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+        HORZGUIDE, 14
+        HORZGUIDE, 24
+        HORZGUIDE, 31
+        HORZGUIDE, 40
+        HORZGUIDE, 46
+        HORZGUIDE, 54
+        HORZGUIDE, 61
+        HORZGUIDE, 169
+        HORZGUIDE, 176
+    END
+
+    IDD_INPUT_DIALOG, DIALOG
+    BEGIN
+        VERTGUIDE, 192
+        BOTTOMMARGIN, 92
+        HORZGUIDE, 24
+    END
+
+    IDD_DIALOG_ADD_CONTACT, DIALOG
+    BEGIN
+        VERTGUIDE, 7
+        BOTTOMMARGIN, 91
+        HORZGUIDE, 24
+    END
+
+    IDD_DIALOG_AUTHORIZE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 280
+        VERTGUIDE, 7
+        VERTGUIDE, 14
+        BOTTOMMARGIN, 133
+        HORZGUIDE, 24
+    END
+
+    IDD_DIALOG_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        VERTGUIDE, 14
+        VERTGUIDE, 21
+        VERTGUIDE, 327
+        VERTGUIDE, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+        HORZGUIDE, 14
+        HORZGUIDE, 88
+        HORZGUIDE, 239
+    END
+
+    IDD_DIALOG_EMOTICONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        VERTGUIDE, 14
+        VERTGUIDE, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+        HORZGUIDE, 13
+    END
+
+    IDD_DIALOG_FILE_TRANSFER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_DIALOG_PLUGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        VERTGUIDE, 14
+        VERTGUIDE, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+        HORZGUIDE, 14
+        HORZGUIDE, 232
+    END
+
+    IDD_DIALOG_EDIT_ACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_DIALOG_MESSAGES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        VERTGUIDE, 14
+        VERTGUIDE, 21
+        VERTGUIDE, 28
+        VERTGUIDE, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+        HORZGUIDE, 14
+        HORZGUIDE, 31
+        HORZGUIDE, 99
+        HORZGUIDE, 116
+    END
+
+    IDD_DIALOG_MAINFRAME_CLOSED_ALERT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        VERTGUIDE, 39
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+        HORZGUIDE, 24
+    END
+
+    IDD_DIALOG_MESSAGE_RECEIVING_CONFIRM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+        HORZGUIDE, 24
+    END
+
+    IDD_DIALOG_CONTACTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 341
+        VERTGUIDE, 14
+        VERTGUIDE, 21
+        VERTGUIDE, 28
+        VERTGUIDE, 71
+        VERTGUIDE, 121
+        VERTGUIDE, 165
+        VERTGUIDE, 174
+        VERTGUIDE, 181
+        VERTGUIDE, 228
+        VERTGUIDE, 326
+        VERTGUIDE, 334
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 258
+        HORZGUIDE, 12
+        HORZGUIDE, 154
+        HORZGUIDE, 253
+    END
+
+    IDD_DIALOG_PRIVACY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+        HORZGUIDE, 24
+    END
+
+    IDD_DIALOG_EDIT_JABBER_ACCOUNT_ADVANCED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_DIALOG_CONFIRMATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+        HORZGUIDE, 24
+    END
+
+    IDD_DIALOG_EDIT_ICQ_ACCOUNT_ADVANCED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        VERTGUIDE, 19
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+        HORZGUIDE, 21
+        HORZGUIDE, 38
+    END
+
+    IDD_DIALOG_PASSWORD_CHANGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        VERTGUIDE, 83
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+        HORZGUIDE, 24
+    END
+
+    IDD_DIALOG_ADD_CUSTOM_EMOTICON, DIALOG
+    BEGIN
+        VERTGUIDE, 7
+        VERTGUIDE, 221
+        BOTTOMMARGIN, 83
+        HORZGUIDE, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CUSTOM_HAND         CURSOR                  "res\\harrow.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&Arquivo"
+    BEGIN
+        MENUITEM "&Preferências...",            ID_SHOW_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "&Fechar",                     ID_APP_EXIT
+    END
+    POPUP "&Ferramentas"
+    BEGIN
+        MENUITEM "&Adicionar contato...",       ID_ADD_CONTACT
+        MENUITEM "Adicionar &grupo...",         ID_ADD_GROUP
+        POPUP "&Estado"
+        BEGIN
+            MENUITEM "Online",                      ID_ESTADO_ONLINE
+            MENUITEM "Ocupado",                     ID_ESTADO_OCUPADO
+            MENUITEM "Ausente",                     ID_ESTADO_AUSENTE
+            MENUITEM "Offline (Invisível)",         ID_ESTADO_OFFLINE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Conectar todas as redes",    ID_CONNECT_ALL
+        MENUITEM "&Desconectar todas as redes", ID_DISCONNECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "Histórico de conversas...",   ID_SHOW_CONVERSATION_HISTORY
+    END
+    POPUP "A&juda"
+    BEGIN
+        MENUITEM "&Ajuda...",                   ID_SHOW_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&Fale conosco...",            ID_REPORT_BUG
+        MENUITEM SEPARATOR
+        MENUITEM "&Sobre...",                   ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\uim.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "A",            ID_ACCELERATOR_ADDCONTACT, VIRTKEY, CONTROL, NOINVERT
+    VK_F4,          ID_ACCELERATOR_CLOSE_CHILD_WINDOW, VIRTKEY, CONTROL, NOINVERT
+    "W",            ID_ACCELERATOR_CLOSE_CONVERSATION_TAB, VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      ID_ACCELERATOR_ESC,     VIRTKEY, NOINVERT
+    "F",            ID_ACCELERATOR_FIND,    VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_ACCELERATOR_HELP,    VIRTKEY, NOINVERT
+    "H",            ID_ACCELERATOR_HISTORY, VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_ACCELERATOR_INFO,    VIRTKEY, CONTROL, NOINVERT
+    VK_TAB,         ID_ACCELERATOR_NEXT_CTRL, VIRTKEY, NOINVERT
+    VK_RIGHT,       ID_ACCELERATOR_NEXT_ITEM, VIRTKEY, ALT, NOINVERT
+    VK_TAB,         ID_ACCELERATOR_NEXT_TAB, VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_ACCELERATOR_OFFLINE, VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_ACCELERATOR_ONLINE,  VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_ACCELERATOR_ONLINE,  VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_ACCELERATOR_PREFERENCE, VIRTKEY, CONTROL, NOINVERT
+    VK_TAB,         ID_ACCELERATOR_PRIOR_CTRL, VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        ID_ACCELERATOR_PRIOR_ITEM, VIRTKEY, ALT, NOINVERT
+    VK_TAB,         ID_ACCELERATOR_PRIOR_TAB, VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "B",            ID_ACCELERATOR_PRIVACY, VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "J",            ID_ACCELERATOR_FILE_TRANSFER_DLG, VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,16,15
+ PRODUCTVERSION 2,0,16,15
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Universo Online S/A"
+            VALUE "FileDescription", "UOL"
+            VALUE "FileVersion", "2, 0, 16, 15"
+            VALUE "LegalCopyright", "Direitos Autorais Reservados (c) 2006 Universo Online S/A"
+            VALUE "OriginalFilename", "uim.exe"
+            VALUE "ProductVersion", "2, 0, 16, 15"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// LICENSE
+//
+
+IDR_LICENSE             LICENSE                 "res\\licença.txt"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST ""res\\\\uim.exe.manifest""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "uim"
+    IDS_SOUNDS_PROPPAGE_EVENT_NEW_MESSAGE "Nova mensagem"
+    IDS_SOUNDS_PROPPAGE_EVENT_CONTACT_ONLINE "Contato online"
+    IDS_HOME_URL            "http://messenger.uol.com.br/welcomeredir.html"
+    IDS_YOU_WERE_ADDED      "O usuário %s adicionou você em sua lista de contatos."
+    IDS_SHOW_PRIVACY_DIALOG_NO_ONLINE_ACCOUNTS_MSG 
+                            "Para alterar a sua lista de permissões é necessário estar conectado. \nPor favor, repita a operação após conectar-se. (UIM0172)"
+    IDS_ACCOUNT_REQUEST_PASSWORD_DIALOG_LABEL 
+                            "Por favor, digite a senha para esta conta."
+    IDS_HELP_URL            "http://messenger.uol.com.br/ajuda.html"
+    IDS_SOUNDS_DIR          "Sounds"
+    IDS_DEFAULT_SOUND_NEW_MESSAGE "mensagem.wav"
+    IDS_DEFAULT_SOUND_CONTACT_ONLINE "online.wav"
+    IDS_MUTEX_SINGLE_INSTANCE "UOLIMSingleInstanceMutex"
+    IDS_MUTEX_INSTALLER     "UOLIMClientInstaller"
+    IDS_MESSAGE_WINDOW_GENERIC_IM_SEND_ERROR 
+                            "Não foi possível enviar a mensagem anterior."
+    IDS_REPORT_DISCONNECT_MSG_FORMAT 
+                            "Ocorreu um erro de conexão na conta %s (%s):\n%s"
+    IDS_ACCOUNTS_PROPPAGE_INVALID_FILE_MSG 
+                            "O formato do arquivo selecionado não é válido. A imagem deve estar no formato BMP, GIF ou JPEG. (UIM0102)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GROUP_NODE_RENAME_GROUP_LABEL "Digite o novo nome do grupo"
+    IDS_DIALOG_ACCOUNTS     "Contas"
+    IDS_SHOW_INFO_NO_ONLINE_ACCOUNTS_MSG 
+                            "Para exibir os detalhes é necessário estar conectado. \nPor favor, repita a operação após conectar-se. (UIM0168)"
+    IDS_SHOW_GROUP_DIALOG_NO_ONLINE_ACCOUNTS_MSG 
+                            "Para criar um grupo é necessário estar conectado. \nPor favor, repita a operação após conectar-se. (UIM0167)"
+    IDS_SEND_FILE_NO_ONLINE_ACCOUNTS_MSG 
+                            "Não é possível enviar um arquivo, pois você está desconectado. \nPor favor, repita a operação após conectar-se.(UIM0113)"
+    IDS_SHOW_MESSAGE_WINDOW_NO_ONLINE_ACCOUNTS_MSG 
+                            "Não é possível enviar mensagem desconectado. \nPor favor, repita a operação após conectar-se. (UIM0107)"
+    IDS_NO                  "Não"
+    IDS_EMOTICONS_PROPPAGE_REMOVECONFIRM_MESSAGE 
+                            "Tem certeza que deseja remover o emoticon selecionado?"
+    IDS_SHOW_GROUP_DIALOG_NO_VISIBLE_GROUPS_MSG 
+                            "Não é possível criar um grupo quando a lista de contatos não está exibindo os contatos em grupos. \nDeseja ativar a exibição de contatos em grupos?"
+    IDS_FILE_TRANSFER_ZERO_SIZE_FILE_MESSAGE 
+                            "Não é possível enviar um arquivo com 0 KBytes de tamanho. \nPor favor, selecione outro arquivo. (UIM0104)"
+    IDS_UOL_BUTTON_URL      "http://www.uol.com.br"
+    IDS_WIZARD_REMEMBER_PASSWORD 
+                            "Ao selecionar esta opção, qualquer pessoa que use o seu computador poderá utilizar o UOL Messenger com seu perfil. Para sua segurança, e-mail e serviços da central do assinante e outros específicos continuarão pedindo confirmação de senha sempre."
+    IDS_DONT_DISPLAY_AGAIN  "Não perguntar novamente"
+    IDS_WIZARD_PROFILE_UNCHECK_AUTHENTICATION 
+                            "Atenção! Ao desmarcar esta opção, você não conseguirá usar futuras funcionalidades do comunicador.\nO UOL recomenda manter a configuração, assim você poderá tirar o máximo proveito do UOL Messenger e suas funcionalidades."
+    IDS_WIZARD_INVALID_LOGIN_PASS 
+                            "Login ou senha inválidos. Por favor, digite novamente. (UIM0601)"
+    IDS_WIZARD_ERROR_SERVER "Não foi possível conectar nos servidores do UOL. (UIM0602)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SOUNDS_PROPPAGE_COLUMN_FILE_PATH "Arquivo de som"
+    IDS_DIALOG_CONTACTS     "Contatos"
+    IDS_DIALOG_MESSAGES     "Mensagens"
+    IDS_DIALOG_STATUS       "Estado"
+    IDS_DIALOG_SOUNDS       "Sons"
+    IDS_STRING_COMPANY_NAME "UOL"
+    IDS_STRING_PRODUCT_NAME "UIM"
+    IDS_ACCOUNTS_PROPPAGE_BUTTON_CONNECT "Conectar"
+    IDS_ACCOUNTS_PROPPAGE_BUTTON_DISCONNECT "Desconectar"
+    IDS_ACCOUNTS_PROPPAGE_REMOVE_ACCOUNT_MSG_FORMAT 
+                            "Tem certeza que deseja remover a conta %s?\nEsta operação não poderá ser cancelada!"
+    IDS_ACCOUNTS_PROPPAGE_NEW_USER_ID "<Novo usuário>"
+    IDS_MENU_CONNECT_ALL    "&Conectar todas  as redes"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENU_DISCONNECT_ALL "&Desconectar todas  as redes"
+    IDS_MENU_STATUS         "Estado"
+    IDS_MENU_CONNECT        "Conectar"
+    IDS_MENU_DISCONNECT     "Desconectar"
+    IDS_MENU_SHOW_CONVERSATION_HISTORY "Histórico de conversas..."
+    IDS_MENU_SEND_MESSAGE   "Enviar mensagem"
+    IDS_MENU_BLOCK_CONTACT  "Bloquear contato"
+    IDS_MENU_REMOVE_CONTACT "Remover contato"
+    IDS_MENU_RENAME_CONTACT "Renomear contato"
+    IDS_MESSAGE_WINDOW_SEND_BUTTON "Enviar"
+    IDS_MESSAGE_WINDOW_CONTACT_TYPING_FORMAT "%s está digitando..."
+    IDS_MESSAGE_WINDOW_CONV_WINDOW_CLOSED_FORMAT "%s fechou a janela."
+    IDS_MESSAGE_WINDOW_CONV_TIMEOUT_FORMAT "A conversa com %s expirou."
+    IDS_ACCOUNTS_PROPPAGE_EMPTY_USER_MESSAGE 
+                            "Por favor, preencha o campo ""Identificação do usuário"". (UIM0106)"
+    IDS_ACCOUNTS_PROPPAGE_USER_ALREADY_EXISTS_MSG_FORMAT 
+                            "Já existe uma conta da rede %s para o usuário %s. (UIM0101)"
+    IDS_SOUNDS_PROPPAGE_COLUMN_EVENT_TYPE "Evento"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_SCSIZE          "Change the window size"
+    ATL_IDS_SCMOVE          "Change the window position"
+    ATL_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    ATL_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    ATL_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    ATL_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    ATL_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_SCRESTORE       "Restore the window to normal size"
+    ATL_IDS_SCTASKLIST      "Activate Task List"
+    ATL_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_MRU_FILE        "Personalizado"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONTACT_NODE_HISTORY_CAPTION "Histórico"
+    IDS_GROUP_NODE_REMOVEGROUP_CAPTION "Remover grupo"
+    IDS_GROUP_NODE_RENAMEGROUP_CAPTION "Renomear grupo"
+    IDS_ACCOUNT_MANAGER_ACCOUNTS_FILE "Accounts.xml"
+    IDS_LIVEUPDATE_URL      "http://ubpv.multi.uol.com.br/uim.html"
+    IDS_LIVEUPDATE_MESSAGE  "Há uma nova versão disponível do UOL Messenger"
+    IDS_APP_REG_KEY         "Software\\UOL\\UIM"
+    IDS_USER_AGENT          "UIM"
+    IDS_VERSION_PARAM       "xid=%s"
+    IDS_BUGREPORT_SERVLET_METHOD "POST"
+    IDS_BUGREPORT_SERVLET_URL 
+                            "http://cr.multi.uol.com.br/creporter.html?prod=UIM"
+    IDS_PRODID_NAME         "ProdId"
+    IDS_PRODID_VALUE        "UIM"
+    IDS_APP_NAME            "UOL Messenger"
+    IDS_GROUP_NODE_ERROR_NO_EMPTY_GROUP 
+                            "Não foi possível remover o grupo %s porque ele não está vazio. (UIM0166)"
+    IDS_GROUP_NODE_RENAME_GROUP_TITLE "Renomear grupo"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ACCOUNTS_PROPPAGE_INVALID_USERNAME_MSG_FORMAT 
+                            "%s não é uma identificação de usuário válida para a rede %s. (UIM0103)"
+    IDS_STRING_PROFILE_DIR  "Profiles"
+    IDS_DIALOG_PROFILE_NEW_ERROR 
+                            "Por favor, preencha o nome do perfil. (UIM0302)"
+    IDS_STRING_BOL_SUBSCRIPTION_URL 
+                            "https://visitante.cadastro.uol.com.br/index.html?skin=/messenger"
+    IDS_DIALOG_GENERAL      "Geral"
+    IDS_DIALOG_EMOTICONS    "Emoticons"
+    IDS_EMOTICONS_PROPPAGE_COLUMN_SHORTCUT "Atalho"
+    IDS_EMOTICONS_PROPPAGE_COLUMN_FILE_PATH "Arquivo de emoticon"
+    IDS_FOLDER_EMOTICONS    "Emoticon"
+    IDS_FOLDER_SOUNDS       "Sound"
+    IDS_FOLDER_ICONS        "Icon"
+    IDS_ACCOUNTS_TITLE_ADD  "Adicionar conta"
+    IDS_SKIN_ERROR_TAG_NOTFOUND 
+                            "Há um erro no código do arquivo \n%s. Linha: %i Coluna: %i. (UIM0403)"
+    IDS_FILE_TRANSFER_REMOTE_CANCEL_MESSAGE_FORMAT 
+                            "%s cancelou a transferência do arquivo %s. (UIM0110)"
+    IDS_CONTACT_NODE_REMOVECONTACT_CONFIRM_MESSAGE_FORMAT 
+                            "Tem certeza que deseja remover %s da sua lista de contatos?"
+    IDS_JABBER_UOL_EMAIL_DOMAIN "@uol.com.br"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VERSION_FORMAT      "UOL Messenger - Versão %d.%d.%d.%db\r\nDireitos Autorais Reservados (c) 2006 Universo Online S/A"
+    IDS_LIVEUPDATE_PLUGIN   "Há um novo plugin disponível para instalação."
+    IDS_CONNECTION_ERROR_DIALOG_CAPTION "%s - Reconectar contas"
+    IDS_CONTACT_DIALOG_CONTACT_ALREADY_EXISTS_MSG_FORMAT 
+                            "O usuário %s já existe na sua lista de contatos, dentro do grupo %s. (UIM0157)"
+    IDS_CONNECTION_ERROR_DIALOG_STATIC_TITLE "Contas desconectadas"
+    IDS_CONNECTION_ERROR_DIALOG_STATIC_MESSAGE 
+                            "As seguintes contas foram desconectadas:"
+    IDS_CONNECTION_ERROR_DIALOG_STATIC_REASON "Motivo:"
+    IDS_CONNECTION_ERROR_DIALOG_RECONNECT_BUTTON_CAPTION "Reconectar todas"
+    IDS_CONNECTION_ERROR_DIALOG_CANCEL_BUTTON_CAPTION "Cancelar"
+    IDS_CONNECTION_ERROR_DIALOG_ACCOUNT_COLUMN "Conta"
+    IDS_CONNECTION_ERROR_DIALOG_DATE_COLUMN "Data"
+    IDS_DIALOG_PROFILE_INVALID 
+                            "O nome do perfil contém caracteres inválidos. Por favor, escolha outro nome. (UIM0303)"
+    IDS_UNREAD_MESSAGES_ALERT 
+                            "Há mensagens não lidas nesta janela. Tem certeza que deseja fechar a janela?"
+    IDS_STATUS_BUSY         "Ocupado"
+    IDS_SKIN_ERROR_VERSION  "O arquivo de tema atual é incompatível com esta versão do UOL Messenger. (UIM0408)"
+    IDS_COMMON_SUB_KEY      "Common"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONTACT_DIALOG_NAME_NOTFOUND 
+                            "Por favor, preencha o nome do usuário. (UIM0156)"
+    IDS_CONTACT_DIALOG_GROUP_NOTFOUND 
+                            "Por favor, digite ou selecione o nome do grupo. (UIM0153)"
+    IDS_CONTACT_DIALOG_ERROR_ADD_CONTACT 
+                            "Não foi possível adicionar o contato. Por favor, tente novamente. (UIM0004)"
+    IDS_JABBER_BOL_EMAIL_DOMAIN "@bol.com.br"
+    IDS_DIALOG_PROFILE_EXISTS 
+                            "Já existe um perfil com esse nome. Por favor, escolha outro. (UIM0301)"
+    IDS_UIMVIEW_AUTHORIZATION_GRANTED "O usuário %s autorizou você."
+    IDS_UIMVIEW_AUTHORIZATION_DENIED "O usuário %s não autorizou você."
+    IDS_USER_INPUT_HANDLER_RECV_FILE_WARNING 
+                            "\n\nATENÇÃO: alguns arquivos podem conter vírus ou executarem\n                  operações potencialmente perigosas para seu computador.\n                  Evite abrir, executar ou aceitar arquivos de fontes não\n                  conhecidas."
+    IDS_ACCOUNTS_TITLE_EDIT "Alterar conta"
+    IDS_EMOTICONS_PROPPAGE_ERROR_THEME 
+                            "Não foi possível importar o arquivo para o tema selecionado. (UIM0250)"
+    IDS_STRING_THEME_DIR    "Themes"
+    IDS_DIALOG_PROFILE_REMOVE_MESSAGE "Deseja realmente remover esse perfil?"
+    IDS_EMOTICONS_PROPPAGE_ERROR_SPACE 
+                            "Não é permitido usar espaço para definir o atalho de um emoticon. (UIM0201)"
+    IDS_EMOTICONS_PROPPAGE_ERROR_SHORTCUT 
+                            "Esse atalho já existe. Por favor, escolha outro para cadastrar o emoticon. (UIM0202)"
+    IDS_ACCOUNTS_USER_CONNECTED 
+                            "Você conectou a conta. Suas alterações não serão salvas. (UIM0140)"
+    IDS_SOUNDS_PROPPAGE_ERROR_IMPORT 
+                            "Não foi possível importar o arquivo para o tema selecionado. (UIM0250)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_JABBER_UOL_DEFAULT_CONNECT_PORT "5222"
+    IDS_CONTACT_NODE_ERROR_NAME_INVALID 
+                            "Por favor, digite um nome para o contato. (UIM0151)"
+    IDS_JABBER_UOL_SERVER   "xmpp.uol.com.br"
+    IDS_THEME_MANAGER_WARNING_FILE_EXISTS 
+                            "Arquivo já existente no tema, deseja continuar com a importação?"
+    IDS_UI_MANAGER_ADDGROUP_CAPTION "UOL Messenger - Adicionar grupo"
+    IDS_UI_MANAGER_ADDGROUP_NAMEGROUP 
+                            "Digite o nome do novo grupo a ser criado"
+    IDS_UI_MANAGER_ERROR_GROUP_EXISTS 
+                            "Já existe um grupo com o nome ""%s"". (UIM0163)"
+    IDS_STRING_UOLK_SUBSCRIPTION_URL 
+                            "http://uolk.uol.com.br/profileQuickSignupView.html"
+    IDS_GROUP_NODE_RENAME_GROUP_CAPTION "UOL Messenger - Renomear grupo"
+    IDS_GROUP_NODE_RENAME_GROUP "Digite o novo nome do grupo"
+    IDS_UOLK_SUBSCRIPTION_REQUIRED_CODE "407"
+    IDS_DELETE_ALL_HISTORY_COMMAND_WARNING_DELETE_HISTORY 
+                            "Deseja realmente apagar o histórico de mensagens de todos os seus contatos?"
+    IDS_MESSAGE_PROTOCOL_UOL_SERVER_ERROR 
+                            "Não foi possível conectar a conta %s (%s). \n%s."
+    IDS_DELETE_HISTORY_COMMAND_WARNING_DEL_HISTORY 
+                            "Deseja realmente apagar o histórico de mensagens desse contato?"
+    IDS_MESSAGE_PROTOCOL_REGISTRATION_REQUIRED 
+                            "Não foi possível conectar a conta %s (%s). \nVocê não está cadastrado neste serviço. (UIM0173)"
+    IDS_GROUP_NODE_ERROR_GROUP_EXISTS 
+                            "Já existe um grupo com o nome ""%s"". (UIM0165)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SKIN_ERROR_ACCESSDENIED 
+                            "Você não tem permissão para acessar o arquivo %s. (UIM0406)"
+    IDS_PREFERENCES_PROPERTYSHEET_TITLE "Preferências"
+    IDS_SKIN_ERROR_ATTRIBUTE_NOTFOUND 
+                            "Há um erro no código do arquivo \n%s. Linha: %i Coluna: %i. (UIM0404)"
+    IDS_HISTORY_WINDOW_TITLE "UOL Messenger - Histórico"
+    IDS_CONTACTS_PROPPAGE_SORT_METHOD_ALPHA "Alfabeticamente"
+    IDS_CONTACTS_PROPPAGE_SORT_METHOD_STATUS "Por status"
+    IDS_DIALOG_NETWORK      "Rede"
+    IDS_NETWORK_PROPPAGE_PROXY_TYPE_NONE "Nenhum"
+    IDS_NETWORK_PROPPAGE_PROXY_TYPE_HTTP "HTTP"
+    IDS_NETWORK_PROPPAGE_PROXY_TYPE_SOCKS4 "SOCKS4"
+    IDS_NETWORK_PROPPAGE_PROXY_TYPE_SOCKS5 "SOCKS5"
+    IDS_ABOUT_PROPPAGE_TITLE "Sobre"
+    IDS_FILE_TRANSFER_DLG_FILE_FORMAT 
+                            "%s - %d KB de %d KB (%.0lf%%) transferidos"
+    IDS_FILE_TRANSFER_DLG_CONTACT_SEND_FORMAT "Enviando para: %s"
+    IDS_FILE_TRANSFER_DLG_CONTACT_RECEIVE_FORMAT "Recebendo de: %s"
+    IDS_CONTACT_DIALOG_ACCOUNT_NOTFOUND 
+                            "Por favor, selecione uma conta. (UIM0155)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_AWAY_MESSAGE_PREFIX "[MENSAGEM AUTOMÁTICA]: "
+    IDS_FILE_TRANSFER_DLG_CANCEL_BUTTON "Cancelar"
+    IDS_FILE_TRANSFER_DLG_DONE_BUTTON "Fechar"
+    IDS_FILE_TRANSFER_DLG_CAPTION "UOL Messenger - Transferência de arquivo"
+    IDS_STRING_UOLK_SUBSCRIPTION_HOWTO_URL 
+                            "http://messenger.uol.com.br/comofunciona_rede_uol.jhtm"
+    IDS_FILE_TRANSFER_DLG_CAPTION_CANCELED 
+                            "UOL Messenger - Transferência de arquivo (Cancelada)"
+    IDS_TITLE_WINDOW_DEFAULT "UOL Messenger - %s"
+    IDS_STRING_UOLK_REGISTRATION_FAILED_MESSAGE 
+                            "Não foi possível conectar à rede UOL. Deseja que o UOL Messenger tente conectar novamente mais tarde?"
+    IDS_SKIN_ERROR_GENERAL  "Ocorreu um erro ao carregar as suas configurações de tema. (UIM0407)"
+    IDS_MESSAGE_PROTOCOL_USER_LOGGED 
+                            "Você conectou a conta %s (%s) em outro computador ou programa de mensagem instantânea. (UIM0018)"
+    IDS_MESSAGE_PROTOCOL_USER_DATA_INVALID 
+                            "Não foi possível conectar a conta %s (%s). \nVerifique seu usuário e senha e tente novamente. (UIM0002)"
+    IDS_MESSAGE_PROTOCOL_TOO_MANY_CONNECTION_ATTEMPTS 
+                            "Não foi possível conectar a conta %s (%s). \nPor favor, aguarde alguns minutos e tente novamente. (UIM0009)"
+    IDS_MENU_APP_ABOUT      "Sobre..."
+    IDS_MENU_CHANGE_STATUS  "Estado"
+    IDS_MENU_SHOW_HELP      "Ajuda"
+    IDS_MENU_APP_CLOSE      "Fechar"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RENAME_CONTACT_DIALOG_LABEL "Digite o novo nome para o contato"
+    IDS_RENAME_CONTACT_DIALOG_CAPTION "Renomear contato"
+    IDS_GROUP_MENU_EMPTY_NEW_NAME_MESSAGE 
+                            "Por favor, digite o novo nome do grupo. (UIM0164)"
+    IDS_USER_INPUT_HANDLER_AUTHORIZE_CAPTION 
+                            "UOL Messenger - Solicitar autorização"
+    IDS_USER_INPUT_HANDLER_AUTHORIZE_MESSAGE 
+                            "Digite a mensagem para pedir autorização"
+    IDS_YES                 "Sim"
+    IDS_USER_INPUT_HANDLER_RECV_FILE_ACCEPT 
+                            "Receber de ""%s"" o arquivo ""%s"" ?"
+    IDS_CONTACT_NODE_MOVECONTACT_CAPTION "Mover contato para"
+    IDS_CONTACT_NODE_BLOCKCONTACT_CAPTION "Bloquear contato"
+    IDS_CONTACT_NODE_UNBLOCKCONTACT_CAPTION "Desbloquear contato"
+    IDS_CONTACT_NODE_INVISIBLE_CAPTION "Aparecer invisível para contato"
+    IDS_CONTACT_NODE_VISIBLE_CAPTION "Não aparecer invisível para contato"
+    IDS_CONTACT_NODE_RENAMECONTACT_CAPTION "Renomear contato"
+    IDS_CONTACT_NODE_REMOVECONTACT_CAPTION "Remover contato"
+    IDS_CONTACT_NODE_SENDFILE_CAPTION "Enviar arquivo"
+    IDS_CONTACT_NODE_INFO_CAPTION "Info"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STATUS_AWAY         "Ausente"
+    IDS_STATUS_INVISIBLE    "Invisível"
+    IDS_MENU_STATUS_ONLINE  "Online"
+    IDS_STATUS_ONLINE       "Online"
+    IDS_CONTEXT_MENU_CONNECT "Conectar"
+    IDS_CONTEXT_MENU_DISCONNECT "Desconectar"
+    IDS_MENU_STATUS_AWAY    "Ausente"
+    IDS_MENU_STATUS_OFFLINE "Desconectado"
+    IDS_STATUS_IDLE         "Inativo"
+    IDS_NOTIFY_POPUP_CLOSE  "Fechar"
+    IDS_NOTIFY_POPUP_OPTIONS "Opções"
+    IDS_SEND_FILE_DIALOG_CAPTION "Enviar arquivo"
+    IDS_CONTACT_ONLINE      "%s ficou online"
+    IDS_CONTACT_OFFLINE     "%s ficou offline"
+    IDS_CONTACT_SAYS        "%s disse:"
+    IDS_SKIN_ERROR_FILE_INVALID 
+                            "O arquivo %s de skin não é um XML válido. (UIM0405)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MESSAGE_WINDOW_RECEIPT_NOT_ONLINE_IM_SEND_ERROR 
+                            "A mensagem anterior pode não ter sido enviada, pois o contato está offline."
+    IDS_MESSAGE_WINDOW_SENDER_NOT_ONLINE_IM_SEND_ERROR 
+                            "A mensagem anterior não foi enviada, pois você não está online."
+    IDS_STATUS_OFFLINE      "Desconectado"
+    IDS_MENU_STATUS_INVISIBLE "Invisível"
+    IDS_STATUS_PERSONALIZED "Personalizado"
+    IDS_UI_MANAGER_ERROR_EMPTY_NAME 
+                            "Por favor, digite um nome para o novo grupo. (UIM0162)"
+    IDS_STRING_UOLK_REGISTRATION_URL 
+                            "http://uolk.uol.com.br/quickCreateProfile.html"
+    IDS_UIM_APPLICATION_CURRENT_THEME_INVALID 
+                            "O arquivo de tema atual não existe ou é inválido. O aplicativo será iniciado com o tema padrão. (UIM0401)"
+    IDS_UIM_APPLICATION_DEFAULT_THEME_INVALID 
+                            "O arquivo de tema atual não existe ou é inválido. Não foi possível carregar o tema padrão. (UIM0402)"
+    IDS_MENU_STATUS_BUSY    "Ocupado"
+    IDS_GROUP_NODE_QUESTION_REMOVE_GROUP 
+                            "Tem certeza que deseja remover o grupo %s?"
+    IDS_CONTACT_DIALOG_INVALID_USERNAME_FORMAT 
+                            """%s"" não é um usuário válido para a rede %s. (UIM0152)"
+    IDS_FILE_TRANSFER_CONTACT_NOT_ONLINE_MESSAGE 
+                            "Não é possível enviar um arquivo para contatos desconectados. \nPor favor, tente novamente mais tarde. (UIM0109)"
+    IDS_GENERAL_PROPPAGE_THEME_CHANGED 
+                            "O novo tema será carregado quando você reiniciar o UOL Messenger."
+    IDS_EMOTICONS_PROPPAGE_INVALID_GIF 
+                            "O formato do arquivo %s não é válido. A imagem deve estar no formato GIF. (UIM0203)"
+    IDS_PROP_PAGE_BTN_INSTALL_TEXT "Instalar"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HISTORY_COLUMN_PROTOCOL "Protocolo"
+    IDS_HISTORY_COLUMN_FRIEND "Amigo"
+    IDS_HISTORY_COLUMN_LAST_CONVERSATION "Data última conversa"
+    IDS_ADD_CONTACT_NO_ONLINE_ACCOUNTS_ERROR_MSG 
+                            "Para adicionar contato é necessário estar conectado. \nPor favor, repita a operação após conectar-se. (UIM0154)"
+    IDS_MESSAGE_PROTOCOL_SERVER_UNAVAILABLE 
+                            "Não foi possível conectar a conta %s (%s). \nPor favor, tente novamente mais tarde. (UIM0001)"
+    IDS_MESSAGE_PROTOCOL_GENERIC_CONNECTION_ERROR 
+                            "Não foi possível conectar a conta %s (%s). \nPor favor, tente novamente mais tarde. (UIM0015)"
+    IDS_MESSAGE_PROTOCOL_UNABLE_TO_CONNECT 
+                            "Não foi possível conectar a conta %s (%s). \nPor favor, tente novamente mais tarde. (UIM0005)"
+    IDS_MESSAGE_PROTOCOL_INVALID_USER_NAME 
+                            "Não foi possível conectar a conta %s (%s). \nVerifique seu usuário e tente novamente. (UIM0006)"
+    IDS_MESSAGE_PROTOCOL_SUSPENDED_ACCOUNT 
+                            "Não foi possível conectar a conta %s (%s). \nNo momento, sua conta está suspensa. (UIM0008)"
+    IDS_MESSAGE_PROTOCOL_CONNECTION_TERMINATED 
+                            "A conexão da conta %s (%s) com o servidor foi encerrada. \nPor favor, tente novamente mais tarde. (UIM0016)"
+    IDS_MESSAGE_PROTOCOL_INVALID_SECURID 
+                            "Não foi possível autenticar a conta %s (%s). \nPor favor, tente novamente mais tarde. (UIM0010)"
+    IDS_MESSAGE_PROTOCOL_ERROR_PARSING_HTTP 
+                            "Não foi possível conectar a conta %s (%s). \nPor favor, tente novamente mais tarde. (UIM0017)"
+    IDS_MESSAGE_PROTOCOL_UNAVAILABLE_BUDDY_LIST 
+                            "A lista de contatos da conta %s (%s) está temporariamente indisponível. \nPor favor, tente conectar novamente mais tarde. (UIM0105)"
+    IDS_MESSAGE_PROTOCOL_SSL_SUPPORT 
+                            "Não foi possível conectar a conta %s (%s). \nPor favor, tente novamente mais tarde. (UIM0012)"
+    IDS_MESSAGE_PROTOCOL_CONNECTION_FAILED 
+                            "Não foi possível conectar a conta %s (%s). \nPor favor, tente novamente mais tarde. (UIM0001)"
+    IDS_MESSAGE_PROTOCOL_PROXY_ERROR 
+                            "Ocorreu um erro na conexão com o servidor proxy e não foi possível conectar a conta %s (%s). \nPor favor, tente novamente mais tarde. (UIM0014)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WIZARD_DIFFERENT_PASSWORD 
+                            "As senhas precisam ser exatamente iguais. Por favor, digite novamente. (UIM0603)"
+    IDS_WIZARD_INVALID_EMAIL "Por favor, digite um e-mail válido. (UIM0604)"
+    IDS_WIZARD_CHECK_AUTHENTICATION 
+                            "Ao selecionar esta opção, você terá acesso às futuras funcionalidades do comunicador, além de ter acesso aos produtos e serviços do UOL que serão integrados ao UOL Messenger. Aguarde! "
+    IDS_URL_SIGNATURE_UOL   "http://cadastro.uol.com.br"
+    IDS_WIZARD_REQUIRED_PASSWORD 
+                            "O preenchimento do campo senha é obrigatório. (UIM0605)"
+    IDS_STRING_UOLK_SUCCESSFULLY_RESPONSE "<error>000</error>"
+    IDS_CHANGE_ALL_AVATAR   "Trocar a imagem de todas as contas"
+    IDS_CHANGE_ONE_AVATAR   "Trocar a imagem dessa conta"
+    IDS_CHANGE_ALL_NICKNAME "Trocar o apelido de todas as contas"
+    IDS_WIZARD_FINISH_BTNCANCEL "&Finalizar"
+    IDS_PLUGIN_CUSTOM_LIST_MAIN_GROUP_NAME "Ferramentas UOL"
+    IDS_PROP_PAGE_BTN_UPDATE_TEXT "Atualizar"
+    IDS_CONFIRM_MESSAGE_RECEIVING_FORMAT 
+                            "Você recebeu uma mensagem de um usuário que não está na sua lista de contatos. \nVocê deseja receber mensagens de %s?"
+    IDS_YOU_WERE_ADD        "O usuário %s está tentando adicionar você à sua lista de contatos. O que você deseja fazer?"
+    IDS_UOLKUT_BUTTON_URL   "http://uolk.uol.com.br"
+    IDS_CONTACT_NODE_SENDMESSAGE_CAPTION "Enviar mensagem"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_URL_SET_COOKIE_FORMAT 
+                            "http://ubpv.multi.uol.com.br/uimconnect.html?uid=%s"
+    IDS_APPLY               "Aplicar"
+    IDS_FILE_EMOTICONS_SETTINGS "Emoticons.xml"
+    IDS_FILE_SOUNDS_SETTINGS "Sounds.xml"
+    IDS_DIR_EMOTICONS       "Emoticons"
+    IDS_DIR_SOUNDS          "Sounds"
+    IDS_FILE_COMMON_SETTINGS "Common.xml"
+    IDS_DIR_COMMON_CONFIG   "Config"
+    IDS_INCORRECT_PASSWORD  "Senha incorreta! (UIM0611)"
+    IDS_PASSCHANGE_URL_UOL  "https://sac.uol.com.br/usuario/senha.html"
+    IDS_PASSCHANGE_URL_BOL  "https://visitante.sac.uol.com.br/trocar-senha.html?skin=bol"
+    IDS_PASSCHANGE_MSG_UOL  "Para alterar a senha de seu perfil é necessário acessar a Central do Assinante UOL. \nDeseja acessá-la agora?"
+    IDS_PASSCHANGE_MSG_BOL  "Para alterar a senha de seu perfil é necessário acessar a Central de Ajuda do BOL. \nDeseja acessá-la agora?"
+    IDS_STRING_WIZARD_XML_DIR "Config"
+    IDS_STRING_WIZARD_XML_FILE "res.xml"
+    IDS_STRING431           "Para alterar a senha de seu perfil é necessário acessar a Central do Ajuda do BOL. Deseja acessá-la agora?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHANGE_ONE_NICKNAME "Trocar o apelido dessa conta"
+    IDS_CHANGE_NICKNAME_TITLE "Novo apelido"
+    IDS_CHANGE_NICKNAME_LABEL "Digite o novo apelido"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WIZARD_SPLASH_BTNCUSTOM "&Criar Perfil"
+    IDS_WIZARD_UOL_BTNCUSTOM "Assine &UOL"
+    IDS_WIZARD_PROFILE_BTNCUSTOM "Assine &UOL"
+    IDS_PROP_PAGE_BTN_CONFIG_TEXT "Configurar"
+    IDS_VALIDATE_ACCOUNTS_UOL_AUTH_LABEL "Validando perfil. Aguarde..."
+    IDS_VALIDATE_ACCOUNTS_MSN_AUTH_LABEL 
+                            "Aguarde, verificando e-mail e senha."
+    IDS_VALIDATE_ACCOUNTS_ICQ_AUTH_LABEL "Aguarde, verificando ID e senha."
+    IDS_WIZARD_SPLASH_BTNNEXT "&OK"
+    IDS_URL_PLUGINS_LIST    "http://ubpv.multi.uol.com.br/messenger/uolmessengerplugins2.xml"
+    IDS_WIZARD_PREFERENCES_PRESET_MSN_TEXT "MSN"
+    IDS_WIZARD_PREFERENCES_PRESET_ICQ_TEXT "ICQ"
+    IDS_WIZARD_PREFERENCES_PRESET_UOL_TEXT "UOL Messenger"
+    IDS_WIZARD_UNSAVE_ACCOUNT "A conta %s não foi salva. Deseja continuar?"
+    IDS_WIZARD_EXISTS_ACCOUNT "A conta %s já está cadastrada. (UIM0606)"
+    IDS_WIZARD_PERSONALIZE_NICK_DEFAULT "[Clique aqui para mudar o apelido]"
+    IDS_WIZARD_INVALID_UIN  "Por favor, digite um UIN válido. (UIM0607)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PLUGIN_PROPPAGE_HEADER_ACTIVE "Ativo"
+    IDS_PLUGIN_PROPPAGE_HEADER_DESCRIPTION "Nome - Descrição"
+    IDS_PLUGIN_INSTALLATION_FAILED_MESSAGE 
+                            "Não possível concluir a instalação do plugin. \nPor favor, tente novamente mais tarde. (UIM0501)"
+    IDS_PLUGIN_DOWNLOAD_INIT_FILE_NAME_FORMAT "Iniciando transferência de %s"
+    IDS_PLUGIN_UPDATE_FAILED_MESSAGE 
+                            "Não foi possível concluir a atualização do plugin. \nPor favor, tente novamente mais tarde. (UIM0503)"
+    IDS_WIZARD_ADD_ACCOUNT_SUCCESS "Conta %s adicionada com sucesso!"
+    IDS_GROUP_NODE_ERROR_LIMIT_NAME 
+                            "O nome do grupo deve conter no máximo 15 caracteres. (UIM0161) "
+    IDS_ACCOUNT_EDIT_DIALOG_OK_BUTTON "OK"
+    IDS_ACCOUNT_EDIT_DIALOG_CANCEL_BUTTON "Cancelar"
+    IDS_ACCOUNT_EDIT_PROPPAGE_CAPTION "Básico"
+    IDS_ACCOUNT_EDIT_ADVANCED_PROPPAGE_CAPTION "Avançado"
+    IDS_CONTACT_DIALOG_BLOCK_LIST 
+                            """%s"" está na sua lista de contatos bloqueados. (UIM0171)"
+    IDS_REMOVE_TO_BLOCK     """%s"" será removido da sua lista de contatos. \nDeseja continuar?"
+    IDS_CONTACT_TOOLTIP_ACCOUNT_LINE_FORMAT "%s: %s"
+    IDS_REMOVE_TO_BLOCK_CAPTION "Bloquear contato"
+    IDS_CONTACT_TOOLTIP_CONNECTED_LINE "Conectado desde: "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SHOW_PLUGIN_PREFERENCES_CAPTION "Configurar..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CONTACT_TOOLTIP_GROUP_LINE "Grupo: "
+    IDS_CONTACT_TOOLTIP_STATUS_LINE "Status: "
+    IDS_TOOLTIP_STATUS_PAINEL_AVATAR "Trocar foto"
+    IDS_TOOLTIP_STATUS_PAINEL_TEXT "Trocar apelido"
+    IDS_TOOLTIP_STATUS_PAINEL_STATUS "Status Geral"
+    IDS_TOOLTIP_MESSAGE_WINDOW_SEND_BUTTON "Enviar mensagem"
+    IDS_VALIDATE_ACCOUNTS_YAHOO_AUTH_LABEL "Aguarde, verificando ID e senha."
+    IDS_WIZARD_INVALID_ID   "Por favor, digite um ID válido. (UIM0609)"
+    IDS_ACCOUNT_EDIT_EMPTY_PORT "Porta do servidor Jabber inváilda. (UIM0141)"
+    IDS_VALIDATE_ACCOUNTS_JABBER_AUTH_LABEL 
+                            "Aguarde, validando e-mail e senha."
+    IDS_WIZARD_INVALID_PORT "Atenção! O número da porta deve ser menor que 65536. (UIM0608)"
+    IDS_WIZARD_EMPTY_PORT   "Por favor, digite o número da porta do servidor. (UIM0610)"
+    IDS_JABBER_ADD_CONTACT_DENIED 
+                            "O usuário %s não permitiu que você o adicionasse à sua lista de contatos. (UIM0158)"
+    IDS_CONTACT_TOOLTIP_BLOCKED "%s  (Bloqueado)"
+    IDS_JABBER_ADD_CONTACT_DENIED_REASON 
+                            "O usuário %s não permitiu que você o adicionasse à sua lista de contatos, \npelo seguinte motivo (UIM0159): \n\n%s"
+    IDS_ADD_TO_LIST_CAPTION "Adicionar contato"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ADD_TO_LIST         """%s"" será desbloqueado. Deseja adicioná-lo à sua lista de contatos?"
+    IDS_BLOCKING_NOT_SUPPORTED 
+                            "Não foi possível (des)bloquear o contato %s, \npelo seguinte motivo: \n\nO protocolo %s não suporta bloqueio de contatos. (UIM0142)"
+    IDS_FILE_TRANSFER_NOT_SUPPORTED 
+                            "O protocolo %s não dá suporte à transferência de arquivos. (UIM0114)"
+    IDS_NO_INTERNET_CONNECTION_MSG "Falha de conexão à Internet. (UIM0019)"
+    IDS_CONTACT_ALREADY_BLOCKED "O contato já está bloqueado. (UIM0143)"
+    IDS_PRIVACY_DIALOG_SAVE_SETTINGS_MSG_FORMAT 
+                            "Você deseja salvar as alterações feitas para a conta %s (%s) ?"
+    IDS_MESSAGE_WINDOW_CONTACT_SIGNED_ON_FORMAT "%s ficou online."
+    IDS_MESSAGE_WINDOW_CONTACT_SIGNED_OFF_FORMAT "%s ficou offline."
+    IDS_NOTIFY_POPUP_URL_CONTACT_ONLINE 
+                            "http://ubpv.multi.uol.com.br/messenger/images/online.bmp"
+    IDS_NOTIFY_POPUP_URL_CONTACT_OFFLINE 
+                            "http://ubpv.multi.uol.com.br/messenger/images/offline.bmp"
+    IDS_NOTIFY_POPUP_URL_NEW_MESSAGE 
+                            "http://ubpv.multi.uol.com.br/messenger/images/message.bmp"
+    IDS_NOTIFY_POPUP_URL_DEFAULT 
+                            "http://ubpv.multi.uol.com.br/messenger/images/notification.bmp"
+    IDS_FILE_TRANSFER_ACCOUNT_NOT_CONNECTED 
+                            "Não é possível enviar arquivo com a conta desconectada. \nPor favor, repita a operação após conectar-se. (UIM0117)"
+    IDS_SHOW_INFO_ACCOUNT_NOT_CONNECTED_MSG 
+                            "Para exibir os detalhes é necessário estar conectado. \nPor favor, repita a operação após conectar-se. (UIM0169)"
+    IDS_TOGGLE_DENIED_CONTACT_ACCOUNT_NOT_CONNECTED_MSG 
+                            "Para (des)bloquear um contato é necessário estar conectado. \nPor favor, repita a operação após conectar-se. (UIM0170)"
+    IDS_CONTACT_NODE_REQUEST_AUTHORIZATION "Pedir autorização novamente"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SKIN_ERROR_LOAD_DEFAULT_THEME_MSG 
+                            "Não foi possível carregar o tema atual pelo seguinte motivo: \n\n%s\n\nO UOL Messenger será reinciado com o tema padrão."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_JABBER_GTALK_SERVER "talk.google.com"
+    IDS_JABBER_UOLINC_SERVER "messenger.uolcorp.intranet"
+    IDS_JABBER_DEFAULT_CONNECT_PORT "5222"
+    IDS_JABBER_GTALK_EMAIL_DOMAIN "@gmail.com"
+    IDS_URL_FILE_TRANSFER_FILTER 
+                            "http://ubpv.multi.uol.com.br/messenger/filter.ext"
+    IDS_FILE_TRANSFER_DLG_CANCEL_CONFIRMATION 
+                            "Tem certeza que deseja cancelar a transferência?"
+    IDS_JABBER_UOLINC_EMAIL_DOMAIN "@uolinc.com"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SHOW_THIS_ACCOUNT_ON_PANEL "Mostrar essa conta no painel"
+    IDS_METHOD_AUTHORIZING_FILE 
+                            "http://ubpv.multi.uol.com.br/messenger/UOLMessengerAuthorizing.xml"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Portuguese (Brazil) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PTB)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE_BRAZILIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_CONTACT_INFO   HTML                    "res\\contactinfo.html"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_NOTIFY       BITMAP                  "res\\mensagem.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_WIZARD_INIT DIALOGEX 0, 0, 370, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD
+EXSTYLE WS_EX_TRANSPARENT | WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_WIZARD_PROFILE DIALOGEX 0, 0, 370, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Informe o e-mail que identificará seu perfil no UOL Messenger.\nPode ser seu e-mail UOL, BOL ou de outro provedor.",IDC_STATIC_WIZARD_PROFILE_HEADER,120,11,240,20
+    CONTROL         "E-mail:",IDC_STATIC_WIZARD_PROFILE_EMAIL,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,120,45,22,8,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT_WIZARD_PROFILE_EMAIL,148,41,135,14,ES_AUTOHSCROLL
+    LTEXT           "Senha* :",IDC_STATIC_WIZARD_PROFILE_PASS,120,63,30,8
+    EDITTEXT        IDC_EDIT_WIZARD_PROFILE_PASSWORD,186,59,97,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Confirmar senha:",IDC_STATIC_WIZARD_PROFILE_CONFIRM,120,81,56,8
+    EDITTEXT        IDC_EDIT_WIZARD_PROFILE_CONFIRM,186,77,97,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "* Use sua senha do e-mail UOL/BOL ou cadastre uma caso seu e-mail seja de outro provedor.",IDC_STATIC_WIZARD_PROFILE_INFO,120,97,157,18
+    LTEXT           "Escolha as redes que deseja configurar:",IDC_STATIC_WIZARD_NETWORKS,120,125,177,11
+    CONTROL         "MSN",IDC_CHK_MSN,"Button",BS_AUTOCHECKBOX,120,141,26,8
+    CONTROL         "UOL",IDC_CHK_UOL,"Button",BS_AUTOCHECKBOX,153,141,26,8
+    CONTROL         "Jabber",IDC_CHK_JABBER,"Button",BS_AUTOCHECKBOX,186,141,34,8
+    CONTROL         "ICQ",IDC_CHK_ICQ,"Button",BS_AUTOCHECKBOX,226,141,26,8,WS_EX_TRANSPARENT
+    CONTROL         "Yahoo!",IDC_CHK_YAHOO,"Button",BS_AUTOCHECKBOX,259,141,35,8
+END
+
+IDD_DIALOG_WIZARD_FINISH DIALOGEX 0, 0, 370, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_WAIT_PROFILE DIALOGEX 0, 0, 185, 91
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Texto de validação de conta",IDC_STATIC_WAIT,15,30,149,8
+    GROUPBOX        "",IDC_STATIC,6,3,172,81
+    PUSHBUTTON      "Cancelar",IDCANCEL,67,55,50,14
+END
+
+IDD_DIALOG_WIZARD_MSN_ACCOUNT DIALOGEX 0, 0, 370, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Cadastre suas contas do MSN Messenger no UOL Messenger informando o e-mail, senha e clicando em ""Adicionar conta"".\n\nSe o UOL Messenger detectar suas contas MSN, elas serão listadas abaixo. Neste caso, apenas selecione a conta e informe a senha.",IDC_STATIC_WIZARD_MSN_SUBHEADER,127,20,227,55
+    LTEXT           "E-mail:",IDC_STATIC_WIZARD_MSN_EMAIL,127,110,22,8
+    EDITTEXT        IDC_EDIT_WIZARD_MSN_ID,152,106,103,14,ES_AUTOHSCROLL
+    LTEXT           "Senha:",IDC_STATIC_WIZARD_MSN_PASS,126,125,24,8
+    EDITTEXT        IDC_EDIT_WIZARD_MSN_PASSWORD,152,124,69,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Adicionar conta",IDC_BUTTON_WIZARD_MSN_ADD_ACCOUNT,127,165,95,17
+    LISTBOX         IDC_LIST_WIZARD_MSN_ACCOUNTS,263,112,97,67,LBS_SORT | LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Contas MSN",IDC_STATIC_WIZARD_MSN_ACCOUNTS,260,102,103,81,NOT WS_VISIBLE
+    LTEXT           "Preenchimento opcional. Para avançar ao próximo passo, clique ""Avançar""",IDC_STATIC_WIZARD_MSN_INFO,127,69,193,22
+END
+
+IDD_DIALOG_WIZARD_ICQ_ACCOUNT DIALOGEX 0, 0, 370, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Converse com seus amigos do ICQ informando seu UIN, senha e clicando em ""Adicionar conta"".\n\nSe o UOL Messenger detectar suas contas ICQ, elas serão listadas abaixo. Neste caso, apenas selecione a conta e informe a senha.",IDC_STATIC_WIZARD_ICQ_SUBHEADER,127,20,225,44
+    LTEXT           "UIN:",IDC_STATIC_WIZARD_ICQ_UIN,134,100,16,8
+    EDITTEXT        IDC_EDIT_WIZARD_ICQ_ID,152,97,103,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Senha:",IDC_STATIC_WIZARD_ICQ_PASS,126,116,24,8
+    EDITTEXT        IDC_EDIT_WIZARD_ICQ_PASSWORD,152,115,69,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Adicionar conta",IDC_BUTTON_WIZARD_ICQ_ADD_ACCOUNT,127,156,95,17
+    LISTBOX         IDC_LIST_WIZARD_ICQ_ACCOUNTS,263,103,97,67,LBS_SORT | LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Contas ICQ",IDC_STATIC_WIZARD_ICQ_ACCOUNTS,260,93,103,81,NOT WS_VISIBLE
+    LTEXT           "Preenchimento opcional. Para avançar ao próximo passo, clique ""Avançar""",IDC_STATIC_WIZARD_ICQ_INFO,127,69,193,22
+END
+
+IDD_DIALOG_WIZARD_PREFERENCES DIALOGEX 0, 0, 376, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Mudar estado para ""ausente"" após",IDC_CHECK_WIZARD_PREFERENCES_AUTO_AWAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,167,126,10
+    CONTROL         "",IDC_SPIN_WIZARD_PREFERENCES_INACTIVITY_MINUTES,
+                    "msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,264,166,11,12
+    EDITTEXT        IDC_EDIT_WIZARD_PREFERENCES_TIME_AUTO_AWAY,243,166,21,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "minutos inativo",IDC_STATIC_WIZARD_PREFERENCES_INACTIVE,278,167,59,10
+    CONTROL         "Iniciar automaticamente",IDC_CHECK_WIZARD_PREFERENCES_AUTO_OPEN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,143,93,10
+    CONTROL         "Conectar ao iniciar",IDC_CHECK_WIZARD_PREFERENCES_AUTO_CONNECT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,243,155,78,10
+    CONTROL         "Histórico de mensagens",IDC_CHECK_WIZARD_PREFERENCES_HISTORY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,119,75,87,10
+    CONTROL         "Separar em grupos",IDC_CHECK_WIZARD_PREFERENCES_SHOW_GROUPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,119,63,77,10
+    LTEXT           "Ordenar",IDC_STATIC_WIZARD_PREFERENCES_CONTACT_ORDER,120,49,28,8
+    COMBOBOX        IDC_COMBO_WIZARD_PREFERENCES_CONTACTS_ORDER,151,47,149,80,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Segurança: Receber mensagens e arquivos... ",IDC_STATIC,114,92,246,47
+    CONTROL         "...de qualquer pessoa",IDC_RADIO_WIZARD_PREFERENCES_SECURITY_RECEIVE_ALL,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,119,104,87,10
+    CONTROL         "...mas perguntar antes se a pessoa não estiver na lista",IDC_RADIO_WIZARD_PREFERENCES_SECURITY_ASK_BEFORE_RECEIVE,
+                    "Button",BS_AUTORADIOBUTTON | BS_MULTILINE | WS_TABSTOP,119,115,194,10
+    CONTROL         "...somente de quem estiver na lista (recomendado)",IDC_RADIO_WIZARD_PREFERENCES_SECURITY_RECEIVE_ONLY_FROM_CONTACT_LIST,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,119,126,188,10
+    CONTROL         "Abrir o navegador ao conectar",IDC_CHECK_WIZARD_PREFERENCES_OPEN_NAVIGATOR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,155,114,10
+    CONTROL         "Usar avisos sonoros",IDC_CHECK_WIZARD_PREFERENCES_TOUCH_SOUND,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,243,143,80,10
+    CONTROL         "Notificar online/offline",IDC_CHECK_WIZARD_PREFEFENCES_WINDOW_NOTIFY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,210,63,87,10
+    COMBOBOX        IDC_COMBO_WIZARD_PREFERENCES_PRESET,215,24,143,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Contatos",IDC_STATIC_WIZARD_PREFERENCES_1,114,37,246,54
+    GROUPBOX        "Imagem",IDC_STATIC_CONTACT_IMAGE,303,44,53,43,WS_TABSTOP
+    CONTROL         "Pequena",IDC_RADIO_WIZARD_PREFERENCES_SMALL_IMAGE,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,309,53,41,10
+    CONTROL         "Média",IDC_RADIO_WIZARD_PREFERENCES_MEDIUM_IMAGE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,309,64,35,10
+    CONTROL         "Grande",IDC_RADIO_WIZARD_PREFERENCES_GREAT_IMAGE,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,309,75,39,10
+    LTEXT           "Usar configurações padrão do",IDC_STATIC,115,25,98,9
+    CONTROL         "Organizar mensagens por abas: uma janela para várias conversas",IDC_CHECK_WIZARD_PREFERENCES_TAB_WINDOW,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,179,233,10
+END
+
+IDD_DIALOG_WIZARD_SPLASH DIALOGEX 0, 0, 370, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT | WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "E-mail:",IDC_STATIC_WIZARD_SPLASH_EMAIL,159,75,22,8
+    COMBOBOX        IDC_COMBO_WIZARD_SPLASH_PROFILE,187,72,149,80,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Senha:",IDC_STATIC_WIZARD_SPLASH_PASS,159,94,24,8
+    EDITTEXT        IDC_EDIT_WIZARD_SPLASH_PASSWORD,187,93,73,12,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Lembrar senha",IDC_CHECK_SPLASH_REMEMBER_PASSWORD,
+                    "Button",BS_AUTOCHECKBOX,187,112,59,8
+    CONTROL         "Abrir automaticamente com este perfil",IDC_CHECK_SPLASH_OPEN_AUTO,
+                    "Button",BS_AUTOCHECKBOX,187,127,133,8
+END
+
+IDD_DIALOG_WIZARD DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+END
+
+IDD_DIALOG_TOOLTIP DIALOGEX 0, 0, 215, 58
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_WIZARD_PERSONALIZE_ACCOUNTS DIALOGEX 0, 0, 370, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Apelido:",IDC_STATIC_WIZARD_PERSONALIZE_NICK,132,64,27,8
+    EDITTEXT        IDC_EDIT_WIZARD_PERSONALIZE_NICK,162,62,141,12,ES_AUTOHSCROLL
+    LTEXT           "Sua foto:",IDC_STATIC_WIZARD_PERSONALIZE_PHOTO,128,89,31,8
+    PUSHBUTTON      "Trocar...",IDC_BUTTON_WIZARD_CHANGE_AVATAR,238,89,65,14
+END
+
+IDD_DIALOG_WIZARD_YAHOO_ACCOUNT DIALOGEX 0, 0, 370, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Converse com seus amigos do Yahoo Messenger informando seu ID, senha e clicando em ""Adicionar conta"".\n\nSe o UOL Messenger detectar suas contas Yahoo, elas serão listadas abaixo. Neste caso, apenas selecione a conta e informe a senha.",IDC_STATIC_WIZARD_YAHOO_SUBHEADER,129,20,224,50
+    LTEXT           "ID:",IDC_STATIC_WIZARD_YAHOO_ID,140,99,11,8
+    EDITTEXT        IDC_EDIT_WIZARD_YAHOO_ID,153,94,103,14,ES_AUTOHSCROLL
+    LTEXT           "Senha:",IDC_STATIC_WIZARD_YAHOO_PASS,127,113,24,8
+    EDITTEXT        IDC_EDIT_WIZARD_YAHOO_PASSWORD,153,112,69,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Adicionar conta",IDC_BUTTON_WIZARD_YAHOO_ADD_ACCOUNT,129,153,95,17
+    LISTBOX         IDC_LIST_WIZARD_YAHOO_ACCOUNTS,265,101,97,67,LBS_SORT | LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Contas Yahoo",IDC_STATIC_WIZARD_YAHOO_ACCOUNTS,261,91,103,81,NOT WS_VISIBLE
+    LTEXT           "Preenchimento opcional. Para avançar ao próximo passo, clique ""Avançar""",IDC_STATIC_WIZARD_YAHOO_INFO,129,69,193,22
+END
+
+IDD_DIALOG_WIZARD_JABBER_ACCOUNT DIALOGEX 0, 0, 370, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Converse com seus amigos do Jabber informando seu e-mail, senha e clicando em ""Adicionar conta"".\n\nSe o UOL Messenger detectar suas contas Jabber, elas serão listadas abaixo. Neste caso, apenas selecione a conta e informe a senha.",IDC_STATIC_WIZARD_JABBER_SUBHEADER,127,20,224,45
+    PUSHBUTTON      "Adicionar conta",IDC_BUTTON_WIZARD_JABBER_ADD_ACCOUNT,154,175,95,17
+    LTEXT           "E-mail:",IDC_STATIC_WIZARD_JABBER_EMAIL,129,105,22,8
+    EDITTEXT        IDC_EDIT_WIZARD_JABBER_EMAIL,155,99,100,14,ES_AUTOHSCROLL
+    LTEXT           "Senha:",IDC_STATIC_WIZARD_JABBER_PASS,127,123,24,8
+    EDITTEXT        IDC_EDIT_WIZARD_JABBER_PASSWORD,155,117,69,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Servidor:",IDC_STATIC_WIZARD_JABBER_SERVER,121,141,30,8
+    EDITTEXT        IDC_EDIT_WIZARD_JABBER_SERVER,155,135,84,14,ES_AUTOHSCROLL
+    LTEXT           "Porta:",IDC_STATIC_WIZARD_JABBER_PORT,130,156,21,8
+    EDITTEXT        IDC_EDIT_WIZARD_JABBER_PORT,155,153,35,14,ES_AUTOHSCROLL | ES_WANTRETURN | ES_NUMBER
+    GROUPBOX        "Contas Google",IDC_STATIC_WIZARD_JABBER_ACCOUNTS,260,93,103,73,NOT WS_VISIBLE
+    LISTBOX         IDC_LIST_WIZARD_JABBER_ACCOUNTS,263,103,97,58,LBS_SORT | LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Preenchimento opcional. Para avançar ao próximo passo, clique ""Avançar""",IDC_STATIC_WIZARD_JABBER_INFO,127,69,193,22
+END
+
+IDD_DIALOG_WIZARD_UOL_ACCOUNT DIALOGEX 0, 0, 370, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Criar um e-mail BOL",IDC_BUTTON_WIZARD_UOLK_SUBSCRIBE,151,164,172,17
+    LTEXT           "Informe seu e-mail e senha do UOL ou BOL e veja seus amigos do UOL online.\n\nPreenchimento opcional. Para avançar ao próximo passo, clique ""Avançar""",IDC_STATIC_WIZARD_UOLK_HEADER,127,19,236,42
+    LTEXT           "E-mail:",IDC_STATIC_WIZARD_UOLK_EMAIL,129,79,22,8
+    EDITTEXT        IDC_EDIT_WIZARD_UOLK_ID,153,74,103,14,ES_AUTOHSCROLL
+    LTEXT           "Senha:",IDC_STATIC_WIZARD_UOLK_PASS,127,92,24,8
+    EDITTEXT        IDC_EDIT_WIZARD_UOLK_PASSWORD,153,92,69,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Adicionar conta",IDC_BUTTON_WIZARD_UOLK_ADD_ACCOUNT,129,120,95,17
+    LTEXT           "Ainda não tem e-mail BOL? Crie o seu agora e participe da rede UOL.",IDC_STATIC_WIZARD_UOLK_SUBSCRIBE,129,149,221,13
+END
+
+IDD_DIALOG_MESSAGEBOX DIALOGEX 0, 0, 275, 91
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,111,70,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancelar",IDCANCEL,165,70,50,14,NOT WS_VISIBLE
+    DEFPUSHBUTTON   "Sim",IDYES,7,70,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Não",IDNO,59,70,50,14,NOT WS_VISIBLE
+    LTEXT           "Static",IDC_STATIC_TEXT,107,23,53,27,0,WS_EX_TRANSPARENT
+END
+
+IDD_DIALOG_CHAT_INVITE DIALOGEX 0, 0, 262, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_INIT_PROGRESS DIALOGEX 0, 0, 207, 49
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP
+EXSTYLE WS_EX_TOPMOST | WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "Static",IDC_STATIC_PROGRESS,55,34,96,8
+    CONTROL         "",IDC_PROGRESS_INIT,"msctls_progress32",WS_BORDER,19,13,168,14
+END
+
+IDD_DIALOG_HOTKEYS DIALOGEX 0, 0, 356, 246
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Atalhos"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,153,226,50,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_WIZARD_PROFILE, DIALOG
+    BEGIN
+        VERTGUIDE, 120
+        VERTGUIDE, 144
+        VERTGUIDE, 201
+        VERTGUIDE, 242
+        VERTGUIDE, 308
+        VERTGUIDE, 348
+        HORZGUIDE, 149
+    END
+
+    IDD_DIALOG_WAIT_PROFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_DIALOG_WIZARD_MSN_ACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 118
+        VERTGUIDE, 127
+        BOTTOMMARGIN, 223
+        HORZGUIDE, 102
+    END
+
+    IDD_DIALOG_WIZARD_ICQ_ACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 118
+        RIGHTMARGIN, 369
+    END
+
+    IDD_DIALOG_WIZARD_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 140
+        RIGHTMARGIN, 366
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_DIALOG_WIZARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DIALOG_TOOLTIP, DIALOG
+    BEGIN
+        RIGHTMARGIN, 214
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_DIALOG_WIZARD_PERSONALIZE_ACCOUNTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        VERTGUIDE, 118
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+        HORZGUIDE, 14
+    END
+
+    IDD_DIALOG_WIZARD_YAHOO_ACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 118
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_DIALOG_WIZARD_JABBER_ACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 118
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_DIALOG_WIZARD_UOL_ACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 118
+        RIGHTMARGIN, 363
+        VERTGUIDE, 129
+        VERTGUIDE, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_DIALOG_MESSAGEBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_DIALOG_CHAT_INVITE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        VERTGUIDE, 121
+        VERTGUIDE, 131
+        VERTGUIDE, 141
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_DIALOG_INIT_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+
+    IDD_DIALOG_HOTKEYS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 349
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 239
+        HORZGUIDE, 226
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_TRAY MENU 
+BEGIN
+    MENUITEM "Conectar Todas as Redes",     ID_CONNECT_ALL
+    MENUITEM "Desconectar Todas as Redes",  ID_DISCONNECT_ALL
+    MENUITEM SEPARATOR
+    POPUP "Estado"
+    BEGIN
+        MENUITEM "Online",                      ID_ESTADO_ONLINE
+        MENUITEM "Ausente",                     ID_ESTADO_AUSENTE
+        MENUITEM "Offline (invisível)",         ID_ESTADO_OFFLINE
+    END
+    MENUITEM SEPARATOR
+    MENUITEM "Ajuda...",                    ID_SHOW_HELP
+    MENUITEM SEPARATOR
+    MENUITEM "Sobre...",                    ID_APP_ABOUT
+    MENUITEM SEPARATOR
+    MENUITEM "Fechar",                      ID_CLOSE_WINDOW
+END
+
+#endif    // Portuguese (Brazil) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "res\\uim.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

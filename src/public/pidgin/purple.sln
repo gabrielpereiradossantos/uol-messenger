@@ -1,0 +1,155 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "purple", "purple.vcproj", "{47DBC5D4-42BB-4A42-9593-14A3C9AD1216}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ssl", "libpurple\plugins\ssl\ssl.vcproj", "{6F8D67BA-B953-44E5-A086-9EBAFB7607CE}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{47DBC5D4-42BB-4A42-9593-14A3C9AD1216} = {47DBC5D4-42BB-4A42-9593-14A3C9AD1216}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ssl-nss", "libpurple\plugins\ssl\ssl-nss.vcproj", "{380655E3-6BB4-4223-B6FC-DA1934081140}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{47DBC5D4-42BB-4A42-9593-14A3C9AD1216} = {47DBC5D4-42BB-4A42-9593-14A3C9AD1216}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libjabber", "libpurple\protocols\jabber\jabber.vcproj", "{DE1945AD-4E34-446F-97A0-83A6AB2BEE0C}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{47DBC5D4-42BB-4A42-9593-14A3C9AD1216} = {47DBC5D4-42BB-4A42-9593-14A3C9AD1216}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libuol", "libpurple\protocols\uol\uol.vcproj", "{4F9D4AF5-851C-4E20-9599-6ECF6925EE91}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{47DBC5D4-42BB-4A42-9593-14A3C9AD1216} = {47DBC5D4-42BB-4A42-9593-14A3C9AD1216}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libyahoo", "libpurple\protocols\yahoo\yahoo.vcproj", "{FB0E9712-03D6-4735-A4A8-DC46ED7B2991}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{47DBC5D4-42BB-4A42-9593-14A3C9AD1216} = {47DBC5D4-42BB-4A42-9593-14A3C9AD1216}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libaim", "libpurple\protocols\oscar\libaim.vcproj", "{D674FC51-518D-4770-9544-F5A0971985E2}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{C5DFC55C-9774-488D-AB29-9CD11EBB06C0} = {C5DFC55C-9774-488D-AB29-9CD11EBB06C0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libicq", "libpurple\protocols\oscar\libicq.vcproj", "{AD41BB97-41FC-4A75-8133-B95397F02DEE}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{C5DFC55C-9774-488D-AB29-9CD11EBB06C0} = {C5DFC55C-9774-488D-AB29-9CD11EBB06C0}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "liboscar", "libpurple\protocols\oscar\liboscar.vcproj", "{C5DFC55C-9774-488D-AB29-9CD11EBB06C0}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{6F8D67BA-B953-44E5-A086-9EBAFB7607CE} = {6F8D67BA-B953-44E5-A086-9EBAFB7607CE}
+		{47DBC5D4-42BB-4A42-9593-14A3C9AD1216} = {47DBC5D4-42BB-4A42-9593-14A3C9AD1216}
+		{380655E3-6BB4-4223-B6FC-DA1934081140} = {380655E3-6BB4-4223-B6FC-DA1934081140}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libuolto", "libpurple\protocols\uolto\uolto.vcproj", "{20D68150-FCF6-49B7-A12D-B97B252C0819}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{47DBC5D4-42BB-4A42-9593-14A3C9AD1216} = {47DBC5D4-42BB-4A42-9593-14A3C9AD1216}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libmsn", "libpurple\protocols\msn\msn.vcproj", "{4C8DB604-5777-4266-824E-DC9EF53167BA}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{47DBC5D4-42BB-4A42-9593-14A3C9AD1216} = {47DBC5D4-42BB-4A42-9593-14A3C9AD1216}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47DBC5D4-42BB-4A42-9593-14A3C9AD1216}.Debug|Win32.ActiveCfg = Debug|Win32
+		{47DBC5D4-42BB-4A42-9593-14A3C9AD1216}.Debug|Win32.Build.0 = Debug|Win32
+		{47DBC5D4-42BB-4A42-9593-14A3C9AD1216}.Release|Win32.ActiveCfg = Release|Win32
+		{47DBC5D4-42BB-4A42-9593-14A3C9AD1216}.Release|Win32.Build.0 = Release|Win32
+		{6F8D67BA-B953-44E5-A086-9EBAFB7607CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6F8D67BA-B953-44E5-A086-9EBAFB7607CE}.Debug|Win32.Build.0 = Debug|Win32
+		{6F8D67BA-B953-44E5-A086-9EBAFB7607CE}.Release|Win32.ActiveCfg = Release|Win32
+		{6F8D67BA-B953-44E5-A086-9EBAFB7607CE}.Release|Win32.Build.0 = Release|Win32
+		{380655E3-6BB4-4223-B6FC-DA1934081140}.Debug|Win32.ActiveCfg = Debug|Win32
+		{380655E3-6BB4-4223-B6FC-DA1934081140}.Debug|Win32.Build.0 = Debug|Win32
+		{380655E3-6BB4-4223-B6FC-DA1934081140}.Release|Win32.ActiveCfg = Release|Win32
+		{380655E3-6BB4-4223-B6FC-DA1934081140}.Release|Win32.Build.0 = Release|Win32
+		{DE1945AD-4E34-446F-97A0-83A6AB2BEE0C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE1945AD-4E34-446F-97A0-83A6AB2BEE0C}.Debug|Win32.Build.0 = Debug|Win32
+		{DE1945AD-4E34-446F-97A0-83A6AB2BEE0C}.Release|Win32.ActiveCfg = Release|Win32
+		{DE1945AD-4E34-446F-97A0-83A6AB2BEE0C}.Release|Win32.Build.0 = Release|Win32
+		{4F9D4AF5-851C-4E20-9599-6ECF6925EE91}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4F9D4AF5-851C-4E20-9599-6ECF6925EE91}.Debug|Win32.Build.0 = Debug|Win32
+		{4F9D4AF5-851C-4E20-9599-6ECF6925EE91}.Release|Win32.ActiveCfg = Release|Win32
+		{4F9D4AF5-851C-4E20-9599-6ECF6925EE91}.Release|Win32.Build.0 = Release|Win32
+		{FB0E9712-03D6-4735-A4A8-DC46ED7B2991}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FB0E9712-03D6-4735-A4A8-DC46ED7B2991}.Debug|Win32.Build.0 = Debug|Win32
+		{FB0E9712-03D6-4735-A4A8-DC46ED7B2991}.Release|Win32.ActiveCfg = Release|Win32
+		{FB0E9712-03D6-4735-A4A8-DC46ED7B2991}.Release|Win32.Build.0 = Release|Win32
+		{D674FC51-518D-4770-9544-F5A0971985E2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D674FC51-518D-4770-9544-F5A0971985E2}.Debug|Win32.Build.0 = Debug|Win32
+		{D674FC51-518D-4770-9544-F5A0971985E2}.Release|Win32.ActiveCfg = Release|Win32
+		{D674FC51-518D-4770-9544-F5A0971985E2}.Release|Win32.Build.0 = Release|Win32
+		{AD41BB97-41FC-4A75-8133-B95397F02DEE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AD41BB97-41FC-4A75-8133-B95397F02DEE}.Debug|Win32.Build.0 = Debug|Win32
+		{AD41BB97-41FC-4A75-8133-B95397F02DEE}.Release|Win32.ActiveCfg = Release|Win32
+		{AD41BB97-41FC-4A75-8133-B95397F02DEE}.Release|Win32.Build.0 = Release|Win32
+		{C5DFC55C-9774-488D-AB29-9CD11EBB06C0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C5DFC55C-9774-488D-AB29-9CD11EBB06C0}.Debug|Win32.Build.0 = Debug|Win32
+		{C5DFC55C-9774-488D-AB29-9CD11EBB06C0}.Release|Win32.ActiveCfg = Release|Win32
+		{C5DFC55C-9774-488D-AB29-9CD11EBB06C0}.Release|Win32.Build.0 = Release|Win32
+		{20D68150-FCF6-49B7-A12D-B97B252C0819}.Debug|Win32.ActiveCfg = Debug|Win32
+		{20D68150-FCF6-49B7-A12D-B97B252C0819}.Debug|Win32.Build.0 = Debug|Win32
+		{20D68150-FCF6-49B7-A12D-B97B252C0819}.Release|Win32.ActiveCfg = Release|Win32
+		{20D68150-FCF6-49B7-A12D-B97B252C0819}.Release|Win32.Build.0 = Release|Win32
+		{4C8DB604-5777-4266-824E-DC9EF53167BA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4C8DB604-5777-4266-824E-DC9EF53167BA}.Debug|Win32.Build.0 = Debug|Win32
+		{4C8DB604-5777-4266-824E-DC9EF53167BA}.Release|Win32.ActiveCfg = Release|Win32
+		{4C8DB604-5777-4266-824E-DC9EF53167BA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

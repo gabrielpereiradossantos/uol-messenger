@@ -1,0 +1,24 @@
+<UIM>
+	<Common>
+		<Setting>
+			<Type><![CDATA[string]]></Type>
+			<Name><![CDATA[AppLinkIcon]]></Name>
+			<Value><![CDATA[uolfone.ico]]></Value>
+		</Setting>
+		<Setting>
+			<Type><![CDATA[string]]></Type>
+			<Name><![CDATA[AppMode]]></Name>
+			<Value><![CDATA[UOLFone]]></Value>
+		</Setting>
+		<Setting>
+			<Type><![CDATA[string]]></Type>
+			<Name><![CDATA[AppTheme]]></Name>
+			<Value><![CDATA[Default]]></Value>
+		</Setting>
+		<Setting>
+			<Type><![CDATA[string]]></Type>
+			<Name><![CDATA[AppStringResource]]></Name>
+			<Value><![CDATA[res.xml]]></Value>
+		</Setting>
+	</Common>
+</UIM>

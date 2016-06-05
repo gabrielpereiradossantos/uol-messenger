@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VisualPng", "VisualPng.vcproj", "{739D8781-6100-450C-9443-C122A089B51D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{739D8781-6100-450C-9443-C122A089B51D}.Debug.ActiveCfg = Debug|Win32
+		{739D8781-6100-450C-9443-C122A089B51D}.Debug.Build.0 = Debug|Win32
+		{739D8781-6100-450C-9443-C122A089B51D}.Release.ActiveCfg = Release|Win32
+		{739D8781-6100-450C-9443-C122A089B51D}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

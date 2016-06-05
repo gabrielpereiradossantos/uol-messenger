@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phone_number_rules>
+    <main_constraints>
+        <phone_number_minimum_size>5</phone_number_minimum_size>
+        <ddd_number_initial_value>11</ddd_number_initial_value>
+        <ddd_number_final_value>99</ddd_number_final_value>
+    </main_constraints>
+    <per_provider_size_rules>
+        <provider_size_rule code="11">
+            <number_minimum_size>7</number_minimum_size>
+            <number_maximum_size>8</number_maximum_size>
+        </provider_size_rule>
+        <provider_size_rule code="85">
+            <number_minimum_size>6</number_minimum_size>
+            <number_maximum_size>8</number_maximum_size>
+        </provider_size_rule>
+    </per_provider_size_rules>
+    <per_provider_sufix_rules>
+        <provider_sufix_rule code="11" prefix="1111" prefix_size="4" sufix_size="4">
+            <rule_type>range</rule_type>
+            <rule_values>
+                <rule_value>0000</rule_value>
+                <rule_value>5555</rule_value>
+            </rule_values>
+        </provider_sufix_rule>
+        <provider_sufix_rule code="11" prefix="2222" prefix_size="4" sufix_size="4">
+            <rule_type>range</rule_type>
+            <rule_values>
+                <rule_value>0000</rule_value>
+                <rule_value>5555</rule_value>
+            </rule_values>
+        </provider_sufix_rule>
+        <provider_sufix_rule code="85" prefix="221" prefix_size="4" sufix_size="4">
+            <rule_type>values</rule_type>
+            <rule_values>
+                <rule_value>1111</rule_value>
+                <rule_value>3333</rule_value>
+                <rule_value>5555</rule_value>
+                <rule_value>7777</rule_value>
+                <rule_value>9999</rule_value>
+            </rule_values>
+        </provider_sufix_rule>
+    </per_provider_sufix_rules>
+    <invalid_numbers>
+        <invalid_number regexp="^{(0300)}" description="invalidate any phone number started by 0300" />
+        <invalid_number regexp="^{(0500)}" description="invalidate any phone number started by 0500" />
+        <invalid_number regexp="^{(0800)}" description="invalidate any phone number started by 0800" />
+    </invalid_numbers>
+</phone_number_rules>

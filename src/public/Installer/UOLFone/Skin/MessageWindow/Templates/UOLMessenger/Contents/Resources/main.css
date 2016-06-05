@@ -1,0 +1,60 @@
+/* =Base */
+body {background-color: #fff; font-size: xx-small; fon\t-size: x-small; font-family: "Trebuchet MS", sans-serif; margin: 0; padding: 5px; word-wrap: break-word;}
+div.msgBox, div.msgSys, div.msgFileTransfer {margin-bottom: 8px; padding: 5px 4px;}
+div.msgBox div.author {font-size: 1.3em;}
+div.msgBox div.id {font-size: 1.0em;}
+div.timeStamp {line-height: 1.6em;}
+div.msgInfo {height:1%;}
+div.msgInfo div.author {font-weight: bold;}
+div.msgInfo div.avatar img {width: 33px; height: 33px;}
+div.msgText {clear:left;height:1%;}
+div.msgText p {font-size: 1.1em;}
+div.msgSys p {font-weight: bold; margin: 3px 0;}
+hr {display: none;}
+div.msgText p {height: 1%;}
+div.space {margin-top:3px;}
+ 
+/* =AvatarYes */
+body.avatarYesTimeStampYes div.avatar,
+body.avatarYesTimeStampNo div.avatar {float: left;}
+body.avatarYesTimeStampYes div.author,
+body.avatarYesTimeStampNo div.author {margin-left: 37px; margin-right: 34px;}
+body.avatarYesTimeStampYes div.id,
+body.avatarYesTimeStampNo div.id {margin-left: 37px; margin-right: 34px;}
+body.avatarYesTimeStampYes div.msgText p,
+body.avatarYesTimeStampNo div.msgText p {margin: 0px 0px 6px 37px;top:0;}
+
+/* =AvatarNo */
+body.avatarNoTimeStampYes .avatar,
+body.avatarNoTimeStampNo .avatar {display: none;}
+body.avatarNoTimeStampYes div.msgText p,
+body.avatarNoTimeStampNo div.msgText p {margin: 0px 0px 6px 37px;}
+
+/* =TimeStampYes */
+body.avatarYesTimeStampYes div.msgText div.timeStamp,
+body.avatarNoTimeStampYes div.msgText div.timeStamp {float: left; width: 36px;}
+body.avatarYesTimeStampYes div.msgSys div.timeStamp,
+body.avatarNoTimeStampYes div.msgSys div.timeStamp {float: left; width: 36px;}
+
+
+/* =TimeStampNo */
+body.avatarYesTimeStampNo div.timeStamp,
+body.avatarNoTimeStampNo div.timeStamp {display: none;}
+body.avatarNoTimeStampNo div.msgText p {margin-left: 0;}
+body.avatarYesTimeStampNo div.msgText p {margin-left: 40px;}
+
+
+
+/* Cores */
+div.timeStamp {color: #666;}
+div.msgSys p {color: #747474;}
+div.me {background-color: #e3fbee; border-bottom: 1px solid #396;}
+div.me div.author {color: #396;}
+div.me div.id {color: #396;}
+div.friend  {background-color: #e6f8fc; border-bottom: 1px solid #07779c;}
+div.friend div.author {color: #057799;}
+div.friend div.id {color: #057799;}
+div.msgSys {background-color: #ebebeb; border-bottom: 1px solid #acacac;}
+div.msgFileTransfer p {color: #969696;}
+div.msgFileTransfer {background-color: #ffff99; border-bottom: 1px solid #acacac;}
+
